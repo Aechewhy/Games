@@ -2,7 +2,7 @@
   WindowHeight = 1080
   UseMouse = true
   NewUpdateSoundRevisionViewed = 38290
-  BackupSaveCount = 7
+  BackupSaveCount = 6
   LastRoadmapRevisionViewed = 38290
   SwapInterval = 0
   DisplayIndex = 0
@@ -14,4 +14,7 @@
   X = 1920
   DefaultControlsChosen = true
   WindowWidth = 1920
+  NoBorder = false
+  FullScreen = true
 }
+
