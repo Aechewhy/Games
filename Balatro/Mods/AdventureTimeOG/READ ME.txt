@@ -1,0 +1,13 @@
+Adventure Time OG deck
+
+Requires Steammodded {https://github.com/Steamodded/smods?tab=readme-ov-file}
+follow the steammodded instilation process and drop in the unzipped folder in the 'mods' folder
+
+Featuring Custom Face cards
+						
+K - Finn
+Q - Princess Bubblegum
+J - Jake
+
+Modding for @mahuru05‬
+Sprite work By @nandoo.px.

@@ -411,6 +411,7 @@ end
 ---@param e {}
 --**e** Is the UIE that called this function
 G.FUNCS.set_button_pip = function(e)
+if Handy.controller.override_node_button(e) then return end
   if G.CONTROLLER.HID.controller and e.config.focus_args and not e.children.button_pip then
     e.children.button_pip = UIBox{
       definition = create_button_binding_pip{button = e.config.focus_args.button, scale = e.config.focus_args.scale},
@@ -2619,6 +2620,7 @@ end
     delay(0.2*delayfac)
     G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,
     func = function()
+      if not Nopeus and G.pack_cards then G.pack_cards:remove(); G.pack_cards = nil; end
       G.FUNCS.draw_from_hand_to_deck()
       G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,
           func = function()
@@ -2642,6 +2644,7 @@ end
                 G.STATE = G.GAME.PACK_INTERRUPT
                 ease_background_colour_blind(G.GAME.PACK_INTERRUPT)
                 G.GAME.PACK_INTERRUPT = nil
+                Handy.insta_booster_skip.is_skipped = false
           return true
       end}))
       SMODS.calculate_context({ending_booster = true, booster = booster_obj})
@@ -2949,6 +2952,7 @@ end
   end
 
 G.FUNCS.cash_out = function(e)
+if Handy.insta_cash_out.is_skipped and e.config.button then return end
     stop_use()
       if G.round_eval then  
         e.config.button = nil
@@ -2968,6 +2972,8 @@ G.FUNCS.cash_out = function(e)
               G.GAME.current_round.discards_left = math.max(0, G.GAME.round_resets.discards + G.GAME.round_bonus.discards)
               G.GAME.current_round.hands_left = (math.max(1, G.GAME.round_resets.hands + G.GAME.round_bonus.next_hands))
               G.STATE = G.STATES.SHOP
+              Handy.insta_cash_out.is_skipped = false
+              Handy.insta_cash_out.can_skip = false
               G.GAME.shop_free = nil
               G.GAME.shop_d6ed = nil
               G.STATE_COMPLETE = false

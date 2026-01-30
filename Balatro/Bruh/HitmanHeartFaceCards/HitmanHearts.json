@@ -1,0 +1,15 @@
+{
+	"id": "HitmanHearts",
+	"name": "Hitman Cards",
+	"display_name": "Hitman Cards",
+	"author": ["WaKa"],
+	"description": "Hitman face cards by Waka",
+	"prefix": "htmfcd",
+	"main_file": "HitmanHearts.lua",
+	"priority": 0,
+	"badge_colour": "",
+	"badge_text_colour": "",
+	"display_name": "Waka",
+	"version": "1.0.0",
+	"dependencies": [],
+}

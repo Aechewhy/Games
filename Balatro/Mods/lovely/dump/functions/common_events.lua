@@ -66,6 +66,7 @@ function ease_chips(mod)
 end
 
 function ease_dollars(mod, instant)
+local handy_ease_muted = Handy.animation_skip.mute_ease_dollars > 0
     local function _mod(mod)
         local dollar_UI = G.HUD:get_UIE_by_ID('dollar_text_UI')
         mod = mod or 0
@@ -93,6 +94,7 @@ function ease_dollars(mod, instant)
           align = 'cm',
           })
         --Play a chip sound
+        if handy_ease_muted then return end
         play_sound('coin1')
     end
     if instant then
@@ -482,18 +484,18 @@ function level_up_hand(card, hand, instant, amount)
     if not instant then 
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.2, func = function()
             play_sound('tarot1')
-            if card then card:juice_up(0.8, 0.5) end
+            if card and card.juice_up then card:juice_up(0.8, 0.5) end
             G.TAROT_INTERRUPT_PULSE = true
             return true end }))
         update_hand_text({delay = 0}, {mult = G.GAME.hands[hand].mult, StatusText = true})
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.9, func = function()
             play_sound('tarot1')
-            if card then card:juice_up(0.8, 0.5) end
+            if card and card.juice_up then card:juice_up(0.8, 0.5) end
             return true end }))
         update_hand_text({delay = 0}, {chips = G.GAME.hands[hand].chips, StatusText = true})
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.9, func = function()
             play_sound('tarot1')
-            if card then card:juice_up(0.8, 0.5) end
+            if card and card.juice_up then card:juice_up(0.8, 0.5) end
             G.TAROT_INTERRUPT_PULSE = nil
             return true end }))
         update_hand_text({sound = 'button', volume = 0.7, pitch = 0.9, delay = 0}, {level=G.GAME.hands[hand].level})
@@ -1001,7 +1003,7 @@ function card_eval_status_text(card, eval_type, amt, percent, dir, extra)
             })
             play_sound(sound, 0.8+percent*0.2, volume)
             if not extra or not extra.no_juice then
-                card:juice_up(0.6, 0.1)
+                if card and card.juice_up then card:juice_up(0.6, 0.1) end
                 G.ROOM.jiggle = G.ROOM.jiggle + 0.7
             end
         else
@@ -1023,7 +1025,7 @@ function card_eval_status_text(card, eval_type, amt, percent, dir, extra)
                     })
                     play_sound(sound, 0.8+percent*0.2, volume)
                     if not extra or not extra.no_juice then
-                        card:juice_up(0.6, 0.1)
+                        if card and card.juice_up then card:juice_up(0.6, 0.1) end
                         G.ROOM.jiggle = G.ROOM.jiggle + 0.7
                     end
                     return true
@@ -1264,7 +1266,7 @@ end
 function juice_card(card)
     G.E_MANAGER:add_event(Event({
         trigger = 'immediate',
-        func = (function() card:juice_up(0.7);return true end)
+        func = (function() if card and card.juice_up then card:juice_up(0.7) end;return true end)
     }))
 end
 
@@ -1300,7 +1302,7 @@ end
 function juice_card_until(card, eval_func, first, delay)
     G.E_MANAGER:add_event(Event({
         trigger = 'after',delay = delay or 0.1, blocking = false, blockable = false, timer = 'REAL',
-        func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)
+        func = (function() if eval_func(card) then if card and card.juice_up then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)
     }))
 end
 

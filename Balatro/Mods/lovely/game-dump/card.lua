@@ -1320,7 +1320,16 @@ function Card:get_p_dollars()
     -- TARGET: get_p_dollars
     if ret ~= 0 then
         G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + ret
-        G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+        if not Handy.animation_skip.should_skip_messages() then
+          G.E_MANAGER:add_event(Event({
+            func = (function()
+              G.GAME.dollar_buffer = 0
+              return true
+            end)
+          }))
+        else
+          Handy.animation_skip.request_dollars_buffer_reset()
+        end
     end
     return ret
 end
@@ -3081,7 +3090,16 @@ function Card:calculate_joker(context)
                 if G.GAME.blind.triggered then 
                     ease_dollars(self.ability.extra)
                     G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra
-                    G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                    if not Handy.animation_skip.should_skip_messages() then
+                      G.E_MANAGER:add_event(Event({
+                        func = (function()
+                          G.GAME.dollar_buffer = 0
+                          return true
+                        end)
+                      }))
+                    else
+                      Handy.animation_skip.request_dollars_buffer_reset()
+                    end
                     return {
                         message = localize('$')..self.ability.extra,
                         colour = G.C.MONEY
@@ -3475,7 +3493,16 @@ function Card:calculate_joker(context)
                 if self.ability.name == 'Golden Ticket' and
                     SMODS.has_enhancement(context.other_card, 'm_gold') then
                         G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra
-                        G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                        if not Handy.animation_skip.should_skip_messages() then
+                          G.E_MANAGER:add_event(Event({
+                            func = (function()
+                              G.GAME.dollar_buffer = 0
+                              return true
+                            end)
+                          }))
+                        else
+                          Handy.animation_skip.request_dollars_buffer_reset()
+                        end
                         return {
                             dollars = self.ability.extra,
                             card = self
@@ -3501,7 +3528,16 @@ function Card:calculate_joker(context)
                     context.other_card:is_face() and
                     SMODS.pseudorandom_probability(self, 'business', 1, self.ability.extra) then
                         G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + 2
-                        G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                        if not Handy.animation_skip.should_skip_messages() then
+                          G.E_MANAGER:add_event(Event({
+                            func = (function()
+                              G.GAME.dollar_buffer = 0
+                              return true
+                            end)
+                          }))
+                        else
+                          Handy.animation_skip.request_dollars_buffer_reset()
+                        end
                         return {
                             dollars = 2,
                             card = self
@@ -3549,7 +3585,16 @@ function Card:calculate_joker(context)
                 if self.ability.name == 'Rough Gem' and
                 context.other_card:is_suit("Diamonds") then
                     G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra
-                    G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                    if not Handy.animation_skip.should_skip_messages() then
+                      G.E_MANAGER:add_event(Event({
+                        func = (function()
+                          G.GAME.dollar_buffer = 0
+                          return true
+                        end)
+                      }))
+                    else
+                      Handy.animation_skip.request_dollars_buffer_reset()
+                    end
                     return {
                         dollars = self.ability.extra,
                         card = self
@@ -3635,7 +3680,16 @@ function Card:calculate_joker(context)
                             }
                         else
                             G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra.dollars
-                            G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                            if not Handy.animation_skip.should_skip_messages() then
+                              G.E_MANAGER:add_event(Event({
+                                func = (function()
+                                  G.GAME.dollar_buffer = 0
+                                  return true
+                                end)
+                              }))
+                            else
+                              Handy.animation_skip.request_dollars_buffer_reset()
+                            end
                             return {
                                 dollars = self.ability.extra.dollars,
                                 card = self
@@ -3826,7 +3880,16 @@ function Card:calculate_joker(context)
                     if self.ability.name == 'To Do List' and context.scoring_name == self.ability.to_do_poker_hand then
                         ease_dollars(self.ability.extra.dollars)
                         G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra.dollars
-                        G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                        if not Handy.animation_skip.should_skip_messages() then
+                          G.E_MANAGER:add_event(Event({
+                            func = (function()
+                              G.GAME.dollar_buffer = 0
+                              return true
+                            end)
+                          }))
+                        else
+                          Handy.animation_skip.request_dollars_buffer_reset()
+                        end
                         return {
                             message = localize('$')..self.ability.extra.dollars,
                             colour = G.C.MONEY
@@ -4041,7 +4104,16 @@ function Card:calculate_joker(context)
                             if G.GAME.blind.triggered then 
                                 ease_dollars(self.ability.extra)
                                 G.GAME.dollar_buffer = (G.GAME.dollar_buffer or 0) + self.ability.extra
-                                G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))
+                                if not Handy.animation_skip.should_skip_messages() then
+                                  G.E_MANAGER:add_event(Event({
+                                    func = (function()
+                                      G.GAME.dollar_buffer = 0
+                                      return true
+                                    end)
+                                  }))
+                                else
+                                  Handy.animation_skip.request_dollars_buffer_reset()
+                                end
                                 return {
                                     message = localize('$')..self.ability.extra,
                                     colour = G.C.MONEY
@@ -4607,6 +4679,7 @@ function Card:align_h_popup()
 end
 
 function Card:hover()
+if Handy.controller.process_card_hover(self) then return end
     self:juice_up(0.05, 0.03)
     play_sound('paper1', math.random()*0.2 + 0.9, 0.35)
 
@@ -4633,6 +4706,10 @@ function Card:hover()
 end
 
 function Card:stop_hover()
+if Handy.last_hovered_card == self then
+    Handy.last_hovered_card = nil
+    Handy.last_hovered_area = nil
+end
     Node.stop_hover(self)
 end
 
@@ -4917,6 +4994,7 @@ function Card:highlight(is_higlighted)
 end
 
 function Card:click() 
+if Handy.controller.process_card_click(self) then return end
     if self.area and self.area:can_highlight(self) then
         if (self.area == G.hand) and (G.STATE == G.STATES.HAND_PLAYED) then return end
         if self.highlighted ~= true then 

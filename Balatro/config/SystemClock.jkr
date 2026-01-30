@@ -1,0 +1,75 @@
+return {
+	['clock_right_click_tutorial'] = true,
+	['clock_visible'] = true,
+	['clock_allow_drag'] = true,
+	['clock_persistent'] = true,
+	['clock_preset_index'] = 1,
+	['config_version'] = 5,
+	['clock_presets'] = {
+		[1] = {
+			['format'] = 4,
+			['size'] = 0.5,
+			['colours'] = {
+				['back'] = 'DYN_UI.MAIN',
+				['text'] = 'WHITE',
+			},
+			['style'] = 'panel',
+			['position'] = {
+				['y'] = -0.622,
+				['x'] = 0.58,
+			},
+		},
+		[2] = {
+			['format'] = 5,
+			['size'] = 0.4,
+			['colours'] = {
+				['back'] = 'GREEN',
+				['text'] = 'WHITE',
+			},
+			['style'] = 'emboss',
+			['position'] = {
+				['y'] = 11.653,
+				['x'] = -0.382,
+			},
+		},
+		[3] = {
+			['format'] = 6,
+			['size'] = 0.3,
+			['colours'] = {
+				['back'] = 'DYN_UI.MAIN',
+				['text'] = 'WHITE',
+			},
+			['style'] = 'simple',
+			['position'] = {
+				['y'] = 2.66,
+				['x'] = 13.66,
+			},
+		},
+		[4] = {
+			['format'] = 1,
+			['size'] = 0.5,
+			['colours'] = {
+				['back'] = 'DYN_UI.MAIN',
+				['text'] = 'WHITE',
+			},
+			['style'] = 'translucent',
+			['position'] = {
+				['y'] = 8.035,
+				['x'] = 17.574,
+			},
+		},
+		[5] = {
+			['format'] = 3,
+			['size'] = 0.6,
+			['colours'] = {
+				['back'] = 'DYN_UI.BOSS_MAIN',
+				['text'] = 'ORANGE',
+			},
+			['style'] = 'throwback',
+			['position'] = {
+				['y'] = 10.394,
+				['x'] = 2.936,
+			},
+		},
+	},
+}

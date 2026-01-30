@@ -172,6 +172,7 @@ function EventManager:update(dt, forced)
     self.queue_timer = self.queue_timer+dt
     if self.queue_timer >= self.queue_last_processed + self.queue_dt or forced then 
         self.queue_last_processed = self.queue_last_processed + (forced and 0 or self.queue_dt)
+        if G.SCORING_COROUTINE then return end
         for k, v in pairs(self.queues) do
             local blocked = false
             local i=1

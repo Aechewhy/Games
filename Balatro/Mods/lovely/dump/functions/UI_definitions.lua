@@ -1361,6 +1361,15 @@ end
 function add_tag(_tag)
   G.HUD_tags = G.HUD_tags or {}
   local tag_sprite_ui = _tag:generate_UI()
+  local _handy_tag_click_target = _tag.tag_sprite
+  if _handy_tag_click_target then
+      _handy_tag_click_target.states.click.can = true
+      local _handy_tag_click_ref = _handy_tag_click_target.click
+      function _handy_tag_click_target:click(...)
+          if Handy.controller.process_tag_click(_tag) then return end
+          return _handy_tag_click_ref(self, ...)
+      end
+  end
   G.HUD_tags[#G.HUD_tags+1] = UIBox{
       definition = {n=G.UIT.ROOT, config={align = "cm",padding = 0.05, colour = G.C.CLEAR}, nodes={
         tag_sprite_ui
@@ -2216,6 +2225,8 @@ function create_tabs(args)
   local tab_buttons = {}
 
   for k, v in ipairs(args.tabs) do
+    if Handy.override_create_tabs_chosen then v.chosen = k == Handy.override_create_tabs_chosen
+    elseif Handy.override_create_tabs_chosen_by_label then v.chosen = v.label == Handy.override_create_tabs_chosen_by_label end
     if v.chosen then args.current = {k = k, v = v} end
     tab_buttons[#tab_buttons+1] = UIBox_button({id = 'tab_but_'..(v.label or ''), ref_table = v, button = 'change_tab', label = {v.label}, minh = 0.8*args.scale, minw = 2.5*args.scale, col = true, choice = true, scale = args.text_scale, chosen = v.chosen, func = v.func, colour = args.colour, focus_args = {type = 'none'}})
   end
@@ -2439,6 +2450,8 @@ function G.UIDEF.settings_tab(tab)
   if tab == 'Game' then
     return {n=G.UIT.ROOT, config={align = "cm", padding = 0.05, colour = G.C.CLEAR}, nodes={
       create_option_cycle({label = localize('b_set_gamespeed'),scale = 0.8, options = {0.5, 1, 2, 4}, opt_callback = 'change_gamespeed', current_option = (G.SETTINGS.GAMESPEED == 0.5 and 1 or G.SETTINGS.GAMESPEED == 4 and 4 or G.SETTINGS.GAMESPEED + 1)}),
+      Handy.UI.CD.speed_multiplier.settings_option_cycle({ compress = true }),
+      Handy.UI.CD.animation_skip.settings_option_cycle({ compress = true }),
       create_option_cycle({w = 5, label = localize('b_set_play_discard_pos'),scale = 0.8, options = localize('ml_play_discard_pos_opt'), opt_callback = 'change_play_discard_position', current_option = (G.SETTINGS.play_button_pos)}),
       G.F_RUMBLE and create_toggle({label = localize('b_set_rumble'), ref_table = G.SETTINGS, ref_value = 'rumble'}) or nil,
       create_slider({label = localize('b_set_screenshake'),w = 4, h = 0.4, ref_table = G.SETTINGS, ref_value = 'screenshake', min = 0, max = 100}),
@@ -6478,6 +6491,15 @@ function create_button_binding_pip(args)
     ['rightstick'] = 17,
     ['guide'] = 19
   }
+  if not args.button or not button_sprite_map[args.button] then
+      return {
+          n = G.UIT.ROOT,
+          config = { align = "cm", colour = G.C.CLEAR },
+          nodes = {
+              { n = G.UIT.O, config = { object = Moveable() } },
+          },
+      }
+  end
   local BUTTON_SPRITE = Sprite(0,0,args.scale or 0.45,args.scale or 0.45,G.ASSET_ATLAS["gamepad_ui"],
     {x=button_sprite_map[args.button],
      y=G.CONTROLLER.GAMEPAD_CONSOLE == 'Nintendo' and 2 or G.CONTROLLER.GAMEPAD_CONSOLE == 'Playstation' and (G.F_PS4_PLAYSTATION_GLYPHS and 3 or 1) or 0})

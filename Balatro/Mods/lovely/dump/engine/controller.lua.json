@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 769,
-          "end_line": 771
+          "start_line": 777,
+          "end_line": 779
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 862,
-          "end_line": 873
+          "start_line": 870,
+          "end_line": 881
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 809,
-          "end_line": 822
+          "start_line": 817,
+          "end_line": 830
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 965,
-          "end_line": 978
+          "start_line": 977,
+          "end_line": 990
         }
       ]
     },
@@ -61,8 +61,73 @@
       },
       "regions": [
         {
-          "start_line": 920,
-          "end_line": 938
+          "start_line": 928,
+          "end_line": 946
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "local l_stick_y = self.GAMEPAD.object:getGamepadAxis('lefty')",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 591,
+          "end_line": 594
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "local r_stick_y = self.GAMEPAD.object:getGamepadAxis('righty')",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 633,
+          "end_line": 636
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_deselect_hand.toml",
+        "pattern": "if (G.play and #G.play.cards > 0) or",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1098,
+          "end_line": 1098
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_misc.toml",
+        "pattern": "G.challenge_tab = G.GAME and G.GAME.challenge and G.GAME.challenge_tab or nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 959,
+          "end_line": 961
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_misc.toml",
+        "pattern": "if key == \"r\" and not G.SETTINGS.paused",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 947,
+          "end_line": 947
         }
       ]
     }

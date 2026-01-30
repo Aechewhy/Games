@@ -799,6 +799,28 @@
           "end_line": 222
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_animation_skip.toml",
+        "pattern": "if effects[ii].card then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\\lovely\\controls_animation_skip.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_scoring_hold.toml",
+        "pattern": "if hand_chips*mult > 0 then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\\lovely\\controls_scoring_hold.toml resulted in no matches"
+      ]
     }
   ]
 }

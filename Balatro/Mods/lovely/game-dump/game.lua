@@ -2059,6 +2059,7 @@ function Game:start_run(args)
     local selected_back = saveTable and saveTable.BACK.name or (args.challenge and args.challenge.deck and args.challenge.deck.type) or (self.GAME.viewed_back and self.GAME.viewed_back.name) or self.GAME.selected_back and self.GAME.selected_back.name or 'Red Deck'
     selected_back = get_deck_from_name(selected_back)
     self.GAME = saveTable and saveTable.GAME or self:init_game_object()
+    Handy.UI.init()
     SMODS.update_hand_limit_text(true, true)
     self.GAME.modifiers = self.GAME.modifiers or {}
     self.GAME.stake = args.stake or self.GAME.stake or 1
@@ -2567,6 +2568,10 @@ function Game:update(dt)
 
         self.SPEEDFACTOR = (G.STAGE == G.STAGES.RUN and not G.SETTINGS.paused and not G.screenwipe) and self.SETTINGS.GAMESPEED or 1
         self.SPEEDFACTOR = self.SPEEDFACTOR + math.max(0, math.abs(G.ACC) - 2)
+        self.SPEEDFACTOR = self.SPEEDFACTOR * Handy.speed_multiplier.get_value() or 1
+        if Handy.insta_cash_out.is_skipped and not Handy.is_in_multiplayer() then
+            self.SPEEDFACTOR = math.max(self.SPEEDFACTOR, 999)
+        end
 
         self.TIMERS.TOTAL = self.TIMERS.TOTAL + dt*(self.SPEEDFACTOR)
 
@@ -2586,6 +2591,7 @@ function Game:update(dt)
 
         
         self.E_MANAGER:update(self.real_dt)
+        Handy.speed_multiplier.accelerate_queue(self.E_MANAGER)
                     timer_checkpoint('e_manager', 'update')
 
         if G.GAME.blind and G.boss_throw_hand and self.STATE == self.STATES.SELECTING_HAND then
@@ -3097,7 +3103,8 @@ end
 function Game:update_selecting_hand(dt)
     if not self.deck_preview and not G.OVERLAY_MENU and (
         (self.deck and self.deck.cards[1] and self.deck.cards[1].states.collide.is and ((not self.deck.cards[1].states.drag.is) or self.CONTROLLER.HID.touch) and (not self.CONTROLLER.HID.controller)) or 
-        G.CONTROLLER.held_buttons.triggerleft) then
+        Handy.show_deck_preview.is_hold
+) then
         if self.buttons then
             self.buttons.states.visible = false
         end
@@ -3109,7 +3116,8 @@ function Game:update_selecting_hand(dt)
             blocking = false,
             blockable = false,
             func = function()
-                if self.deck_preview and not (((self.deck and self.deck.cards[1] and self.deck.cards[1].states.collide.is and not self.CONTROLLER.HID.controller)) or G.CONTROLLER.held_buttons.triggerleft) then 
+                if self.deck_preview and not (((self.deck and self.deck.cards[1] and self.deck.cards[1].states.collide.is and not self.CONTROLLER.HID.controller)) or Handy.show_deck_preview.is_hold
+) then 
                     self.deck_preview:remove()
                     self.deck_preview = nil
                     local _card = G.CONTROLLER.focused.target
@@ -3175,6 +3183,7 @@ function Game:update_shop(dt)
                         blockable = false,
                         func = function()
                             if math.abs(G.shop.T.y - G.shop.VT.y) < 3 then
+                            Handy.regular_keybinds.on_shop_loaded()
                                 G.ROOM.jiggle = G.ROOM.jiggle + 3
                                 play_sound('cardFan2')
                                 for i = 1, #G.GAME.tags do
@@ -3413,6 +3422,7 @@ function Game:update_round_eval(dt)
                                     play_sound('cardFan2')
                                     delay(0.1)
                                     G.FUNCS.evaluate_round()
+                                    Handy.insta_cash_out.can_skip = true
                                     return true
                             end
                         end

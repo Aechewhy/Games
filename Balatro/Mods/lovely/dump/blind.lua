@@ -143,6 +143,7 @@ function Blind:set_blind(blind, reset, silent)
                             G.HUD_blind:get_UIE_by_ID("dollars_to_be_earned").config.object:pop_in(0)
                             G.HUD_blind:get_UIE_by_ID("HUD_blind_name").config.object:pop_in(0)
                             G.HUD_blind:get_UIE_by_ID("HUD_blind_count"):juice_up()
+                            self.dissolve = 0
                             self.children.animatedSprite:set_sprite_pos(self.config.blind.pos)
                             self.blind_set = true
                             G.ROOM.jiggle = G.ROOM.jiggle + 3

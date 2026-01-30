@@ -1,0 +1,13 @@
+CupHead deck
+
+Requires Steammodded {https://github.com/Steamodded/smods?tab=readme-ov-file}
+follow the steammodded instilation process and drop in the unzipped folder in the 'mods' folder
+
+Featuring Custom Face cards
+						
+K - King Dice
+Q - Cala Maria
+J - Beppi The Clown
+
+Modding for @mahuru05‬
+Sprite work By @nandoo.px.

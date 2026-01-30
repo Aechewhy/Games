@@ -20,8 +20,20 @@
       },
       "regions": [
         {
-          "start_line": 1265,
-          "end_line": 1345
+          "start_line": 1269,
+          "end_line": 1349
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\init.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1350,
+          "end_line": 1537
         }
       ]
     },
@@ -33,8 +45,8 @@
       },
       "regions": [
         {
-          "start_line": 1074,
-          "end_line": 1074
+          "start_line": 1078,
+          "end_line": 1078
         }
       ]
     },
@@ -117,6 +129,58 @@
         {
           "start_line": 984,
           "end_line": 984
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.mousepressed(x, y, button, touch)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1047,
+          "end_line": 1047
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.mousereleased(x, y, button)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1059,
+          "end_line": 1059
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.keypressed(key)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1015,
+          "end_line": 1015
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.keyreleased(key)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1024,
+          "end_line": 1024
         }
       ]
     }

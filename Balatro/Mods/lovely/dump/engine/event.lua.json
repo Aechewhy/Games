@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 182,
-          "end_line": 183
+          "start_line": 183,
+          "end_line": 184
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 185,
-          "end_line": 185
+          "start_line": 186,
+          "end_line": 186
         }
       ]
     },
@@ -63,6 +63,19 @@
         {
           "start_line": 69,
           "end_line": 76
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_animation_skip.toml",
+        "pattern": "self.queue_last_processed = self.queue_last_processed + (forced and 0 or self.queue_dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 175,
+          "end_line": 175
         }
       ]
     }
