@@ -125,6 +125,7 @@ function Game:start_up()
 
     --Load all shaders from resources
     self.SHADERS = {}
+    Blueprint.load_shaders()
     local shader_files = love.filesystem.getDirectoryItems("resources/shaders")
     for k, filename in ipairs(shader_files) do
         local extension = string.sub(filename, -3)
@@ -214,7 +215,7 @@ function Game:start_up()
     initSteamodded()
 
     set_profile_progress()
-    Cartomancer.load_mod_file('internal/localization.lua', 'cartomancer.localization')
+    Blueprint.load_mod_file('internal/localization.lua', 'internal.localization')
     boot_timer('prep stage', 'splash prep',1)
     self:splash_screen()
     boot_timer('splash prep', 'end',1)
@@ -2521,7 +2522,6 @@ function Game:start_run(args)
         reset_blinds()
     end
 
-    Cartomancer.update_tags_visibility()
     G.FUNCS.blind_chip_UI_scale(G.hand_text_area.blind_chips)
      
     self.HUD:recalculate()

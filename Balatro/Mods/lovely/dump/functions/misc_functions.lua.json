@@ -1258,19 +1258,6 @@
           "end_line": 2178
         }
       ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-v4.17\\lovely\\fixed-flames.toml",
-        "pattern": "(?<value>\\(not G\\.video_organ and G\\.STATE == G\\.STATES\\.SPLASH\\) and 0 or AC\\[k\\]\\.vol and v\\.volfunc\\(AC\\[k\\]\\.vol\\) or 0)",
-        "patch_type": "regex"
-      },
-      "regions": [
-        {
-          "start_line": 957,
-          "end_line": 957
-        }
-      ]
     }
   ]
 }

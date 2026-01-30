@@ -1045,12 +1045,6 @@ function Controller:button_release_update(button, dt)
 end
 
 function Controller:key_press_update(key, dt)
-    if key == "escape" and Cartomancer.INTERNAL_in_config then
-        Cartomancer.INTERNAL_in_config = false
-        if not Cartomancer.use_smods() or Cartomancer.INTERNAL_force_save_config then
-            Cartomancer.save_config()
-        end
-    end
     if key == "escape" and (G.ACTIVE_MOD_UI or SMODS.IN_MODS_TAB) then
         G.FUNCS.exit_mods()
     end

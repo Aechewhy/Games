@@ -57,7 +57,7 @@
       "regions": [
         {
           "start_line": 1946,
-          "end_line": 2157
+          "end_line": 2156
         }
       ]
     },
@@ -68,8 +68,8 @@
       },
       "regions": [
         {
-          "start_line": 2158,
-          "end_line": 3367
+          "start_line": 2157,
+          "end_line": 3366
         }
       ]
     },
@@ -80,20 +80,8 @@
       },
       "regions": [
         {
-          "start_line": 3368,
-          "end_line": 3369
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-v4.17\\lovely.toml",
-        "patch_type": "copy"
-      },
-      "regions": [
-        {
-          "start_line": 3370,
-          "end_line": 3451
+          "start_line": 3367,
+          "end_line": 3368
         }
       ]
     },
@@ -104,8 +92,20 @@
       },
       "regions": [
         {
-          "start_line": 3452,
-          "end_line": 3626
+          "start_line": 3369,
+          "end_line": 3543
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Blueprint-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 3544,
+          "end_line": 3556
         }
       ]
     },
@@ -276,30 +276,6 @@
       "regions": [],
       "warnings": [
         "Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \\'number\\' or type(G.GAME.current_round.current_hand.mult) ~= \\'number\\' then' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-v4.17\\lovely\\saturn-compat.toml",
-        "pattern": "assert(load(nfs.read(Saturn.PATH .. \"/core/logic/hide_played.lua\")))()",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2123,
-          "end_line": 2124
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-steamodded-0.9.8.toml",
-        "pattern": "modded and {",
-        "patch_type": "pattern"
-      },
-      "regions": [],
-      "warnings": [
-        "Pattern 'modded and {' on target 'main.lua' for pattern patch from Cartomancer-v4.17\\lovely\\stackable-deck-steamodded-0.9.8.toml resulted in no matches"
       ]
     }
   ]

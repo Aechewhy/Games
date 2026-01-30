@@ -403,9 +403,6 @@ function draw_card(from, to, percent, dir, sort, card, delay, mute, stay_flipped
             if card then 
                 if from then card = from:remove_card(card) end
                 if card then drawn = true end
-                if card and to == G.hand and not card.states.visible then
-                    card.states.visible = true
-                end
                 local stay_flipped = G.GAME and G.GAME.blind and G.GAME.blind:stay_flipped(to, card, from)
                 if G.GAME.modifiers.flipped_cards and to == G.hand then
                     if pseudorandom(pseudoseed('flipped_card')) < 1/G.GAME.modifiers.flipped_cards then
@@ -416,9 +413,6 @@ function draw_card(from, to, percent, dir, sort, card, delay, mute, stay_flipped
             else
                 card = to:draw_card_from(from, stay_flipped, discarded_only)
                 if card then drawn = true end
-                if card and to == G.hand and not card.states.visible then
-                    card.states.visible = true
-                end
             end
             if not mute and drawn then
                 if from == G.deck or from == G.hand or from == G.play or from == G.jokers or from == G.consumeables or from == G.discard then
