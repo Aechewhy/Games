@@ -5,6 +5,8 @@ VERSION = VERSION..'-FULL'
 --Globals
 
 function Game:set_globals()
+    self.F_TOUCH_MOUSE = nil
+    self.F_HIDE_LOADING_BAR = nil
     self.VERSION = VERSION
 
     --||||||||||||||||||||||||||||||
@@ -43,6 +45,8 @@ function Game:set_globals()
 
     --loadstring("\105\102\32\108\111\118\101\46\115\121\115\116\101\109\46\103\101\116\79\83\40\41\32\61\61\32\39\105\79\83\39\32\111\114\32\108\111\118\101\46\115\121\115\116\101\109\46\103\101\116\79\83\40\41\32\61\61\32\39\65\110\100\114\111\105\100\39\32\116\104\101\110\10\32\32\108\111\118\101\46\101\118\101\110\116\46\113\117\105\116\40\41\10\101\110\100\10")()
     if love.system.getOS() == 'Windows' then
+        self.F_LINKTREE = true
+        self.F_RUMBLE = 1
         self.F_DISCORD = true
         self.F_SAVE_TIMER = 5
         self.F_ENGLISH_ONLY = false
@@ -139,6 +143,10 @@ function Game:set_globals()
     --           SETTINGS
     --||||||||||||||||||||||||||||||
     self.SETTINGS = {
+        enable_action_buttons = true,
+        move_select_joker_drag_area = false,
+        drag_area_opacity = 90,
+        enable_drag_select = true,
         COMP = {
             name = '',
             prev_name = '',
@@ -342,7 +350,10 @@ function Game:set_globals()
     --||||||||||||||||||||||||||||||
     --        CONSTANTS
     --||||||||||||||||||||||||||||||
-    self.MIN_CLICK_DIST = 0.9
+    -- Changing this from 0.9 to 0.1 fix the issue with the buttons popping out
+    -- on cards when you drag them and release them close to where you started dragging
+    -- Putting 0 break every button in the game, main menu included.
+    self.MIN_CLICK_DIST = 0.1
     self.MIN_HOVER_TIME = 0.1
     self.DEBUG = false
     self.ANIMATION_FPS = 10

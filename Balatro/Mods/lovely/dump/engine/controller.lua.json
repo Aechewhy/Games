@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 777,
-          "end_line": 779
+          "start_line": 1043,
+          "end_line": 1045
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 870,
-          "end_line": 881
+          "start_line": 1136,
+          "end_line": 1147
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 817,
-          "end_line": 830
+          "start_line": 1083,
+          "end_line": 1096
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 977,
-          "end_line": 990
+          "start_line": 1244,
+          "end_line": 1257
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 928,
-          "end_line": 946
+          "start_line": 1195,
+          "end_line": 1213
         }
       ]
     },
@@ -74,8 +74,8 @@
       },
       "regions": [
         {
-          "start_line": 591,
-          "end_line": 594
+          "start_line": 857,
+          "end_line": 860
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 633,
-          "end_line": 636
+          "start_line": 899,
+          "end_line": 902
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 1098,
-          "end_line": 1098
+          "start_line": 1365,
+          "end_line": 1365
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 959,
-          "end_line": 961
+          "start_line": 1226,
+          "end_line": 1228
         }
       ]
     },
@@ -126,8 +126,140 @@
       },
       "regions": [
         {
-          "start_line": 947,
-          "end_line": 947
+          "start_line": 1214,
+          "end_line": 1214
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:init()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:init()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6,
+          "end_line": 7
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "self.HID.mouse = HID_type == 'mouse'",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 150,
+          "end_line": 155
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "if v.states.hover.can and (not v.states.drag.is or self.HID.touch) then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1342,
+          "end_line": 1342
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "if not self.cursor_hover.target or (self.dragging.target and not self.HID.touch) then self.cursor_hover.target = G.ROOM end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1349,
+          "end_line": 1349
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "local press_node =  (self.HID.touch and self.cursor_hover.target) or self.hovering.target or self.focused.target",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1385,
+          "end_line": 1385
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "self.cursor_up.target = self.hovering.target or self.focused.target",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1408,
+          "end_line": 1408
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:update([\\s\\S]+?)^end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 195,
+          "end_line": 691
+        }
+      ],
+      "warnings": [
+        "Regex 'function Controller:update([\\s\\S]+?)^end' on target 'engine/controller.lua' for regex patch from MobileLikeDragging\\lovely\\controller.toml resulted in 4 matches, wanted 1",
+        "Ignoring excess matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Galdur\\lovely.toml",
+        "pattern": "if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then' on target 'engine/controller.lua' for pattern patch from Galdur\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Galdur\\lovely.toml",
+        "pattern": "G:start_run({})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1157,
+          "end_line": 1158
         }
       ]
     }

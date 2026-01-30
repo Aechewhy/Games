@@ -328,7 +328,7 @@ end
 
 function UIBox:drag(offset)
     Moveable.drag(self,offset)
-    Moveable.move(self.UIRoot, dt)
+    --Moveable.move(self.UIRoot, dt)
 end
 
 function UIBox:add_child(node, parent)
@@ -760,7 +760,7 @@ function UIElement:draw_self()
             local collided_button = self.config.button_UIE or self
             self.ARGS.button_colours = self.ARGS.button_colours or {}
             self.ARGS.button_colours[1] = self.config.button_delay and mix_colours(self.config.colour, G.C.L_BLACK, 0.5) or self.config.colour
-            self.ARGS.button_colours[2] = (((collided_button.config.hover and collided_button.states.hover.is) or (collided_button.last_clicked and collided_button.last_clicked > G.TIMERS.REAL - 0.1)) and G.C.UI.HOVER or nil)
+            self.ARGS.button_colours[2] = (((collided_button.config.hover and collided_button.states.hover.is and ((not G.CONTROLLER.HID.touch) or G.CONTROLLER.is_cursor_down)) or (collided_button.last_clicked and collided_button.last_clicked > G.TIMERS.REAL - 0.1)) and G.C.UI.HOVER or nil)
             for k, v in ipairs(self.ARGS.button_colours) do
                 love.graphics.setColor(v)
                 if self.config.r and self.VT.w > 0.01 then 
@@ -820,6 +820,19 @@ function UIElement:draw_self()
             end
             love.graphics.pop()
         end
+    end
+
+    if self.config.pulse_border then
+        self.border_pulse_timer = self.border_pulse_timer or G.TIMERS.REAL
+        local lw = 2*math.max(0, 0.5*math.cos(6*(G.TIMERS.REAL - self.border_pulse_timer)) + 0.5)
+        prep_draw(self, 1)
+        love.graphics.scale((1)/(G.TILESIZE))
+        love.graphics.setLineWidth(lw + 1)
+        love.graphics.setColor(adjust_alpha(G.C.BLACK, 0.2*lw, true))
+        self:draw_pixellated_rect('fill', parallax_dist)
+        love.graphics.setColor(self.config.colour[4] > 0 and mix_colours(G.C.WHITE, self.config.colour, 0.8) or G.C.WHITE)
+        self:draw_pixellated_rect('line', parallax_dist)
+        love.graphics.pop()
     end
 
     --Draw the outline for highlighted buttons
@@ -952,6 +965,20 @@ function UIElement:draw_pixellated_rect(_type, _parallax, _emboss, _progress)
 end
 
 function UIElement:update(dt)
+    if G.DISABLED_BUTTONS and self.config.button and not self.tutorial_disabled then
+        for k, v in ipairs(G.DISABLED_BUTTONS) do
+            if self.config.button == v then
+                self.tutorial_disabled = self.config.button
+                self.config.button = nil
+                self.disable_button = true
+            end
+        end
+    elseif not G.DISABLED_BUTTONS and self.tutorial_disabled then 
+        self.disable_button = nil
+        self.config.button = self.tutorial_disabled
+        self.tutorial_disabled = nil
+    end
+
     G.ARGS.FUNC_TRACKER = G.ARGS.FUNC_TRACKER or {}
     if self.config.button_delay then
         self.config.button_temp = self.config.button or self.config.button_temp
@@ -993,6 +1020,7 @@ function UIElement:click()
         end
         G.FUNCS[self.config.button](self)
         
+        G.CONTROLLER.touch_control.only_hover = G.ROOM
         G.NO_MOD_CURSOR_STACK = nil
 
         if self.config.choice then
@@ -1064,6 +1092,9 @@ function UIElement:stop_hover()
 end
 
 function UIElement:release(other)
+    if self.config.release_func then 
+        self.config.release_func(other)
+    end
     if self.parent then self.parent:release(other) end
 end
 

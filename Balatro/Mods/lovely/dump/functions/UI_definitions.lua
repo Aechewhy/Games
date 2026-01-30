@@ -157,7 +157,9 @@ function create_UIBox_notify_alert(_achievement, _type)
   local subtext = _type == 'achievement' and localize(G.F_TROPHIES and 'k_trophy' or 'k_achievement') or
     _type == 'Joker' and localize('k_joker') or 
     _type == 'Voucher' and localize('k_voucher') or
-    _type == 'Back' and localize('k_deck') or 'ERROR'
+    _type == 'Back' and localize('k_deck') or
+    _c.set and localize('k_' .. _c.set:lower()) or
+    'ERROR'
 
   if _achievement == 'b_challenge' then subtext = localize('k_challenges') end
   local name = _type == 'achievement' and localize(_achievement, 'achievement_names') or 'ERROR'
@@ -898,6 +900,62 @@ end
   end
 
 
+  function drag_target(args)
+    args = args or {}
+    args.text = args.text or {'BUY'}
+    args.colour = copy_table(args.colour or G.C.UI.TRANSPARENT_DARK)
+    args.cover = args.cover or nil
+    args.emboss = args.emboss or nil
+    args.active_check = args.active_check or (function(other) return true end)
+    args.release_func = args.release_func or (function(other) G.DEBUG_VALUE = 'WORKIN' end)
+    args.text_colour = copy_table(G.C.WHITE)
+    args.uibox_config = {
+      align = args.align or 'tli',
+      offset = args.offset or {x=0,y=0}, 
+      major = args.cover or args.major or nil,
+    }
+
+    local drag_area_width =(args.T and args.T.w or args.cover and args.cover.T.w or 0.001) + (args.cover_padding or 0)
+
+    local text_rows = {}
+    for k, v in ipairs(args.text) do
+      text_rows[#text_rows+1] = {n=G.UIT.R, config={align = "cm", padding = 0.05, maxw = drag_area_width-0.1}, nodes={{n=G.UIT.O, config={object = DynaText({scale = args.scale, string = v, maxw = args.maxw or (drag_area_width-0.1), colours = {args.text_colour},float = true, shadow = true, silent = not args.noisy, 0.7, pop_in = 0, pop_in_rate = 6, rotate = args.rotate or nil})}}}}
+    end
+
+    args.DT = UIBox{
+      T = {0,0,0,0},
+      definition = 
+        {n=G.UIT.ROOT, config = {align = 'cm',  args = args, can_collide = true, hover = true, release_func = args.release_func, func = 'check_drag_target_active', minw = drag_area_width, minh = (args.cover and args.cover.T.h or 0.001) + (args.cover_padding or 0), padding = 0.03, r = 0.1, emboss = args.emboss, colour = G.C.CLEAR}, nodes=text_rows}, 
+      config = args.uibox_config
+    }
+    args.DT.attention_text = true
+
+    if G.OVERLAY_TUTORIAL and G.OVERLAY_TUTORIAL.highlights then 
+      G.OVERLAY_TUTORIAL.highlights[#G.OVERLAY_TUTORIAL.highlights+1] = args.DT
+    end
+
+    G.E_MANAGER:add_event(Event({
+      trigger = 'after',
+      delay = 0,
+      blockable = false,
+      blocking = false,
+      func = function()
+        if not G.CONTROLLER.dragging.target and args.DT then 
+          if G.OVERLAY_TUTORIAL and G.OVERLAY_TUTORIAL.highlights then
+            for k, v in ipairs(G.OVERLAY_TUTORIAL.highlights) do
+              if args.DT == v then 
+                table.remove(G.OVERLAY_TUTORIAL.highlights, k)
+                break
+              end
+            end
+          end
+          args.DT:remove()
+          return true
+        end
+      end
+      }))
+  end
+
   function attention_text(args)
     args = args or {}
     args.text = args.text or 'test'
@@ -1591,7 +1649,7 @@ function create_UIBox_blind_tag(blind_choice, run_info)
   if not G.GAME.round_resets.blind_tags[blind_choice] then return nil end
   local _tag = Tag(G.GAME.round_resets.blind_tags[blind_choice], nil, blind_choice)
   local _tag_ui, _tag_sprite = _tag:generate_UI()
-  _tag_sprite.states.collide.can = not not run_info
+  _tag_sprite.states.collide.can = false
   return 
   {n=G.UIT.R, config={id = 'tag_container', ref_table = _tag, align = "cm"}, nodes={
     {n=G.UIT.R, config={align = 'tm', minh = 0.65}, nodes={
@@ -2442,6 +2500,11 @@ function create_UIBox_settings()
     tab_definition_function_args = 'Audio'
   }
 
+  tabs[#tabs+1] = {
+    label = 'Dragging',
+    tab_definition_function = G.UIDEF.settings_tab,
+    tab_definition_function_args = 'Dragging'
+  }
   if not SMODS then
       tabs[#tabs+1] = {
       label = require('systemclock.locale').translate('sysclock_settings_tab'),
@@ -2491,6 +2554,13 @@ function G.UIDEF.settings_tab(tab)
       create_slider({label = localize('b_set_master_vol'), w = 5, h = 0.4, ref_table = G.SETTINGS.SOUND, ref_value = 'volume', min = 0, max = 100}),
       create_slider({label = localize('b_set_music_vol'), w = 5, h = 0.4, ref_table = G.SETTINGS.SOUND, ref_value = 'music_volume', min = 0, max = 100}),
       create_slider({label = localize('b_set_game_vol'), w = 5, h = 0.4, ref_table = G.SETTINGS.SOUND, ref_value = 'game_sounds_volume', min = 0, max = 100}),
+    }}
+  elseif tab == 'Dragging' then 
+    return {n=G.UIT.ROOT, config={align = "cm", padding = 0.05, colour = G.C.CLEAR}, nodes={
+      create_toggle({label = 'Enable Actions Buttons', ref_table = G.SETTINGS, ref_value = 'enable_action_buttons'}),
+      create_toggle({label = 'Enable drag to select/deselect from hand area', ref_table = G.SETTINGS, ref_value = 'enable_drag_select'}),
+      create_slider({label = 'Drag Area Opacity (Default: 90%)', w = 5, h = 0.4, ref_table = G.SETTINGS, ref_value = 'drag_area_opacity', min = 0, max = 100}),
+      create_toggle({label = 'Move Joker Booster Pack Select Area To Joker Buy Area', ref_table = G.SETTINGS, ref_value = 'move_select_joker_drag_area'}),
     }}
   elseif tab == 'Graphics' then 
     return {n=G.UIT.ROOT, config={align = "cm", padding = 0.05, colour = G.C.CLEAR}, nodes={
@@ -4296,6 +4366,7 @@ function create_UIBox_your_collection_blinds(exit)
     temp_blind.states.hover.can = true
     temp_blind.states.drag.can = false
     temp_blind.states.collide.can = true
+    temp_blind.touch_collide_tilt = true
     temp_blind.config = {blind = v, force_focus = true}
     if discovered and not v.alerted then 
       blinds_to_be_alerted[#blinds_to_be_alerted+1] = temp_blind
@@ -4464,7 +4535,7 @@ function create_UIBox_card_unlock(card_center)
   local locked_card = Card(G.your_collection.T.x + G.your_collection.T.w/2 - G.CARD_W/2, G.your_collection.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, card_center.set == 'Voucher' and G.v_locked or G.j_locked)
   locked_card:remove_UI()
   locked_card.ID = card.ID
-  card.states.click.can = false
+  --card.states.click.can = false
   locked_card.states.click.can = false
   card.states.visible = false
   card.no_ui = true
@@ -5638,8 +5709,9 @@ function G.UIDEF.run_setup(from_game_over)
             {
                 label = localize('b_new_run'),
                 chosen = (not _challenge_chosen) and (not _can_continue),
-                tab_definition_function = G.UIDEF.run_setup_option,
+                tab_definition_function = (Galdur.config.use and G.UIDEF.run_setup_option_new_model or G.UIDEF.run_setup_option),
                 tab_definition_function_args = 'New Run'
+                
             },
             G.STAGE == G.STAGES.MAIN_MENU and {
                 label = localize('b_continue'),
@@ -6176,6 +6248,7 @@ function G.UIDEF.challenge_description_tab(args)
           temp_blind.states.hover.can = true
           temp_blind.states.drag.can = false
           temp_blind.states.collide.can = true
+    temp_blind.touch_collide_tilt = true
           temp_blind.config = {blind = v, force_focus = true}
           temp_blind.hover = function()
             if not G.CONTROLLER.dragging.target or G.CONTROLLER.using_touch then 

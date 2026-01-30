@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 1031,
-          "end_line": 1034
+          "start_line": 1059,
+          "end_line": 1062
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 999,
-          "end_line": 999
+          "start_line": 1027,
+          "end_line": 1027
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 1004,
-          "end_line": 1004
+          "start_line": 1032,
+          "end_line": 1032
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 841,
-          "end_line": 848
+          "start_line": 854,
+          "end_line": 861
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 862,
-          "end_line": 862
+          "start_line": 875,
+          "end_line": 875
         }
       ]
     },
@@ -216,6 +216,84 @@
         {
           "start_line": 721,
           "end_line": 721
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "self.ARGS.button_colours[2] = (((collided_button.config.hover and collided_button.states.hover.is) or (collided_button.last_clicked and collided_button.last_clicked > G.TIMERS.REAL - 0.1)) and G.C.UI.HOVER or nil)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 763,
+          "end_line": 763
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "--Draw the outline for highlighted buttons",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 825,
+          "end_line": 837
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "function UIElement:update(dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 968,
+          "end_line": 981
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "G.NO_MOD_CURSOR_STACK = nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1023,
+          "end_line": 1023
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "function UIElement:release(other)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1095,
+          "end_line": 1097
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "(?<before>function UIBox:drag\\(offset\\)[\\s\\S]+)(?:    Moveable\\.move\\(self\\.UIRoot, dt\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 329,
+          "end_line": 331
         }
       ]
     }

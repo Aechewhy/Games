@@ -39,6 +39,19 @@
           "end_line": 93
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\sprite.toml",
+        "pattern": "G.SHADERS[_shader or 'dissolve']:send('hovering',((_shadow_height  and not tilt_shadow) or _no_tilt) and 0 or (_draw_major.hover_tilt or 0)*(tilt_shadow or 1))",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 106,
+          "end_line": 106
+        }
+      ]
     }
   ]
 }

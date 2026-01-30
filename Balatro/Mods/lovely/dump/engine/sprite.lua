@@ -103,7 +103,7 @@ function Sprite:draw_shader(_shader, _shadow_height, _send, _no_tilt, other_obj,
 
         G.SHADERS[_shader or 'dissolve']:send('mouse_screen_pos', self.ARGS.prep_shader.cursor_pos)
         G.SHADERS[_shader or 'dissolve']:send('screen_scale', G.TILESCALE*G.TILESIZE*(_draw_major.mouse_damping or 1)*G.CANV_SCALE)
-        G.SHADERS[_shader or 'dissolve']:send('hovering',((_shadow_height  and not tilt_shadow) or _no_tilt) and 0 or (_draw_major.hover_tilt or 0)*(tilt_shadow or 1))
+        G.SHADERS[_shader or 'dissolve']:send('hovering',((_shadow_height  and not tilt_shadow) or _no_tilt) and 0 or (((_draw_major.touch_collide_tilt and _draw_major.states.collide.is) and _draw_major.hover_tilt or 0) or 0)*(tilt_shadow or 1))
         G.SHADERS[_shader or 'dissolve']:send("dissolve",math.abs(_draw_major.dissolve or 0))
         G.SHADERS[_shader or 'dissolve']:send("time",123.33412*(_draw_major.ID/1.14212 or 12.5123152)%3000)
         G.SHADERS[_shader or 'dissolve']:send("texture_details",self:get_pos_pixel())

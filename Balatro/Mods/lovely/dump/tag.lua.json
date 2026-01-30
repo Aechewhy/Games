@@ -74,8 +74,8 @@
       },
       "regions": [
         {
-          "start_line": 570,
-          "end_line": 570
+          "start_line": 571,
+          "end_line": 571
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 584,
-          "end_line": 585
+          "start_line": 585,
+          "end_line": 586
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 549,
-          "end_line": 551
+          "start_line": 550,
+          "end_line": 552
         }
       ]
     },
@@ -128,6 +128,19 @@
         {
           "start_line": 521,
           "end_line": 521
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\tag.toml",
+        "pattern": "tag_sprite.hover = function(_self)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 536,
+          "end_line": 536
         }
       ]
     }

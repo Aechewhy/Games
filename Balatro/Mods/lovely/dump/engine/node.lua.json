@@ -13,6 +13,19 @@
           "end_line": 281
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\node.toml",
+        "pattern": "function Node:update(dt) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 395,
+          "end_line": 403
+        }
+      ]
     }
   ]
 }

@@ -3,6 +3,9 @@ Controller = Object:extend()
 
 --The controller contains all engine logic for how human input interacts with any game objects.
 function Controller:init()
+--Touch controller
+self.touch_control = {s_tap = {target = nil,handled = true}, l_press = {target = nil, handled = true}}
+self.dragSelectActive = {active = false, mode = nil}
 
 --Each of these are calculated per frame to pass along to the corresponding nodes for input handling
 self.clicked = {target = nil, handled = true, prev_target = nil} --The node that was clicked this frame
@@ -144,6 +147,12 @@ function Controller:set_HID_flags(HID_type, button)
         self.HID.pointer = HID_type == 'mouse' or HID_type == 'axis_cursor' or HID_type == 'touch'
         self.HID.controller = HID_type == 'button' or HID_type == 'axis_cursor'
         self.HID.mouse = HID_type == 'mouse'
+        if self.HID.touch ~= (HID_type == 'touch') then
+            self.HID.touch = HID_type == 'touch'
+            for k, v in pairs(G.I.CARDAREA) do
+                v:set_ranks()
+            end
+        end
         self.HID.touch = HID_type == 'touch'
         self.HID.axis_cursor = HID_type == 'axis_cursor'
         self.HID.last_type = HID_type
@@ -182,6 +191,7 @@ function Controller:set_cursor_position()
     end
 end
 
+--Called every game logic update frame
 --Called every game logic update frame
 function Controller:update(dt)
 
@@ -312,6 +322,7 @@ function Controller:update(dt)
         self.L_cursor_queue = nil
     end
 
+    self.finger_cursor = self.cursor_hover.target
     self.dragging.prev_target = self.dragging.target
     self.released_on.prev_target = self.released_on.target
     self.clicked.prev_target = self.clicked.target
@@ -319,111 +330,366 @@ function Controller:update(dt)
 
     --Cursor is currently down
     if not self.cursor_down.handled then 
+        --TOUCH
+        ----------------------------------
+        if self.HID.touch then
+            if self.cursor_hover.target and self.cursor_hover.target.states.hover.can then
+                self.finger_focus = self.cursor_hover.target
+            end
+            self.touch_control.clear_touch = true
+        --NON TOUCH
+        ----------------------------------
+        else
+
+        end
+        --BOTH
+        ----------------------------------
+        self.cursor_down.distance = 0
+        self.cursor_down.duration = 0
         if self.cursor_down.target.states.drag.can then
             self.cursor_down.target.states.drag.is = true
             self.cursor_down.target:set_offset(self.cursor_down.T, 'Click')
             self.dragging.target = self.cursor_down.target
             self.dragging.handled = false
+        elseif #self.collision_list == 0 and G.SETTINGS.enable_drag_select then
+            self.dragSelectActive.active = true
         end
         self.cursor_down.handled = true
     end
 
     if not self.cursor_up.handled then 
+        self.dragSelectActive.active = false
+        self.dragSelectActive.mode = nil
+
         --First, stop dragging
         if self.dragging.target then
             self.dragging.target:stop_drag()
+            self.finger_cursor = self.dragging.target
             self.dragging.target.states.drag.is = false
             self.dragging.target = nil
         end
-        --Now, handle the Cursor release
-        --Was the Cursor release in the same location as the Cursor press and within Cursor timeout?
-        if self.cursor_down.target then 
-            if (not self.cursor_down.target.click_timeout or self.cursor_down.target.click_timeout*G.SPEEDFACTOR > self.cursor_up.time - self.cursor_down.time) then
-                if Vector_Dist(self.cursor_down.T, self.cursor_up.T) < G.MIN_CLICK_DIST then 
-                    if self.cursor_down.target.states.click.can then
-                        self.clicked.target = self.cursor_down.target
-                        self.clicked.handled = false
+
+        --TOUCH
+        ----------------------------------
+        if self.HID.touch then
+            if self.cursor_down.target then
+                if self.cursor_down.distance < G.MIN_CLICK_DIST and self.cursor_down.duration < (0.2 * G.SPEEDFACTOR) then
+                    if self.cursor_down.target.states.click.can and not self.touch_control.l_press.target then
+                        self.touch_control.s_tap.target = self.cursor_down.target
+                        self.touch_control.s_tap.time = self.cursor_up.time - self.cursor_down.time
+                        self.touch_control.s_tap.handled = false
                     end
                 --if not, was the Cursor dragging some other thing?
-                elseif self.dragging.prev_target and self.cursor_up.target and self.cursor_up.target.states.release_on.can then 
-                    self.released_on.target = self.cursor_up.target
-                    self.released_on.handled = false
+                elseif self.dragging.prev_target then
+                    local releasable = nil
+                    for _, v in ipairs(self.collision_list) do
+                        if v.states.hover.can and (not v.states.drag.is) and (v ~= self.dragging.prev_target) then
+                            releasable = v
+                            break
+                        end
+                    end
+                    if releasable and releasable.states.release_on.can then
+                        self.released_on.target = releasable
+                        self.released_on.handled = false
+                    end
+                end
+            end
+        --NON TOUCH
+        ----------------------------------
+        else
+            if self.cursor_down.target then
+                if
+                    not self.cursor_down.target.click_timeout
+                    -- Not sure what the click_timeout is for, but we need to bypass it when were dragging something on desktop or it always block the
+                    -- release of the card unless we drag it so fast it's under the 0.3s click_timeout time.
+                    -- or self.dragging.prev_target
+                    or self.cursor_down.target.click_timeout*G.SPEEDFACTOR > self.cursor_up.time - self.cursor_down.time
+                then
+                    if Vector_Dist(self.cursor_down.T, self.cursor_up.T) < G.MIN_CLICK_DIST then
+                        if self.cursor_down.target.states.click.can then
+                            self.clicked.target = self.cursor_down.target
+                            self.clicked.time = self.cursor_up.time - self.cursor_down.time
+                            self.clicked.handled = false
+                        end
+                    end
+                end
+
+                --was the Cursor dragging some other thing?
+                if self.dragging.prev_target then
+                    local releasable = nil
+                    for _, v in ipairs(self.collision_list) do
+                        if v.states.hover.can and (not v.states.drag.is) and (v ~= self.dragging.prev_target) then
+                            releasable = v
+                            break
+                        end
+                    end
+                    if releasable and releasable.states.release_on.can then
+                        self.released_on.target = releasable
+                        self.released_on.handled = false
+                    end
                 end
             end
         end
+        --BOTH
+        ----------------------------------
+
+        --Was the Cursor release in the same location as the Cursor press and within Cursor timeout?
         self.cursor_up.handled = true
     end
 
-    --Cursor is currently hovering over something
-    if self.cursor_hover.target and self.cursor_hover.target.states.hover.can and (not self.HID.touch or self.is_cursor_down) then 
-        self.hovering.target = self.cursor_hover.target
-        if self.hovering.prev_target and self.hovering.prev_target ~= self.hovering.target then self.hovering.prev_target.states.hover.is = false end
-        self.hovering.target.states.hover.is = true
-        self.hovering.target:set_offset(self.cursor_hover.T, 'Hover')
-    elseif (self.cursor_hover.target == nil or (self.HID.touch and not self.is_cursor_down)) and self.hovering.target then
-        self.hovering.target.states.hover.is = false
-        self.hovering.target = nil
+    --TOUCH
+    ----------------------------------
+    if self.HID.touch then
+
+        if self.finger_focus then
+            if self.is_cursor_down and self.finger_focus:can_long_press() and self.cursor_down.duration > (0.2 * G.SPEEDFACTOR) and not self.touch_control.l_press.target and not self.touch_control.l_pressed then
+                self.touch_control.l_press.target = self.finger_focus
+                self.touch_control.l_press.handled = false
+            end
+        end
+    --NON TOUCH
+    ----------------------------------
+    else
+        --Cursor is currently hovering over something
+        if self.cursor_hover.target and self.cursor_hover.target.states.hover.can then
+            self.hovering.target = self.cursor_hover.target
+            if self.hovering.prev_target and self.hovering.prev_target ~= self.hovering.target then self.hovering.prev_target.states.hover.is = false end
+            self.hovering.target.states.hover.is = true
+            self.hovering.target:set_offset(self.cursor_hover.T, 'Hover')
+        elseif self.cursor_hover.target == nil and self.hovering.target then
+            self.hovering.target.states.hover.is = false
+            self.hovering.target = nil
+        end
     end
+    --BOTH
+    ----------------------------------
+
 
     --------------------------------------------------------------------
     -- Sending all input updates to the game objects
     --------------------------------------------------------------------
-    --The clicked object
-    if not self.clicked.handled then
-        self.clicked.target:click()
-        self.clicked.handled = true
-    end
-
-    --Process registry clicks
-    self:process_registry()
-
-    --The object being dragged
-    if self.dragging.target then
-        self.dragging.target:drag()
-    end
-
-    --The object released on
-    if not self.released_on.handled and self.dragging.prev_target then
-        if self.dragging.prev_target == self.hovering.target then self.hovering.target:stop_hover();self.hovering.target = nil end
-        self.released_on.target:release(self.dragging.prev_target)
-        self.released_on.handled = true
-    end
-
-    --The object being hovered over
-    if self.hovering.target then
-        self.hovering.target:set_offset(self.cursor_hover.T, 'Hover')
-        if self.hovering.prev_target ~= self.hovering.target then 
-            if self.hovering.target ~= self.dragging.target and not self.HID.touch then               
-                self.hovering.target:hover() 
-            elseif self.HID.touch then
-                local _ID =  self.hovering.target.ID
-                G.E_MANAGER:add_event(Event({
-                    trigger = 'after',
-                    blockable = false, 
-                    blocking = false,
-                    delay = G.MIN_HOVER_TIME,
-                    func = function()
-                        if self.hovering.target and _ID == self.hovering.target.ID then
-                            self.hovering.target:hover() 
-                        end
-                    return true
-                    end
-                }))
-                if self.hovering.prev_target then 
-                    self.hovering.prev_target:stop_hover()
-                end   
-            end
-            if self.hovering.prev_target then
-                self.hovering.prev_target:stop_hover()
+    --touch
+    if self.HID.touch then
+        if self.finger_focus and not self.finger_focus:can_long_press() then
+            if self.finger_focus ~= self.hovering.target and self.finger_focus:can_hover_on_drag() then
+                self.hovering.target = self.finger_focus
+                self.hovering.handled = false
             end
         end
-    elseif self.hovering.prev_target then
-        self.hovering.prev_target:stop_hover()
+
+        if self.dragSelectActive.active then
+            local distance = math.huge;
+            local closest = nil;
+            for _, v in ipairs(self.collision_list) do
+                local cur_distance = Vector_Dist(self.cursor_hover.T, v.T)
+                if v.area ~= nil and v.area.config.type == 'hand' and v.states.hover.can and (not v.states.drag.is) and (v ~= self.dragging.prev_target) and cur_distance < distance then
+                    closest = v
+                    distance = cur_distance
+                end
+            end
+
+            if closest and
+                (not self.dragSelectActive.mode -- We accept all cards if no mode is set
+                or self.dragSelectActive.mode == 'select' and not closest.highlighted -- We only accept cards that are not already highlighted if we are in select mode
+                or self.dragSelectActive.mode == 'deselect' and closest.highlighted) -- We only accept cards that are already highlighted if we are in deselect mode
+            then
+                if closest.highlighted then
+                    closest.area:remove_from_highlighted(closest)
+                    self.dragSelectActive.mode = 'deselect'
+                else
+                    closest.area:add_to_highlighted(closest)
+                    self.dragSelectActive.mode = 'select'
+                end
+            end
+        end
+
+        if not self.touch_control.s_tap.handled then
+            if self.touch_control.s_tap.target.single_tap then
+                self.touch_control.s_tap.target:single_tap()
+                if self.finger_focus and not self.finger_focus:can_long_press() then
+                    self.hovering.target = self.touch_control.s_tap.target
+                    self.hovering.handled = false
+                end
+            else
+                self.touch_control.s_tap.target:click()
+            end
+            self.touch_control.s_tap.handled = true
+            self.touch_control.clear_touch = nil
+        end
+
+        if not self.touch_control.l_press.handled then
+            self.hovering.target = self.touch_control.l_press.target
+            self.hovering.handled = false
+            self.touch_control.l_pressed = self.finger_focus
+            self.touch_control.l_press.handled = true
+        end
+
+        if self.touch_control.clear_touch or not self.finger_focus then
+            self.touch_control.l_press.target = nil
+            self.touch_control.l_pressed = nil
+            self.touch_control.s_tap.target = nil
+            self.hovering.target = nil
+
+            self.hovering.handled = false
+            self.touch_control.clear_touch = nil
+        end
+
+        if self.touch_control.l_pressed then
+            self.hovering.target = self.finger_focus
+        end
+
+        --The object being dragged
+        if not self.dragging.handled and self.cursor_down.duration and (self.cursor_down.duration > (0.1 * G.SPEEDFACTOR)) then
+            create_drag_target_from_card(self.dragging.target)
+            self.dragging.handled = true
+        end
+        if self.dragging.target then
+            self.dragging.target:drag()
+            -- We added this part to hide the card action buttons when the user start dragging the cards, we check that the card has
+            -- been dragged away from the start of the drag by a certain amount to avoid having hiding the button when the user is
+            -- clicking on a card as that would cause the button to show up again on the next update.
+            -- Sometime the distance doesn't seem to trigger so we also check for the duration of the drag.
+            if self.dragging.target and self.dragging.target.highlighted and self.dragging.target.area
+                and self.dragging.target.area.config.type ~= 'hand' and self.cursor_down and self.cursor_up
+                and (Vector_Dist(self.cursor_down.T, self.cursor_up.T) > --[[ G.MIN_CLICK_DIST ]] 5 or (self.cursor_down.duration > (0.25 * G.SPEEDFACTOR)))
+            then
+                self.dragging.target.area:remove_from_highlighted(self.dragging.target)
+            end
+        end
+
+        --The object released on
+        if not self.released_on.handled and self.dragging.prev_target then
+            self.released_on.target:release(self.dragging.prev_target)
+            self.released_on.handled = true
+        end
+
+        if not self.hovering.handled then
+            if self.hovering.target then
+                self.hovering.target:hover()
+                self.hovering.target.states.hover.is = true
+                self.hovering.target:set_offset(self.cursor_hover.T, 'Hover')
+
+                if self.hovering.prev_target and self.hovering.prev_target ~= self.hovering.target then
+                    self.hovering.prev_target.states.hover.is = false
+                    self.hovering.prev_target:stop_hover()
+                end
+            elseif self.hovering.prev_target then
+                self.hovering.prev_target.states.hover.is = false
+                self.hovering.prev_target:stop_hover()
+            end
+            self.hovering.handled = true
+        end
+    else
+        --The clicked object
+        if not self.clicked.handled then
+            self.clicked.target:click()
+            self.clicked.handled = true
+        end
+        
+        if self.dragSelectActive.active then
+            local distance = math.huge;
+            local closest = nil;
+            for _, v in ipairs(self.collision_list) do
+                local cur_distance = Vector_Dist(self.cursor_hover.T, v.T)
+                if v.area ~= nil and v.area.config.type == 'hand' and v.states.hover.can and (not v.states.drag.is) and (v ~= self.dragging.prev_target) and cur_distance < distance then
+                    closest = v
+                    distance = cur_distance
+                end
+            end
+
+            if closest and
+                (not self.dragSelectActive.mode -- We accept all cards if no mode is set
+                or self.dragSelectActive.mode == 'select' and not closest.highlighted -- We only accept cards that are not already highlighted if we are in select mode
+                or self.dragSelectActive.mode == 'deselect' and closest.highlighted) -- We only accept cards that are already highlighted if we are in deselect mode
+            then
+                if closest.highlighted then
+                    closest.area:remove_from_highlighted(closest)
+                    self.dragSelectActive.mode = 'deselect'
+                else
+                    closest.area:add_to_highlighted(closest)
+                    self.dragSelectActive.mode = 'select'
+                end
+            end
+        end
+
+        --Process registry clicks
+        self:process_registry()
+
+        --The object being dragged
+        if self.dragging.target and not self.dragging.handled and self.cursor_down.duration and (self.cursor_down.duration > (0.15 * G.SPEEDFACTOR)) then
+            create_drag_target_from_card(self.dragging.target)
+            self.dragging.handled = true
+        end
+        if self.dragging.target then
+            -- We added this part to hide the card action buttons when the user start dragging the cards, we check that the card has
+            -- been dragged away from the start of the drag by a certain amount to avoid having hiding the button when the user is
+            -- clicking on a card as that would cause the button to show up again on the next update.
+            -- Sometime the distance doesn't seem to trigger so we also check for the duration of the drag.
+            if self.dragging.target and self.dragging.target.area and self.dragging.target.area.config.type ~= 'hand' and self.cursor_down and self.cursor_up and (Vector_Dist(self.cursor_down.T, self.cursor_up.T) > --[[ G.MIN_CLICK_DIST ]] 5 or (self.cursor_down.duration > (0.15 * G.SPEEDFACTOR))) then
+                self.dragging.target.area:remove_from_highlighted(self.dragging.target)
+            end
+            self.dragging.target:drag()
+        end
+
+        --The object released on
+        if not self.released_on.handled and self.dragging.prev_target then
+            if self.dragging.prev_target == self.hovering.target then self.hovering.target:stop_hover();self.hovering.target = nil end
+            if self.released_on.target then self.released_on.target:release(self.dragging.prev_target) end
+            self.released_on.handled = true
+        end
+
+        --The object being hovered over
+        if self.hovering.target then
+            self.hovering.target:set_offset(self.cursor_hover.T, 'Hover')
+            if self.hovering.prev_target ~= self.hovering.target then
+                if self.hovering.target ~= self.dragging.target then
+                    self.hovering.target:hover()
+                elseif self.HID.touch then
+                    local _ID =  self.hovering.target.ID
+                    G.E_MANAGER:add_event(Event({
+                        trigger = 'after',
+                        blockable = false,
+                        blocking = false,
+                        delay = G.MIN_HOVER_TIME,
+                        func = function()
+                                if (self.hovering.target and _ID == self.hovering.target.ID) then
+                                self.hovering.target:hover()
+                            end
+                        return true
+                        end
+                    }))
+                    if self.hovering.prev_target then
+                        self.hovering.prev_target:stop_hover()
+                    end
+                end
+                if self.hovering.prev_target then
+                    self.hovering.prev_target:stop_hover()
+                end
+            end
+        elseif self.hovering.prev_target then
+            self.hovering.prev_target:stop_hover()
+        end
+        if self.hovering.target and self.hovering.target == self.dragging.target then
+            self.hovering.target:stop_hover()
+        end
     end
-    if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then
-        self.hovering.target:stop_hover()
+
+    if self.is_cursor_down then
+        self.cursor_down.distance = math.max(Vector_Dist(self.cursor_down.T, self.cursor_hover.T), self.cursor_down.distance or 0)
+        self.cursor_down.duration = G.TIMERS.TOTAL - self.cursor_down.time -- self.cursor_down.duration = G.TIMERS.UPTIME - self.cursor_down.time
+        if self.cursor_up.target then
+            self.cursor_up.target = nil
+        end
+    end
+    if not self.is_cursor_down then
+        if self.cursor_down.target then
+            self.cursor_down.target = nil
+            self.cursor_down.distance = nil
+            self.cursor_down.duration = nil
+        end
     end
 end
+
 
 --Brute force remove all registries that no longer have valid nodes
 function Controller:cull_registry()
@@ -888,7 +1154,8 @@ function Controller:key_press_update(key, dt)
         end
         if key == 'b' then
             G:delete_run()
-            G:start_run({})
+            Galdur.prepare_run_setup()
+            G:start_run(Galdur.run_setup.choices)
         end
         if key == 'l' then
             G:delete_run()
@@ -1072,14 +1339,14 @@ function Controller:set_cursor_hover()
         end
     else
         for _, v in ipairs(self.collision_list) do
-            if v.states.hover.can and (not v.states.drag.is or self.HID.touch) then
+            if v.states.hover.can and (not v.states.drag.is) then
                 self.cursor_hover.target = v
                 break 
             end
         end
     end
 
-    if not self.cursor_hover.target or (self.dragging.target and not self.HID.touch) then self.cursor_hover.target = G.ROOM end
+    if not self.cursor_hover.target or self.dragging.target then self.cursor_hover.target = G.ROOM end
     if self.cursor_hover.target ~= self.cursor_hover.prev_target then self.cursor_hover.handled = false end 
 end
 
@@ -1115,7 +1382,7 @@ function Controller:L_cursor_press(x, y)
     self.cursor_down.target = nil
     self.is_cursor_down = true
 
-    local press_node =  (self.HID.touch and self.cursor_hover.target) or self.hovering.target or self.focused.target
+    local press_node =  (self.cursor_hover.target) or self.hovering.target or self.focused.target
 
     if press_node then 
         self.cursor_down.target = press_node.states.click.can and press_node or press_node:can_drag() or nil
@@ -1138,7 +1405,7 @@ function Controller:L_cursor_release(x, y)
     self.cursor_up.target = nil
     self.is_cursor_down = false
 
-    self.cursor_up.target = self.hovering.target or self.focused.target
+    self.cursor_up.target = self.hovering.target or self.focused.target or self.dragging.target
 
     if self.cursor_up.target == nil then 
         self.cursor_up.target = G.ROOM

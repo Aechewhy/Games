@@ -2060,7 +2060,7 @@ function Game:start_run(args)
     if not saveTable then ease_background_colour_blind(G.STATE, 'Small Blind')
     else ease_background_colour_blind(G.STATE, saveTable.BLIND.name:gsub("%s+", "") ~= '' and saveTable.BLIND.name or 'Small Blind') end
 
-    local selected_back = saveTable and saveTable.BACK.name or (args.challenge and args.challenge.deck and args.challenge.deck.type) or (self.GAME.viewed_back and self.GAME.viewed_back.name) or self.GAME.selected_back and self.GAME.selected_back.name or 'Red Deck'
+    local selected_back = saveTable and saveTable.BACK.name or (args.challenge and args.challenge.deck and args.challenge.deck.type) or (args.deck and args.deck.name) or (self.GAME.viewed_back and self.GAME.viewed_back.name) or self.GAME.selected_back and self.GAME.selected_back.name or 'Red Deck'
     selected_back = get_deck_from_name(selected_back)
     self.GAME = saveTable and saveTable.GAME or self:init_game_object()
     if Talisman and Talisman.igo then self.GAME = Talisman.igo(self.GAME) end
@@ -2074,6 +2074,13 @@ function Game:start_run(args)
         self.GAME.selected_back:load(saveTable.BACK)
     end
     self.GAME.selected_back_key = selected_back
+    
+    if not saveTable then
+        if args.seed then self.GAME.seeded = true end
+        self.GAME.pseudorandom.seed = args.seed or (not (G.SETTINGS.tutorial_complete or G.SETTINGS.tutorial_progress.completed_parts["big_blind"]) and "TUTORIAL") or generate_starting_seed()
+    end
+    for k, v in pairs(self.GAME.pseudorandom) do if v == 0 then self.GAME.pseudorandom[k] = pseudohash(k..self.GAME.pseudorandom.seed) end end
+    self.GAME.pseudorandom.hashed_seed = pseudohash(self.GAME.pseudorandom.seed)
     
     if saveTable then
         self.GAME.current_scoring_calculation = SMODS.Scoring_Calculations[saveTable.SCORING_CALC.key]:load({
@@ -2214,13 +2221,16 @@ function Game:start_run(args)
 
     G.GAME.chips_text = ''
 
+    -- moved this code to earlier in the function (by CardSleeves)
+    --[[
     if not saveTable then
         if args.seed then self.GAME.seeded = true end
         self.GAME.pseudorandom.seed = args.seed or (not (G.SETTINGS.tutorial_complete or G.SETTINGS.tutorial_progress.completed_parts['big_blind']) and "TUTORIAL") or generate_starting_seed()
     end
-
+    
     for k, v in pairs(self.GAME.pseudorandom) do if v == 0 then self.GAME.pseudorandom[k] = pseudohash(k..self.GAME.pseudorandom.seed) end end
     self.GAME.pseudorandom.hashed_seed = pseudohash(self.GAME.pseudorandom.seed)
+    --]]
 
     G:save_settings()
 
@@ -3108,7 +3118,7 @@ end
 
 function Game:update_selecting_hand(dt)
     if not self.deck_preview and not G.OVERLAY_MENU and (
-        (self.deck and self.deck.cards[1] and self.deck.cards[1].states.collide.is and ((not self.deck.cards[1].states.drag.is) or self.CONTROLLER.HID.touch) and (not self.CONTROLLER.HID.controller)) or 
+        (self.deck and self.deck.cards[1] and ((self.CONTROLLER.HID.touch and (self.deck.cards[1].states.hover.is)) or (not self.CONTROLLER.HID.touch and (self.deck.cards[1].states.collide.is and ((not self.deck.cards[1].states.drag.is))))) and (not self.CONTROLLER.HID.controller)) or 
         Handy.show_deck_preview.is_hold
 ) then
         if self.buttons then
@@ -3272,6 +3282,20 @@ function Game:update_shop(dt)
                                 end
 
                                 if not nosave_shop then SMODS.calculate_context({starting_shop = true}) end
+                                if CardSleeves then
+                                    -- CardSleeves custom context stuff
+                                    G.E_MANAGER:add_event(Event({
+                                        delay = 0.01,  --  because stupid fucking tags not applying immediately
+                                        blockable = true,
+                                        trigger = 'after',
+                                        func = function()
+                                            local sleeve_center = CardSleeves.Sleeve:get_obj(G.GAME.selected_sleeve or "sleeve_casl_none")
+                                            sleeve_center:trigger_effect{context = "shop_final_pass"}
+                                            if type(sleeve_center.calculate) == "function" then sleeve_center:calculate(sleeve_center, {shop_final_pass = true, deprecated = true}) end
+                                            return true
+                                        end
+                                    }))
+                                end
                                 G.CONTROLLER:snap_to({node = G.shop:get_UIE_by_ID('next_round_button')})
                                 if not nosave_shop then G.E_MANAGER:add_event(Event({ func = function() save_run(); return true end})) end
                                 return true

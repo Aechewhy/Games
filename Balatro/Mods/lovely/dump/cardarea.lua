@@ -131,6 +131,8 @@ function CardArea:change_size(delta)
 end
 
 function CardArea:can_highlight(card)
+    -- Disable the action button if the setting is off
+    if not G.SETTINGS.enable_action_buttons and self.config.type ~= 'hand' then return false end
     if G.CONTROLLER.HID.controller then 
         if  self.config.type == 'hand'
         then
@@ -222,7 +224,11 @@ function CardArea:remove_from_highlighted(card, force)
             break
         end
     end
-    card:highlight(false)
+
+    if card then
+        card:highlight(false)
+    end
+
     if self == G.hand and G.STATE == G.STATES.SELECTING_HAND then
         self:parse_highlighted()
     end
@@ -249,7 +255,12 @@ function CardArea:set_ranks()
             card.states.drag.can = false 
             card.states.collide.can = false 
         elseif self.config.type == 'play' or self.config.type == 'shop' or self.config.type == 'consumeable' then 
-            card.states.drag.can = false
+            -- This enable dragging on all platforms
+            if --[[ G.CONTROLLER.HID.touch and ]] ((self.config.type == 'shop') or (self.config.type == 'consumeable')) then
+                card.states.drag.can = true
+            else
+                card.states.drag.can = false
+            end
         else
             card.states.drag.can = true
         end
@@ -436,7 +447,7 @@ function CardArea:draw()
             }
             self.children.view_deck.states.collide.can = false
         end
-    if G.deck_preview or self.states.collide.is or (G.buttons and G.buttons.states.collide.is and G.CONTROLLER.HID.controller) then self.children.view_deck:draw() end
+    if G.deck_preview or (not self.under_overlay and self.states.collide.is) or (G.buttons and (not G.buttons.under_overlay and G.buttons.states.collide.is) and G.CONTROLLER.HID.controller) then self.children.view_deck:draw() end
     if self.children.peek_deck then self.children.peek_deck:draw() end
     end
 end
@@ -543,7 +554,7 @@ function CardArea:align_cards()
     if self.config.type == 'joker' or self.config.type == 'title_2' then
         for k, card in ipairs(self.cards) do
             if not card.states.drag.is then 
-                card.T.r = 0.1*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
+                card.T.r = (self.config.flat and 0 or 0.1)*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w)
                 if #self.cards > 2 or (#self.cards > 1 and self == G.consumeables) or (#self.cards > 1 and self.config.spread) then

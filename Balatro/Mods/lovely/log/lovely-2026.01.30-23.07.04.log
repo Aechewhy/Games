@@ -1,0 +1,272 @@
+INFO - [♥] Lovely 0.9.0
+INFO - [♥] Game directory is at "Z:\\home\\aechewhy\\Games\\Balatro"
+INFO - [♥] Writing logs to "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] No blacklist.txt in Mods/lovely.
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Cleaning up game-dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\game-dump"
+INFO - [♥] Initialization complete in 134ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 18 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+WARN - [♥] Regex 'function Controller:update([\s\S]+?)^end' on target 'engine/controller.lua' for regex patch from MobileLikeDragging\lovely\controller.toml resulted in 4 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+INFO - [♥] Applied 18 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 11 patches to 'tag.lua'
+INFO - [♥] Applied 6 patches to 'engine/event.lua'
+INFO - [♥] Applied 2 patches to 'engine/node.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 4 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 4 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.ARGS.score_intensity.earned_score = G.GAME.current_round.current_hand.chips*G.GAME.current_round.current_hand.mult\n' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 88 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 69 patches to 'game.lua'
+INFO - [♥] Applied 5 patches to 'globals.lua'
+INFO - [♥] Applied 16 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 131 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_scoring_hold.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 82 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.chips) == \'number\' and type(G.GAME.current_round.current_hand.chips) == \'number\') and (vals.chips - G.GAME.current_round.current_hand.chips) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.mult) == \'number\' and type(G.GAME.current_round.current_hand.mult) == \'number\')and (vals.mult - G.GAME.current_round.current_hand.mult) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() card:juice_up(0.7);return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if card then card:juice_up(0.8, 0.5) end' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card:juice_up(0.6, 0.1)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 167 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if G.pack_cards and (G.pack_cards.cards[1]) and' on target 'functions/button_callbacks.lua' for pattern patch from MobileLikeDragging\lovely\button_callbacks.toml resulted in no matches
+INFO - [♥] Applied 79 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 246 patches to 'card.lua'
+INFO - [♥] Applied 25 patches to 'cardarea.lua'
+INFO - [♥] Applied 45 patches to 'blind.lua'
+INFO - [♥] Applied 10 patches to 'card_character.lua'
+INFO - [♥] Applied 19 patches to 'engine/text.lua'
+WARN - [♥] Regex '= amount > 0' on target '=[SMODS _ "src/utils.lua"]' for regex patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2026-01-30 23:07:05 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2026-01-30 23:07:05 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-1224a
+INFO - [G] Order not set for config dictionary: speed_multiplier_settings_toggle
+INFO - [G] Order not set for config dictionary: speed_multiplier_default_value
+INFO - [G] Order not set for config dictionary: animation_skip_settings_toggle
+INFO - [G] Order not set for config dictionary: animation_skip_default_value
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): AdevntureTimeCards.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: adv_deck
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): AdevntureTimeCards.lua
+INFO - [G] 2026-01-30 23:07:06 :: WARN  :: Loader :: Duplicate Mod ID: adv_deck
+INFO - [G] 2026-01-30 23:07:06 :: WARN  :: Loader :: Duplicate Mod prefix adv used by adv_deck, adv_deck
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: celestial_funk_limeeffy
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): CupHead.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: CH_deck
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): FancyDecks.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: FancyDecks
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): GravityFallsDeck.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: GravityFalls
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): HadesCards.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: hades
+INFO - [G] 2026-01-30 23:07:06 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded.lua
+INFO - [G] 2026-01-30 23:07:06 :: WARN  :: Loader :: Duplicate Mod ID: Handy
+INFO - [G] 2026-01-30 23:07:06 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-30 23:07:06 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): MidnightTarot.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: MidnightTs
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/MobileLikeDragging/manifest.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): ADeckCreatorModule.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: ADeckCreatorModule
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): RegularShowDeck.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: RegularShowDeck
+INFO - [G] 2026-01-30 23:07:06 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): facesofsin.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: fos
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/back.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/blind.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/card.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/card_character.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/cardarea.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/game.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/globals.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/main.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/tag.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/back.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/blind.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/card.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/card_character.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/cardarea.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/game.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/globals.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/main.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/tag.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Processing Mod file (Legacy header): rustdeck.lua
+INFO - [G] 2026-01-30 23:07:06 :: TRACE :: Loader :: Saving Mod Info: rustydeck
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:07:06 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS ADeckCreatorModule "ADeckCreatorModule.lua"]:68: module 'ModloaderHelper' not found:
+No module found: ModloaderHelper
+	no field package.preload['ModloaderHelper']
+	no 'ModloaderHelper' in LOVE game directories.
+	no file 'ModloaderHelper' in LOVE paths.
+	no file '.\ModloaderHelper.lua'
+	no file 'Z:\home\aechewhy\Games\Balatro\lua\ModloaderHelper.lua'
+	no file 'Z:\home\aechewhy\Games\Balatro\lua\ModloaderHelper\init.lua'
+	no file '.\ModloaderHelper.dll'
+	no file 'Z:\home\aechewhy\Games\Balatro\ModloaderHelper.dll'
+	no file 'Z:\home\aechewhy\Games\Balatro\loadall.dll'
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:610'
+	Local variables:
+	 msg = string: "[SMODS ADeckCreatorModule \"ADeckCreatorModule.lua\"]:68: module 'ModloaderHelper' not found:\
+No module found: ModloaderHelper\
+\9no field package.preload['ModloaderHelper']\
+\9no 'ModloaderHelper' in LOVE game directories.\
+\9no file 'ModloaderHelper' in LOVE paths.\
+\9no file '.\\ModloaderHelper.lua'\
+\9no file 'Z:\\home\\aechewhy\\Games\\Balatro\\lua\\ModloaderHelper.lua'\
+\9no file 'Z:\\home\\aechewhy\\Games\\Balatro\\lua\\ModloaderHelper\\init.lua'\
+\9no file '.\\ModloaderHelper.dll'\
+\9no file 'Z:\\home\\aechewhy\\Games\\Balatro\\ModloaderHelper.dll'\
+\9no file 'Z:\\home\\aechewhy\\Games\\Balatro\\loadall.dll'"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE function at file 'boot.lua:352' (best guess)
+	Local variables:
+	 errhand = Lua function '?' (defined at line 596 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 596 of chunk main.lua)
+(3) global C function 'require'
+(4) Lua local 'v' at file 'ADeckCreatorModule.lua:68' (from mod with id ADeckCreatorModule)
+(5) Lua local 'func' at Steamodded file 'src/loader.lua:565' 
+	Local variables:
+	 (for generator) = C function: next
+	 (for state) = table: 0x07e244b8  {DeckCreatorModule:function: 0x04c07890, RPGClassDeck:function: 0x04da1200}
+	 (for control) = number: nan
+	 k = string: "DeckCreatorModule"
+	 v = Lua function '?' (defined at line 66 of chunk [SMODS ADeckCreatorModule "ADeckCreatorModule.lua"])
+(6) Lua field 'with_compat' at Steamodded file 'src/compat_0_9_8.lua:522' 
+	Local variables:
+	 func = Lua function '?' (defined at line 561 of chunk [SMODS _ "src/loader.lua"])
+	 localization_ref = table: 0x04b71508  {tutorial_parsed:table: 0x04c447c8, quips_parsed:table: 0x04c311f0, descriptions:table: 0x04b71568, misc:table: 0x04ae4f50, __handy_injected:true (more...)}
+	 captured_loc = table: 0x04cfc280  {}
+(7) Lua global 'loadMods' at Steamodded file 'src/loader.lua:561' 
+	Local variables:
+	 modsDirectory = string: "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods"
+	 header_components = table: 0x0aa38438  {version:table: 0x0aa38b88, id:table: 0x0aa38648, conflicts:table: 0x0aa38a78, outdated:table: 0x0aa38c08, prefix:table: 0x0aa38b28, dump_loc:table: 0x0aa38ca8 (more...)}
+	 json_spec = table: 0x0aa38d40  {version:table: 0x0aa39480, id:table: 0x0aa39070, main_file:table: 0x0aa39660, __:table: 0x0aa39720, badge_colour:table: 0x0aa39320, badge_text_colour:table: 0x0aa393a0 (more...)}
+	 used_prefixes = table: 0x0aa39820  {hades:hades, RSD:RegularShowDeck, fos:fos, GravityFalls:GravityFalls, lep:celestial_funk_limeeffy, rusty:rustydeck, talisman:Talisman, adv:adv_deck (more...)}
+	 lovely_directories = table: 0x0aa39848  {1:C:\users\steamuser\AppData\Roaming\Balatro\Mods/HandyBalatro/, 2:C:\users\steamuser\AppData\Roaming\Balatro\Mods/Malverk-main/, 3:C:\users\steamuser\AppData\Roaming\Balatro\Mods/MobileLikeDragging/ (more...)}
+	 processDirectory = Lua function '?' (defined at line 185 of chunk [SMODS _ "src/loader.lua"])
+	 keyset = table: 0x0aa408d8  {1:-999999, 2:0, 3:100000}
+	 check_dependencies = Lua function '?' (defined at line 419 of chunk [SMODS _ "src/loader.lua"])
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x0aa408d8  {1:-999999, 2:0, 3:100000}
+	 (for control) = number: 2
+	 _ = number: 2
+	 priority = number: 0
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x0aa3c878  {1:table: 0x0cec13d8, 2:table: 0x0aa44640, 3:table: 0x0aa46950, 4:table: 0x0aa49310, 5:table: 0x0cd131e0, 6:table: 0x0ce74950, 7:table: 0x0cced4f0 (more...)}
+	 (for control) = number: 1
+	 _ = number: 1
+	 mod = table: 0x0cec13d8  {version:0.0.0, id:ADeckCreatorModule, main_file:ADeckCreatorModule.lua, can_load:true, badge_colour:table: 0x0cec1718, badge_text_colour:table: 0x0cec16c8 (more...)}
+(8) Lua global 'initSteamodded' at Steamodded file 'src/loader.lua:657' 
+(9) Lua upvalue 'game_start_up_ref' at file 'game.lua:214'
+	Local variables:
+	 self = table: 0x00fddc68  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_DISCORD:true, STAGE:1, F_MOBILE_UI:false, F_NO_SAVING:false (more...)}
+	 settings = string: "return {[\"enable_action_buttons\"]=true,[\"paused\"]=false,[\"rumble\"]=1,[\"COMP\"]={[\"prev_name\"]=\"\",[\"name\"]=\"\",[\"score\"]=966,},[\"language\"]=\"en-us\",[\"colourblind_option\"]=false,[\"play_button_pos\"]=2,[\"CUSTOM_DECK\"]={[\"Collabs\"]={[\"Spades\"]=\"fos_spades_skin\",[\"Hearts\"]=\"fos_hearts_skin\",[\"Diamonds\"]=\"hades_diamonds_skin\",[\"Clubs\"]=\"fos_clubs_skin\",},},[\"profile\"]=1,[\"run_stake_stickers\"]=false,[\"colour_palettes\"]={[\"Spades\"]=\"lc\",[\"Hearts\"]=\"lc\",[\"Diamonds\"]=\"lc\",[\"Clubs\"]=\"lc\",},[\"move_select_joker_drag_area\"]=false,[\"crashreports\"]=false,[\"tutorial_progress\"]={[\"hold_parts\"]={},[\"section\"]=\"big_blind\",[\"completed_parts\"]={[\"first_hand_3\"]=true,[\"small_blind\"]=true,[\"big_blind\"]=true,[\"first_hand_4\"]=true,[\"shop_1\"]=true,[\"first_hand_section\"]=true,[\"first_hand_2\"]=true,[\"first_hand\"]=true,},},[\"QUEUED_CHANGE\"]={},[\"drag_area_opacity\"]=90,[\"screenshake\"]=50,[\"WINDOW\"]={[\"vsync\"]=1,[\"display_names\"]={[1]=\"[NONE]\",},[\"screenmode\"]=\"Borderless\",[\"DISPLAYS\"]={[1]={[\"name\"]=\"[NONE]\",[\"screen_res\"]={[\"w\"]=1920,[\"h\"]=1080,},},},[\"selected_display\"]=1,},[\"enable_drag_select\"]=true,[\"GAMESPEED\"]=4,[\"SOUND\"]={[\"volume\"]=50,[\"music_volume\"]=100,[\"game_sounds_volume\"]=100,},[\"music_control\"]={[\"current_track\"]=\"\",[\"desired_track\"]=\"\",[\"lerp\"]=1,},[\"ACHIEVEMENTS_EARNED\"]={},[\"version\"]=\"1.0.1o-FULL\",[\"current_setup\"]=\"New Run\",[\"tutorial_complete\"]=true,[\"ambient_control\"]={[\"ambientFire1\"]={[\"per\"]=1.1,[\"vol\"]=0,},[\"ambientOrgan1\"]={[\"per\"]=0.7,[\"vol\"]=0,},[\"ambientFire2\"]={[\"per\"]=1.05,[\"vol\"]=0,},[\"ambientFire3\"]={[\"per\"]=1,[\"vol\"]=0,},},[\"DEMO\"]={[\"win_CTA_shown\"]=true,[\"quit_CTA_shown\"]=true,[\"timed_CTA_shown\"]=true,[\"total_uptime\"]=37.522938287256,},[\"GRAPHICS\"]={[\"texture_scaling\"]=2,[\"crt\"]=70,[\"shadows\"]=\"On\",[\"bloom\"]=1,},}"
+	 settings_ver = nil
+	 new_colour_proto = table: 0x03174738  {Spades:table: 0x031749c0, Hearts:table: 0x03174830, Diamonds:table: 0x031748e8, Clubs:table: 0x03174a58}
+	 sound_files = table: 0x04d86578  {1:ambientFire1.ogg, 2:ambientFire2.ogg, 3:ambientFire3.ogg, 4:ambientOrgan1.ogg, 5:button.ogg, 6:cancel.ogg, 7:card1.ogg, 8:card3.ogg, 9:cardFan2.ogg (more...)}
+	 shader_files = table: 0x04ebb378  {1:CRT.fs, 2:background.fs, 3:booster.fs, 4:debuff.fs, 5:dissolve.fs, 6:flame.fs, 7:flash.fs, 8:foil.fs, 9:gold_seal.fs, 10:holo.fs, 11:hologram.fs (more...)}
+(10) Lua upvalue 'su' at file 'main.lua:1461'
+	Local variables:
+	 self = table: 0x00fddc68  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_DISCORD:true, STAGE:1, F_MOBILE_UI:false, F_NO_SAVING:false (more...)}
+(11) Lua method 'start_up' at file 'main.lua:2489'
+	Local variables:
+	 self = table: 0x00fddc68  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_DISCORD:true, STAGE:1, F_MOBILE_UI:false, F_NO_SAVING:false (more...)}
+(12) Lua field 'load' at file 'main.lua:958'
+(13) Lua function '?' at file 'main.lua:905' (best guess)
+(14) global C function 'xpcall'
+(15) LÖVE function at file 'boot.lua:368' (best guess)
+	Local variables:
+	 result = boolean: true
+	 main = nil
+(16) global C function 'xpcall'
+(17) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:07:06 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-1224a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.9.0
+Platform: Windows
+Steamodded Mods:
+    1: Faces of Sin by TiltedHat, Victin [ID: fos, Version: 1.1.2]
+    2: Celestial Funk by Lime_Effy [ID: celestial_funk_limeeffy, Version: 1.0.0]
+    3: Hitman Cards by WaKa [ID: HitmanHearts, Version: 1.0.0]
+    4: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg, lord.ruby [ID: Talisman, Version: 2.7, Uses Lovely]
+    5: CupHead by Mahuru [ID: CH_deck, Version: 1.0.0]
+    6: Adventure Time Cards by Mahuru [ID: adv_deck, Version: 1.0.0]
+    7: rusty lake deck by pixal [ID: rustydeck]
+    8: Regular Show Deck by rynagon and NyxForKicks [ID: RegularShowDeck, Version: 1.0.0]
+    9: Gravity Falls by therealdan55 [ID: GravityFalls, Version: 1.0.1]
+    10: Malverk by Eremel_ [ID: malverk, Priority: -999999, Version: 1.1.4, Uses Lovely]
+    11: Fancy Decks by NoScope1080 [ID: FancyDecks]
+    12: Marvel's Midnight Suns Tarot Cards by SeijiPuu [ID: MidnightTs, Version: 1.0.0]
+    13: RPG Classes by playfulrainbow [ID: ADeckCreatorModule]
+    14: Hades Cards by Galeandra [ID: hades, Version: 1.0.0]
+    15: SystemClock by Breezebuilder [ID: SystemClock, Priority: 100000, Version: 1.7.1, Uses Lovely]
+    16: Handy by SleepyG11 [ID: Handy, Version: 1.5.1m, Uses Lovely]
+Lovely Mods:
+    1: MobileLikeDragging

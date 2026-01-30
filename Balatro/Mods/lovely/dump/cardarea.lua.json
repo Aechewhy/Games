@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 640,
-          "end_line": 641
+          "start_line": 651,
+          "end_line": 652
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 634,
-          "end_line": 634
+          "start_line": 645,
+          "end_line": 645
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 312,
-          "end_line": 312
+          "start_line": 323,
+          "end_line": 323
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 470,
-          "end_line": 470
+          "start_line": 481,
+          "end_line": 481
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 484,
-          "end_line": 484
+          "start_line": 495,
+          "end_line": 495
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 673,
-          "end_line": 688
+          "start_line": 684,
+          "end_line": 699
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 295,
-          "end_line": 298
+          "start_line": 306,
+          "end_line": 309
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "regions": [
         {
-          "start_line": 299,
-          "end_line": 300
+          "start_line": 310,
+          "end_line": 311
         }
       ]
     },
@@ -139,8 +139,8 @@
       },
       "regions": [
         {
-          "start_line": 321,
-          "end_line": 321
+          "start_line": 332,
+          "end_line": 332
         }
       ]
     },
@@ -152,8 +152,8 @@
       },
       "regions": [
         {
-          "start_line": 328,
-          "end_line": 328
+          "start_line": 339,
+          "end_line": 339
         }
       ]
     },
@@ -165,8 +165,8 @@
       },
       "regions": [
         {
-          "start_line": 317,
-          "end_line": 317
+          "start_line": 328,
+          "end_line": 328
         }
       ]
     },
@@ -191,8 +191,8 @@
       },
       "regions": [
         {
-          "start_line": 187,
-          "end_line": 189
+          "start_line": 189,
+          "end_line": 191
         }
       ]
     },
@@ -204,8 +204,8 @@
       },
       "regions": [
         {
-          "start_line": 208,
-          "end_line": 211
+          "start_line": 210,
+          "end_line": 213
         }
       ]
     },
@@ -217,8 +217,8 @@
       },
       "regions": [
         {
-          "start_line": 204,
-          "end_line": 206
+          "start_line": 206,
+          "end_line": 208
         }
       ]
     },
@@ -230,8 +230,8 @@
       },
       "regions": [
         {
-          "start_line": 562,
-          "end_line": 562
+          "start_line": 573,
+          "end_line": 573
         }
       ]
     },
@@ -243,8 +243,8 @@
       },
       "regions": [
         {
-          "start_line": 154,
-          "end_line": 154
+          "start_line": 156,
+          "end_line": 156
         }
       ]
     },
@@ -256,8 +256,73 @@
       },
       "regions": [
         {
-          "start_line": 278,
-          "end_line": 278
+          "start_line": 289,
+          "end_line": 289
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\cardarea.toml",
+        "pattern": "function CardArea:can_highlight(card)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 134,
+          "end_line": 135
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\cardarea.toml",
+        "pattern": "if G.deck_preview or self.states.collide.is or (G.buttons and G.buttons.states.collide.is and G.CONTROLLER.HID.controller) then self.children.view_deck:draw() end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 450,
+          "end_line": 450
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\cardarea.toml",
+        "pattern": "(?<before>function CardArea:remove_from_highlighted[\\s\\S]+)(?:    card:highlight\\(false\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 219,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\cardarea.toml",
+        "pattern": "(?<before>function CardArea:set_ranks[\\s\\S]+\\n)(?<toReplace> +card.states.drag.can = false)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 250,
+          "end_line": 263
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\cardarea.toml",
+        "pattern": "card.T.r = 0.1",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 557,
+          "end_line": 557
         }
       ]
     }

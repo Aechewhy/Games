@@ -219,6 +219,54 @@ G.FUNCS.can_continue = function(e)
   end
 end
 
+G.FUNCS.check_drag_target_active = function(e)
+  if e.config.args.active_check(e.config.args.card) then
+    if (not e.config.pulse_border) or not e.config.args.init then
+      e.config.pulse_border = true
+      e.config.colour = e.config.args.colour
+      e.config.args.text_colour[4] = 1
+      e.config.release_func = e.config.args.release_func
+    end
+  else
+    if (e.config.pulse_border) or not e.config.args.init  then 
+      e.config.pulse_border = nil
+      e.config.colour = adjust_alpha(G.C.L_BLACK, 0.9)
+      e.config.args.text_colour[4] = 0.5
+      e.config.release_func = nil
+    end
+  end
+  e.config.args.init = true
+end
+G.FUNCS.can_buy_check = function(_card)
+  local isCryptidMod = to_big
+  if isCryptidMod then
+    if to_big(_card.cost) > (to_big(G.GAME.dollars) - to_big(G.GAME.bankrupt_at)) and (to_big(_card.cost) > to_big(0)) then
+      return false
+    end
+    return true
+  end
+
+  if _card.cost > (G.GAME.dollars - G.GAME.bankrupt_at) and (_card.cost > 0) then
+    return false
+  end
+  return true
+end
+
+--Checks if the cost of a non voucher card is greater than what the player can afford and changes the 
+G.FUNCS.can_buy_and_use_check = function(_card)
+  local isCryptidMod = to_big
+  if isCryptidMod then
+    if ((to_big(_card.cost) > to_big(G.GAME.dollars) - to_big(G.GAME.bankrupt_at)) and (to_big(_card.cost) > to_big(0))) or (not _card:can_use_consumeable()) then
+      return false
+    end
+    return true
+  end
+
+  if (((_card.cost > G.GAME.dollars - G.GAME.bankrupt_at) and (_card.cost > 0)) or (not _card:can_use_consumeable())) then
+    return false
+  end
+  return true
+end
 G.FUNCS.can_load_profile = function(e)
   if G.SETTINGS.profile == G.focused_profile then
       e.config.colour = G.C.UI.BACKGROUND_INACTIVE
@@ -1366,6 +1414,7 @@ G.FUNCS.overlay_menu  = function(args)
   G.OVERLAY_MENU.alignment.offset.y = 0
   G.ROOM.jiggle = G.ROOM.jiggle + 1
   G.OVERLAY_MENU:align_to_major()
+  G.CONTROLLER.touch_control.clear_touch = true
 end
 
 --Removes the overlay menu if one exists, unpauses the game, and saves the settings to file
@@ -1378,6 +1427,7 @@ G.FUNCS.exit_overlay_menu = function()
   G.OVERLAY_MENU = nil
   G.VIEWING_DECK = nil
   G.SETTINGS.paused = false
+  G.CONTROLLER.touch_control.clear_touch = true
 
   --Save settings to file
   G:save_settings()
@@ -2129,6 +2179,12 @@ end
     end
   end
 
+  G.FUNCS.can_select_card_check = function(_card)
+    if _card.ability.set ~= 'Joker' or (_card.edition and _card.edition.negative) or #G.jokers.cards < G.jokers.config.card_limit then 
+      return true
+    end
+    return false
+  end
   G.FUNCS.can_select_card = function(e)
     local card = e.config.ref_table
     local card_limit = card.ability.card_limit - card.ability.extra_slots_used

@@ -533,6 +533,7 @@ function Tag:generate_UI(_size)
     tag_sprite.states.collide.can = true
     tag_sprite.config = {tag = self, force_focus = true}
 
+    tag_sprite.touch_collide_tilt = true
     tag_sprite.hover = function(_self)
         if not G.CONTROLLER.dragging.target or G.CONTROLLER.using_touch then 
             if not _self.hovering and _self.states.visible then
