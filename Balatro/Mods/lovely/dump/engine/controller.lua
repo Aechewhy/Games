@@ -1193,6 +1193,22 @@ function Controller:key_press_update(key, dt)
     end
 end
 
+local __typist_key_press_update_impl = Controller.key_press_update
+local __typist_layout = require("typist.mod.layout")
+function Controller:key_press_update(key, dt)
+  if _RELEASE_MODE or key == "escape" then
+    require("typist")(self, key, dt)
+    return __typist_key_press_update_impl(self, key, dt)
+  elseif
+    self.text_input_hook
+    or self.held_keys[__typist_layout.debug_leader_left]
+    or self.held_keys[__typist_layout.debug_leader_right]
+  then
+    return __typist_key_press_update_impl(self, key, dt)
+  else
+    require("typist")(self, key, dt)
+  end
+end
 function Controller:key_hold_update(key, dt)
     if ((self.locked) and not G.SETTINGS.paused) or (self.locks.frame) or (self.frame_buttonpress) then return end
     --self.frame_buttonpress = true

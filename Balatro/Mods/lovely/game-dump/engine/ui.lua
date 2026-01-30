@@ -29,6 +29,7 @@ function UIBox:init(args)
     if args.config then
         self.config = args.config
         args.config.major = args.config.major or args.config.parent or self
+        if not args.config.parent then G.__typist_ORPHANED_UIBOXES[self] = true end
 
         self:set_alignment({
             major = args.config.major,
@@ -272,6 +273,7 @@ function UIBox:set_parent_child(node, parent)
     end
 end
 function UIBox:remove()
+G.__typist_ORPHANED_UIBOXES[self] = nil
     if self == G.OVERLAY_MENU then G.REFRESH_ALERTS = true end
     self.UIRoot:remove()
     for k, v in pairs(G.I[self.config.instance_type or 'UIBOX']) do

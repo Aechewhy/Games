@@ -1,0 +1,24 @@
+{
+    "diagnostics.globals": [
+        "G",
+        "play_sound",
+        "find_joker",
+        "CardArea",
+        "Event",
+        "UIBox",
+        "fhotkey",
+        "Controller",
+        "localize",
+        "create_option_cycle",
+        "create_tabs",
+        "create_UIBox_generic_options",
+        "UIBox_button",
+        "DynaText",
+        "create_slider",
+        "Card"
+    ],
+    "workspace.library": [
+        "${3rd}/love2d/library"
+    ],
+    "workspace.checkThirdParty": "Disable"
+}

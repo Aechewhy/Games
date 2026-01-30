@@ -533,6 +533,7 @@ function Game:set_globals()
 end
 
 G = Game()
+require("typist.mod.init")
 
 --- Divvy's Preview for Balatro - Init.lua
 --

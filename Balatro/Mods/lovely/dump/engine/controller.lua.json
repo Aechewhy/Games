@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 1249,
-          "end_line": 1262
+          "start_line": 1265,
+          "end_line": 1278
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 1200,
-          "end_line": 1218
+          "start_line": 1216,
+          "end_line": 1234
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 1370,
-          "end_line": 1370
+          "start_line": 1386,
+          "end_line": 1386
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 1231,
-          "end_line": 1233
+          "start_line": 1247,
+          "end_line": 1249
         }
       ]
     },
@@ -126,8 +126,21 @@
       },
       "regions": [
         {
-          "start_line": 1219,
-          "end_line": 1219
+          "start_line": 1235,
+          "end_line": 1235
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\entrypoint.toml",
+        "pattern": "function Controller:key_hold_update(key, dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1196,
+          "end_line": 1211
         }
       ]
     },
@@ -191,8 +204,8 @@
       },
       "regions": [
         {
-          "start_line": 1347,
-          "end_line": 1347
+          "start_line": 1363,
+          "end_line": 1363
         }
       ]
     },
@@ -204,8 +217,8 @@
       },
       "regions": [
         {
-          "start_line": 1354,
-          "end_line": 1354
+          "start_line": 1370,
+          "end_line": 1370
         }
       ]
     },
@@ -217,8 +230,8 @@
       },
       "regions": [
         {
-          "start_line": 1390,
-          "end_line": 1390
+          "start_line": 1406,
+          "end_line": 1406
         }
       ]
     },
@@ -230,8 +243,8 @@
       },
       "regions": [
         {
-          "start_line": 1413,
-          "end_line": 1413
+          "start_line": 1429,
+          "end_line": 1429
         }
       ]
     },

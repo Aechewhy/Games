@@ -956,6 +956,7 @@ end
 
 function love.load() 
 	G:start_up()
+	require("typist.compat.init")()
 	--Steam integration
 	local os = love.system.getOS()
 	if os == 'OS X' or os == 'Windows' or os == 'Linux' then

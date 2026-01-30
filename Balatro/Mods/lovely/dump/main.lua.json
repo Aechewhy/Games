@@ -20,8 +20,8 @@
       },
       "regions": [
         {
-          "start_line": 1269,
-          "end_line": 1349
+          "start_line": 1270,
+          "end_line": 1350
         }
       ]
     },
@@ -32,8 +32,8 @@
       },
       "regions": [
         {
-          "start_line": 1350,
-          "end_line": 1537
+          "start_line": 1351,
+          "end_line": 1538
         }
       ]
     },
@@ -44,8 +44,8 @@
       },
       "regions": [
         {
-          "start_line": 1538,
-          "end_line": 1945
+          "start_line": 1539,
+          "end_line": 1946
         }
       ]
     },
@@ -56,8 +56,8 @@
       },
       "regions": [
         {
-          "start_line": 1946,
-          "end_line": 2156
+          "start_line": 1947,
+          "end_line": 2157
         }
       ]
     },
@@ -68,8 +68,8 @@
       },
       "regions": [
         {
-          "start_line": 2157,
-          "end_line": 3366
+          "start_line": 2158,
+          "end_line": 3367
         }
       ]
     },
@@ -80,8 +80,8 @@
       },
       "regions": [
         {
-          "start_line": 3367,
-          "end_line": 3368
+          "start_line": 3368,
+          "end_line": 3369
         }
       ]
     },
@@ -92,8 +92,8 @@
       },
       "regions": [
         {
-          "start_line": 3369,
-          "end_line": 3543
+          "start_line": 3370,
+          "end_line": 3544
         }
       ]
     },
@@ -104,8 +104,8 @@
       },
       "regions": [
         {
-          "start_line": 3544,
-          "end_line": 3556
+          "start_line": 3545,
+          "end_line": 3557
         }
       ]
     },
@@ -117,8 +117,8 @@
       },
       "regions": [
         {
-          "start_line": 1078,
-          "end_line": 1078
+          "start_line": 1079,
+          "end_line": 1079
         }
       ]
     },
@@ -130,8 +130,8 @@
       },
       "regions": [
         {
-          "start_line": 964,
-          "end_line": 965
+          "start_line": 965,
+          "end_line": 966
         }
       ]
     },
@@ -143,8 +143,8 @@
       },
       "regions": [
         {
-          "start_line": 986,
-          "end_line": 986
+          "start_line": 987,
+          "end_line": 987
         }
       ]
     },
@@ -156,8 +156,8 @@
       },
       "regions": [
         {
-          "start_line": 961,
-          "end_line": 961
+          "start_line": 962,
+          "end_line": 962
         }
       ]
     },
@@ -169,8 +169,8 @@
       },
       "regions": [
         {
-          "start_line": 966,
-          "end_line": 966
+          "start_line": 967,
+          "end_line": 967
         }
       ]
     },
@@ -182,12 +182,12 @@
       },
       "regions": [
         {
-          "start_line": 970,
-          "end_line": 971
+          "start_line": 971,
+          "end_line": 972
         },
         {
-          "start_line": 974,
-          "end_line": 975
+          "start_line": 975,
+          "end_line": 976
         }
       ]
     },
@@ -199,8 +199,8 @@
       },
       "regions": [
         {
-          "start_line": 984,
-          "end_line": 984
+          "start_line": 985,
+          "end_line": 985
         }
       ]
     },
@@ -212,8 +212,8 @@
       },
       "regions": [
         {
-          "start_line": 1047,
-          "end_line": 1047
+          "start_line": 1048,
+          "end_line": 1048
         }
       ]
     },
@@ -225,8 +225,8 @@
       },
       "regions": [
         {
-          "start_line": 1059,
-          "end_line": 1059
+          "start_line": 1060,
+          "end_line": 1060
         }
       ]
     },
@@ -238,8 +238,8 @@
       },
       "regions": [
         {
-          "start_line": 1015,
-          "end_line": 1015
+          "start_line": 1016,
+          "end_line": 1016
         }
       ]
     },
@@ -251,8 +251,21 @@
       },
       "regions": [
         {
-          "start_line": 1024,
-          "end_line": 1024
+          "start_line": 1025,
+          "end_line": 1025
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\compat.toml",
+        "pattern": "G:start_up()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 959,
+          "end_line": 959
         }
       ]
     },

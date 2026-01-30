@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 1059,
-          "end_line": 1062
+          "start_line": 1061,
+          "end_line": 1064
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 1027,
-          "end_line": 1027
+          "start_line": 1029,
+          "end_line": 1029
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 1032,
-          "end_line": 1032
+          "start_line": 1034,
+          "end_line": 1034
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 854,
-          "end_line": 861
+          "start_line": 856,
+          "end_line": 863
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 875,
-          "end_line": 875
+          "start_line": 877,
+          "end_line": 877
         }
       ]
     },
@@ -74,32 +74,24 @@
       },
       "regions": [
         {
-          "start_line": 625,
-          "end_line": 625
+          "start_line": 627,
+          "end_line": 627
         },
         {
-          "start_line": 699,
-          "end_line": 699
+          "start_line": 701,
+          "end_line": 701
         },
         {
-          "start_line": 700,
-          "end_line": 700
+          "start_line": 702,
+          "end_line": 702
         },
         {
-          "start_line": 710,
-          "end_line": 710
+          "start_line": 712,
+          "end_line": 712
         },
         {
-          "start_line": 710,
-          "end_line": 710
-        },
-        {
-          "start_line": 711,
-          "end_line": 711
-        },
-        {
-          "start_line": 711,
-          "end_line": 711
+          "start_line": 712,
+          "end_line": 712
         },
         {
           "start_line": 713,
@@ -110,36 +102,44 @@
           "end_line": 713
         },
         {
-          "start_line": 714,
-          "end_line": 714
+          "start_line": 715,
+          "end_line": 715
         },
         {
-          "start_line": 730,
-          "end_line": 730
+          "start_line": 715,
+          "end_line": 715
         },
         {
-          "start_line": 730,
-          "end_line": 730
+          "start_line": 716,
+          "end_line": 716
         },
         {
-          "start_line": 731,
-          "end_line": 731
+          "start_line": 732,
+          "end_line": 732
         },
         {
-          "start_line": 731,
-          "end_line": 731
-        },
-        {
-          "start_line": 733,
-          "end_line": 733
+          "start_line": 732,
+          "end_line": 732
         },
         {
           "start_line": 733,
           "end_line": 733
         },
         {
-          "start_line": 734,
-          "end_line": 734
+          "start_line": 733,
+          "end_line": 733
+        },
+        {
+          "start_line": 735,
+          "end_line": 735
+        },
+        {
+          "start_line": 735,
+          "end_line": 735
+        },
+        {
+          "start_line": 736,
+          "end_line": 736
         }
       ]
     },
@@ -151,18 +151,6 @@
       },
       "regions": [
         {
-          "start_line": 143,
-          "end_line": 143
-        },
-        {
-          "start_line": 143,
-          "end_line": 143
-        },
-        {
-          "start_line": 143,
-          "end_line": 143
-        },
-        {
           "start_line": 144,
           "end_line": 144
         },
@@ -173,6 +161,44 @@
         {
           "start_line": 144,
           "end_line": 144
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "        args.config.major = args.config.major or args.config.parent or self\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 32,
+          "end_line": 32
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "function UIBox:remove()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 276,
+          "end_line": 276
         }
       ]
     },
@@ -184,8 +210,8 @@
       },
       "regions": [
         {
-          "start_line": 187,
-          "end_line": 190
+          "start_line": 188,
+          "end_line": 191
         }
       ]
     },
@@ -197,8 +223,8 @@
       },
       "regions": [
         {
-          "start_line": 563,
-          "end_line": 563
+          "start_line": 565,
+          "end_line": 565
         }
       ]
     },
@@ -210,12 +236,12 @@
       },
       "regions": [
         {
-          "start_line": 704,
-          "end_line": 704
+          "start_line": 706,
+          "end_line": 706
         },
         {
-          "start_line": 721,
-          "end_line": 721
+          "start_line": 723,
+          "end_line": 723
         }
       ]
     },
@@ -227,8 +253,8 @@
       },
       "regions": [
         {
-          "start_line": 763,
-          "end_line": 763
+          "start_line": 765,
+          "end_line": 765
         }
       ]
     },
@@ -240,8 +266,8 @@
       },
       "regions": [
         {
-          "start_line": 825,
-          "end_line": 837
+          "start_line": 827,
+          "end_line": 839
         }
       ]
     },
@@ -253,8 +279,8 @@
       },
       "regions": [
         {
-          "start_line": 968,
-          "end_line": 981
+          "start_line": 970,
+          "end_line": 983
         }
       ]
     },
@@ -266,8 +292,8 @@
       },
       "regions": [
         {
-          "start_line": 1023,
-          "end_line": 1023
+          "start_line": 1025,
+          "end_line": 1025
         }
       ]
     },
@@ -279,8 +305,8 @@
       },
       "regions": [
         {
-          "start_line": 1095,
-          "end_line": 1097
+          "start_line": 1097,
+          "end_line": 1099
         }
       ]
     },
@@ -292,8 +318,8 @@
       },
       "regions": [
         {
-          "start_line": 329,
-          "end_line": 331
+          "start_line": 331,
+          "end_line": 333
         }
       ]
     }

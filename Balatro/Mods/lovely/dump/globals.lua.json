@@ -8,8 +8,8 @@
       },
       "regions": [
         {
-          "start_line": 536,
-          "end_line": 581
+          "start_line": 537,
+          "end_line": 582
         }
       ]
     },
@@ -20,8 +20,8 @@
       },
       "regions": [
         {
-          "start_line": 582,
-          "end_line": 626
+          "start_line": 583,
+          "end_line": 627
         }
       ]
     },
@@ -35,6 +35,19 @@
         {
           "start_line": 292,
           "end_line": 294
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "G = Game()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 536,
+          "end_line": 536
         }
       ]
     },

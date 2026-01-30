@@ -239,6 +239,8 @@ function create_UIBox_high_scores_filling(_resp)
 end
 
 function G.UIDEF.use_and_sell_buttons(card)
+local __typist_no_prefix = card == G.__typist_TOP_AREA.active_selection
+if __typist_no_prefix then card.ambient_tilt = 1.5 end
   local sell = nil
   local use = nil
   if card.area and card.area.config.type == 'joker' then
@@ -247,11 +249,36 @@ function G.UIDEF.use_and_sell_buttons(card)
         {n=G.UIT.B, config = {w=0.1,h=0.6}},
         {n=G.UIT.C, config={align = "tm"}, nodes={
           {n=G.UIT.R, config={align = "cm", maxw = 1.25}, nodes={
-            {n=G.UIT.T, config={text = localize('b_sell'),colour = G.C.UI.TEXT_LIGHT, scale = 0.4, shadow = true}}
+            {
+              n = G.UIT.T,
+              config = {
+                text = localize("b_sell"),
+                colour = __typist_no_prefix and G.C.RED or G.C.UI.TEXT_LIGHT,
+                scale = __typist_no_prefix and 0.8 or 0.4,
+                shadow = true,
+              },
+            }
           }},
           {n=G.UIT.R, config={align = "cm"}, nodes={
-            {n=G.UIT.T, config={text = localize('$'),colour = G.C.WHITE, scale = 0.4, shadow = true}},
-            {n=G.UIT.T, config={ref_table = card, ref_value = 'sell_cost_label',colour = G.C.WHITE, scale = 0.55, shadow = true}}
+            {
+              n = G.UIT.T,
+              config = {
+                text = localize("$"),
+                colour = __typist_no_prefix and G.C.RED or G.C.WHITE,
+                scale = __typist_no_prefix and 0.8 or 0.4,
+                shadow = true,
+              },
+            },
+            {
+              n = G.UIT.T,
+              config = {
+                ref_table = card,
+                ref_value = "sell_cost_label",
+                colour = __typist_no_prefix and G.C.RED or G.C.WHITE,
+                scale = __typist_no_prefix and 0.9 or 0.55,
+                shadow = true,
+              },
+            },
           }}
         }}
       }},
@@ -274,7 +301,15 @@ function G.UIDEF.use_and_sell_buttons(card)
           {n=G.UIT.R, config={mid = true}, nodes={
           }},
           {n=G.UIT.R, config={ref_table = card, r = 0.08, padding = 0.1, align = "bm", minw = 0.5*card.T.w - 0.15, minh = 0.8*card.T.h, maxw = 0.7*card.T.w - 0.15, hover = true, shadow = true, colour = G.C.UI.BACKGROUND_INACTIVE, one_press = true, button = 'use_card', func = 'can_use_consumeable'}, nodes={
-            {n=G.UIT.T, config={text = localize('b_use'),colour = G.C.UI.TEXT_LIGHT, scale = 0.55, shadow = true}}
+            {
+              n = G.UIT.T,
+              config = {
+                text = localize("b_use"),
+                colour = __typist_no_prefix and G.C.BLACK or G.C.UI.TEXT_LIGHT,
+                scale = __typist_no_prefix and 0.9 or 0.55,
+                shadow = true,
+              },
+            }
           }},
       }}
     end
@@ -283,7 +318,15 @@ function G.UIDEF.use_and_sell_buttons(card)
       
       {n=G.UIT.C, config={ref_table = card, align = "cr",maxw = 1.25, padding = 0.1, r=0.08, minw = 1.25, minh = (card.area and card.area.config.type == 'joker') and 0 or 1, hover = true, shadow = true, colour = G.C.UI.BACKGROUND_INACTIVE, one_press = true, button = 'use_card', func = 'can_use_consumeable'}, nodes={
         {n=G.UIT.B, config = {w=0.1,h=0.6}},
-        {n=G.UIT.T, config={text = localize('b_use'),colour = G.C.UI.TEXT_LIGHT, scale = 0.55, shadow = true}}
+        {
+          n = G.UIT.T,
+          config = {
+            text = localize("b_use"),
+            colour = __typist_no_prefix and G.C.BLACK or G.C.UI.TEXT_LIGHT,
+            scale = __typist_no_prefix and 0.9 or 0.55,
+            shadow = true,
+          },
+        }
       }}
     }}
   elseif card.area and card.area == G.pack_cards then
@@ -399,7 +442,15 @@ function G.UIDEF.card_focus_button(args)
     button_contents = 
     {n=G.UIT.C, config={align = "cl"}, nodes={
       {n=G.UIT.R, config={align = "cl", maxw = 1}, nodes={
-        {n=G.UIT.T, config={text = localize('b_sell'),colour = G.C.UI.TEXT_LIGHT, scale = 0.4, shadow = true}}
+        {
+          n = G.UIT.T,
+          config = {
+            text = localize("b_sell"),
+            colour = __typist_no_prefix and G.C.RED or G.C.UI.TEXT_LIGHT,
+            scale = __typist_no_prefix and 0.8 or 0.4,
+            shadow = true,
+          },
+        }
       }},
       {n=G.UIT.R, config={align = "cl"}, nodes={
         {n=G.UIT.T, config={text = localize('$'),colour = G.C.WHITE, scale = 0.4, shadow = true}},
@@ -2465,6 +2516,10 @@ function create_UIBox_options()
   return t
 end
 
+local __typist_create_UIBox_options_impl = create_UIBox_options
+create_UIBox_options = function()
+  return require("typist.mod.settings-page").insert_settings_page_button(__typist_create_UIBox_options_impl())
+end
 function create_UIBox_settings()
   local tabs = {}
   tabs[#tabs+1] = {

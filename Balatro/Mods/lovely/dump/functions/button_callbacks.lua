@@ -1428,6 +1428,7 @@ G.FUNCS.exit_overlay_menu = function()
   G.VIEWING_DECK = nil
   G.SETTINGS.paused = false
   G.CONTROLLER.touch_control.clear_touch = true
+  require("typist.mod.settings-page").draw_layout_change_notification()
 
   --Save settings to file
   G:save_settings()

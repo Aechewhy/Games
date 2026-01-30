@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 2645,
-          "end_line": 2646
+          "start_line": 2646,
+          "end_line": 2647
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 2325,
-          "end_line": 2325
+          "start_line": 2326,
+          "end_line": 2326
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 2521,
-          "end_line": 2521
+          "start_line": 2522,
+          "end_line": 2522
         }
       ]
     },
@@ -74,8 +74,8 @@
       },
       "regions": [
         {
-          "start_line": 2429,
-          "end_line": 2429
+          "start_line": 2430,
+          "end_line": 2430
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 2542,
-          "end_line": 2546
+          "start_line": 2543,
+          "end_line": 2547
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 2560,
-          "end_line": 2560
+          "start_line": 2561,
+          "end_line": 2561
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 2592,
-          "end_line": 2592
+          "start_line": 2593,
+          "end_line": 2593
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "regions": [
         {
-          "start_line": 2666,
-          "end_line": 2666
+          "start_line": 2667,
+          "end_line": 2667
         }
       ]
     },
@@ -139,8 +139,8 @@
       },
       "regions": [
         {
-          "start_line": 2878,
-          "end_line": 2878
+          "start_line": 2879,
+          "end_line": 2879
         }
       ]
     },
@@ -152,8 +152,8 @@
       },
       "regions": [
         {
-          "start_line": 3019,
-          "end_line": 3019
+          "start_line": 3020,
+          "end_line": 3020
         }
       ]
     },
@@ -165,131 +165,14 @@
       },
       "regions": [
         {
-          "start_line": 2977,
-          "end_line": 2977
+          "start_line": 2978,
+          "end_line": 2978
         }
       ]
     },
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
-        "pattern": "for i = 1, #G.GAME.tags do\n    if G.GAME.tags[i]:apply_to_run({type = 'new_blind_choice'}) then break end\nend\n\nG.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,\n          func = function()\n            save_run()\n            return true\n      end}))\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2725,
-          "end_line": 2725
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "prev_state == G.STATES.SPECTRAL_PACK or prev_state == G.STATES.STANDARD_PACK or",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2374,
-          "end_line": 2374
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.SPECTRAL_PACK then",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2313,
-          "end_line": 2318
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if area == G.consumeables then",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2376,
-          "end_line": 2376
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if prev_state == G.STATES.TAROT_PACK then inc_career_stat('c_tarot_reading_used', 1) end",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2388,
-          "end_line": 2388
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if prev_state == G.STATES.PLANET_PACK then inc_career_stat('c_planetarium_used', 1) end",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2389,
-          "end_line": 2389
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "(G.STATE == G.STATES.BUFFOON_PACK and G.STATES.BUFFOON_PACK) or",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2264,
-          "end_line": 2264
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "e.config.ref_table:redeem()",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2356,
-          "end_line": 2356
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if card.ability.consumeable then\n      if nc then\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2302,
-          "end_line": 2313
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
         "pattern": "for i = 1, #G.GAME.tags do\n    if G.GAME.tags[i]:apply_to_run({type = 'new_blind_choice'}) then break end\nend\n\nG.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,\n          func = function()\n            save_run()\n            return true\n      end}))\n",
         "patch_type": "pattern"
       },
@@ -303,33 +186,33 @@
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "G.FUNCS.end_consumeable(e)\n",
+        "pattern": "prev_state == G.STATES.SPECTRAL_PACK or prev_state == G.STATES.STANDARD_PACK or",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 2667,
-          "end_line": 2667
+          "start_line": 2375,
+          "end_line": 2375
         }
       ]
     },
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if e.config.ref_table.ability.set ~= 'Joker' or (e.config.ref_table.edition and e.config.ref_table.edition.negative) or #G.jokers.cards < G.jokers.config.card_limit then",
+        "pattern": "if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.SPECTRAL_PACK then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 2189,
-          "end_line": 2191
+          "start_line": 2314,
+          "end_line": 2319
         }
       ]
     },
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
-        "pattern": "if area == G.consumeables then\n",
+        "pattern": "if area == G.consumeables then",
         "patch_type": "pattern"
       },
       "regions": [
@@ -341,14 +224,131 @@
     },
     {
       "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "if prev_state == G.STATES.TAROT_PACK then inc_career_stat('c_tarot_reading_used', 1) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2389,
+          "end_line": 2389
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "if prev_state == G.STATES.PLANET_PACK then inc_career_stat('c_planetarium_used', 1) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2390,
+          "end_line": 2390
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "(G.STATE == G.STATES.BUFFOON_PACK and G.STATES.BUFFOON_PACK) or",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2265,
+          "end_line": 2265
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "e.config.ref_table:redeem()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2357,
+          "end_line": 2357
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "if card.ability.consumeable then\n      if nc then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2303,
+          "end_line": 2314
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "for i = 1, #G.GAME.tags do\n    if G.GAME.tags[i]:apply_to_run({type = 'new_blind_choice'}) then break end\nend\n\nG.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,\n          func = function()\n            save_run()\n            return true\n      end}))\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2727,
+          "end_line": 2727
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "G.FUNCS.end_consumeable(e)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2668,
+          "end_line": 2668
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "if e.config.ref_table.ability.set ~= 'Joker' or (e.config.ref_table.edition and e.config.ref_table.edition.negative) or #G.jokers.cards < G.jokers.config.card_limit then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2190,
+          "end_line": 2192
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "pattern": "if area == G.consumeables then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2378,
+          "end_line": 2378
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\center.toml",
         "pattern": "if G.booster_pack and not G.booster_pack.alignment.offset.py and (card.ability.consumeable or not (G.GAME.pack_choices and G.GAME.pack_choices > 1)) then\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 2269,
-          "end_line": 2278
+          "start_line": 2270,
+          "end_line": 2279
         }
       ]
     },
@@ -360,8 +360,8 @@
       },
       "regions": [
         {
-          "start_line": 2299,
-          "end_line": 2300
+          "start_line": 2300,
+          "end_line": 2301
         }
       ]
     },
@@ -373,8 +373,8 @@
       },
       "regions": [
         {
-          "start_line": 2405,
-          "end_line": 2405
+          "start_line": 2406,
+          "end_line": 2406
         }
       ]
     },
@@ -386,8 +386,8 @@
       },
       "regions": [
         {
-          "start_line": 2322,
-          "end_line": 2322
+          "start_line": 2323,
+          "end_line": 2323
         }
       ]
     },
@@ -399,8 +399,8 @@
       },
       "regions": [
         {
-          "start_line": 2501,
-          "end_line": 2501
+          "start_line": 2502,
+          "end_line": 2502
         }
       ]
     },
@@ -412,8 +412,8 @@
       },
       "regions": [
         {
-          "start_line": 2500,
-          "end_line": 2500
+          "start_line": 2501,
+          "end_line": 2501
         }
       ]
     },
@@ -425,8 +425,8 @@
       },
       "regions": [
         {
-          "start_line": 3079,
-          "end_line": 3079
+          "start_line": 3080,
+          "end_line": 3080
         }
       ]
     },
@@ -451,8 +451,8 @@
       },
       "regions": [
         {
-          "start_line": 2211,
-          "end_line": 2211
+          "start_line": 2212,
+          "end_line": 2212
         }
       ]
     },
@@ -464,8 +464,8 @@
       },
       "regions": [
         {
-          "start_line": 2119,
-          "end_line": 2119
+          "start_line": 2120,
+          "end_line": 2120
         }
       ]
     },
@@ -477,8 +477,8 @@
       },
       "regions": [
         {
-          "start_line": 2163,
-          "end_line": 2163
+          "start_line": 2164,
+          "end_line": 2164
         }
       ]
     },
@@ -490,8 +490,8 @@
       },
       "regions": [
         {
-          "start_line": 1860,
-          "end_line": 1861
+          "start_line": 1861,
+          "end_line": 1862
         }
       ]
     },
@@ -503,8 +503,8 @@
       },
       "regions": [
         {
-          "start_line": 1834,
-          "end_line": 1834
+          "start_line": 1835,
+          "end_line": 1835
         }
       ]
     },
@@ -516,8 +516,8 @@
       },
       "regions": [
         {
-          "start_line": 1969,
-          "end_line": 1969
+          "start_line": 1970,
+          "end_line": 1970
         }
       ]
     },
@@ -529,8 +529,8 @@
       },
       "regions": [
         {
-          "start_line": 2040,
-          "end_line": 2047
+          "start_line": 2041,
+          "end_line": 2048
         }
       ]
     },
@@ -542,8 +542,8 @@
       },
       "regions": [
         {
-          "start_line": 2052,
-          "end_line": 2052
+          "start_line": 2053,
+          "end_line": 2053
         }
       ]
     },
@@ -555,8 +555,8 @@
       },
       "regions": [
         {
-          "start_line": 2487,
-          "end_line": 2487
+          "start_line": 2488,
+          "end_line": 2488
         }
       ]
     },
@@ -581,8 +581,8 @@
       },
       "regions": [
         {
-          "start_line": 2909,
-          "end_line": 2918
+          "start_line": 2910,
+          "end_line": 2919
         }
       ]
     },
@@ -607,8 +607,8 @@
       },
       "regions": [
         {
-          "start_line": 2225,
-          "end_line": 2227
+          "start_line": 2226,
+          "end_line": 2228
         }
       ]
     },
@@ -698,8 +698,8 @@
       },
       "regions": [
         {
-          "start_line": 2212,
-          "end_line": 2212
+          "start_line": 2213,
+          "end_line": 2213
         }
       ]
     },
@@ -711,8 +711,8 @@
       },
       "regions": [
         {
-          "start_line": 2212,
-          "end_line": 2212
+          "start_line": 2213,
+          "end_line": 2213
         }
       ]
     },
@@ -724,12 +724,12 @@
       },
       "regions": [
         {
-          "start_line": 1973,
-          "end_line": 1973
+          "start_line": 1974,
+          "end_line": 1974
         },
         {
-          "start_line": 1975,
-          "end_line": 1975
+          "start_line": 1976,
+          "end_line": 1976
         }
       ]
     },
@@ -741,8 +741,8 @@
       },
       "regions": [
         {
-          "start_line": 1976,
-          "end_line": 1976
+          "start_line": 1977,
+          "end_line": 1977
         }
       ]
     },
@@ -754,8 +754,8 @@
       },
       "regions": [
         {
-          "start_line": 2698,
-          "end_line": 2698
+          "start_line": 2699,
+          "end_line": 2699
         }
       ]
     },
@@ -767,8 +767,8 @@
       },
       "regions": [
         {
-          "start_line": 2722,
-          "end_line": 2722
+          "start_line": 2723,
+          "end_line": 2723
         }
       ]
     },
@@ -780,8 +780,8 @@
       },
       "regions": [
         {
-          "start_line": 3030,
-          "end_line": 3030
+          "start_line": 3031,
+          "end_line": 3031
         }
       ]
     },
@@ -793,8 +793,8 @@
       },
       "regions": [
         {
-          "start_line": 3050,
-          "end_line": 3051
+          "start_line": 3051,
+          "end_line": 3052
         }
       ]
     },
@@ -813,14 +813,27 @@
     },
     {
       "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\settings-page.toml",
+        "pattern": "  G.OVERLAY_MENU:remove()\n  G.OVERLAY_MENU = nil\n  G.VIEWING_DECK = nil\n  G.SETTINGS.paused = false\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1431,
+          "end_line": 1431
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "Talisman-main\\lovely.toml",
         "pattern": "if G.GAME.current_round.current_hand.chip_total < 1 then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 2014,
-          "end_line": 2014
+          "start_line": 2015,
+          "end_line": 2015
         }
       ]
     },
@@ -832,8 +845,8 @@
       },
       "regions": [
         {
-          "start_line": 3068,
-          "end_line": 3068
+          "start_line": 3069,
+          "end_line": 3069
         }
       ]
     },
@@ -845,8 +858,8 @@
       },
       "regions": [
         {
-          "start_line": 2084,
-          "end_line": 2084
+          "start_line": 2085,
+          "end_line": 2085
         }
       ]
     },
@@ -858,8 +871,8 @@
       },
       "regions": [
         {
-          "start_line": 1987,
-          "end_line": 1993
+          "start_line": 1988,
+          "end_line": 1994
         }
       ]
     },
@@ -871,8 +884,8 @@
       },
       "regions": [
         {
-          "start_line": 2003,
-          "end_line": 2009
+          "start_line": 2004,
+          "end_line": 2010
         }
       ]
     },
@@ -884,8 +897,8 @@
       },
       "regions": [
         {
-          "start_line": 2022,
-          "end_line": 2022
+          "start_line": 2023,
+          "end_line": 2023
         }
       ]
     },
@@ -897,8 +910,8 @@
       },
       "regions": [
         {
-          "start_line": 2147,
-          "end_line": 2147
+          "start_line": 2148,
+          "end_line": 2148
         }
       ]
     },
@@ -910,8 +923,8 @@
       },
       "regions": [
         {
-          "start_line": 2893,
-          "end_line": 2893
+          "start_line": 2894,
+          "end_line": 2894
         }
       ]
     },
@@ -923,8 +936,8 @@
       },
       "regions": [
         {
-          "start_line": 2086,
-          "end_line": 2092
+          "start_line": 2087,
+          "end_line": 2093
         }
       ]
     },
@@ -1026,8 +1039,8 @@
       },
       "regions": [
         {
-          "start_line": 2182,
-          "end_line": 2187
+          "start_line": 2183,
+          "end_line": 2188
         }
       ]
     },
