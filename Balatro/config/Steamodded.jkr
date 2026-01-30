@@ -8,5 +8,5 @@ return {
 		4,
 		8,
 	},
-	["graphics_mipmap_level"] = 3,
+	["graphics_mipmap_level"] = 4,
 }
