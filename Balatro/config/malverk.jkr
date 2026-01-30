@@ -12,6 +12,5 @@ return {
 	["selected"] = {
 		"texpack_lep_planets_pack",
 		"default",
-		"texpack_RFRSHD_Refreshed_decks",
 	},
 }
