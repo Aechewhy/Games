@@ -1,0 +1,699 @@
+{
+  "buffer_name": "blind.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "card:set_debuff(true)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 688,
+          "end_line": 688
+        },
+        {
+          "start_line": 693,
+          "end_line": 693
+        },
+        {
+          "start_line": 698,
+          "end_line": 698
+        },
+        {
+          "start_line": 703,
+          "end_line": 703
+        },
+        {
+          "start_line": 708,
+          "end_line": 708
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "G.GAME.last_blind = G.GAME.last_blind or {}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 103,
+          "end_line": 105
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.name == 'The Eye' and not reset then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 166,
+          "end_line": 172
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.name == 'The Water' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 381,
+          "end_line": 384
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.name == 'The Manacle' and not self.disabled then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 354,
+          "end_line": 357
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.debuff and not self.disabled and card.area ~= G.jokers then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 666,
+          "end_line": 684
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "function Blind:stay_flipped(area, card)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 645,
+          "end_line": 645
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if area == G.hand then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 647,
+          "end_line": 650
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.debuff then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 542,
+          "end_line": 545
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.disabled then return mult, hand_chips, false end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 530,
+          "end_line": 533
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "function Blind:modify_hand(cards, poker_hands, text, mult, hand_chips)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 528,
+          "end_line": 528
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if self.name == \"The Hook\" then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 484,
+          "end_line": 487
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "function Blind:get_loc_debuff_text()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 280,
+          "end_line": 283
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "local loc_target = localize{type = 'raw_descriptions', key = self.config.blind.key, set = 'Blind', vars = loc_vars or self.config.blind.vars}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 59,
+          "end_line": 66
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "if G.P_BLINDS[blindTable.config_blind] then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 805,
+          "end_line": 807
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "self.config.blind = blind or {}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 86,
+          "end_line": 86
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "function Blind:load(blindTable)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 784,
+          "end_line": 784
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "local blindTable = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 755,
+          "end_line": 755
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "pattern": "for k, v in ipairs(loc_target) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 70,
+          "end_line": 70
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "pattern": "self.loc_debuff_text = self.loc_debuff_text..v..(k <= #loc_target and ' ' or '')",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 73,
+          "end_line": 73
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "_card:set_debuff(true)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 635,
+          "end_line": 636
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "function Blind:load(blindTable)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 783,
+          "end_line": 783
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "local blindTable = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 754,
+          "end_line": 754
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "card:set_debuff\\(true\\); return end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 718,
+          "end_line": 718
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)if self.name == 'Cerulean Bell' then\n",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 597,
+          "end_line": 600
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "end\n(?<indent>[\t ]*)if self.name == ['\"](?<ability>.*?)['\"]",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 187,
+          "end_line": 187
+        },
+        {
+          "start_line": 189,
+          "end_line": 189
+        },
+        {
+          "start_line": 191,
+          "end_line": 191
+        },
+        {
+          "start_line": 194,
+          "end_line": 194
+        },
+        {
+          "start_line": 197,
+          "end_line": 197
+        },
+        {
+          "start_line": 199,
+          "end_line": 199
+        },
+        {
+          "start_line": 361,
+          "end_line": 361
+        },
+        {
+          "start_line": 388,
+          "end_line": 388
+        },
+        {
+          "start_line": 390,
+          "end_line": 390
+        },
+        {
+          "start_line": 399,
+          "end_line": 399
+        },
+        {
+          "start_line": 401,
+          "end_line": 401
+        },
+        {
+          "start_line": 404,
+          "end_line": 404
+        },
+        {
+          "start_line": 408,
+          "end_line": 408
+        },
+        {
+          "start_line": 410,
+          "end_line": 410
+        },
+        {
+          "start_line": 411,
+          "end_line": 411
+        },
+        {
+          "start_line": 487,
+          "end_line": 487
+        },
+        {
+          "start_line": 508,
+          "end_line": 508
+        },
+        {
+          "start_line": 513,
+          "end_line": 513
+        },
+        {
+          "start_line": 515,
+          "end_line": 515
+        },
+        {
+          "start_line": 533,
+          "end_line": 533
+        },
+        {
+          "start_line": 560,
+          "end_line": 560
+        },
+        {
+          "start_line": 566,
+          "end_line": 566
+        },
+        {
+          "start_line": 574,
+          "end_line": 574
+        },
+        {
+          "start_line": 583,
+          "end_line": 583
+        },
+        {
+          "start_line": 600,
+          "end_line": 600
+        },
+        {
+          "start_line": 613,
+          "end_line": 613
+        },
+        {
+          "start_line": 654,
+          "end_line": 654
+        },
+        {
+          "start_line": 656,
+          "end_line": 656
+        },
+        {
+          "start_line": 658,
+          "end_line": 658
+        },
+        {
+          "start_line": 696,
+          "end_line": 696
+        },
+        {
+          "start_line": 712,
+          "end_line": 712
+        },
+        {
+          "start_line": 718,
+          "end_line": 718
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)elseif self.name == 'The Pillar' and card.ability.played_this_ante then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 695,
+          "end_line": 696
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)elseif self.name == 'The Eye' then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 559,
+          "end_line": 560
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)elseif self.name == 'The Arm' then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 573,
+          "end_line": 574
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\\t ]*)elseif self\\.name == 'Crimson Heart' and not self\\.disabled",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 711,
+          "end_line": 712
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "pattern": "(?<indent>[\t ]*)self\\.loc_debuff_lines\\[1\\] = ''\n[\t ]*self\\.loc_debuff_lines\\[2\\] = ''",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 53,
+          "end_line": 53
+        },
+        {
+          "start_line": 77,
+          "end_line": 77
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "pattern": "(?<indent>[\t ]*)self\\.loc_debuff_lines\\[1\\] = loc_target\\[1\\] or ''\n[\t ]*self\\.loc_debuff_lines\\[2\\] = loc_target\\[2\\] or ''\n",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 75,
+          "end_line": 74
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "(?<indent>[\\t ]*)    G\\.HUD_blind\\.alignment\\.offset\\.y = 0\n[\\t ]*end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 823,
+          "end_line": 826
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "card\\.area ~= G.jokers",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 685,
+          "end_line": 685
+        },
+        {
+          "start_line": 718,
+          "end_line": 718
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "if self.name == 'Crimson Heart' and self.prepped and G.jokers.cards\\[1\\] then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 613,
+          "end_line": 615
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "(?<indent>[\\t ]*)for i = 1, #G\\.jokers\\.cards do\n[\\t ]*if not G\\.jokers\\.cards\\[i\\]\\.debuff or #G\\.jokers\\.cards < 2 then jokers\\[#jokers\\+1\\] = ?G\\.jokers\\.cards\\[i\\] end\n[\\t ]*G\\.jokers\\.cards\\[i\\]:set_debuff\\(false\\)\n[\\t ]*end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 617,
+          "end_line": 632
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "if self\\.name == 'Crimson Heart' and not self\\.disabled and card\\.area == G\\.jokers then\\s+\n((?<indent>[\\t ]*)return)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 713,
+          "end_line": 717
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "elseif self.name == 'The Water' then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 384,
+          "end_line": 388
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "elseif self.name == 'The Manacle' and not self.disabled then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 357,
+          "end_line": 361
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "G\\.hand:change_size\\(1\\)(\\s+G\\.FUNCS\\.draw_from_deck_to_hand\\(1\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 409,
+          "end_line": 409
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\create_sprite.toml",
+        "pattern": "    self.children.animatedSprite = AnimatedSprite(self.T.x, self.T.y, self.T.w, self.T.h, G.ANIMATION_ATLAS['blind_chips'], G.P_BLINDS.bl_small.pos)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 17,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\listed_probabilities.toml",
+        "pattern": "if self.name == 'The Wheel' and pseudorandom(pseudoseed('wheel')) < G.GAME.probabilities.normal/7 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 652,
+          "end_line": 652
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "buffer_name": "main.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1,
+          "end_line": 871
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\core.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1265,
+          "end_line": 1345
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
+        "pattern": "function love.errhand(msg)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1074,
+          "end_line": 1074
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "--To control when steam communication happens, make sure to send updates to steam as little as possible",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 964,
+          "end_line": 965
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "--Set up the render window and the stage for the splash screen, then enter the gameloop with :update",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 986,
+          "end_line": 986
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "if os == 'OS X' or os == 'Windows' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 961,
+          "end_line": 961
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "if os == 'OS X' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 966,
+          "end_line": 966
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "st = require 'luasteam'",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 970,
+          "end_line": 971
+        },
+        {
+          "start_line": 974,
+          "end_line": 975
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "pattern": "(?<indent>[\t ]*)if not \\(st.init and st:init\\(\\)\\) then\n[\t ]*(?<quit>love.event.quit\\(\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 984,
+          "end_line": 984
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "buffer_name": "engine/ui.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
+        "pattern": "if self == G.CONTROLLER.text_input_hook then \n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1024,
+          "end_line": 1027
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui.toml",
+        "pattern": "if self.config.choice then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 992,
+          "end_line": 992
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui.toml",
+        "pattern": "self.config.chosen = true",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 997,
+          "end_line": 997
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "pattern": "--Draw the 'chosen triangle'\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 834,
+          "end_line": 841
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_elements.toml",
+        "pattern": "love.graphics.polygon(\"fill\", get_chosen_triangle_from_rect(self.layered_parallax.x, self.layered_parallax.y, self.VT.w*G.TILESIZE, self.VT.h*G.TILESIZE, self.config.chosen == 'vert'))",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 855,
+          "end_line": 855
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "pattern": "self.config.lang.font",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 620,
+          "end_line": 620
+        },
+        {
+          "start_line": 694,
+          "end_line": 694
+        },
+        {
+          "start_line": 695,
+          "end_line": 695
+        },
+        {
+          "start_line": 704,
+          "end_line": 704
+        },
+        {
+          "start_line": 704,
+          "end_line": 704
+        },
+        {
+          "start_line": 705,
+          "end_line": 705
+        },
+        {
+          "start_line": 705,
+          "end_line": 705
+        },
+        {
+          "start_line": 707,
+          "end_line": 707
+        },
+        {
+          "start_line": 707,
+          "end_line": 707
+        },
+        {
+          "start_line": 708,
+          "end_line": 708
+        },
+        {
+          "start_line": 723,
+          "end_line": 723
+        },
+        {
+          "start_line": 723,
+          "end_line": 723
+        },
+        {
+          "start_line": 724,
+          "end_line": 724
+        },
+        {
+          "start_line": 724,
+          "end_line": 724
+        },
+        {
+          "start_line": 726,
+          "end_line": 726
+        },
+        {
+          "start_line": 726,
+          "end_line": 726
+        },
+        {
+          "start_line": 727,
+          "end_line": 727
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "pattern": "node.config.lang.font",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 143,
+          "end_line": 143
+        },
+        {
+          "start_line": 143,
+          "end_line": 143
+        },
+        {
+          "start_line": 143,
+          "end_line": 143
+        },
+        {
+          "start_line": 144,
+          "end_line": 144
+        },
+        {
+          "start_line": 144,
+          "end_line": 144
+        },
+        {
+          "start_line": 144,
+          "end_line": 144
+        }
+      ]
+    }
+  ]
+}
