@@ -1416,7 +1416,7 @@ SMODS.calculate_effect = function(effect, scored_card, from_edition, pre_jokers)
     local ret = {}
     for _, key in ipairs(SMODS.calculation_keys) do
         if effect[key] then
-            if effect.juice_card and not SMODS.no_resolve then
+            if effect.juice_card and not Saturn.should_skip_animation() and not SMODS.no_resolve then
                 G.E_MANAGER:add_event(Event({trigger = 'immediate', func = function ()
                     effect.juice_card:juice_up(0.1)
                     if (not effect.message_card) or (effect.message_card and effect.message_card ~= scored_card) then

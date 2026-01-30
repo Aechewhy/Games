@@ -1185,6 +1185,17 @@
     },
     {
       "patch_source": {
+        "file": "UnBlind-main\\lovely.toml",
+        "pattern": "function localize(args, misc_cat)\nif args and args.vars then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'function localize(args, misc_cat)\\nif args and args.vars then\\n' on target 'functions/misc_functions.lua' for pattern patch from UnBlind-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
         "file": "Talisman-main\\lovely.toml",
         "pattern": "SMODS\\.calculate_round_score\\(true\\)",
         "patch_type": "regex"
@@ -1219,6 +1230,32 @@
         {
           "start_line": 1599,
           "end_line": 1604
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "JokerDisplay-main\\lovely\\core.toml",
+        "pattern": "\\(part\\.control\\.C and loc_colour\\(part\\.control\\.C\\)\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2123,
+          "end_line": 2123
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "JokerDisplay-main\\lovely\\core.toml",
+        "pattern": "loc_colour\\(part\\.control\\.C or nil, args\\.default_col\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2178,
+          "end_line": 2178
         }
       ]
     }

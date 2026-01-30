@@ -2120,7 +2120,7 @@ function localize(args, misc_cat)
           final_line[#final_line].nodes[1] = {n=G.UIT.O, config={
           underline = part.control.u and loc_colour(part.control.u),
             object = DynaText({string = {assembled_string},
-              colours = {(part.control.V and args.vars.colours[tonumber(part.control.V)]) or (part.control.C and loc_colour(part.control.C)) or args.text_colour or G.C.UI.TEXT_LIGHT},
+              colours = {(part.control.V and args.vars.colours[tonumber(part.control.V)]) or (part.control.C and loc_colour(part.control.C)) or args.text_colour or args.text_colour or G.C.UI.TEXT_LIGHT},
               bump = not args.no_bump,
               text_effect = SMODS.DynaTextEffects[part.control.E] and part.control.E,
               silent = not args.no_silent,
@@ -2175,7 +2175,7 @@ function localize(args, misc_cat)
           font = SMODS.Fonts[part.control.f] or G.FONTS[tonumber(part.control.f)],
           underline = part.control.u and loc_colour(part.control.u),
           shadow = args.shadow,
-          colour = part.control.V and args.vars.colours[tonumber(part.control.V)] or not part.control.C and args.text_colour or loc_colour(part.control.C or nil, args.default_col),
+          colour = part.control.V and args.vars.colours[tonumber(part.control.V)] or not part.control.C and args.text_colour or not part.control.C and args.text_colour or loc_colour(part.control.C or nil, args.default_col),
           scale = 0.32*(part.control.s and tonumber(part.control.s) or args.scale  or 1)*desc_scale},}
         end
       end

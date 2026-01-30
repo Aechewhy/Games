@@ -8,5 +8,6 @@ return {
 	},
 	["selected"] = {
 		"texpack_lep_planets_pack",
+		"default",
 	},
 }

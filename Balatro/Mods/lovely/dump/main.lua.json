@@ -39,13 +39,25 @@
     },
     {
       "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
+        "file": "Saturn-main\\lovely\\core.toml",
         "patch_type": "copy"
       },
       "regions": [
         {
           "start_line": 1538,
-          "end_line": 2747
+          "end_line": 1748
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1749,
+          "end_line": 2958
         }
       ]
     },
@@ -56,8 +68,20 @@
       },
       "regions": [
         {
-          "start_line": 2748,
-          "end_line": 2749
+          "start_line": 2959,
+          "end_line": 2960
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "JokerDisplay-main\\lovely\\core.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 2961,
+          "end_line": 3135
         }
       ]
     },

@@ -669,30 +669,18 @@ function G.UIDEF.shop()
       1.15*G.CARD_H, 
       {card_limit = 2, type = 'shop', highlight_limit = 1, card_w = 1.27*G.CARD_W})
 
-    local shop_sign = AnimatedSprite(0,0, 4.4, 2.2, G.ANIMATION_ATLAS['shop_sign'])
-    shop_sign:define_draw_steps({
-      {shader = 'dissolve', shadow_height = 0.05},
-      {shader = 'dissolve'}
-    })
-    G.SHOP_SIGN = UIBox{
-      definition = 
-        {n=G.UIT.ROOT, config = {colour = G.C.DYN_UI.MAIN, emboss = 0.05, align = 'cm', r = 0.1, padding = 0.1}, nodes={
-          {n=G.UIT.R, config={align = "cm", padding = 0.1, minw = 4.72, minh = 3.1, colour = G.C.DYN_UI.DARK, r = 0.1}, nodes={
-            {n=G.UIT.R, config={align = "cm"}, nodes={
-              {n=G.UIT.O, config={object = shop_sign}}
+        G.SHOP_SIGN = UIBox{
+          definition = 
+            {n=G.UIT.ROOT, config = {colour = G.C.CLEAR, align = 'bm' }, nodes={
+              G.UIDEF.UnBlind_current_blinds()
             }},
-            {n=G.UIT.R, config={align = "cm"}, nodes={
-              {n=G.UIT.O, config={object = DynaText({string = {localize('ph_improve_run')}, colours = {lighten(G.C.GOLD, 0.3)},shadow = true, rotate = true, float = true, bump = true, scale = 0.5, spacing = 1, pop_in = 1.5, maxw = 4.3})}}
-            }},
-          }},
-        }},
-      config = {
-        align="cm",
-        offset = {x=0,y=-15},
-        major = G.HUD:get_UIE_by_ID('row_blind'),
-        bond = 'Weak'
-      }
-    }
+          config = {
+            align="cm",
+            offset = {x=0,y=-15},
+            major = G.HUD:get_UIE_by_ID('row_blind'),
+            bond = 'Weak'
+          }
+        }
     G.E_MANAGER:add_event(Event({
       trigger = 'immediate',
       func = (function()
@@ -2454,6 +2442,7 @@ function create_UIBox_options()
   end
 
   local settings = UIBox_button({button = 'settings', label = {localize('b_settings')}, minw = 5, focus_args = {snap_to = true}})
+  local saturn_settings = UIBox_button_custom({button = 'saturn_config', label = {'Saturn'}, colour = darken(G.C.BLUE, 0.25), shadow = true, text_colour = G.C.ORANGE, minw = 5, focus_args = {snap_to = true}})
   local high_scores = UIBox_button{ label = {localize('b_stats')}, button = "high_scores", minw = 5}
   local customize = UIBox_button{ label = {localize('b_customize_deck')}, button = "customize_deck", minw = 5}
   customize = {n=G.UIT.R, config={minw = 5, align='cl', padding = 0.1}, nodes = {
@@ -2462,6 +2451,7 @@ function create_UIBox_options()
   }}
 
   local t = create_UIBox_generic_options({ contents = {
+  saturn_settings,
       settings,
       G.GAME.seeded and current_seed or nil,
       restart,
@@ -2511,6 +2501,12 @@ function create_UIBox_settings()
       tab_definition_function = require('systemclock.config_ui').create_config_tab
     }
   end
+  if not SMODS then
+      tabs[#tabs+1] = {
+          label = "JokerDisplay",
+          tab_definition_function = JokerDisplay.config_tab,
+      }
+  end
   local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(
     {tabs = tabs,
     tab_h = 7.05,
@@ -2523,7 +2519,21 @@ end
 function G.UIDEF.settings_tab(tab)
   if tab == 'Game' then
     return {n=G.UIT.ROOT, config={align = "cm", padding = 0.05, colour = G.C.CLEAR}, nodes={
-      create_option_cycle({label = localize('b_set_gamespeed'),scale = 0.8, options = {0.5, 1, 2, 4}, opt_callback = 'change_gamespeed', current_option = (G.SETTINGS.GAMESPEED == 0.5 and 1 or G.SETTINGS.GAMESPEED == 4 and 4 or G.SETTINGS.GAMESPEED + 1)}),
+      create_option_cycle({
+            label = localize("b_set_gamespeed"),
+            scale = 0.8,
+            options = { 0.5, 1, 2, 4, 8, 16 },
+            opt_callback = "change_gamespeed",
+            current_option = (
+              G.SETTINGS.GAMESPEED == 0.5 and 1
+              or G.SETTINGS.GAMESPEED == 1 and 2
+              or G.SETTINGS.GAMESPEED == 2 and 3
+              or G.SETTINGS.GAMESPEED == 4 and 4
+              or G.SETTINGS.GAMESPEED == 8 and 5
+              or G.SETTINGS.GAMESPEED == 16 and 6
+              or 4
+            ),
+          }),
       Handy.UI.CD.speed_multiplier.settings_option_cycle({ compress = true }),
       Handy.UI.CD.animation_skip.settings_option_cycle({ compress = true }),
       create_option_cycle({w = 5, label = localize('b_set_play_discard_pos'),scale = 0.8, options = localize('ml_play_discard_pos_opt'), opt_callback = 'change_play_discard_position', current_option = (G.SETTINGS.play_button_pos)}),
@@ -3052,14 +3062,12 @@ function create_UIBox_win()
         create_UIBox_round_scores_row('furthest_round', G.C.FILTER),
         {n=G.UIT.R, config={align = "cm", minh = 0.4, minw = 0.1}, nodes={}},
         show_win_cta and UIBox_button({id = 'win_cta', button = 'show_main_cta', label = {localize('b_next')}, colour = G.C.GREEN, scale = 0.8, minw = 2.5, minh = 2.5, focus_args = {nav = 'wide', snap_to = true}}) or nil,
-        not show_win_cta and UIBox_button({id = 'from_game_won', button = 'notify_then_setup_run', label = {localize('b_start_new_run')}, minw = 2.5, maxw = 2.5, minh = 1, focus_args = {nav = 'wide', snap_to = true}}) or nil,
+                not show_win_cta and UIBox_button({id = 'from_game_won', button = GTB.WINBUTTON(), label = {localize(GTB.WINLABEL())}, minw = 2.5, maxw = 2.5, minh = 1, focus_args = {nav = 'wide', snap_to = true}}) or nil,
         not show_win_cta and {n=G.UIT.R, config={align = "cm", minh = 0.2, minw = 0.1}, nodes={}} or nil,
-        not show_win_cta and UIBox_button({button = 'go_to_menu', label = {localize('b_main_menu')}, minw = 2.5, maxw = 2.5, minh = 1, focus_args = {nav = 'wide'}}) or nil,
+                not show_win_cta and GTB.WINMENUBUTTON() or nil,
       }}
     }},
-    {n=G.UIT.R, config={align = "cm", padding = 0.08}, nodes={
-      UIBox_button({button = 'exit_overlay_menu', label = {localize('b_endless')}, minw = 6.5, maxw = 5, minh = 1.2, scale = 0.7, shadow = true, colour = G.C.BLUE, focus_args = {nav = 'wide', button = 'x',set_button_pip = true}}),
-    }},
+        {n=G.UIT.R, config={align = "cm", padding = 0.08}, nodes=GTB.ENDLESSBUTTON()},
   }}
   }}
   }}) 
@@ -3179,16 +3187,12 @@ function create_UIBox_game_over()
           }}
         }} or
         {n=G.UIT.R, config={align = "cm", padding = 0.1}, nodes={
-          {n=G.UIT.R, config={id = 'from_game_over', align = "cm", minw = 5, padding = 0.1, r = 0.1, hover = true, colour = G.C.RED, button = "notify_then_setup_run", shadow = true, focus_args = {nav = 'wide', snap_to = true}}, nodes={
-            {n=G.UIT.R, config={align = "cm", padding = 0, no_fill = true, maxw = 4.8}, nodes={
-              {n=G.UIT.T, config={text = localize('b_start_new_run'), scale = 0.5, colour = G.C.UI.TEXT_LIGHT}}
-            }}
-          }},
-          {n=G.UIT.R, config={align = "cm", minw = 5, padding = 0.1, r = 0.1, hover = true, colour = G.C.RED, button = "go_to_menu", shadow = true, focus_args = {nav = 'wide'}}, nodes={
-            {n=G.UIT.R, config={align = "cm", padding = 0, no_fill = true, maxw = 4.8}, nodes={
-              {n=G.UIT.T, config={text = localize('b_main_menu'), scale = 0.5, colour = G.C.UI.TEXT_LIGHT}}
-            }}
-          }}
+                    {n=G.UIT.R, config={id = 'from_game_over', align = "cm", minw = 5, padding = 0.1, r = 0.1, hover = true, colour = G.C.RED, button = GTB.DIEBUTTON(), shadow = true, focus_args = {nav = 'wide', snap_to = true}}, nodes={
+                      {n=G.UIT.R, config={align = "cm", padding = 0, no_fill = true, maxw = 4.8}, nodes={
+                        {n=G.UIT.T, config={text = localize(GTB.DIELABEL()), scale = 0.5, colour = G.C.UI.TEXT_LIGHT}}
+                      }}
+                    }},
+                    GTB.DIEMENUBUTTON()
         }}
       }},
     }}
@@ -3622,6 +3626,7 @@ function G.UIDEF.view_deck(unplayed_only)
     (mod_suit_tallies['Diamonds'] ~= suit_tallies['Diamonds'])
 
   if wheel_flipped > 0 then flip_col = mix_colours(G.C.FILTER, G.C.WHITE,0.7) end
+  Saturn.hide_played_cards(deck_tables, unplayed_only)
 
   local rank_cols = {}
   for i = 13, 1, -1 do
@@ -6871,4 +6876,477 @@ function UIBox_button(args)
     }, nodes=
     but_UI_label
     }}}
+end
+
+function G.UIDEF.UnBlind_current_blinds() -- called by the replaced bit of code.	see lovely.toml			♥
+	return {n=G.UIT.ROOT, config={align = "bm", colour = G.C.CLEAR, padding = 0.1}, nodes={
+		{n=G.UIT.R, config={align = "bm", colour = G.C.DYN_UI.BOSS_MAIN , r=1, padding = 0.1, w = 2, emboss = 0.05}, nodes={
+			G.GAME.round_resets.blind_states['Small'] ~= 'Hide' and
+			UnBlind_create_UIBox_blind('Small') or nil,
+			G.GAME.round_resets.blind_states['Big'] ~= 'Hide' and
+			UnBlind_create_UIBox_blind('Big') or nil,
+			G.GAME.round_resets.blind_states['Boss'] ~= 'Hide' and
+			UnBlind_create_UIBox_blind('Boss') or nil
+		}}
+	}}
+end
+
+function UnBlind_create_UIBox_blind(type) -- Main definition for the whole of the shop_sign replacement
+	local run_info = true
+	local disabled = false
+
+	local blind_choice = {  config = G.P_BLINDS[G.GAME.round_resets.blind_choices[type]] }
+	-- how im sending bs to the lovely consol when i gotta (I keep forgetting how i did it)
+	-- local g = sendDebugMessage(DataDumper(blind_choice), "UNBLIND ◙◙◙◙◙◙◙◙◙◙")
+
+	blind_choice.animation =  SMODS.create_sprite(0,0, 0.75, 0.75, G.ANIMATION_ATLAS[blind_choice.config.atlas] or  'blind_chips',   blind_choice.config.pos) 
+
+	blind_choice.animation:define_draw_steps({   {shader = 'dissolve', shadow_height = 0.05},  {shader = 'dissolve'}  })
+	local temp_blind = blind_choice.animation
+	local extras = nil
+	local stake_sprite = get_stake_sprite(G.GAME.stake or 1, 0.5)
+
+	G.GAME.orbital_choices = G.GAME.orbital_choices or {}
+	G.GAME.orbital_choices[G.GAME.round_resets.ante] = G.GAME.orbital_choices[G.GAME.round_resets.ante] or {}
+
+	if not G.GAME.orbital_choices[G.GAME.round_resets.ante][type] then
+	local _poker_hands = {}
+	for k, v in pairs(G.GAME.hands) do
+			if SMODS.is_poker_hand_visible(k) then _poker_hands[#_poker_hands+1] = k end
+	end
+
+	G.GAME.orbital_choices[G.GAME.round_resets.ante][type] = pseudorandom_element(_poker_hands, pseudoseed('orbital'))
+	end
+
+	if type == 'Small' then
+		extras = UnBlind_create_UIBox_blind_tag(type)
+	elseif type == 'Big' then
+		extras = UnBlind_create_UIBox_blind_tag(type)
+	else
+		extras = {n=G.UIT.R, config={id = 'tag_container', align = "cm"}, nodes={
+			{n=G.UIT.R, config={id = 'empty_tag_replacement', align = "cm", r = 0.1, padding = 0.05, can_collide = true}, nodes={
+				{n=G.UIT.B, config={id = 'tag_desc', align = "cm", w = 0.75, h = 0.1}, nodes={ }},
+			}}
+		}}
+	end
+
+	G.GAME.round_resets.blind_ante = G.GAME.round_resets.blind_ante or G.GAME.round_resets.ante
+	local target = {type = 'raw_descriptions', key = blind_choice.config.key, set = 'Blind', vars = {}}
+	if blind_choice.config.name == 'The Ox' then
+	       target.vars = {localize(G.GAME.current_round.most_played_poker_hand, 'poker_hands')}
+	end
+	local obj = blind_choice.config
+	if obj.loc_vars and _G['type'](obj.loc_vars) == 'function' then
+	    local res = obj:loc_vars() or {}
+	    target.vars = res.vars or target.vars
+	    target.key = res.key or target.key
+	end
+	local loc_target = localize(target)
+	local loc_name = localize{type = 'name_text', key = blind_choice.config.key, set = 'Blind'}
+	local text_table = loc_target
+	local blind_col = get_blind_main_colour(G.GAME.round_resets.blind_choices[type])
+	local blind_amt = get_blind_amount(G.GAME.round_resets.blind_ante)*blind_choice.config.mult*G.GAME.starting_params.ante_scaling
+
+	local blind_state = G.GAME.round_resets.blind_states[type]
+	local _reward = true
+
+	if G.GAME.modifiers.no_blind_reward and G.GAME.modifiers.no_blind_reward[type] then _reward = nil end
+	if blind_state == 'Select' then blind_state = 'Current' end
+	local blind_desc_nodes = {}
+	for k, v in ipairs(text_table) do
+	  blind_desc_nodes[#blind_desc_nodes+1] = {n=G.UIT.R, config={align = "cm", maxw = 2.8}, nodes={
+	    {n=G.UIT.T, config={text = v or '-', scale = 0.32, colour = disabled and G.C.UI.TEXT_INACTIVE or G.C.WHITE, shadow = not disabled}}
+	  }}
+	end
+	local run_info_colour = run_info and (blind_state == 'Defeated' and G.C.GREY or blind_state == 'Skipped' and mix_colours(G.C.BLUE, G.C.GREY, 0.5) or blind_state == 'Upcoming' and G.C.ORANGE or G.C.GOLD)
+	local blind_state_text_colour =  (blind_state == 'Defeated' and G.C.UI.BACKGROUND_LIGHT or   blind_state == 'Skipped' and G.C.UI.BACKGROUND_LIGHT or blind_state == 'Upcoming' and G.C.WHITE or G.C.GOLD)
+
+	-- blind tag animatiopn bs
+	local discovered = true
+	local blinds_to_be_alerted = {}
+	local v = blind_choice
+
+	temp_blind.float = true
+	temp_blind.states.hover.can = true
+	temp_blind.states.drag.can = false
+	temp_blind.states.collide.can = true
+    temp_blind.touch_collide_tilt = true
+	temp_blind.config = {blind = v, force_focus = true}
+	if discovered and not v.alerted then
+		blinds_to_be_alerted[#blinds_to_be_alerted+1] = temp_blind
+	end
+	temp_blind.hover = function()
+	if not G.CONTROLLER.dragging.target or G.CONTROLLER.using_touch then 
+		if not temp_blind.hovering and temp_blind.states.visible then
+			temp_blind.hovering = true
+			temp_blind.hover_tilt = 3
+			temp_blind:juice_up(0.05, 0.02)
+			play_sound('chips1', math.random()*0.1 + 0.55, 0.12)
+			temp_blind.config.h_popup = UnBlind_create_UIBox_blind_popup(v.config, number_format(blind_amt), blind_col)
+			temp_blind.config.h_popup_config ={align = 'bm', offset = {x=0,y=0.1},parent = temp_blind}
+			Node.hover(temp_blind)
+			if temp_blind.children.alert then 
+				temp_blind.children.alert:remove()
+				temp_blind.children.alert = nil
+				temp_blind.config.blind.alerted = true
+				G:save_progress()
+			end
+			end
+		end
+		temp_blind.stop_hover = function() temp_blind.hovering = false; Node.stop_hover(temp_blind); temp_blind.hover_tilt = 0 end
+	end
+
+	local t =				--mix_colours(G.C.BLACK, G.C.L_BLACK, 0.5)		--G.C.DYN_UI.MAIN (red)		--G.C.DYN_UI.DARK (very similar to boss_main)		--black is too close to boss_main			--l_dark is too light
+	{n=G.UIT.R, config={align = "cm", colour = G.C.DYN_UI.BOSS_DARK, r = 0.1, outline = 1, outline_colour = G.C.DYN_UI.BOSS_MAIN}, nodes={
+		{n=G.UIT.R, config={align = "cm", padding = 0.09}, nodes={
+			{n=G.UIT.C, config={id = 'blind_extras', align = "cl"}, nodes={
+				extras,
+			}},
+			--blind tag and desc container
+			{n=G.UIT.C, config={align = "cl", padding = 0}, nodes={
+				{n=G.UIT.C, config={id = 'blind_desc', align = "cm", padding = 0.05 }, nodes={
+					--blind tag pos + boss desc
+					--BLIND CHIP animation here btw ♥
+					{n=G.UIT.O, config={object = blind_choice.animation, focus_with_object = true}},
+				}},
+			}},
+			--select blind container
+			{n=G.UIT.C, config={align = "cl", padding = 0.05 }, nodes={
+				--select blind "button" (defeated or upcoming)
+				{n=G.UIT.C, config={
+					id = 'select_blind_button',
+					align = "cm",
+					ref_table = blind_choice.config,
+					colour = run_info_colour,
+					minh = 0.75,
+					minw = 0.3,
+					padding = 0.0,
+					r = 3,
+					emboss = 0.08,
+				},
+				nodes={
+					--min score
+					{n=G.UIT.R, config={align = "cm", minw = 2.5}, nodes={
+						--"reward: $$$$+"
+						_reward and {n=G.UIT.C, config={align = "cm"}, nodes={
+							{n=G.UIT.T, config={text = string.rep(localize("$"), blind_choice.config.dollars)..'+', scale = 0.32, colour = disabled and G.C.UI.TEXT_INACTIVE or blind_state_text_colour, shadow = not disabled}}
+						}} or nil,
+						{n=G.UIT.B, config={ w=0.1, h=0.1 }},
+						--"☻ 1,350"
+						{n=G.UIT.C, config={align = "cm", minh = 0.4}, nodes={
+							{n=G.UIT.O, config={w=0.3,h=0.3, colour = G.C.BLUE, object = stake_sprite, hover = true, can_collide = false}},
+							{n=G.UIT.B, config={h=0.1,w=0.05}},
+							{n=G.UIT.T, config={text = number_format(blind_amt), scale = score_number_scale(0.47, blind_amt), colour = disabled and G.C.UI.TEXT_INACTIVE or blind_state_text_colour, shadow =  not disabled}}
+						}},
+					}},
+				}}
+			}},
+		}}
+	}}
+	return t
+end
+
+function UnBlind_hex2rgb(hex)
+    hex = hex:gsub("#","")
+    return tonumber("0x"..tonumber(hex:sub(1,2)))/256, tonumber("0x"..tonumber(hex:sub(3,4)))/256, tonumber("0x"..tonumber(hex:sub(5,6)))/256
+end
+
+
+function UnBlind_create_UIBox_blind_popup(blind, vars, blind_col) --definition for the blind tooltip popup.	--called in main
+
+	local blind_col_rgb = type(blind_col)=="number" and UnBlind_hex2rgb(blind_col) or type(blind_col)=="table" and blind_col or sendErrorMessage("colour calculations are not going how I thought they would :/", "UnBlindError")
+	local blind_col_lum = 0.2126*blind_col_rgb[1] + 0.7152*blind_col_rgb[2] + 0.0722*blind_col_rgb[3]
+	local max_lum = 0.65
+
+	if blind_col_lum > max_lum then
+		blind_col = darken(blind_col, 0.2)
+	end
+
+	local blind_text = {}
+
+	local _dollars = blind.dollars
+	local loc_target = localize{type = 'raw_descriptions', key = blind.key, set = 'Blind', vars = {localize(G.GAME.current_round.most_played_poker_hand, 'poker_hands')}}
+	-- get hands on the most_played_poker_hand. doesnt work with other mods yet. WOMP WOMP -s
+	local loc_name = localize{type = 'name_text', key = blind.key, set = 'Blind'}
+
+
+	 local ability_text = {}
+	 if loc_target then
+		for k, v in ipairs(loc_target) do
+			--sendDebugMessage("k: "..k.." v: "..v, "unblind◙◙◙")
+			ability_text[#ability_text + 1] = {n=G.UIT.R, config={align = "cm"}, nodes={{n=G.UIT.T, config={text = v, scale = 0.35, shadow = true, colour = G.C.WHITE}}}}
+		end
+	 end
+	 local stake_sprite = get_stake_sprite(G.GAME.stake or 1, 0.4)
+	 blind_text[#blind_text + 1] =
+		{n=G.UIT.R, config={align = "cm", colour = G.C.CLEAR}, nodes={
+			{n=G.UIT.R, config={align = "cm", emboss = 0.05, r = 0.1, minw = 2.5, padding = 0.07, colour = G.C.WHITE}, nodes={
+				{n=G.UIT.R, config={align = "cm", maxw = 2.4}, nodes={
+					{n=G.UIT.T, config={text = localize('ph_blind_score_at_least'), scale = 0.35, colour = G.C.UI.TEXT_DARK}},
+				}},
+				{n=G.UIT.R, config={align = "cm"}, nodes={			-- text for chips required to win blind
+					{n=G.UIT.O, config={object = stake_sprite}},
+					{n=G.UIT.O, config={object = DynaText({string = vars, scale = 0.52, colour = G.C.RED})}}
+				}},
+				{n=G.UIT.R, config={align = "cm"}, nodes={
+					{n=G.UIT.T, config={text = localize('ph_blind_reward'), scale = 0.35, colour = G.C.UI.TEXT_DARK}},
+					{n=G.UIT.O, config={object = DynaText({string = {_dollars and string.rep(localize('$'),_dollars) or '-'}, colours = {G.C.MONEY}, rotate = true, bump = true, silent = true, scale = 0.45})}},
+				}},
+			}},
+		}}
+	return
+	 {n=G.UIT.ROOT, config={align = "cm", padding = 0.1, colour = G.C.BLACK, r = 0.1, emboss = 0.05, outline_colour = G.C.WHITE, outline = 1}, nodes={
+		{n=G.UIT.R, config={align = "cm", emboss = 0.05, r = 0.1, minw = 2.5, padding = 0.1, colour = blind_col}, nodes={
+			{n=G.UIT.O, config={object = DynaText({string = loc_name, colours = {G.C.UI.TEXT_LIGHT}, shadow = true, spacing = 2, bump = true, scale = 0.4})}},
+		}},
+		{n=G.UIT.R, config={align = "cm"}, nodes=blind_text},
+		ability_text[1] and {n=G.UIT.R, config={align = "cm", padding = 0.08, colour = mix_colours(blind_col, G.C.GREY, 0.8), r = 0.1, emboss = 0.05, minw = 2.5}, nodes=ability_text}
+		or nil
+	 }}
+end
+
+function UnBlind_create_UIBox_blind_tag(blind_choice) --Renders the tag that's availavle if the blind is skipped_rank	--called in main
+	G.GAME.round_resets.blind_tags = G.GAME.round_resets.blind_tags or {}
+	if not G.GAME.round_resets.blind_tags[blind_choice] then return nil end
+	local _tag = Tag(G.GAME.round_resets.blind_tags[blind_choice], nil, blind_choice)
+	local _tag_ui, _tag_sprite = _tag:generate_UI()
+	_tag_sprite.states.collide.can = not not true
+	return 
+	{n=G.UIT.R, config={id = 'tag_container', ref_table = _tag, align = "cm"}, nodes={
+		{n=G.UIT.R, config={id = 'tag_'..blind_choice, align = "cm", r = 0.1, padding = 0.05, can_collide = true, ref_table = _tag_sprite}, nodes={
+			{n=G.UIT.C, config={id = 'tag_desc', align = "cm", minh = 0.8}, nodes={
+				_tag_ui
+			}},
+		}}
+	}}
+end
+
+--[[ DataDumper.lua
+Copyright (c) 2007 Olivetti-Engineering SA
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+]]
+
+local dumplua_closure = [[
+local closures = {}
+local function closure(t) 
+  closures[#closures+1] = t
+  t[1] = assert(loadstring(t[1]))
+  return t[1]
+end
+
+for _,t in pairs(closures) do
+  for i = 2,#t do 
+    debug.setupvalue(t[1], i-1, t[i]) 
+  end 
+end
+]]
+
+local lua_reserved_keywords = {
+  'and', 'break', 'do', 'else', 'elseif', 'end', 'false', 'for', 
+  'function', 'if', 'in', 'local', 'nil', 'not', 'or', 'repeat', 
+  'return', 'then', 'true', 'until', 'while' }
+
+local function keys(t)
+  local res = {}
+  local oktypes = { stringstring = true, numbernumber = true }
+  local function cmpfct(a,b)
+    if oktypes[type(a)..type(b)] then
+      return a < b
+    else
+      return type(a) < type(b)
+    end
+  end
+  for k in pairs(t) do
+    res[#res+1] = k
+  end
+  table.sort(res, cmpfct)
+  return res
+end
+
+local c_functions = {}
+for _,lib in pairs{'_G', 'string', 'table', 'math', 
+    'io', 'os', 'coroutine', 'package', 'debug'} do
+  local t = _G[lib] or {}
+  lib = lib .. "."
+  if lib == "_G." then lib = "" end
+  for k,v in pairs(t) do
+    if type(v) == 'function' and not pcall(string.dump, v) then
+      c_functions[v] = lib..k
+    end
+  end
+end
+
+function DataDumper(value, varname, fastmode, ident)
+  local defined, dumplua = {}
+  -- Local variables for speed optimization
+  local string_format, type, string_dump, string_rep = 
+        string.format, type, string.dump, string.rep
+  local tostring, pairs, table_concat = 
+        tostring, pairs, table.concat
+  local keycache, strvalcache, out, closure_cnt = {}, {}, {}, 0
+  setmetatable(strvalcache, {__index = function(t,value)
+    local res = string_format('%q', value)
+    t[value] = res
+    return res
+  end})
+  local fcts = {
+    string = function(value) return strvalcache[value] end,
+    number = function(value) return value end,
+    boolean = function(value) return tostring(value) end,
+    ['nil'] = function(value) return 'nil' end,
+    ['function'] = function(value) 
+      return string_format("loadstring(%q)", string_dump(value)) 
+    end,
+    userdata = function() error("Cannot dump userdata") end,
+    thread = function() error("Cannot dump threads") end,
+  }
+  local function test_defined(value, path)
+    if defined[value] then
+      if path:match("^getmetatable.*%)$") then
+        out[#out+1] = string_format("s%s, %s)\n", path:sub(2,-2), defined[value])
+      else
+        out[#out+1] = path .. " = " .. defined[value] .. "\n"
+      end
+      return true
+    end
+    defined[value] = path
+  end
+  local function make_key(t, key)
+    local s
+    if type(key) == 'string' and key:match('^[_%a][_%w]*$') then
+      s = key .. "="
+    else
+      s = "[" .. dumplua(key, 0) .. "]="
+    end
+    t[key] = s
+    return s
+  end
+  for _,k in ipairs(lua_reserved_keywords) do
+    keycache[k] = '["'..k..'"] = '
+  end
+  if fastmode then 
+    fcts.table = function (value)
+      -- Table value
+      local numidx = 1
+      out[#out+1] = "{"
+      for key,val in pairs(value) do
+        if key == numidx then
+          numidx = numidx + 1
+        else
+          out[#out+1] = keycache[key]
+        end
+        local str = dumplua(val)
+        out[#out+1] = str..","
+      end
+      if string.sub(out[#out], -1) == "," then
+        out[#out] = string.sub(out[#out], 1, -2);
+      end
+      out[#out+1] = "}"
+      return "" 
+    end
+  else 
+    fcts.table = function (value, ident, path)
+      if test_defined(value, path) then return "nil" end
+      -- Table value
+      local sep, str, numidx, totallen = " ", {}, 1, 0
+      local meta, metastr = (debug or getfenv()).getmetatable(value)
+      if meta then
+        ident = ident + 1
+        metastr = dumplua(meta, ident, "getmetatable("..path..")")
+        totallen = totallen + #metastr + 16
+      end
+      for _,key in pairs(keys(value)) do
+        local val = value[key]
+        local s = ""
+        local subpath = path or ""
+        if key == numidx then
+          subpath = subpath .. "[" .. numidx .. "]"
+          numidx = numidx + 1
+        else
+          s = keycache[key]
+          if not s:match "^%[" then subpath = subpath .. "." end
+          subpath = subpath .. s:gsub("%s*=%s*$","")
+        end
+        s = s .. dumplua(val, ident+1, subpath)
+        str[#str+1] = s
+        totallen = totallen + #s + 2
+      end
+      if totallen > 80 then
+        sep = "\n" .. string_rep("  ", ident+1)
+      end
+      str = "{"..sep..table_concat(str, ","..sep).." "..sep:sub(1,-3).."}" 
+      if meta then
+        sep = sep:sub(1,-3)
+        return "setmetatable("..sep..str..","..sep..metastr..sep:sub(1,-3)..")"
+      end
+      return str
+    end
+    fcts['function'] = function (value, ident, path)
+      if test_defined(value, path) then return "nil" end
+      if c_functions[value] then
+        return c_functions[value]
+      elseif debug == nil or debug.getupvalue(value, 1) == nil then
+        return string_format("loadstring(%q)", string_dump(value))
+      end
+      closure_cnt = closure_cnt + 1
+      local res = {string.dump(value)}
+      for i = 1,math.huge do
+        local name, v = debug.getupvalue(value,i)
+        if name == nil then break end
+        res[i+1] = v
+      end
+      return "closure " .. dumplua(res, ident, "closures["..closure_cnt.."]")
+    end
+  end
+  function dumplua(value, ident, path)
+    return fcts[type(value)](value, ident, path)
+  end
+  if varname == nil then
+    varname = "return "
+  elseif varname:match("^[%a_][%w_]*$") then
+    varname = varname .. " = "
+  end
+  if fastmode then
+    setmetatable(keycache, {__index = make_key })
+    out[1] = varname
+    table.insert(out,dumplua(value, 0))
+    return table.concat(out)
+  else
+    setmetatable(keycache, {__index = make_key })
+    local items = {}
+    for i=1,10 do items[i] = '' end
+    items[3] = dumplua(value, ident or 0, "t")
+    if closure_cnt > 0 then
+      items[1], items[6] = dumplua_closure:match("(.*\n)\n(.*)")
+      out[#out+1] = ""
+    end
+    if #out > 0 then
+      items[2], items[4] = "local t = ", "\n"
+      items[5] = table.concat(out)
+      items[7] = varname .. "t"
+    else
+      items[2] = varname
+    end
+    return table.concat(items)
+  end
 end

@@ -1,0 +1,42 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 50     # after smods
+
+# Copied from cg-223/Joker-Loadouts <3
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = ["lovely.lua"]
+
+# Add the config tab to the settings (Copied from DebugPlus)
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs('''
+position = "before"
+payload = '''
+if not SMODS then
+    tabs[#tabs+1] = {
+        label = "JokerDisplay",
+        tab_definition_function = JokerDisplay.config_tab,
+    }
+end
+'''
+match_indent = true
+
+# localize (Copied from SMODS for the mod description)
+[[patches]]
+[patches.regex]
+target = 'functions/misc_functions.lua'
+position = 'after'
+pattern = '\(part\.control\.C and loc_colour\(part\.control\.C\)\)'
+payload = ' or args.text_colour'
+
+[[patches]]
+[patches.regex]
+target = 'functions/misc_functions.lua'
+position = 'at'
+pattern = 'loc_colour\(part\.control\.C or nil, args\.default_col\)'
+payload = 'not part.control.C and args.text_colour or loc_colour(part.control.C or nil, args.default_col)'

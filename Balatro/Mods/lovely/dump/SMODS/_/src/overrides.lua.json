@@ -1,0 +1,22 @@
+{
+  "buffer_name": "=[SMODS _ \"src/overrides.lua\"]",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\hide_played.toml",
+        "pattern": "if wheel_flipped > 0 then flip_col = mix_colours(G.C.FILTER, G.C.WHITE, 0.7) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1025,
+          "end_line": 1025
+        },
+        {
+          "start_line": 1331,
+          "end_line": 1331
+        }
+      ]
+    }
+  ]
+}

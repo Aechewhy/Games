@@ -13,6 +13,17 @@
           "end_line": 26
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\stack.toml",
+        "pattern": "x_mult = card.ability.extra",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'x_mult = card.ability.extra' on target '=[SMODS _ \"src/game_object.lua\"]' for pattern patch from Saturn-main\\lovely\\stack.toml resulted in no matches"
+      ]
     }
   ]
 }

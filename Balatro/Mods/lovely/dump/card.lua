@@ -557,7 +557,7 @@ function Card:set_edition(edition, immediate, silent)
         end
     end
 
-    if self.edition and (not Talisman.config_file.disable_anims or (not Talisman.calculating_joker and not Talisman.calculating_score and not Talisman.calculating_card)) and not silent then
+    if self.edition and not Saturn.should_skip_animation() and not silent then
         G.CONTROLLER.locks.edition = true
         G.E_MANAGER:add_event(Event({
             trigger = 'after',
@@ -2730,7 +2730,24 @@ function Card:calculate_joker(context)
                 if G.consumeables.cards[1] then
                     G.E_MANAGER:add_event(Event({
                         func = function() 
-                            local card = copy_card(pseudorandom_element(G.consumeables.cards, pseudoseed('perkeo')), nil)
+                            local total = 0
+                            local checked = 0
+                            local center = nil
+                            for i = 1, #G.consumeables.cards do
+                              local amt = G.consumeables.cards[i]:getAmt()
+                              total = total + amt
+                            end
+                            local poll = pseudorandom(pseudoseed('perkeo'))*total
+                            for i = 1, #G.consumeables.cards do
+                              local amt = G.consumeables.cards[i]:getAmt()
+                              checked = checked + amt
+                              if checked >= poll then
+                                center = G.consumeables.cards[i]
+                                break
+                              end
+                            end
+                            local card = copy_card(center, nil, nil, nil, true)
+                            card.ability.amt = 1
                             card:set_edition({negative = true}, true)
                             card:add_to_deck()
                             G.consumeables:emplace(card) 
@@ -4781,6 +4798,9 @@ function Card:draw(layer)
             else
                 self.children.buy_button.states.visible = false
             end
+        end
+        if self.children.stack_actions_button and self.highlighted then
+          self.children.stack_actions_button:draw()
         end
         if self.children.use_button and self.highlighted then self.children.use_button:draw() end
 

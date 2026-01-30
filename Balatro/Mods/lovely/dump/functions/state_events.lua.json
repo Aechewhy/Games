@@ -824,6 +824,17 @@
     },
     {
       "patch_source": {
+        "file": "Saturn-main\\lovely\\rem_anim.toml",
+        "pattern": "if effects[ii].card then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Saturn-main\\lovely\\rem_anim.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
         "file": "Talisman-main\\lovely.toml",
         "pattern": "if hand_chips*mult > 0 then",
         "patch_type": "pattern"

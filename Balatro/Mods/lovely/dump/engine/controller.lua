@@ -17,6 +17,11 @@ self.released_on = {target = nil, handled = true, prev_target = nil} --The node 
 self.collision_list = {} --A list of all node that the cursor currently collides with
 
 --Input values to be determined by this controller - the actual game objects should not have to see any of this
+  self.r_cursor_down =
+    { T = { x = 0, y = 0 }, target = nil, time = 0, handled = true }
+  self.r_cursor_up =
+    { T = { x = 0, y = 0 }, target = nil, time = 0.1, handled = true }
+  self.is_r_cursor_down = false
 self.cursor_down = {T = {x=0, y=0}, target = nil, time = 0, handled = true}
 self.cursor_up = {T = {x=0, y=0}, target = nil, time = 0.1, handled = true}
 self.cursor_hover = {T = {x=0, y=0}, target = nil, time = 0, handled = true}

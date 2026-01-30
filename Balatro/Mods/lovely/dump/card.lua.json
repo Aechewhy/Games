@@ -139,8 +139,8 @@
       },
       "regions": [
         {
-          "start_line": 2788,
-          "end_line": 2801
+          "start_line": 2805,
+          "end_line": 2818
         }
       ]
     },
@@ -152,8 +152,8 @@
       },
       "regions": [
         {
-          "start_line": 2925,
-          "end_line": 2938
+          "start_line": 2942,
+          "end_line": 2955
         }
       ]
     },
@@ -165,8 +165,8 @@
       },
       "regions": [
         {
-          "start_line": 3919,
-          "end_line": 3919
+          "start_line": 3936,
+          "end_line": 3936
         }
       ]
     },
@@ -178,8 +178,8 @@
       },
       "regions": [
         {
-          "start_line": 3794,
-          "end_line": 3794
+          "start_line": 3811,
+          "end_line": 3811
         }
       ]
     },
@@ -204,28 +204,28 @@
       },
       "regions": [
         {
-          "start_line": 3120,
-          "end_line": 3120
+          "start_line": 3137,
+          "end_line": 3137
         },
         {
-          "start_line": 3271,
-          "end_line": 3271
+          "start_line": 3288,
+          "end_line": 3288
         },
         {
-          "start_line": 3304,
-          "end_line": 3304
+          "start_line": 3321,
+          "end_line": 3321
         },
         {
-          "start_line": 3372,
-          "end_line": 3372
+          "start_line": 3389,
+          "end_line": 3389
         },
         {
-          "start_line": 3985,
-          "end_line": 3985
+          "start_line": 4002,
+          "end_line": 4002
         },
         {
-          "start_line": 4003,
-          "end_line": 4003
+          "start_line": 4020,
+          "end_line": 4020
         }
       ]
     },
@@ -263,8 +263,8 @@
       },
       "regions": [
         {
-          "start_line": 2896,
-          "end_line": 2896
+          "start_line": 2913,
+          "end_line": 2913
         }
       ]
     },
@@ -276,8 +276,8 @@
       },
       "regions": [
         {
-          "start_line": 2828,
-          "end_line": 2828
+          "start_line": 2845,
+          "end_line": 2845
         }
       ]
     },
@@ -341,8 +341,8 @@
       },
       "regions": [
         {
-          "start_line": 2943,
-          "end_line": 2944
+          "start_line": 2960,
+          "end_line": 2961
         }
       ]
     },
@@ -393,8 +393,8 @@
       },
       "regions": [
         {
-          "start_line": 2796,
-          "end_line": 2796
+          "start_line": 2813,
+          "end_line": 2813
         }
       ]
     },
@@ -510,8 +510,8 @@
       },
       "regions": [
         {
-          "start_line": 4525,
-          "end_line": 4528
+          "start_line": 4542,
+          "end_line": 4545
         }
       ]
     },
@@ -536,8 +536,8 @@
       },
       "regions": [
         {
-          "start_line": 5168,
-          "end_line": 5171
+          "start_line": 5188,
+          "end_line": 5191
         }
       ]
     },
@@ -588,8 +588,8 @@
       },
       "regions": [
         {
-          "start_line": 5138,
-          "end_line": 5138
+          "start_line": 5158,
+          "end_line": 5158
         }
       ]
     },
@@ -627,8 +627,8 @@
       },
       "regions": [
         {
-          "start_line": 3704,
-          "end_line": 3708
+          "start_line": 3721,
+          "end_line": 3725
         }
       ]
     },
@@ -640,12 +640,12 @@
       },
       "regions": [
         {
-          "start_line": 4208,
-          "end_line": 4208
+          "start_line": 4225,
+          "end_line": 4225
         },
         {
-          "start_line": 4212,
-          "end_line": 4212
+          "start_line": 4229,
+          "end_line": 4229
         }
       ]
     },
@@ -657,12 +657,12 @@
       },
       "regions": [
         {
-          "start_line": 4216,
-          "end_line": 4216
+          "start_line": 4233,
+          "end_line": 4233
         },
         {
-          "start_line": 4219,
-          "end_line": 4220
+          "start_line": 4236,
+          "end_line": 4237
         }
       ]
     },
@@ -674,8 +674,8 @@
       },
       "regions": [
         {
-          "start_line": 4449,
-          "end_line": 4449
+          "start_line": 4466,
+          "end_line": 4466
         }
       ]
     },
@@ -687,8 +687,8 @@
       },
       "regions": [
         {
-          "start_line": 4437,
-          "end_line": 4437
+          "start_line": 4454,
+          "end_line": 4454
         }
       ]
     },
@@ -794,8 +794,8 @@
           "end_line": 463
         },
         {
-          "start_line": 5263,
-          "end_line": 5265
+          "start_line": 5283,
+          "end_line": 5285
         }
       ]
     },
@@ -850,8 +850,8 @@
       },
       "regions": [
         {
-          "start_line": 5150,
-          "end_line": 5153
+          "start_line": 5170,
+          "end_line": 5173
         }
       ]
     },
@@ -863,8 +863,8 @@
       },
       "regions": [
         {
-          "start_line": 5226,
-          "end_line": 5233
+          "start_line": 5246,
+          "end_line": 5253
         }
       ]
     },
@@ -915,8 +915,8 @@
       },
       "regions": [
         {
-          "start_line": 4564,
-          "end_line": 4564
+          "start_line": 4581,
+          "end_line": 4581
         }
       ]
     },
@@ -928,8 +928,8 @@
       },
       "regions": [
         {
-          "start_line": 4576,
-          "end_line": 4576
+          "start_line": 4593,
+          "end_line": 4593
         }
       ]
     },
@@ -941,8 +941,8 @@
       },
       "regions": [
         {
-          "start_line": 3495,
-          "end_line": 3495
+          "start_line": 3512,
+          "end_line": 3512
         }
       ]
     },
@@ -954,8 +954,8 @@
       },
       "regions": [
         {
-          "start_line": 3061,
-          "end_line": 3061
+          "start_line": 3078,
+          "end_line": 3078
         }
       ]
     },
@@ -967,8 +967,8 @@
       },
       "regions": [
         {
-          "start_line": 4558,
-          "end_line": 4558
+          "start_line": 4575,
+          "end_line": 4575
         }
       ]
     },
@@ -1006,12 +1006,12 @@
       },
       "regions": [
         {
-          "start_line": 4440,
-          "end_line": 4440
+          "start_line": 4457,
+          "end_line": 4457
         },
         {
-          "start_line": 4452,
-          "end_line": 4452
+          "start_line": 4469,
+          "end_line": 4469
         }
       ]
     },
@@ -1023,8 +1023,8 @@
       },
       "regions": [
         {
-          "start_line": 4234,
-          "end_line": 4239
+          "start_line": 4251,
+          "end_line": 4256
         }
       ]
     },
@@ -1049,8 +1049,8 @@
       },
       "regions": [
         {
-          "start_line": 5252,
-          "end_line": 5252
+          "start_line": 5272,
+          "end_line": 5272
         }
       ]
     },
@@ -1062,8 +1062,8 @@
       },
       "regions": [
         {
-          "start_line": 5272,
-          "end_line": 5272
+          "start_line": 5292,
+          "end_line": 5292
         }
       ]
     },
@@ -1088,8 +1088,8 @@
       },
       "regions": [
         {
-          "start_line": 3154,
-          "end_line": 3154
+          "start_line": 3171,
+          "end_line": 3171
         }
       ]
     },
@@ -1118,12 +1118,12 @@
       },
       "regions": [
         {
-          "start_line": 3122,
-          "end_line": 3122
+          "start_line": 3139,
+          "end_line": 3139
         },
         {
-          "start_line": 3273,
-          "end_line": 3273
+          "start_line": 3290,
+          "end_line": 3290
         }
       ]
     },
@@ -1135,8 +1135,8 @@
       },
       "regions": [
         {
-          "start_line": 3131,
-          "end_line": 3132
+          "start_line": 3148,
+          "end_line": 3149
         }
       ]
     },
@@ -1148,8 +1148,8 @@
       },
       "regions": [
         {
-          "start_line": 3146,
-          "end_line": 3147
+          "start_line": 3163,
+          "end_line": 3164
         }
       ]
     },
@@ -1161,8 +1161,8 @@
       },
       "regions": [
         {
-          "start_line": 3895,
-          "end_line": 3895
+          "start_line": 3912,
+          "end_line": 3912
         }
       ]
     },
@@ -1174,12 +1174,12 @@
       },
       "regions": [
         {
-          "start_line": 3105,
-          "end_line": 3105
+          "start_line": 3122,
+          "end_line": 3122
         },
         {
-          "start_line": 4119,
-          "end_line": 4119
+          "start_line": 4136,
+          "end_line": 4136
         }
       ]
     },
@@ -1191,8 +1191,8 @@
       },
       "regions": [
         {
-          "start_line": 5201,
-          "end_line": 5201
+          "start_line": 5221,
+          "end_line": 5221
         }
       ]
     },
@@ -1243,8 +1243,8 @@
       },
       "regions": [
         {
-          "start_line": 3781,
-          "end_line": 3781
+          "start_line": 3798,
+          "end_line": 3798
         }
       ]
     },
@@ -1256,8 +1256,8 @@
       },
       "regions": [
         {
-          "start_line": 2902,
-          "end_line": 2902
+          "start_line": 2919,
+          "end_line": 2919
         }
       ]
     },
@@ -1269,8 +1269,8 @@
       },
       "regions": [
         {
-          "start_line": 2907,
-          "end_line": 2920
+          "start_line": 2924,
+          "end_line": 2937
         }
       ]
     },
@@ -1295,8 +1295,8 @@
       },
       "regions": [
         {
-          "start_line": 2761,
-          "end_line": 2768
+          "start_line": 2778,
+          "end_line": 2785
         }
       ]
     },
@@ -1308,8 +1308,8 @@
       },
       "regions": [
         {
-          "start_line": 3797,
-          "end_line": 3803
+          "start_line": 3814,
+          "end_line": 3820
         }
       ]
     },
@@ -1321,8 +1321,8 @@
       },
       "regions": [
         {
-          "start_line": 3937,
-          "end_line": 3945
+          "start_line": 3954,
+          "end_line": 3962
         }
       ]
     },
@@ -1334,8 +1334,8 @@
       },
       "regions": [
         {
-          "start_line": 3332,
-          "end_line": 3342
+          "start_line": 3349,
+          "end_line": 3359
         }
       ]
     },
@@ -1347,12 +1347,12 @@
       },
       "regions": [
         {
-          "start_line": 3813,
-          "end_line": 3818
+          "start_line": 3830,
+          "end_line": 3835
         },
         {
-          "start_line": 3821,
-          "end_line": 3826
+          "start_line": 3838,
+          "end_line": 3843
         }
       ]
     },
@@ -1364,8 +1364,8 @@
       },
       "regions": [
         {
-          "start_line": 3173,
-          "end_line": 3178
+          "start_line": 3190,
+          "end_line": 3195
         }
       ]
     },
@@ -1377,8 +1377,8 @@
       },
       "regions": [
         {
-          "start_line": 3426,
-          "end_line": 3435
+          "start_line": 3443,
+          "end_line": 3452
         }
       ]
     },
@@ -1390,8 +1390,8 @@
       },
       "regions": [
         {
-          "start_line": 3991,
-          "end_line": 3998
+          "start_line": 4008,
+          "end_line": 4015
         }
       ]
     },
@@ -1403,8 +1403,8 @@
       },
       "regions": [
         {
-          "start_line": 2825,
-          "end_line": 2825
+          "start_line": 2842,
+          "end_line": 2842
         }
       ]
     },
@@ -1416,8 +1416,8 @@
       },
       "regions": [
         {
-          "start_line": 2839,
-          "end_line": 2846
+          "start_line": 2856,
+          "end_line": 2863
         }
       ]
     },
@@ -1429,8 +1429,8 @@
       },
       "regions": [
         {
-          "start_line": 3078,
-          "end_line": 3084
+          "start_line": 3095,
+          "end_line": 3101
         }
       ]
     },
@@ -1455,8 +1455,8 @@
       },
       "regions": [
         {
-          "start_line": 3413,
-          "end_line": 3422
+          "start_line": 3430,
+          "end_line": 3439
         }
       ]
     },
@@ -1468,8 +1468,8 @@
       },
       "regions": [
         {
-          "start_line": 3963,
-          "end_line": 3971
+          "start_line": 3980,
+          "end_line": 3988
         }
       ]
     },
@@ -1481,8 +1481,8 @@
       },
       "regions": [
         {
-          "start_line": 3193,
-          "end_line": 3201
+          "start_line": 3210,
+          "end_line": 3218
         }
       ]
     },
@@ -1494,8 +1494,8 @@
       },
       "regions": [
         {
-          "start_line": 3205,
-          "end_line": 3218
+          "start_line": 3222,
+          "end_line": 3235
         }
       ]
     },
@@ -1507,8 +1507,8 @@
       },
       "regions": [
         {
-          "start_line": 3974,
-          "end_line": 3980
+          "start_line": 3991,
+          "end_line": 3997
         }
       ]
     },
@@ -1520,8 +1520,8 @@
       },
       "regions": [
         {
-          "start_line": 3868,
-          "end_line": 3878
+          "start_line": 3885,
+          "end_line": 3895
         }
       ]
     },
@@ -1533,8 +1533,8 @@
       },
       "regions": [
         {
-          "start_line": 2775,
-          "end_line": 2783
+          "start_line": 2792,
+          "end_line": 2800
         }
       ]
     },
@@ -1546,8 +1546,8 @@
       },
       "regions": [
         {
-          "start_line": 3261,
-          "end_line": 3267
+          "start_line": 3278,
+          "end_line": 3284
         }
       ]
     },
@@ -1559,8 +1559,8 @@
       },
       "regions": [
         {
-          "start_line": 3278,
-          "end_line": 3288
+          "start_line": 3295,
+          "end_line": 3305
         }
       ]
     },
@@ -1572,8 +1572,8 @@
       },
       "regions": [
         {
-          "start_line": 3310,
-          "end_line": 3318
+          "start_line": 3327,
+          "end_line": 3335
         }
       ]
     },
@@ -1585,8 +1585,8 @@
       },
       "regions": [
         {
-          "start_line": 3127,
-          "end_line": 3136
+          "start_line": 3144,
+          "end_line": 3153
         }
       ]
     },
@@ -1598,8 +1598,8 @@
       },
       "regions": [
         {
-          "start_line": 3142,
-          "end_line": 3151
+          "start_line": 3159,
+          "end_line": 3168
         }
       ]
     },
@@ -1611,8 +1611,8 @@
       },
       "regions": [
         {
-          "start_line": 3019,
-          "end_line": 3028
+          "start_line": 3036,
+          "end_line": 3045
         }
       ]
     },
@@ -1624,8 +1624,8 @@
       },
       "regions": [
         {
-          "start_line": 3041,
-          "end_line": 3049
+          "start_line": 3058,
+          "end_line": 3066
         }
       ]
     },
@@ -1650,8 +1650,8 @@
       },
       "regions": [
         {
-          "start_line": 3114,
-          "end_line": 3114
+          "start_line": 3131,
+          "end_line": 3131
         }
       ]
     },
@@ -1663,8 +1663,8 @@
       },
       "regions": [
         {
-          "start_line": 4529,
-          "end_line": 4532
+          "start_line": 4546,
+          "end_line": 4549
         }
       ]
     },
@@ -1689,8 +1689,8 @@
       },
       "regions": [
         {
-          "start_line": 4696,
-          "end_line": 4698
+          "start_line": 4713,
+          "end_line": 4715
         }
       ]
     },
@@ -1810,8 +1810,8 @@
       },
       "regions": [
         {
-          "start_line": 5142,
-          "end_line": 5142
+          "start_line": 5162,
+          "end_line": 5162
         }
       ]
     },
@@ -1823,8 +1823,8 @@
       },
       "regions": [
         {
-          "start_line": 5235,
-          "end_line": 5235
+          "start_line": 5255,
+          "end_line": 5255
         }
       ]
     },
@@ -1878,32 +1878,32 @@
           "end_line": 2703
         },
         {
-          "start_line": 2739,
-          "end_line": 2739
+          "start_line": 2756,
+          "end_line": 2756
         },
         {
-          "start_line": 2853,
-          "end_line": 2853
+          "start_line": 2870,
+          "end_line": 2870
         },
         {
-          "start_line": 2871,
-          "end_line": 2871
+          "start_line": 2888,
+          "end_line": 2888
         },
         {
-          "start_line": 2886,
-          "end_line": 2886
+          "start_line": 2903,
+          "end_line": 2903
         },
         {
-          "start_line": 2957,
-          "end_line": 2957
+          "start_line": 2974,
+          "end_line": 2974
         },
         {
-          "start_line": 3113,
-          "end_line": 3113
+          "start_line": 3130,
+          "end_line": 3130
         },
         {
-          "start_line": 3230,
-          "end_line": 3230
+          "start_line": 3247,
+          "end_line": 3247
         }
       ]
     },
@@ -1980,8 +1980,8 @@
       },
       "regions": [
         {
-          "start_line": 4016,
-          "end_line": 4016
+          "start_line": 4033,
+          "end_line": 4033
         }
       ]
     },
@@ -2088,12 +2088,12 @@
           "end_line": 1146
         },
         {
-          "start_line": 4434,
-          "end_line": 4434
+          "start_line": 4451,
+          "end_line": 4451
         },
         {
-          "start_line": 4446,
-          "end_line": 4446
+          "start_line": 4463,
+          "end_line": 4463
         }
       ]
     },
@@ -2174,8 +2174,8 @@
       },
       "regions": [
         {
-          "start_line": 2739,
-          "end_line": 2741
+          "start_line": 2756,
+          "end_line": 2758
         }
       ]
     },
@@ -2187,8 +2187,8 @@
       },
       "regions": [
         {
-          "start_line": 2756,
-          "end_line": 2756
+          "start_line": 2773,
+          "end_line": 2773
         }
       ]
     },
@@ -2200,8 +2200,8 @@
       },
       "regions": [
         {
-          "start_line": 2769,
-          "end_line": 2769
+          "start_line": 2786,
+          "end_line": 2786
         }
       ]
     },
@@ -2213,8 +2213,8 @@
       },
       "regions": [
         {
-          "start_line": 2784,
-          "end_line": 2784
+          "start_line": 2801,
+          "end_line": 2801
         }
       ]
     },
@@ -2226,8 +2226,8 @@
       },
       "regions": [
         {
-          "start_line": 2802,
-          "end_line": 2802
+          "start_line": 2819,
+          "end_line": 2819
         }
       ]
     },
@@ -2239,8 +2239,8 @@
       },
       "regions": [
         {
-          "start_line": 2823,
-          "end_line": 2823
+          "start_line": 2840,
+          "end_line": 2840
         }
       ]
     },
@@ -2252,8 +2252,8 @@
       },
       "regions": [
         {
-          "start_line": 2847,
-          "end_line": 2847
+          "start_line": 2864,
+          "end_line": 2864
         }
       ]
     },
@@ -2261,19 +2261,6 @@
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\joker_retriggers.toml",
         "pattern": "[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Riff-raff' ",
-        "patch_type": "regex"
-      },
-      "regions": [
-        {
-          "start_line": 2855,
-          "end_line": 2855
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\joker_retriggers.toml",
-        "pattern": "[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Cartomancer' ",
         "patch_type": "regex"
       },
       "regions": [
@@ -2286,7 +2273,7 @@
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\joker_retriggers.toml",
-        "pattern": "[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Ceremonial Dagger' and not context.blueprint",
+        "pattern": "[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Cartomancer' ",
         "patch_type": "regex"
       },
       "regions": [
@@ -2299,13 +2286,26 @@
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\joker_retriggers.toml",
+        "pattern": "[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Ceremonial Dagger' and not context.blueprint",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2906,
+          "end_line": 2906
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\joker_retriggers.toml",
         "pattern": "[ \\t]*end\n[ \\t]*end\n(?<indent>[ \\t]*)if self\\.ability\\.name == 'Marble Joker' ",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 2921,
-          "end_line": 2921
+          "start_line": 2938,
+          "end_line": 2938
         }
       ]
     },
@@ -2317,8 +2317,8 @@
       },
       "regions": [
         {
-          "start_line": 2939,
-          "end_line": 2939
+          "start_line": 2956,
+          "end_line": 2956
         }
       ]
     },
@@ -2330,8 +2330,8 @@
       },
       "regions": [
         {
-          "start_line": 3052,
-          "end_line": 3053
+          "start_line": 3069,
+          "end_line": 3070
         }
       ]
     },
@@ -2343,8 +2343,8 @@
       },
       "regions": [
         {
-          "start_line": 3068,
-          "end_line": 3068
+          "start_line": 3085,
+          "end_line": 3085
         }
       ]
     },
@@ -2356,8 +2356,8 @@
       },
       "regions": [
         {
-          "start_line": 3076,
-          "end_line": 3076
+          "start_line": 3093,
+          "end_line": 3093
         }
       ]
     },
@@ -2369,8 +2369,8 @@
       },
       "regions": [
         {
-          "start_line": 3086,
-          "end_line": 3086
+          "start_line": 3103,
+          "end_line": 3103
         }
       ]
     },
@@ -2382,8 +2382,8 @@
       },
       "regions": [
         {
-          "start_line": 3115,
-          "end_line": 3115
+          "start_line": 3132,
+          "end_line": 3132
         }
       ]
     },
@@ -2395,8 +2395,8 @@
       },
       "regions": [
         {
-          "start_line": 3234,
-          "end_line": 3234
+          "start_line": 3251,
+          "end_line": 3251
         }
       ]
     },
@@ -2486,8 +2486,8 @@
       },
       "regions": [
         {
-          "start_line": 5267,
-          "end_line": 5269
+          "start_line": 5287,
+          "end_line": 5289
         }
       ]
     },
@@ -2529,8 +2529,8 @@
           "end_line": 1304
         },
         {
-          "start_line": 4866,
-          "end_line": 4869
+          "start_line": 4886,
+          "end_line": 4889
         }
       ]
     },
@@ -2679,8 +2679,8 @@
       },
       "regions": [
         {
-          "start_line": 5191,
-          "end_line": 5200
+          "start_line": 5211,
+          "end_line": 5220
         }
       ]
     },
@@ -2978,8 +2978,8 @@
       },
       "regions": [
         {
-          "start_line": 3951,
-          "end_line": 3951
+          "start_line": 3968,
+          "end_line": 3968
         }
       ]
     },
@@ -2991,8 +2991,8 @@
       },
       "regions": [
         {
-          "start_line": 3324,
-          "end_line": 3324
+          "start_line": 3341,
+          "end_line": 3341
         }
       ]
     },
@@ -3042,28 +3042,28 @@
           "end_line": 2640
         },
         {
-          "start_line": 3371,
-          "end_line": 3371
+          "start_line": 3388,
+          "end_line": 3388
         },
         {
-          "start_line": 3451,
-          "end_line": 3451
+          "start_line": 3468,
+          "end_line": 3468
         },
         {
-          "start_line": 3530,
-          "end_line": 3530
+          "start_line": 3547,
+          "end_line": 3547
         },
         {
-          "start_line": 3620,
-          "end_line": 3620
+          "start_line": 3637,
+          "end_line": 3637
         },
         {
-          "start_line": 3675,
-          "end_line": 3675
+          "start_line": 3692,
+          "end_line": 3692
         },
         {
-          "start_line": 3805,
-          "end_line": 3805
+          "start_line": 3822,
+          "end_line": 3822
         }
       ]
     },
@@ -3075,8 +3075,8 @@
       },
       "regions": [
         {
-          "start_line": 5025,
-          "end_line": 5025
+          "start_line": 5045,
+          "end_line": 5045
         }
       ]
     },
@@ -3088,8 +3088,8 @@
       },
       "regions": [
         {
-          "start_line": 4683,
-          "end_line": 4683
+          "start_line": 4700,
+          "end_line": 4700
         }
       ]
     },
@@ -3101,8 +3101,8 @@
       },
       "regions": [
         {
-          "start_line": 4710,
-          "end_line": 4713
+          "start_line": 4727,
+          "end_line": 4730
         }
       ]
     },
@@ -3118,32 +3118,32 @@
           "end_line": 1332
         },
         {
-          "start_line": 3094,
-          "end_line": 3103
+          "start_line": 3111,
+          "end_line": 3120
         },
         {
-          "start_line": 3497,
-          "end_line": 3506
+          "start_line": 3514,
+          "end_line": 3523
         },
         {
-          "start_line": 3532,
-          "end_line": 3541
+          "start_line": 3549,
+          "end_line": 3558
         },
         {
-          "start_line": 3589,
-          "end_line": 3598
+          "start_line": 3606,
+          "end_line": 3615
         },
         {
-          "start_line": 3684,
-          "end_line": 3693
+          "start_line": 3701,
+          "end_line": 3710
         },
         {
-          "start_line": 3884,
-          "end_line": 3893
+          "start_line": 3901,
+          "end_line": 3910
         },
         {
-          "start_line": 4108,
-          "end_line": 4117
+          "start_line": 4125,
+          "end_line": 4134
         }
       ]
     },
@@ -3155,8 +3155,8 @@
       },
       "regions": [
         {
-          "start_line": 4814,
-          "end_line": 4819
+          "start_line": 4834,
+          "end_line": 4839
         }
       ]
     },
@@ -3168,8 +3168,8 @@
       },
       "regions": [
         {
-          "start_line": 4915,
-          "end_line": 4917
+          "start_line": 4935,
+          "end_line": 4937
         }
       ]
     },
@@ -3181,8 +3181,8 @@
       },
       "regions": [
         {
-          "start_line": 4919,
-          "end_line": 4919
+          "start_line": 4939,
+          "end_line": 4939
         }
       ]
     },
@@ -3194,8 +3194,8 @@
       },
       "regions": [
         {
-          "start_line": 4974,
-          "end_line": 4976
+          "start_line": 4994,
+          "end_line": 4996
         }
       ]
     },
@@ -3207,8 +3207,91 @@
       },
       "regions": [
         {
-          "start_line": 4978,
-          "end_line": 4978
+          "start_line": 4998,
+          "end_line": 4998
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\rem_anim.toml",
+        "pattern": "if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Saturn-main\\lovely\\rem_anim.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\rem_anim.toml",
+        "pattern": "if self.edition and not silent then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 560,
+          "end_line": 560
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\rem_anim.toml",
+        "pattern": "G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Saturn-main\\lovely\\rem_anim.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\stack.toml",
+        "pattern": "Xmult_mod = G.P_CENTERS.v_observatory.config.extra",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'Xmult_mod = G.P_CENTERS.v_observatory.config.extra' on target 'card.lua' for pattern patch from Saturn-main\\lovely\\stack.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\stack.toml",
+        "pattern": "message = localize{type = 'variable', key = 'a_xmult', vars = {G.P_CENTERS.v_observatory.config.extra}},",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'message = localize{type = \\'variable\\', key = \\'a_xmult\\', vars = {G.P_CENTERS.v_observatory.config.extra}},' on target 'card.lua' for pattern patch from Saturn-main\\lovely\\stack.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\stack.toml",
+        "pattern": "local card = copy_card(pseudorandom_element(G.consumeables.cards, pseudoseed('perkeo')), nil)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2733,
+          "end_line": 2750
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\stack.toml",
+        "pattern": "if self.children.use_button and self.highlighted then self.children.use_button:draw() end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4802,
+          "end_line": 4804
         }
       ]
     },
@@ -3220,8 +3303,8 @@
       },
       "regions": [
         {
-          "start_line": 3384,
-          "end_line": 3384
+          "start_line": 3401,
+          "end_line": 3401
         }
       ]
     },
@@ -3233,8 +3316,8 @@
       },
       "regions": [
         {
-          "start_line": 4304,
-          "end_line": 4304
+          "start_line": 4321,
+          "end_line": 4321
         }
       ]
     },
@@ -3246,8 +3329,8 @@
       },
       "regions": [
         {
-          "start_line": 4414,
-          "end_line": 4414
+          "start_line": 4431,
+          "end_line": 4431
         }
       ]
     },
@@ -3259,8 +3342,8 @@
       },
       "regions": [
         {
-          "start_line": 4137,
-          "end_line": 4137
+          "start_line": 4154,
+          "end_line": 4154
         }
       ]
     },
@@ -3270,11 +3353,9 @@
         "pattern": "if self.edition and not silent then",
         "patch_type": "pattern"
       },
-      "regions": [
-        {
-          "start_line": 560,
-          "end_line": 560
-        }
+      "regions": [],
+      "warnings": [
+        "Pattern 'if self.edition and not silent then' on target 'card.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
       ]
     },
     {
@@ -3331,8 +3412,8 @@
       },
       "regions": [
         {
-          "start_line": 5040,
-          "end_line": 5042
+          "start_line": 5060,
+          "end_line": 5062
         }
       ]
     },
@@ -3344,8 +3425,8 @@
       },
       "regions": [
         {
-          "start_line": 5043,
-          "end_line": 5057
+          "start_line": 5063,
+          "end_line": 5077
         }
       ]
     },
@@ -3357,8 +3438,8 @@
       },
       "regions": [
         {
-          "start_line": 5058,
-          "end_line": 5063
+          "start_line": 5078,
+          "end_line": 5083
         }
       ]
     },
@@ -3370,8 +3451,8 @@
       },
       "regions": [
         {
-          "start_line": 5064,
-          "end_line": 5066
+          "start_line": 5084,
+          "end_line": 5086
         }
       ]
     },
@@ -3383,21 +3464,21 @@
       },
       "regions": [
         {
-          "start_line": 5067,
-          "end_line": 5097
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "MobileLikeDragging\\lovely\\card.toml",
-        "pattern": "function Card:save()",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 5098,
+          "start_line": 5087,
           "end_line": 5117
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\card.toml",
+        "pattern": "function Card:save()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5118,
+          "end_line": 5137
         }
       ]
     },
@@ -3409,8 +3490,8 @@
       },
       "regions": [
         {
-          "start_line": 4948,
-          "end_line": 4960
+          "start_line": 4968,
+          "end_line": 4980
         }
       ]
     },
@@ -3433,8 +3514,8 @@
       },
       "regions": [
         {
-          "start_line": 4967,
-          "end_line": 4969
+          "start_line": 4987,
+          "end_line": 4989
         }
       ]
     },

@@ -3,6 +3,19 @@
   "entries": [
     {
       "patch_source": {
+        "file": "Saturn-main\\lovely\\rem_anim.toml",
+        "pattern": "if effect.juice_card",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1419,
+          "end_line": 1419
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "Talisman-main\\lovely.toml",
         "pattern": "= amount > 0",
         "patch_type": "regex"
