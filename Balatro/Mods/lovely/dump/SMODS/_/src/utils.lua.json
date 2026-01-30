@@ -1,0 +1,16 @@
+{
+  "buffer_name": "=[SMODS _ \"src/utils.lua\"]",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "= amount > 0",
+        "patch_type": "regex"
+      },
+      "regions": [],
+      "warnings": [
+        "Regex '= amount > 0' on target '=[SMODS _ \"src/utils.lua\"]' for regex patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    }
+  ]
+}

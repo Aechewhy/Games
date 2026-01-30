@@ -138,6 +138,14 @@ function DynaText:update_text(first_pass)
             end
         end
 
+        if Big then
+        	if type(self.strings[k].W) == 'table' then
+        		self.strings[k].W = to_number(self.strings[k].W)
+        	end
+        	if type(self.strings[k].H) == 'table' then
+        		self.strings[k].H = to_number(self.strings[k].H)
+        	end
+        end
         if self.strings[k].W > self.config.W then
             self.config.W = self.strings[k].W
             self.strings[k].W_offset = 0
@@ -183,6 +191,12 @@ function DynaText:pop_in(pop_in_timer)
     self.created_time = G.TIMERS.REAL
 
     for k, letter in ipairs(self.strings[self.focused_string].letters) do
+    if Big then
+    	letter.dims.x = to_number(letter.dims.x)
+    	letter.dims.y = to_number(letter.dims.y)
+    	letter.offset.x = to_number(letter.offset.x)
+    	letter.offset.y = to_number(letter.offset.y)
+    end
         letter.pop_in = 0
     end
 
@@ -194,6 +208,12 @@ function DynaText:align_letters()
         self.focused_string = (self.config.random_element and math.random(1, #self.strings)) or self.focused_string ==  #self.strings and 1 or self.focused_string+1
         self.pop_cycle = false
         for k, letter in ipairs(self.strings[self.focused_string].letters) do
+        if Big then
+        	letter.dims.x = to_number(letter.dims.x)
+        	letter.dims.y = to_number(letter.dims.y)
+        	letter.offset.x = to_number(letter.offset.x)
+        	letter.offset.y = to_number(letter.offset.y)
+        end
             letter.pop_in = 0
         end
         self.config.pop_in = 0.1
@@ -202,6 +222,12 @@ function DynaText:align_letters()
     end
     self.string = self.strings[self.focused_string].string
     for k, letter in ipairs(self.strings[self.focused_string].letters) do
+    if Big then
+    	letter.dims.x = to_number(letter.dims.x)
+    	letter.dims.y = to_number(letter.dims.y)
+    	letter.offset.x = to_number(letter.offset.x)
+    	letter.offset.y = to_number(letter.offset.y)
+    end
         if self.config.pop_out then 
             letter.pop_in = math.min(1, math.max((self.config.min_cycle_time or 1)-(G.TIMERS.REAL - self.pop_out_time)*self.config.pop_out/(self.config.min_cycle_time or 1), 0))
             letter.pop_in = letter.pop_in*letter.pop_in
@@ -276,6 +302,10 @@ function DynaText:pulse(amt)
 end
 
 function DynaText:draw()
+if Big then
+	self.scale = to_number(self.scale)
+	if self.shadow_parallax then self.shadow_parallax.x = to_number(self.shadow_parallax.x) end
+end
     if self.config.text_effect and SMODS.DynaTextEffects[self.config.text_effect] and type(SMODS.DynaTextEffects[self.config.text_effect].draw_override) == "function" then
         SMODS.DynaTextEffects[self.config.text_effect].draw_override(self)
         return
@@ -303,6 +333,12 @@ function DynaText:draw()
         end
         for k=start_index, end_index do
             local letter = self.strings[self.focused_string].letters[k]
+            if Big then
+            	letter.dims.x = to_number(letter.dims.x)
+            	letter.dims.y = to_number(letter.dims.y)
+            	letter.offset.x = to_number(letter.offset.x)
+            	letter.offset.y = to_number(letter.offset.y)
+            end
             local real_pop_in = self.config.min_cycle_time == 0 and 1 or letter.pop_in
             if self.config.text_effect and SMODS.DynaTextEffects[self.config.text_effect] and type(SMODS.DynaTextEffects[self.config.text_effect].draw_shadow) == "function" then
                 SMODS.DynaTextEffects[self.config.text_effect].draw_shadow(self, k, letter) -- shadow
@@ -334,6 +370,12 @@ function DynaText:draw()
     
     for k=start_index, end_index do
         local letter = self.strings[self.focused_string].letters[k]
+        if Big then
+        	letter.dims.x = to_number(letter.dims.x)
+        	letter.dims.y = to_number(letter.dims.y)
+        	letter.offset.x = to_number(letter.offset.x)
+        	letter.offset.y = to_number(letter.offset.y)
+        end
         local real_pop_in = self.config.min_cycle_time == 0 and 1 or letter.pop_in
         love.graphics.setColor(letter.prefix or letter.suffix or letter.colour or self.colours[k%#self.colours + 1])
 

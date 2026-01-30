@@ -1268,6 +1268,7 @@ function Game:prep_stage(new_stage, new_state, new_game_obj)
         self.CONTROLLER.locks[k] = nil
     end
     if new_game_obj then self.GAME = self:init_game_object() end
+    if Talisman and Talisman.igo then self.GAME = Talisman.igo(self.GAME) end
     self.STAGE = new_stage or self.STAGES.MAIN_MENU
     self.STATE = new_state or self.STATES.MENU
     self.STATE_COMPLETE = false
@@ -1626,6 +1627,7 @@ function Game:main_menu(change_context) --True if main menu is accessed from the
     local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS.S_A, G.P_CENTERS.c_base)
     self.title_top:emplace(replace_card)
 
+    replace_card:set_seal('Gold', true, true)
     replace_card.states.visible = false
     replace_card.no_ui = true
     replace_card.ambient_tilt = 0.0
@@ -1807,6 +1809,7 @@ function Game:demo_cta() --True if main menu is accessed from the splash screen,
     local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS.S_A, G.P_CENTERS.c_base)
     self.title_top:emplace(replace_card)
 
+    replace_card:set_seal('Gold', true, true)
     replace_card.states.visible = false
     replace_card.no_ui = true
     replace_card.ambient_tilt = 0.0
@@ -1945,7 +1948,7 @@ function Game:init_game_object()
         perishable_rounds = 5,
         rental_rate = 3,
         blind =  nil,
-        chips = 0,
+        chips = to_big(0),
         chips_text = '0',
         voucher_text = '',
         dollars = 0,
@@ -1965,7 +1968,7 @@ function Game:init_game_object()
         used_vouchers = {},
         current_round = {
             current_hand = {
-                chips = 0,
+                chips = to_big(0),
                 chip_text = '0',
                 mult = 0,
                 mult_text = '0',
@@ -2002,6 +2005,7 @@ function Game:init_game_object()
             temp_reroll_cost = nil,
             temp_handsize = nil,
             ante = 1,
+            ante_disp = number_format(1),
             blind_ante = 1,
             blind_states = {Small = 'Select', Big = 'Upcoming', Boss = 'Upcoming'},
             loc_blind_states = {Small = '', Big = '', Boss = ''},
@@ -2059,6 +2063,7 @@ function Game:start_run(args)
     local selected_back = saveTable and saveTable.BACK.name or (args.challenge and args.challenge.deck and args.challenge.deck.type) or (self.GAME.viewed_back and self.GAME.viewed_back.name) or self.GAME.selected_back and self.GAME.selected_back.name or 'Red Deck'
     selected_back = get_deck_from_name(selected_back)
     self.GAME = saveTable and saveTable.GAME or self:init_game_object()
+    if Talisman and Talisman.igo then self.GAME = Talisman.igo(self.GAME) end
     Handy.UI.init()
     SMODS.update_hand_limit_text(true, true)
     self.GAME.modifiers = self.GAME.modifiers or {}
@@ -2806,6 +2811,7 @@ function Game:update(dt)
             if G.FILE_HANDLER.run then
                 G.SAVE_MANAGER.channel:push({
                     type = 'save_run',
+                    talisman = Talisman.config_file.break_infinity,
                     save_table = G.ARGS.save_run,
                     profile_num = G.SETTINGS.profile})
                 G.SAVED_GAME = nil
@@ -3284,6 +3290,8 @@ function Game:update_play_tarot(dt)
 end
 
 function Game:update_hand_played(dt)
+G.GAME.chips = (G.GAME.chips or 0)
+G.GAME.blind.chips = (G.GAME.blind.chips or math.huge)
     if self.buttons then self.buttons:remove(); self.buttons = nil end
     if self.shop then self.shop:remove(); self.shop = nil end
 
@@ -3292,7 +3300,7 @@ function Game:update_hand_played(dt)
         G.E_MANAGER:add_event(Event({
             trigger = 'immediate',
             func = function()
-        if G.GAME.chips - G.GAME.blind.chips >= 0 or G.GAME.current_round.hands_left < 1 then
+        if to_big(G.GAME.chips) >= to_big(G.GAME.blind.chips) or G.GAME.current_round.hands_left < 1 then
             G.STATE = G.STATES.NEW_ROUND
         else
             G.STATE = G.STATES.DRAW_TO_HAND

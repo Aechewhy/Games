@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 254,
-          "end_line": 256
+          "start_line": 280,
+          "end_line": 282
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 340,
-          "end_line": 342
+          "start_line": 382,
+          "end_line": 384
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 353,
-          "end_line": 353
+          "start_line": 395,
+          "end_line": 395
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 307,
-          "end_line": 309
+          "start_line": 343,
+          "end_line": 345
         }
       ]
     },
@@ -74,8 +74,8 @@
       },
       "regions": [
         {
-          "start_line": 321,
-          "end_line": 321
+          "start_line": 357,
+          "end_line": 357
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 279,
-          "end_line": 282
+          "start_line": 309,
+          "end_line": 312
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 141,
-          "end_line": 152
+          "start_line": 149,
+          "end_line": 160
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "regions": [
         {
-          "start_line": 169,
-          "end_line": 169
+          "start_line": 177,
+          "end_line": 177
         }
       ]
     },
@@ -139,8 +139,8 @@
       },
       "regions": [
         {
-          "start_line": 284,
-          "end_line": 293
+          "start_line": 314,
+          "end_line": 323
         }
       ]
     },
@@ -152,12 +152,12 @@
       },
       "regions": [
         {
-          "start_line": 304,
-          "end_line": 306
+          "start_line": 334,
+          "end_line": 342
         },
         {
-          "start_line": 335,
-          "end_line": 337
+          "start_line": 371,
+          "end_line": 379
         }
       ]
     },
@@ -197,6 +197,70 @@
         {
           "start_line": 88,
           "end_line": 88
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "function DynaText:draw()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 305,
+          "end_line": 308
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "for k, letter in ipairs(self.strings[self.focused_string].letters) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 194,
+          "end_line": 199
+        },
+        {
+          "start_line": 211,
+          "end_line": 216
+        },
+        {
+          "start_line": 225,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "local letter = self.strings[self.focused_string].letters[k]",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 336,
+          "end_line": 341
+        },
+        {
+          "start_line": 373,
+          "end_line": 378
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "(?<indent>[\\t ]*)if self\\.strings\\[k\\]\\.W > self\\.config\\.W then",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 141,
+          "end_line": 148
         }
       ]
     }

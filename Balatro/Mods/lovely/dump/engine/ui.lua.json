@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 1024,
-          "end_line": 1027
+          "start_line": 1031,
+          "end_line": 1034
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 992,
-          "end_line": 992
+          "start_line": 999,
+          "end_line": 999
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 997,
-          "end_line": 997
+          "start_line": 1004,
+          "end_line": 1004
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 834,
-          "end_line": 841
+          "start_line": 841,
+          "end_line": 848
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 855,
-          "end_line": 855
+          "start_line": 862,
+          "end_line": 862
         }
       ]
     },
@@ -74,72 +74,72 @@
       },
       "regions": [
         {
-          "start_line": 620,
-          "end_line": 620
+          "start_line": 625,
+          "end_line": 625
         },
         {
-          "start_line": 694,
-          "end_line": 694
+          "start_line": 699,
+          "end_line": 699
         },
         {
-          "start_line": 695,
-          "end_line": 695
+          "start_line": 700,
+          "end_line": 700
         },
         {
-          "start_line": 704,
-          "end_line": 704
+          "start_line": 710,
+          "end_line": 710
         },
         {
-          "start_line": 704,
-          "end_line": 704
+          "start_line": 710,
+          "end_line": 710
         },
         {
-          "start_line": 705,
-          "end_line": 705
+          "start_line": 711,
+          "end_line": 711
         },
         {
-          "start_line": 705,
-          "end_line": 705
+          "start_line": 711,
+          "end_line": 711
         },
         {
-          "start_line": 707,
-          "end_line": 707
+          "start_line": 713,
+          "end_line": 713
         },
         {
-          "start_line": 707,
-          "end_line": 707
+          "start_line": 713,
+          "end_line": 713
         },
         {
-          "start_line": 708,
-          "end_line": 708
+          "start_line": 714,
+          "end_line": 714
         },
         {
-          "start_line": 723,
-          "end_line": 723
+          "start_line": 730,
+          "end_line": 730
         },
         {
-          "start_line": 723,
-          "end_line": 723
+          "start_line": 730,
+          "end_line": 730
         },
         {
-          "start_line": 724,
-          "end_line": 724
+          "start_line": 731,
+          "end_line": 731
         },
         {
-          "start_line": 724,
-          "end_line": 724
+          "start_line": 731,
+          "end_line": 731
         },
         {
-          "start_line": 726,
-          "end_line": 726
+          "start_line": 733,
+          "end_line": 733
         },
         {
-          "start_line": 726,
-          "end_line": 726
+          "start_line": 733,
+          "end_line": 733
         },
         {
-          "start_line": 727,
-          "end_line": 727
+          "start_line": 734,
+          "end_line": 734
         }
       ]
     },
@@ -173,6 +173,49 @@
         {
           "start_line": 144,
           "end_line": 144
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if _th and _tw then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 187,
+          "end_line": 190
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "local _cw, _ch = w:set_wh()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 563,
+          "end_line": 563
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.config.vert then love.graphics.translate(0,self.VT.h); love.graphics.rotate(-math.pi/2) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 704,
+          "end_line": 704
+        },
+        {
+          "start_line": 721,
+          "end_line": 721
         }
       ]
     }

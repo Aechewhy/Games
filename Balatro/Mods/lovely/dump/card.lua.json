@@ -536,8 +536,8 @@
       },
       "regions": [
         {
-          "start_line": 5062,
-          "end_line": 5065
+          "start_line": 5076,
+          "end_line": 5079
         }
       ]
     },
@@ -588,8 +588,8 @@
       },
       "regions": [
         {
-          "start_line": 5032,
-          "end_line": 5032
+          "start_line": 5046,
+          "end_line": 5046
         }
       ]
     },
@@ -794,8 +794,8 @@
           "end_line": 463
         },
         {
-          "start_line": 5157,
-          "end_line": 5159
+          "start_line": 5171,
+          "end_line": 5173
         }
       ]
     },
@@ -850,8 +850,8 @@
       },
       "regions": [
         {
-          "start_line": 5044,
-          "end_line": 5047
+          "start_line": 5058,
+          "end_line": 5061
         }
       ]
     },
@@ -863,8 +863,8 @@
       },
       "regions": [
         {
-          "start_line": 5120,
-          "end_line": 5127
+          "start_line": 5134,
+          "end_line": 5141
         }
       ]
     },
@@ -1049,8 +1049,8 @@
       },
       "regions": [
         {
-          "start_line": 5146,
-          "end_line": 5146
+          "start_line": 5160,
+          "end_line": 5160
         }
       ]
     },
@@ -1062,8 +1062,8 @@
       },
       "regions": [
         {
-          "start_line": 5166,
-          "end_line": 5166
+          "start_line": 5180,
+          "end_line": 5180
         }
       ]
     },
@@ -1191,8 +1191,8 @@
       },
       "regions": [
         {
-          "start_line": 5095,
-          "end_line": 5095
+          "start_line": 5109,
+          "end_line": 5109
         }
       ]
     },
@@ -1810,8 +1810,8 @@
       },
       "regions": [
         {
-          "start_line": 5036,
-          "end_line": 5036
+          "start_line": 5050,
+          "end_line": 5050
         }
       ]
     },
@@ -1823,8 +1823,8 @@
       },
       "regions": [
         {
-          "start_line": 5129,
-          "end_line": 5129
+          "start_line": 5143,
+          "end_line": 5143
         }
       ]
     },
@@ -2486,8 +2486,8 @@
       },
       "regions": [
         {
-          "start_line": 5161,
-          "end_line": 5163
+          "start_line": 5175,
+          "end_line": 5177
         }
       ]
     },
@@ -2529,8 +2529,8 @@
           "end_line": 1304
         },
         {
-          "start_line": 4859,
-          "end_line": 4862
+          "start_line": 4865,
+          "end_line": 4868
         }
       ]
     },
@@ -2679,8 +2679,8 @@
       },
       "regions": [
         {
-          "start_line": 5085,
-          "end_line": 5094
+          "start_line": 5099,
+          "end_line": 5108
         }
       ]
     },
@@ -3075,8 +3075,8 @@
       },
       "regions": [
         {
-          "start_line": 4997,
-          "end_line": 4997
+          "start_line": 5011,
+          "end_line": 5011
         }
       ]
     },
@@ -3145,6 +3145,169 @@
           "start_line": 4107,
           "end_line": 4116
         }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-main\\lovely\\ui.toml",
+        "pattern": "if not self.config.center.discovered and (self.ability.consumeable or self.config.center.unlocked) and not self.config.center.demo and not self.bypass_discovery_center then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4813,
+          "end_line": 4818
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-main\\lovely\\ui.toml",
+        "pattern": "self.children.floating_sprite:draw_shader('dissolve', nil, nil, nil, self.children.center, scale_mod, rotate_mod)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4914,
+          "end_line": 4916
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-main\\lovely\\ui.toml",
+        "pattern": "self.children.floating_sprite:draw_shader('dissolve', nil, nil, nil, self.children.center, scale_mod, rotate_mod)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4918,
+          "end_line": 4918
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-main\\lovely\\ui.toml",
+        "pattern": "if k ~= 'focused_ui' and k ~= \"front\" and k ~= \"back\" and k ~= \"soul_parts\" and k ~= \"center\" and k ~= 'floating_sprite' and k~= \"shadow\" and k~= \"use_button\" and k ~= 'buy_button' and k ~= 'buy_and_use_button' and k~= \"debuff\" and k ~= 'price' and k~= 'particles' and k ~= 'h_popup' then v:draw() end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4960,
+          "end_line": 4962
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-main\\lovely\\ui.toml",
+        "pattern": "if k ~= 'focused_ui' and k ~= \"front\" and k ~= \"back\" and k ~= \"soul_parts\" and k ~= \"center\" and k ~= 'floating_sprite' and k~= \"shadow\" and k~= \"use_button\" and k ~= 'buy_button' and k ~= 'buy_and_use_button' and k~= \"debuff\" and k ~= 'price' and k~= 'particles' and k ~= 'h_popup' then v:draw() end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4964,
+          "end_line": 4964
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "G.GAME.chips/G.GAME.blind.chips >= 0.25 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3383,
+          "end_line": 3383
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.ability.name == 'Bull' and (G.GAME.dollars + (G.GAME.dollar_buffer or 0)) > 0 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4303,
+          "end_line": 4303
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.ability.name == 'Bootstraps' and math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.ability.extra.dollars) >= 1 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4413,
+          "end_line": 4413
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if G.GAME.dollars <= self.ability.extra then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4136,
+          "end_line": 4136
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.edition and not silent then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 560,
+          "end_line": 560
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "x_mult = center.config.Xmult or 1,",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
       ]
     }
   ]

@@ -707,6 +707,32 @@
           "end_line": 146
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.boss and G.GAME.chips - G.GAME.blind.chips >= 0 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 419,
+          "end_line": 419
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if G.GAME.hands[handname].level > 1 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 577,
+          "end_line": 577
+        }
+      ]
     }
   ]
 }

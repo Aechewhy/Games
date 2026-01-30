@@ -9,8 +9,34 @@
       },
       "regions": [
         {
-          "start_line": 18,
-          "end_line": 18
+          "start_line": 33,
+          "end_line": 33
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "CHANNEL = love.thread.getChannel(\"save_request\")",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 13,
+          "end_line": 27
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "compress_and_save(prefix_profile..'save.jkr', request.save_table)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 97,
+          "end_line": 97
         }
       ]
     }

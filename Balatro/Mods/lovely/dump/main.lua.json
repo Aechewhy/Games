@@ -39,6 +39,30 @@
     },
     {
       "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1538,
+          "end_line": 2747
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "SystemClock\\lovely\\modules.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 2748,
+          "end_line": 2749
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
         "pattern": "function love.errhand(msg)",
         "patch_type": "pattern"
@@ -182,6 +206,28 @@
           "start_line": 1024,
           "end_line": 1024
         }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if type(G.GAME.current_round.current_hand.chips) ~= 'number' or type(G.GAME.current_round.current_hand.mult) ~= 'number' then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \\'number\\' or type(G.GAME.current_round.current_hand.mult) ~= \\'number\\' then' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
       ]
     }
   ]

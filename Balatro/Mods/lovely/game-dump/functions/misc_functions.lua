@@ -797,19 +797,19 @@ function modulate_sound(dt)
   --For ambient sound control
   G.SETTINGS.ambient_control = G.SETTINGS.ambient_control or {}
   G.ARGS.score_intensity = G.ARGS.score_intensity or {}
-  if type(G.GAME.current_round.current_hand.chips) ~= 'number' or type(G.GAME.current_round.current_hand.mult) ~= 'number' then
+  if not is_number(G.GAME.current_round.current_hand.chips) or not is_number(G.GAME.current_round.current_hand.mult) then
     G.ARGS.score_intensity.earned_score = 0
   else
     local all_numbers = true
     for name, parameter in pairs(SMODS.Scoring_Parameters) do
-        if type(G.GAME.current_round.current_hand[name]) ~= 'number' then all_numbers = false end
+        if not is_number(G.GAME.current_round.current_hand[name]) then all_numbers = false end
     end
-    G.ARGS.score_intensity.earned_score = all_numbers and SMODS.calculate_round_score(true) or 0
+    G.ARGS.score_intensity.earned_score = all_numbers and math.min(to_number(SMODS.calculate_round_score(true)), 1e300) or 0
   end
   G.ARGS.score_intensity.required_score = G.GAME.blind and G.GAME.blind.chips or 0
   G.ARGS.score_intensity.flames = math.min(1, (G.STAGE == G.STAGES.RUN and 1 or 0)*(
     (G.ARGS.chip_flames and (G.ARGS.chip_flames.real_intensity + G.ARGS.chip_flames.change) or 0))/10)
-  G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0
+  G.ARGS.score_intensity.organ = G.video_organ or to_big(G.ARGS.score_intensity.required_score) > to_big(0) and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0
 
   local AC = G.SETTINGS.ambient_control
   G.ARGS.ambient_sounds = G.ARGS.ambient_sounds or {
@@ -823,6 +823,20 @@ function modulate_sound(dt)
     AC[k] = AC[k] or {}
     AC[k].per = (k == 'ambientOrgan1') and 0.7 or (k == 'ambientFire1' and 1.1) or (k == 'ambientFire2' and 1.05) or 1
     AC[k].vol = (not G.video_organ and G.STATE == G.STATES.SPLASH) and 0 or AC[k].vol and v.volfunc(AC[k].vol) or 0
+    if type(AC[k].vol) == "table" then
+    	if AC[k].vol > to_big(1e300) then
+    		AC[k].vol = 1e300
+    	else
+    		AC[k].vol = to_number(AC[k].vol)
+    	end
+    end
+    if type(AC[k].per) == "table" then
+    	if AC[k].per > to_big(1e300) then
+    		AC[k].per = 1e300
+    	else
+    		AC[k].per = to_number(AC[k].per)
+    	end
+    end
   end
 
   G.ARGS.push = G.ARGS.push or {}
@@ -890,6 +904,10 @@ function count_of_suit(area, suit)
 end
 
 function prep_draw(moveable, scale, rotate, offset)
+if Big and G.STATE == G.STATES.MENU then moveable.VT.x = to_number(moveable.VT.x)
+moveable.VT.y = to_number(moveable.VT.y)
+moveable.VT.w = to_number(moveable.VT.w)
+moveable.VT.h = to_number(moveable.VT.h) end
     love.graphics.push()
     love.graphics.scale(G.TILESCALE*G.TILESIZE)
     love.graphics.translate(
@@ -1141,7 +1159,7 @@ end
 
 function check_and_set_high_score(score, amt)
   if not amt or type(amt) ~= 'number' then return end
-  if G.GAME.round_scores[score] and math.floor(amt) > G.GAME.round_scores[score].amt then
+  if G.GAME.round_scores[score] and math.floor(amt) > (G.GAME.round_scores[score].amt or 0) then
     G.GAME.round_scores[score].amt = math.floor(amt)
   end
   if  G.GAME.seeded  then return end

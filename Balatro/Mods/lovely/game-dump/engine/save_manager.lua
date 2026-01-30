@@ -10,6 +10,21 @@ require "engine/string_packer"
 
 --vars needed for sound manager thread
 CHANNEL = love.thread.getChannel("save_request")
+function tal_compress_and_save(_file, _data, talisman)
+  local save_string = type(_data) == 'table' and STR_PACK(_data) or _data
+  local fallback_save = STR_PACK({GAME = {won = true}}) --just bare minimum to not crash, maybe eventually display some info?
+  if talisman == 'bignumber' then
+    fallback_save = "if not BigMeta then " .. fallback_save
+  elseif talisman == 'omeganum' then
+    fallback_save = "if not OmegaMeta then " .. fallback_save
+  else
+    fallback_save = "if BigMeta or OmegaMeta then " .. fallback_save
+  end
+  fallback_save = fallback_save .. " end"
+  save_string = fallback_save .. " " .. save_string
+  save_string = love.data.compress('string', 'deflate', save_string, 1)
+  love.filesystem.write(_file,save_string)
+end
 
  while true do
     --Monitor the channel for any new requests
@@ -79,7 +94,7 @@ CHANNEL = love.thread.getChannel("save_request")
             if not love.filesystem.getInfo(prefix_profile) then love.filesystem.createDirectory( prefix_profile ) end
             prefix_profile = prefix_profile..'/'
 
-            compress_and_save(prefix_profile..'save.jkr', request.save_table)
+            tal_compress_and_save(prefix_profile..'save.jkr', request.save_table, request.talisman)
         end
     end
 end

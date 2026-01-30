@@ -1,0 +1,12 @@
+return {
+	["texture_configs"] = {
+		["texpack_lep_planets_pack"] = {
+			["alt_tex_lep_planets_tex"] = true,
+			["alt_tex_lep_celestial_tex"] = true,
+			["alt_tex_lep_black_hole_tex"] = true,
+		},
+	},
+	["selected"] = {
+		"texpack_lep_planets_pack",
+	},
+}

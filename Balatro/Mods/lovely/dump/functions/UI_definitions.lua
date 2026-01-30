@@ -1442,7 +1442,7 @@ function create_UIBox_HUD()
                   {n=G.UIT.T, config={text = localize('k_ante'), scale = 0.85*scale, colour = G.C.UI.TEXT_LIGHT, shadow = true}},
                 }},
                 {n=G.UIT.R, config={align = "cm", r = 0.1, minw = 1.2, colour = temp_col2}, nodes={
-                  {n=G.UIT.O, config={object = DynaText({string = {{ref_table = G.GAME.round_resets, ref_value = 'ante'}}, colours = {G.C.IMPORTANT},shadow = true, font = G.LANGUAGES['en-us'].font, scale = 2*scale}),id = 'ante_UI_count'}},
+                  {n=G.UIT.O, config={object = DynaText({string = {{ref_table = G.GAME.round_resets, ref_value = 'ante_disp'}}, colours = {G.C.IMPORTANT},shadow = true, font = G.LANGUAGES['en-us'].font, scale = scale_number(G.GAME.round_resets.ante, 2*scale, 100, 1000000)}),id = 'ante_UI_count'}},--{n=G.UIT.T, config={text = number_format(G.GAME.round_resets.ante, 1000000), lang = G.LANGUAGES['en-us'], scale = scale_number(G.GAME.round_resets.ante, 2*scale, 100, 1000000), colour = G.C.IMPORTANT, shadow = true,id = 'ante_UI_count'}},
                   {n=G.UIT.T, config={text = " ", scale = 0.3*scale}},
                   {n=G.UIT.T, config={text = "/ ", scale = 0.7*scale, colour = G.C.WHITE, shadow = true}},
                   {n=G.UIT.T, config={ref_table = G.GAME, ref_value='win_ante', scale = scale, colour = G.C.WHITE, shadow = true}}
@@ -2360,6 +2360,7 @@ function create_UIBox_options()
   local your_collection = nil
   local credits = nil
   local customize = nil
+  local textures = nil
 
   G.E_MANAGER:add_event(Event({
     blockable = false,
@@ -2397,6 +2398,10 @@ function create_UIBox_options()
   local settings = UIBox_button({button = 'settings', label = {localize('b_settings')}, minw = 5, focus_args = {snap_to = true}})
   local high_scores = UIBox_button{ label = {localize('b_stats')}, button = "high_scores", minw = 5}
   local customize = UIBox_button{ label = {localize('b_customize_deck')}, button = "customize_deck", minw = 5}
+  customize = {n=G.UIT.R, config={minw = 5, align='cl', padding = 0.1}, nodes = {
+      UIBox_button{ label = {localize('b_deck_skins')}, col = true, button = "customize_deck", minw = 2.45},
+      UIBox_button{ label = {localize('b_textures')}, col = true, button = "textures_button", minw = 2.45, align = 'cl', colour = Malverk.badge_colour},
+  }}
 
   local t = create_UIBox_generic_options({ contents = {
       settings,
@@ -2437,6 +2442,12 @@ function create_UIBox_settings()
     tab_definition_function_args = 'Audio'
   }
 
+  if not SMODS then
+      tabs[#tabs+1] = {
+      label = require('systemclock.locale').translate('sysclock_settings_tab'),
+      tab_definition_function = require('systemclock.config_ui').create_config_tab
+    }
+  end
   local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(
     {tabs = tabs,
     tab_h = 7.05,
@@ -3242,8 +3253,8 @@ function create_UIBox_current_hand_row(handname, simple, in_collection)
   (not simple and
     {n=G.UIT.R, config={align = "cm", padding = 0.05, r = 0.1, colour = darken(G.C.JOKER_GREY, 0.1), emboss = 0.05, hover = true, force_focus = true, on_demand_tooltip = {text = localize(handname, 'poker_hand_descriptions'), filler = {func = create_UIBox_hand_tip, args = handname}}}, nodes={
       {n=G.UIT.C, config={align = "cl", padding = 0, minw = 5}, nodes={
-        {n=G.UIT.C, config={align = "cm", padding = 0.01, r = 0.1, colour = G.C.HAND_LEVELS[math.min(7, G.GAME.hands[handname].level)], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={
-          {n=G.UIT.T, config={text = localize('k_level_prefix')..G.GAME.hands[handname].level, scale = 0.5, colour = G.C.UI.TEXT_DARK}}
+        {n=G.UIT.C, config={align = "cm", padding = 0.01, r = 0.1, colour = G.C.HAND_LEVELS[math.floor(to_number(math.min(7, G.GAME.hands[handname].level)))], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={
+          {n=G.UIT.T, config={text = localize('k_level_prefix')..number_format(G.GAME.hands[handname].level), scale = 0.5, colour = G.C.UI.TEXT_DARK}}
         }},
         {n=G.UIT.C, config={align = "cm", minw = 4.5, maxw = 4.5}, nodes={
           {n=G.UIT.T, config={text = ' '..localize(handname,'poker_hands'), scale = 0.45, colour = G.C.UI.TEXT_LIGHT, shadow = true}}

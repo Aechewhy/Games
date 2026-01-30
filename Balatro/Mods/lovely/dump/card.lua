@@ -557,7 +557,7 @@ function Card:set_edition(edition, immediate, silent)
         end
     end
 
-    if self.edition and not silent then
+    if self.edition and (not Talisman.config_file.disable_anims or (not Talisman.calculating_joker and not Talisman.calculating_score and not Talisman.calculating_card)) and not silent then
         G.CONTROLLER.locks.edition = true
         G.E_MANAGER:add_event(Event({
             trigger = 'after',
@@ -3380,7 +3380,7 @@ function Card:calculate_joker(context)
                     end
                 end
                 if self.ability.name == 'Mr. Bones' and context.game_over and 
-                G.GAME.chips/G.GAME.blind.chips >= 0.25 then
+                to_big(G.GAME.chips)/G.GAME.blind.chips >= to_big(0.25) then
                     G.E_MANAGER:add_event(Event({
                         func = function()
                             G.hand_text_area.blind_chips:juice_up()
@@ -4133,7 +4133,7 @@ function Card:calculate_joker(context)
                             }
                         end
                         if self.ability.name == 'Vagabond' and #G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit then
-                            if G.GAME.dollars <= self.ability.extra then
+                            if to_big(G.GAME.dollars) <= to_big(self.ability.extra) then
                                 G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
                                 G.E_MANAGER:add_event(Event({
                                     trigger = 'before',
@@ -4300,7 +4300,7 @@ function Card:calculate_joker(context)
                                 colour = G.C.MULT
                             }
                         end
-                        if self.ability.name == 'Bull' and (G.GAME.dollars + (G.GAME.dollar_buffer or 0)) > 0 then
+                        if self.ability.name == 'Bull' and to_big(G.GAME.dollars + (G.GAME.dollar_buffer or 0)) > to_big(0) then
                             return {
                                 message = localize{type='variable',key='a_chips',vars={self.ability.extra*math.max(0,(G.GAME.dollars + (G.GAME.dollar_buffer or 0))) }},
                                 chip_mod = self.ability.extra*math.max(0,(G.GAME.dollars + (G.GAME.dollar_buffer or 0))), 
@@ -4410,7 +4410,7 @@ function Card:calculate_joker(context)
                                 Xmult_mod = self.ability.extra.Xmult,
                             }
                         end
-                        if self.ability.name == 'Bootstraps' and math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.ability.extra.dollars) >= 1 then 
+                        if self.ability.name == 'Bootstraps' and to_big(math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.ability.extra.dollars)) >= to_big(1) then
                             return {
                                 message = localize{type='variable',key='a_mult',vars={self.ability.extra.mult*math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.ability.extra.dollars)}},
                                 mult_mod = self.ability.extra.mult*math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.ability.extra.dollars)
@@ -4810,6 +4810,12 @@ function Card:draw(layer)
             end
 
             --If the card is not yet discovered
+            if self.texture_selected then
+                self.children.center:draw_shader('malverk_texture_selected', nil, self.ARGS.send_to_shader)
+                if self.children.front then
+                    self.children.front:draw_shader('malverk_texture_selected', nil, self.ARGS.send_to_shader)
+                end
+            end
             if not self.config.center.discovered and (self.ability.consumeable or self.config.center.unlocked) and not self.config.center.demo and not self.bypass_discovery_center then
                 local shared_sprite = (self.ability.set == 'Edition' or self.ability.set == 'Joker') and G.shared_undiscovered_joker or G.shared_undiscovered_tarot
                 local scale_mod = -0.05 + 0.05*math.sin(1.8*G.TIMERS.REAL)
@@ -4905,7 +4911,11 @@ function Card:draw(layer)
                         self.hover_tilt = self.hover_tilt/1.5
                     else
                         self.children.floating_sprite:draw_shader('dissolve',0, nil, nil, self.children.center,scale_mod, rotate_mod,nil, 0.1 + 0.03*math.sin(1.8*G.TIMERS.REAL),nil, 0.6)
+                        if self.texture_selected then
+                            self.children.floating_sprite:draw_shader('malverk_texture_selected', nil, nil, nil, self.children.center, scale_mod, rotate_mod)
+                        else
                         self.children.floating_sprite:draw_shader('dissolve', nil, nil, nil, self.children.center, scale_mod, rotate_mod)
+                        end
                     end
                     
                 end
@@ -4947,7 +4957,11 @@ function Card:draw(layer)
         end
 
         for k, v in pairs(self.children) do
+            if self.children.animatedSprite and self.texture_selected then
+                self.children.animatedSprite:draw_shader('malverk_texture_selected', nil, self.ARGS.send_to_shader)
+            else
             if k ~= 'focused_ui' and k ~= "front" and k ~= "back" and k ~= "soul_parts" and k ~= "center" and k ~= 'floating_sprite' and k~= "shadow" and k~= "use_button" and k ~= 'buy_button' and k ~= 'buy_and_use_button' and k~= "debuff" and k ~= 'price' and k~= 'particles' and k ~= 'h_popup' then v:draw() end
+            end
         end
 
         if (layer == 'card' or layer == 'both') and self.area == G.hand then 

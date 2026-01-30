@@ -275,7 +275,7 @@ function CardArea:update(dt)
         if G.GAME.modifiers.minus_hand_size_per_X_dollar then
             self.config.last_poll_size = self.config.last_poll_size or 0
             if math.floor(G.GAME.dollars/G.GAME.modifiers.minus_hand_size_per_X_dollar) ~= self.config.last_poll_size then
-                 self:change_size(self.config.last_poll_size - math.floor(G.GAME.dollars/G.GAME.modifiers.minus_hand_size_per_X_dollar))
+                 self:change_size(to_number(self.config.last_poll_size - math.floor(G.GAME.dollars/G.GAME.modifiers.minus_hand_size_per_X_dollar)))
                  self.config.last_poll_size = math.floor(G.GAME.dollars/G.GAME.modifiers.minus_hand_size_per_X_dollar)
             end
         end

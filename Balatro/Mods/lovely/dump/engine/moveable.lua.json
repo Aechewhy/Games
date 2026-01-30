@@ -26,6 +26,19 @@
           "end_line": 129
         }
       ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "function Moveable:move_wh(dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 433,
+          "end_line": 436
+        }
+      ]
     }
   ]
 }

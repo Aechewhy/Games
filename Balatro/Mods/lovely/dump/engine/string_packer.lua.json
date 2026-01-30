@@ -1,0 +1,31 @@
+{
+  "buffer_name": "engine/string_packer.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if type_v == \"table\" then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 34,
+          "end_line": 42
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if v.is and v:is(Object) then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 43,
+          "end_line": 43
+        }
+      ]
+    }
+  ]
+}

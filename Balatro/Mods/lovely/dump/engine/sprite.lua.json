@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 106,
-          "end_line": 108
+          "start_line": 114,
+          "end_line": 116
         }
       ]
     },
@@ -22,8 +22,21 @@
       },
       "regions": [
         {
-          "start_line": 111,
-          "end_line": 122
+          "start_line": 119,
+          "end_line": 130
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "G.SHADERS[_shader]:send(v.name, v.val or (v.func and v.func()) or v.ref_table[v.ref_value])",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 85,
+          "end_line": 93
         }
       ]
     }
