@@ -3,13 +3,13 @@
   "entries": [
     {
       "patch_source": {
-        "file": "UnBlind-main\\lovely.toml",
+        "file": "DVPreview_v4.1.2\\lovely\\preview.toml",
         "patch_type": "copy"
       },
       "regions": [
         {
-          "start_line": 6880,
-          "end_line": 7122
+          "start_line": 7055,
+          "end_line": 7281
         }
       ]
     },
@@ -20,8 +20,20 @@
       },
       "regions": [
         {
-          "start_line": 7123,
-          "end_line": 7352
+          "start_line": 7282,
+          "end_line": 7524
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "UnBlind-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 7525,
+          "end_line": 7754
         }
       ]
     },
@@ -33,8 +45,8 @@
       },
       "regions": [
         {
-          "start_line": 1435,
-          "end_line": 1436
+          "start_line": 1440,
+          "end_line": 1441
         }
       ]
     },
@@ -46,8 +58,8 @@
       },
       "regions": [
         {
-          "start_line": 4399,
-          "end_line": 4409
+          "start_line": 4567,
+          "end_line": 4577
         }
       ]
     },
@@ -59,8 +71,8 @@
       },
       "regions": [
         {
-          "start_line": 4345,
-          "end_line": 4345
+          "start_line": 4513,
+          "end_line": 4513
         }
       ]
     },
@@ -72,12 +84,12 @@
       },
       "regions": [
         {
-          "start_line": 1719,
-          "end_line": 1729
+          "start_line": 1725,
+          "end_line": 1735
         },
         {
-          "start_line": 6934,
-          "end_line": 6944
+          "start_line": 7336,
+          "end_line": 7346
         }
       ]
     },
@@ -89,8 +101,8 @@
       },
       "regions": [
         {
-          "start_line": 4480,
-          "end_line": 4486
+          "start_line": 4648,
+          "end_line": 4654
         }
       ]
     },
@@ -102,8 +114,8 @@
       },
       "regions": [
         {
-          "start_line": 6245,
-          "end_line": 6247
+          "start_line": 6413,
+          "end_line": 6415
         }
       ]
     },
@@ -115,12 +127,12 @@
       },
       "regions": [
         {
-          "start_line": 1739,
-          "end_line": 1744
+          "start_line": 1745,
+          "end_line": 1750
         },
         {
-          "start_line": 6955,
-          "end_line": 6960
+          "start_line": 7357,
+          "end_line": 7362
         }
       ]
     },
@@ -132,8 +144,8 @@
       },
       "regions": [
         {
-          "start_line": 1577,
-          "end_line": 1579
+          "start_line": 1583,
+          "end_line": 1585
         }
       ]
     },
@@ -158,8 +170,8 @@
       },
       "regions": [
         {
-          "start_line": 983,
-          "end_line": 984
+          "start_line": 984,
+          "end_line": 985
         }
       ]
     },
@@ -171,8 +183,8 @@
       },
       "regions": [
         {
-          "start_line": 990,
-          "end_line": 993
+          "start_line": 991,
+          "end_line": 994
         }
       ]
     },
@@ -184,8 +196,8 @@
       },
       "regions": [
         {
-          "start_line": 1035,
-          "end_line": 1037
+          "start_line": 1036,
+          "end_line": 1038
         }
       ]
     },
@@ -197,8 +209,8 @@
       },
       "regions": [
         {
-          "start_line": 655,
-          "end_line": 655
+          "start_line": 656,
+          "end_line": 656
         }
       ]
     },
@@ -210,8 +222,8 @@
       },
       "regions": [
         {
-          "start_line": 5995,
-          "end_line": 5995
+          "start_line": 6163,
+          "end_line": 6163
         }
       ]
     },
@@ -223,12 +235,12 @@
       },
       "regions": [
         {
-          "start_line": 6019,
-          "end_line": 6019
+          "start_line": 6187,
+          "end_line": 6187
         },
         {
-          "start_line": 6042,
-          "end_line": 6042
+          "start_line": 6210,
+          "end_line": 6210
         }
       ]
     },
@@ -240,8 +252,8 @@
       },
       "regions": [
         {
-          "start_line": 6377,
-          "end_line": 6377
+          "start_line": 6545,
+          "end_line": 6545
         }
       ]
     },
@@ -253,8 +265,8 @@
       },
       "regions": [
         {
-          "start_line": 1207,
-          "end_line": 1217
+          "start_line": 1212,
+          "end_line": 1222
         }
       ]
     },
@@ -266,8 +278,8 @@
       },
       "regions": [
         {
-          "start_line": 765,
-          "end_line": 768
+          "start_line": 766,
+          "end_line": 769
         }
       ]
     },
@@ -279,8 +291,8 @@
       },
       "regions": [
         {
-          "start_line": 2831,
-          "end_line": 2831
+          "start_line": 2937,
+          "end_line": 2937
         }
       ]
     },
@@ -292,8 +304,8 @@
       },
       "regions": [
         {
-          "start_line": 2853,
-          "end_line": 2868
+          "start_line": 2959,
+          "end_line": 2974
         }
       ]
     },
@@ -305,8 +317,8 @@
       },
       "regions": [
         {
-          "start_line": 4734,
-          "end_line": 4735
+          "start_line": 4902,
+          "end_line": 4903
         }
       ]
     },
@@ -318,8 +330,8 @@
       },
       "regions": [
         {
-          "start_line": 5202,
-          "end_line": 5202
+          "start_line": 5370,
+          "end_line": 5370
         }
       ]
     },
@@ -331,8 +343,8 @@
       },
       "regions": [
         {
-          "start_line": 1302,
-          "end_line": 1304
+          "start_line": 1307,
+          "end_line": 1309
         }
       ]
     },
@@ -344,8 +356,8 @@
       },
       "regions": [
         {
-          "start_line": 1200,
-          "end_line": 1202
+          "start_line": 1205,
+          "end_line": 1207
         }
       ]
     },
@@ -357,8 +369,8 @@
       },
       "regions": [
         {
-          "start_line": 951,
-          "end_line": 951
+          "start_line": 952,
+          "end_line": 952
         }
       ]
     },
@@ -370,8 +382,8 @@
       },
       "regions": [
         {
-          "start_line": 960,
-          "end_line": 962
+          "start_line": 961,
+          "end_line": 963
         }
       ]
     },
@@ -383,8 +395,8 @@
       },
       "regions": [
         {
-          "start_line": 1012,
-          "end_line": 1012
+          "start_line": 1013,
+          "end_line": 1013
         }
       ]
     },
@@ -396,8 +408,8 @@
       },
       "regions": [
         {
-          "start_line": 1062,
-          "end_line": 1064
+          "start_line": 1064,
+          "end_line": 1066
         }
       ]
     },
@@ -409,8 +421,8 @@
       },
       "regions": [
         {
-          "start_line": 1068,
-          "end_line": 1073
+          "start_line": 1070,
+          "end_line": 1075
         }
       ]
     },
@@ -422,8 +434,8 @@
       },
       "regions": [
         {
-          "start_line": 1218,
-          "end_line": 1225
+          "start_line": 1223,
+          "end_line": 1230
         }
       ]
     },
@@ -435,8 +447,8 @@
       },
       "regions": [
         {
-          "start_line": 1237,
-          "end_line": 1261
+          "start_line": 1242,
+          "end_line": 1266
         }
       ]
     },
@@ -448,8 +460,8 @@
       },
       "regions": [
         {
-          "start_line": 1271,
-          "end_line": 1283
+          "start_line": 1276,
+          "end_line": 1288
         }
       ]
     },
@@ -461,8 +473,8 @@
       },
       "regions": [
         {
-          "start_line": 1107,
-          "end_line": 1107
+          "start_line": 1112,
+          "end_line": 1112
         }
       ]
     },
@@ -474,8 +486,8 @@
       },
       "regions": [
         {
-          "start_line": 3339,
-          "end_line": 3339
+          "start_line": 3445,
+          "end_line": 3445
         }
       ]
     },
@@ -487,8 +499,8 @@
       },
       "regions": [
         {
-          "start_line": 3345,
-          "end_line": 3345
+          "start_line": 3451,
+          "end_line": 3451
         }
       ]
     },
@@ -500,8 +512,8 @@
       },
       "regions": [
         {
-          "start_line": 3704,
-          "end_line": 3704
+          "start_line": 3872,
+          "end_line": 3872
         }
       ]
     },
@@ -513,8 +525,8 @@
       },
       "regions": [
         {
-          "start_line": 6338,
-          "end_line": 6338
+          "start_line": 6506,
+          "end_line": 6506
         }
       ]
     },
@@ -526,8 +538,8 @@
       },
       "regions": [
         {
-          "start_line": 6340,
-          "end_line": 6345
+          "start_line": 6508,
+          "end_line": 6513
         }
       ]
     },
@@ -539,8 +551,8 @@
       },
       "regions": [
         {
-          "start_line": 3309,
-          "end_line": 3311
+          "start_line": 3415,
+          "end_line": 3417
         }
       ]
     },
@@ -552,8 +564,8 @@
       },
       "regions": [
         {
-          "start_line": 1360,
-          "end_line": 1360
+          "start_line": 1365,
+          "end_line": 1365
         }
       ]
     },
@@ -565,8 +577,8 @@
       },
       "regions": [
         {
-          "start_line": 3325,
-          "end_line": 3326
+          "start_line": 3431,
+          "end_line": 3432
         }
       ]
     },
@@ -578,8 +590,8 @@
       },
       "regions": [
         {
-          "start_line": 3352,
-          "end_line": 3352
+          "start_line": 3460,
+          "end_line": 3460
         }
       ]
     },
@@ -591,8 +603,8 @@
       },
       "regions": [
         {
-          "start_line": 1305,
-          "end_line": 1307
+          "start_line": 1310,
+          "end_line": 1312
         }
       ]
     },
@@ -604,8 +616,8 @@
       },
       "regions": [
         {
-          "start_line": 1171,
-          "end_line": 1171
+          "start_line": 1176,
+          "end_line": 1176
         }
       ]
     },
@@ -617,8 +629,8 @@
       },
       "regions": [
         {
-          "start_line": 1509,
-          "end_line": 1509
+          "start_line": 1514,
+          "end_line": 1514
         }
       ]
     },
@@ -630,8 +642,8 @@
       },
       "regions": [
         {
-          "start_line": 1535,
-          "end_line": 1536
+          "start_line": 1540,
+          "end_line": 1541
         }
       ]
     },
@@ -643,8 +655,8 @@
       },
       "regions": [
         {
-          "start_line": 1308,
-          "end_line": 1310
+          "start_line": 1313,
+          "end_line": 1315
         }
       ]
     },
@@ -656,8 +668,8 @@
       },
       "regions": [
         {
-          "start_line": 653,
-          "end_line": 653
+          "start_line": 654,
+          "end_line": 654
         }
       ]
     },
@@ -669,8 +681,8 @@
       },
       "regions": [
         {
-          "start_line": 801,
-          "end_line": 801
+          "start_line": 802,
+          "end_line": 802
         }
       ]
     },
@@ -682,8 +694,8 @@
       },
       "regions": [
         {
-          "start_line": 786,
-          "end_line": 790
+          "start_line": 787,
+          "end_line": 791
         }
       ]
     },
@@ -695,12 +707,12 @@
       },
       "regions": [
         {
-          "start_line": 5882,
-          "end_line": 5882
+          "start_line": 6050,
+          "end_line": 6050
         },
         {
-          "start_line": 5899,
-          "end_line": 5901
+          "start_line": 6067,
+          "end_line": 6069
         }
       ]
     },
@@ -712,8 +724,8 @@
       },
       "regions": [
         {
-          "start_line": 5884,
-          "end_line": 5884
+          "start_line": 6052,
+          "end_line": 6052
         }
       ]
     },
@@ -725,8 +737,8 @@
       },
       "regions": [
         {
-          "start_line": 3473,
-          "end_line": 3473
+          "start_line": 3601,
+          "end_line": 3601
         }
       ]
     },
@@ -738,8 +750,8 @@
       },
       "regions": [
         {
-          "start_line": 3495,
-          "end_line": 3495
+          "start_line": 3623,
+          "end_line": 3623
         }
       ]
     },
@@ -751,8 +763,8 @@
       },
       "regions": [
         {
-          "start_line": 5903,
-          "end_line": 5903
+          "start_line": 6071,
+          "end_line": 6071
         }
       ]
     },
@@ -764,8 +776,8 @@
       },
       "regions": [
         {
-          "start_line": 5897,
-          "end_line": 5902
+          "start_line": 6065,
+          "end_line": 6070
         }
       ]
     },
@@ -777,8 +789,8 @@
       },
       "regions": [
         {
-          "start_line": 5852,
-          "end_line": 5861
+          "start_line": 6020,
+          "end_line": 6029
         }
       ]
     },
@@ -790,8 +802,8 @@
       },
       "regions": [
         {
-          "start_line": 5870,
-          "end_line": 5870
+          "start_line": 6038,
+          "end_line": 6038
         }
       ]
     },
@@ -803,12 +815,12 @@
       },
       "regions": [
         {
-          "start_line": 3477,
-          "end_line": 3484
+          "start_line": 3605,
+          "end_line": 3612
         },
         {
-          "start_line": 3502,
-          "end_line": 3509
+          "start_line": 3630,
+          "end_line": 3637
         }
       ]
     },
@@ -820,8 +832,8 @@
       },
       "regions": [
         {
-          "start_line": 1311,
-          "end_line": 1313
+          "start_line": 1316,
+          "end_line": 1318
         }
       ]
     },
@@ -833,8 +845,8 @@
       },
       "regions": [
         {
-          "start_line": 4211,
-          "end_line": 4212
+          "start_line": 4379,
+          "end_line": 4380
         }
       ]
     },
@@ -846,28 +858,28 @@
       },
       "regions": [
         {
-          "start_line": 3915,
-          "end_line": 3924
+          "start_line": 4083,
+          "end_line": 4092
         },
         {
-          "start_line": 3966,
-          "end_line": 3975
+          "start_line": 4134,
+          "end_line": 4143
         },
         {
-          "start_line": 4012,
-          "end_line": 4021
+          "start_line": 4180,
+          "end_line": 4189
         },
         {
-          "start_line": 4062,
-          "end_line": 4071
+          "start_line": 4230,
+          "end_line": 4239
         },
         {
-          "start_line": 4233,
-          "end_line": 4242
+          "start_line": 4401,
+          "end_line": 4410
         },
         {
-          "start_line": 4317,
-          "end_line": 4326
+          "start_line": 4485,
+          "end_line": 4494
         }
       ]
     },
@@ -879,8 +891,8 @@
       },
       "regions": [
         {
-          "start_line": 4243,
-          "end_line": 4243
+          "start_line": 4411,
+          "end_line": 4411
         }
       ]
     },
@@ -892,8 +904,8 @@
       },
       "regions": [
         {
-          "start_line": 2129,
-          "end_line": 2135
+          "start_line": 2221,
+          "end_line": 2227
         }
       ]
     },
@@ -905,8 +917,8 @@
       },
       "regions": [
         {
-          "start_line": 6851,
-          "end_line": 6851
+          "start_line": 7026,
+          "end_line": 7026
         }
       ]
     },
@@ -918,8 +930,8 @@
       },
       "regions": [
         {
-          "start_line": 1158,
-          "end_line": 1158
+          "start_line": 1163,
+          "end_line": 1163
         }
       ]
     },
@@ -931,8 +943,8 @@
       },
       "regions": [
         {
-          "start_line": 1192,
-          "end_line": 1196
+          "start_line": 1197,
+          "end_line": 1201
         }
       ]
     },
@@ -944,8 +956,8 @@
       },
       "regions": [
         {
-          "start_line": 1121,
-          "end_line": 1126
+          "start_line": 1126,
+          "end_line": 1131
         }
       ]
     },
@@ -957,8 +969,8 @@
       },
       "regions": [
         {
-          "start_line": 1132,
-          "end_line": 1132
+          "start_line": 1137,
+          "end_line": 1137
         }
       ]
     },
@@ -970,8 +982,8 @@
       },
       "regions": [
         {
-          "start_line": 2277,
-          "end_line": 2277
+          "start_line": 2369,
+          "end_line": 2369
         }
       ]
     },
@@ -983,8 +995,8 @@
       },
       "regions": [
         {
-          "start_line": 2306,
-          "end_line": 2306
+          "start_line": 2398,
+          "end_line": 2398
         }
       ]
     },
@@ -996,8 +1008,8 @@
       },
       "regions": [
         {
-          "start_line": 2318,
-          "end_line": 2318
+          "start_line": 2410,
+          "end_line": 2410
         }
       ]
     },
@@ -1009,8 +1021,8 @@
       },
       "regions": [
         {
-          "start_line": 2312,
-          "end_line": 2312
+          "start_line": 2404,
+          "end_line": 2404
         }
       ]
     },
@@ -1022,8 +1034,8 @@
       },
       "regions": [
         {
-          "start_line": 2319,
-          "end_line": 2319
+          "start_line": 2411,
+          "end_line": 2411
         }
       ]
     },
@@ -1035,8 +1047,8 @@
       },
       "regions": [
         {
-          "start_line": 2322,
-          "end_line": 2322
+          "start_line": 2414,
+          "end_line": 2414
         }
       ]
     },
@@ -1048,8 +1060,8 @@
       },
       "regions": [
         {
-          "start_line": 2323,
-          "end_line": 2323
+          "start_line": 2415,
+          "end_line": 2415
         }
       ]
     },
@@ -1061,8 +1073,8 @@
       },
       "regions": [
         {
-          "start_line": 4629,
-          "end_line": 4638
+          "start_line": 4797,
+          "end_line": 4806
         }
       ]
     },
@@ -1074,12 +1086,12 @@
       },
       "regions": [
         {
-          "start_line": 1672,
-          "end_line": 1672
+          "start_line": 1678,
+          "end_line": 1678
         },
         {
-          "start_line": 3246,
-          "end_line": 3246
+          "start_line": 3352,
+          "end_line": 3352
         }
       ]
     },
@@ -1091,8 +1103,8 @@
       },
       "regions": [
         {
-          "start_line": 4350,
-          "end_line": 4355
+          "start_line": 4518,
+          "end_line": 4523
         }
       ]
     },
@@ -1104,8 +1116,8 @@
       },
       "regions": [
         {
-          "start_line": 4410,
-          "end_line": 4409
+          "start_line": 4578,
+          "end_line": 4577
         }
       ]
     },
@@ -1117,8 +1129,8 @@
       },
       "regions": [
         {
-          "start_line": 1768,
-          "end_line": 1768
+          "start_line": 1774,
+          "end_line": 1774
         }
       ]
     },
@@ -1130,8 +1142,8 @@
       },
       "regions": [
         {
-          "start_line": 1385,
-          "end_line": 1385
+          "start_line": 1390,
+          "end_line": 1390
         }
       ]
     },
@@ -1143,12 +1155,12 @@
       },
       "regions": [
         {
-          "start_line": 4493,
-          "end_line": 4493
+          "start_line": 4661,
+          "end_line": 4661
         },
         {
-          "start_line": 7077,
-          "end_line": 7077
+          "start_line": 7479,
+          "end_line": 7479
         }
       ]
     },
@@ -1160,8 +1172,8 @@
       },
       "regions": [
         {
-          "start_line": 1182,
-          "end_line": 1197
+          "start_line": 1187,
+          "end_line": 1202
         }
       ]
     },
@@ -1173,8 +1185,8 @@
       },
       "regions": [
         {
-          "start_line": 3806,
-          "end_line": 3814
+          "start_line": 3974,
+          "end_line": 3982
         }
       ]
     },
@@ -1186,8 +1198,8 @@
       },
       "regions": [
         {
-          "start_line": 3824,
-          "end_line": 3824
+          "start_line": 3992,
+          "end_line": 3992
         }
       ]
     },
@@ -1199,8 +1211,8 @@
       },
       "regions": [
         {
-          "start_line": 771,
-          "end_line": 784
+          "start_line": 772,
+          "end_line": 785
         }
       ]
     },
@@ -1212,8 +1224,8 @@
       },
       "regions": [
         {
-          "start_line": 2790,
-          "end_line": 2826
+          "start_line": 2896,
+          "end_line": 2932
         }
       ]
     },
@@ -1225,8 +1237,8 @@
       },
       "regions": [
         {
-          "start_line": 2871,
-          "end_line": 2871
+          "start_line": 2977,
+          "end_line": 2977
         }
       ]
     },
@@ -1238,8 +1250,8 @@
       },
       "regions": [
         {
-          "start_line": 2757,
-          "end_line": 2784
+          "start_line": 2863,
+          "end_line": 2890
         }
       ]
     },
@@ -1251,12 +1263,12 @@
       },
       "regions": [
         {
-          "start_line": 4130,
-          "end_line": 4130
+          "start_line": 4298,
+          "end_line": 4298
         },
         {
-          "start_line": 4159,
-          "end_line": 4159
+          "start_line": 4327,
+          "end_line": 4327
         }
       ]
     },
@@ -1268,8 +1280,8 @@
       },
       "regions": [
         {
-          "start_line": 1476,
-          "end_line": 1479
+          "start_line": 1481,
+          "end_line": 1484
         }
       ]
     },
@@ -1281,8 +1293,8 @@
       },
       "regions": [
         {
-          "start_line": 6488,
-          "end_line": 6488
+          "start_line": 6656,
+          "end_line": 6656
         }
       ]
     },
@@ -1294,8 +1306,8 @@
       },
       "regions": [
         {
-          "start_line": 6493,
-          "end_line": 6493
+          "start_line": 6661,
+          "end_line": 6661
         }
       ]
     },
@@ -1307,8 +1319,8 @@
       },
       "regions": [
         {
-          "start_line": 3710,
-          "end_line": 3710
+          "start_line": 3878,
+          "end_line": 3878
         }
       ]
     },
@@ -1320,8 +1332,8 @@
       },
       "regions": [
         {
-          "start_line": 6318,
-          "end_line": 6324
+          "start_line": 6486,
+          "end_line": 6492
         }
       ]
     },
@@ -1333,8 +1345,8 @@
       },
       "regions": [
         {
-          "start_line": 6366,
-          "end_line": 6376
+          "start_line": 6534,
+          "end_line": 6544
         }
       ]
     },
@@ -1346,8 +1358,8 @@
       },
       "regions": [
         {
-          "start_line": 4264,
-          "end_line": 4281
+          "start_line": 4432,
+          "end_line": 4449
         }
       ]
     },
@@ -1359,8 +1371,8 @@
       },
       "regions": [
         {
-          "start_line": 4314,
-          "end_line": 4317
+          "start_line": 4482,
+          "end_line": 4485
         }
       ]
     },
@@ -1372,8 +1384,8 @@
       },
       "regions": [
         {
-          "start_line": 4329,
-          "end_line": 4329
+          "start_line": 4497,
+          "end_line": 4497
         }
       ]
     },
@@ -1385,8 +1397,8 @@
       },
       "regions": [
         {
-          "start_line": 4229,
-          "end_line": 4231
+          "start_line": 4397,
+          "end_line": 4399
         }
       ]
     },
@@ -1398,8 +1410,8 @@
       },
       "regions": [
         {
-          "start_line": 3833,
-          "end_line": 3833
+          "start_line": 4001,
+          "end_line": 4001
         }
       ]
     },
@@ -1411,8 +1423,8 @@
       },
       "regions": [
         {
-          "start_line": 1107,
-          "end_line": 1107
+          "start_line": 1112,
+          "end_line": 1112
         }
       ]
     },
@@ -1424,8 +1436,8 @@
       },
       "regions": [
         {
-          "start_line": 1133,
-          "end_line": 1133
+          "start_line": 1138,
+          "end_line": 1138
         }
       ]
     },
@@ -1437,8 +1449,8 @@
       },
       "regions": [
         {
-          "start_line": 5965,
-          "end_line": 5965
+          "start_line": 6133,
+          "end_line": 6133
         }
       ]
     },
@@ -1450,8 +1462,8 @@
       },
       "regions": [
         {
-          "start_line": 5639,
-          "end_line": 5645
+          "start_line": 5807,
+          "end_line": 5813
         }
       ]
     },
@@ -1463,8 +1475,8 @@
       },
       "regions": [
         {
-          "start_line": 5972,
-          "end_line": 5972
+          "start_line": 6140,
+          "end_line": 6140
         }
       ]
     },
@@ -1476,8 +1488,8 @@
       },
       "regions": [
         {
-          "start_line": 2405,
-          "end_line": 2405
+          "start_line": 2497,
+          "end_line": 2497
         }
       ]
     },
@@ -1489,8 +1501,8 @@
       },
       "regions": [
         {
-          "start_line": 2422,
-          "end_line": 2422
+          "start_line": 2514,
+          "end_line": 2514
         }
       ]
     },
@@ -1502,8 +1514,8 @@
       },
       "regions": [
         {
-          "start_line": 2459,
-          "end_line": 2459
+          "start_line": 2551,
+          "end_line": 2551
         }
       ]
     },
@@ -1515,8 +1527,8 @@
       },
       "regions": [
         {
-          "start_line": 2581,
-          "end_line": 2581
+          "start_line": 2687,
+          "end_line": 2687
         }
       ]
     },
@@ -1528,12 +1540,12 @@
       },
       "regions": [
         {
-          "start_line": 1687,
-          "end_line": 1687
+          "start_line": 1693,
+          "end_line": 1693
         },
         {
-          "start_line": 6915,
-          "end_line": 6915
+          "start_line": 7317,
+          "end_line": 7317
         }
       ]
     },
@@ -1545,24 +1557,24 @@
       },
       "regions": [
         {
-          "start_line": 1672,
-          "end_line": 1672
+          "start_line": 1678,
+          "end_line": 1678
         },
         {
-          "start_line": 3246,
-          "end_line": 3246
+          "start_line": 3352,
+          "end_line": 3352
         },
         {
-          "start_line": 4355,
-          "end_line": 4355
+          "start_line": 4523,
+          "end_line": 4523
         },
         {
-          "start_line": 6246,
-          "end_line": 6246
+          "start_line": 6414,
+          "end_line": 6414
         },
         {
-          "start_line": 6902,
-          "end_line": 6902
+          "start_line": 7304,
+          "end_line": 7304
         }
       ]
     },
@@ -1574,8 +1586,8 @@
       },
       "regions": [
         {
-          "start_line": 1410,
-          "end_line": 1418
+          "start_line": 1415,
+          "end_line": 1423
         }
       ]
     },
@@ -1587,8 +1599,8 @@
       },
       "regions": [
         {
-          "start_line": 6583,
-          "end_line": 6591
+          "start_line": 6751,
+          "end_line": 6759
         }
       ]
     },
@@ -1600,8 +1612,8 @@
       },
       "regions": [
         {
-          "start_line": 2274,
-          "end_line": 2275
+          "start_line": 2366,
+          "end_line": 2367
         }
       ]
     },
@@ -1613,8 +1625,34 @@
       },
       "regions": [
         {
-          "start_line": 2537,
-          "end_line": 2538
+          "start_line": 2643,
+          "end_line": 2644
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\hand-sorting.toml",
+        "pattern": "{n=G.UIT.T, config={text = localize('b_sort_hand'), scale = text_scale*0.8, colour = G.C.UI.TEXT_LIGHT}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1085,
+          "end_line": 1087
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\hand-sorting.toml",
+        "pattern": "function create_UIBox_buttons()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1057,
+          "end_line": 1057
         }
       ]
     },
@@ -1626,8 +1664,8 @@
       },
       "regions": [
         {
-          "start_line": 2409,
-          "end_line": 2409
+          "start_line": 2501,
+          "end_line": 2501
         }
       ]
     },
@@ -1639,8 +1677,8 @@
       },
       "regions": [
         {
-          "start_line": 2448,
-          "end_line": 2451
+          "start_line": 2540,
+          "end_line": 2543
         }
       ]
     },
@@ -1652,8 +1690,8 @@
       },
       "regions": [
         {
-          "start_line": 2445,
-          "end_line": 2445
+          "start_line": 2537,
+          "end_line": 2537
         }
       ]
     },
@@ -1665,8 +1703,8 @@
       },
       "regions": [
         {
-          "start_line": 2454,
-          "end_line": 2454
+          "start_line": 2546,
+          "end_line": 2546
         }
       ]
     },
@@ -1678,8 +1716,8 @@
       },
       "regions": [
         {
-          "start_line": 2522,
-          "end_line": 2536
+          "start_line": 2628,
+          "end_line": 2642
         }
       ]
     },
@@ -1691,8 +1729,8 @@
       },
       "regions": [
         {
-          "start_line": 3629,
-          "end_line": 3629
+          "start_line": 3796,
+          "end_line": 3796
         }
       ]
     },
@@ -1726,8 +1764,8 @@
       },
       "regions": [
         {
-          "start_line": 1491,
-          "end_line": 1491
+          "start_line": 1496,
+          "end_line": 1496
         }
       ]
     },
@@ -1739,8 +1777,8 @@
       },
       "regions": [
         {
-          "start_line": 3331,
-          "end_line": 3331
+          "start_line": 3437,
+          "end_line": 3437
         }
       ]
     },
@@ -1752,8 +1790,8 @@
       },
       "regions": [
         {
-          "start_line": 3330,
-          "end_line": 3330
+          "start_line": 3436,
+          "end_line": 3436
         }
       ]
     },
@@ -1765,8 +1803,8 @@
       },
       "regions": [
         {
-          "start_line": 672,
-          "end_line": 683
+          "start_line": 673,
+          "end_line": 684
         }
       ]
     },
@@ -1778,8 +1816,8 @@
       },
       "regions": [
         {
-          "start_line": 891,
-          "end_line": 946
+          "start_line": 892,
+          "end_line": 947
         }
       ]
     },
@@ -1791,8 +1829,8 @@
       },
       "regions": [
         {
-          "start_line": 1640,
-          "end_line": 1640
+          "start_line": 1646,
+          "end_line": 1646
         }
       ]
     },
@@ -1804,8 +1842,8 @@
       },
       "regions": [
         {
-          "start_line": 2493,
-          "end_line": 2497
+          "start_line": 2585,
+          "end_line": 2589
         }
       ]
     },
@@ -1817,8 +1855,8 @@
       },
       "regions": [
         {
-          "start_line": 2568,
-          "end_line": 2574
+          "start_line": 2674,
+          "end_line": 2680
         }
       ]
     },
@@ -1830,16 +1868,16 @@
       },
       "regions": [
         {
-          "start_line": 4374,
-          "end_line": 4374
+          "start_line": 4542,
+          "end_line": 4542
         },
         {
-          "start_line": 6256,
-          "end_line": 6256
+          "start_line": 6424,
+          "end_line": 6424
         },
         {
-          "start_line": 6973,
-          "end_line": 6973
+          "start_line": 7375,
+          "end_line": 7375
         }
       ]
     },
@@ -1851,8 +1889,21 @@
       },
       "regions": [
         {
-          "start_line": 4543,
-          "end_line": 4543
+          "start_line": 4711,
+          "end_line": 4711
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "DVPreview_v4.1.2\\lovely\\settings.toml",
+        "pattern": "local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2590,
+          "end_line": 2593
         }
       ]
     },
@@ -1864,8 +1915,8 @@
       },
       "regions": [
         {
-          "start_line": 3065,
-          "end_line": 3065
+          "start_line": 3171,
+          "end_line": 3171
         }
       ]
     },
@@ -1877,8 +1928,8 @@
       },
       "regions": [
         {
-          "start_line": 3070,
-          "end_line": 3070
+          "start_line": 3176,
+          "end_line": 3176
         }
       ]
     },
@@ -1890,8 +1941,8 @@
       },
       "regions": [
         {
-          "start_line": 3190,
-          "end_line": 3194
+          "start_line": 3296,
+          "end_line": 3300
         }
       ]
     },
@@ -1903,8 +1954,8 @@
       },
       "regions": [
         {
-          "start_line": 3067,
-          "end_line": 3067
+          "start_line": 3173,
+          "end_line": 3173
         }
       ]
     },
@@ -1916,8 +1967,8 @@
       },
       "regions": [
         {
-          "start_line": 3195,
-          "end_line": 3195
+          "start_line": 3301,
+          "end_line": 3301
         }
       ]
     },
@@ -1929,8 +1980,21 @@
       },
       "regions": [
         {
-          "start_line": 2498,
-          "end_line": 2503
+          "start_line": 2594,
+          "end_line": 2599
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "DVPreview_v4.1.2\\lovely\\settings.toml",
+        "pattern": "tab_alignment = 'tm',\\n\\s+snap_to_nav = true}\\n\\s+\\)}}\\)\\n",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2621,
+          "end_line": 2621
         }
       ]
     },
@@ -1942,8 +2006,8 @@
       },
       "regions": [
         {
-          "start_line": 5717,
-          "end_line": 5719
+          "start_line": 5885,
+          "end_line": 5887
         }
       ]
     },
@@ -1968,8 +2032,290 @@
       },
       "regions": [
         {
-          "start_line": 2504,
-          "end_line": 2509
+          "start_line": 2600,
+          "end_line": 2605
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\blinds-info.toml",
+        "pattern": "        {\n          label = localize('b_blinds'),\n          tab_definition_function = G.UIDEF.current_blinds,\n        },",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3528,
+          "end_line": 3551
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\peek-shop.toml",
+        "pattern": "    if not G.OVERLAY_MENU then\n        for k, v in pairs(G.P_CENTERS) do",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern '    if not G.OVERLAY_MENU then\\n        for k, v in pairs(G.P_CENTERS) do' on target 'functions/UI_definitions.lua' for pattern patch from Cartomancer-v4.17\\lovely\\peek-shop.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\peek-shop.toml",
+        "pattern": "{n=G.UIT.C,config={align = \"tm\", padding = 0.05, minw = 2.4}, nodes={}},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1838,
+          "end_line": 1855
+        },
+        {
+          "start_line": 1901,
+          "end_line": 1918
+        },
+        {
+          "start_line": 1964,
+          "end_line": 1981
+        },
+        {
+          "start_line": 2027,
+          "end_line": 2044
+        },
+        {
+          "start_line": 2090,
+          "end_line": 2107
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "table.insert(SUITS[v.base.suit], v)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3674,
+          "end_line": 3698
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "    if SUITS[suit_map[j]][1] then\n      local view_deck = CardArea(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3701,
+          "end_line": 3702
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "local suit_map = {'Spades', 'Hearts', 'Clubs', 'Diamonds'}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 518,
+          "end_line": 518
+        },
+        {
+          "start_line": 3672,
+          "end_line": 3672
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "local suit_tallies = {['Spades']  = 0, ['Hearts'] = 0, ['Clubs'] = 0, ['Diamonds'] = 0}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3730,
+          "end_line": 3746
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "{card_limit = #SUITS[suit_map[j]], type = 'title', view_deck = true, highlight_limit = 0, card_w = G.CARD_W*0.7, draw_layers = {'card'}})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3706,
+          "end_line": 3706
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "modded and {n=G.UIT.R, config={align = \"cm\"}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3856,
+          "end_line": 3856
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\stackable-deck-vanilla.toml",
+        "pattern": "      for i = 1, #SUITS[suit_map[j]] do\n        if SUITS[suit_map[j]][i] then\n          local greyed, _scale = nil, 0.7\n          if unplayed_only and not ((SUITS[suit_map[j]][i].area and SUITS[suit_map[j]][i].area == G.deck) or SUITS[suit_map[j]][i].ability.wheel_flipped) then\n            greyed = true\n          end\n          local copy = copy_card(SUITS[suit_map[j]][i],nil, _scale)\n          copy.greyed = greyed\n          copy.T.x = view_deck.T.x + view_deck.T.w/2\n          copy.T.y = view_deck.T.y\n\n          copy:hard_set_T()\n          view_deck:emplace(copy)\n        end\n      end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3713,
+          "end_line": 3724
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "{n=G.UIT.C, config={align = \"cm\", padding = 0.05, colour = G.C.L_BLACK,r = 0.1, minw = 0.9}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3457,
+          "end_line": 3459
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "contents.dollars_chips = {n=G.UIT.R, config={align = \"cm\",r=0.1, padding = 0,colour = G.C.DYN_UI.BOSS_MAIN, emboss = 0.05, id = 'row_dollars_chips'}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1542,
+          "end_line": 1543
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2606,
+          "end_line": 2614
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "but_UI_label",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 7052,
+          "end_line": 7052
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "colour = args.colour,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 7038,
+          "end_line": 7038
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "{n=G.UIT.C, config={align = \"cm\", minh = args.h,r = 0.1, minw = 0.8, colour = args.colour,shadow = true}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2160,
+          "end_line": 2160
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "for k, v in ipairs(args.label) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 7007,
+          "end_line": 7013
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\zoom-jokers.toml",
+        "pattern": "{n=G.UIT.B, config={w=startval,h=args.h, r = 0.1, colour = args.colour, ref_table = args, refresh_movement = true}},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2158,
+          "end_line": 2158
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\blinds-info.toml",
+        "pattern": "func = button_pip,",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 7011,
+          "end_line": 7011
+        },
+        {
+          "start_line": 7019,
+          "end_line": 7019
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\zoom-jokers.toml",
+        "pattern": "(?<content>\\{n=G\\.UIT\\.C\\, config=\\{align = \"cm\"\\, minh = args\\.h\\,r = 0\\.1\\, minw = 0\\.8\\, colour = args\\.colour\\,shadow = true\\}\\, nodes=\\{\n[\\t ]*\\{n=G\\.UIT\\.T\\, config=\\{ref_table = args\\, ref_value = 'text'\\, scale = args\\.text_scale\\, colour = G\\.C\\.UI\\.TEXT_LIGHT\\, decimal_places = args\\.decimal_places\\}\\}\n[\\t ]*\\}\\})\\,",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2161,
+          "end_line": 2163
         }
       ]
     }

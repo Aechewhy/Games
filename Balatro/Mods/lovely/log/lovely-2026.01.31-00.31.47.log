@@ -1,0 +1,19 @@
+INFO - [♥] Lovely 0.9.0
+INFO - [♥] Game directory is at "Z:\\home\\aechewhy\\Games\\Balatro"
+INFO - [♥] Writing logs to "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] No blacklist.txt in Mods/lovely.
+INFO - [♥] Found .lovelyignore in 'FancyDecks', skipping it.
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Balatro-Preview-main\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Balatro-Preview-main\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Balatro-Preview-main\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Balatro-Preview-main\\lovely\\settings.toml", ignoring it
+ERROR - [♥] lovely-injector has crashed: 
+panicked at crates\lovely-core\src\lib.rs:200:75:
+called `Result::unwrap()` on an `Err` value: Copy source "lib/Balatro-Settings/src/Settings.lua" not found in preloaded sources for patch from C:\users\steamuser\AppData\Roaming\Balatro\Mods\Balatro-Preview-main\lovely\settings.toml

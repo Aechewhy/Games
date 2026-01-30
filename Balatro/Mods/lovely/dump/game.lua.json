@@ -3,14 +3,26 @@
   "entries": [
     {
       "patch_source": {
+        "file": "DVPreview_v4.1.2\\lovely\\settings.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 3762,
+          "end_line": 3857
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
         "pattern": "self.GAME.selected_back = Back(selected_back)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 2073,
-          "end_line": 2075
+          "start_line": 2074,
+          "end_line": 2076
         }
       ]
     },
@@ -22,8 +34,8 @@
       },
       "regions": [
         {
-          "start_line": 3357,
-          "end_line": 3357
+          "start_line": 3359,
+          "end_line": 3359
         }
       ]
     },
@@ -35,8 +47,8 @@
       },
       "regions": [
         {
-          "start_line": 3284,
-          "end_line": 3284
+          "start_line": 3286,
+          "end_line": 3286
         }
       ]
     },
@@ -48,8 +60,8 @@
       },
       "regions": [
         {
-          "start_line": 2317,
-          "end_line": 2321
+          "start_line": 2318,
+          "end_line": 2322
         }
       ]
     },
@@ -61,8 +73,8 @@
       },
       "regions": [
         {
-          "start_line": 2621,
-          "end_line": 2621
+          "start_line": 2623,
+          "end_line": 2623
         }
       ]
     },
@@ -74,8 +86,8 @@
       },
       "regions": [
         {
-          "start_line": 2490,
-          "end_line": 2490
+          "start_line": 2491,
+          "end_line": 2491
         }
       ]
     },
@@ -87,14 +99,92 @@
       },
       "regions": [
         {
-          "start_line": 2632,
-          "end_line": 2636
+          "start_line": 2634,
+          "end_line": 2638
         }
       ]
     },
     {
       "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "pattern": "local saveTable = args.savetext or nil\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2048,
+          "end_line": 2048
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "pattern": "{card_limit = self.GAME.starting_params.consumable_slots, type = 'joker', highlight_limit = 1})\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2306,
+          "end_line": 2306
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "pattern": "{card_limit = self.GAME.starting_params.joker_slots, type = 'joker', highlight_limit = 1})\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2312,
+          "end_line": 2312
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "pattern": "{card_limit = self.GAME.starting_params.hand_size, type = 'hand'})\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2330,
+          "end_line": 2330
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "pattern": "{card_limit = 5, type = 'play'})\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2334,
+          "end_line": 2334
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\cardareas.toml",
+        "pattern": "G.playing_cards = {}\n\nset_screen_positions()\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2339,
+          "end_line": 2343
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
         "pattern": "local saveTable = args.savetext or nil\n",
         "patch_type": "pattern"
       },
@@ -107,92 +197,14 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "{card_limit = self.GAME.starting_params.consumable_slots, type = 'joker', highlight_limit = 1})\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2305,
-          "end_line": 2305
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "{card_limit = self.GAME.starting_params.joker_slots, type = 'joker', highlight_limit = 1})\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2311,
-          "end_line": 2311
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "{card_limit = self.GAME.starting_params.hand_size, type = 'hand'})\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2329,
-          "end_line": 2329
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "{card_limit = 5, type = 'play'})\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2333,
-          "end_line": 2333
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\cardareas.toml",
-        "pattern": "G.playing_cards = {}\n\nset_screen_positions()\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2338,
-          "end_line": 2342
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
-        "pattern": "local saveTable = args.savetext or nil\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2046,
-          "end_line": 2046
-        }
-      ]
-    },
-    {
-      "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\edition.toml",
         "pattern": "table.sort(self.P_CENTER_POOLS[\"Enhanced\"], function (a, b) return a.order < b.order end)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 854,
-          "end_line": 854
+          "start_line": 855,
+          "end_line": 855
         }
       ]
     },
@@ -204,8 +216,8 @@
       },
       "regions": [
         {
-          "start_line": 2548,
-          "end_line": 2548
+          "start_line": 2550,
+          "end_line": 2550
         }
       ]
     },
@@ -217,8 +229,8 @@
       },
       "regions": [
         {
-          "start_line": 1167,
-          "end_line": 1168
+          "start_line": 1168,
+          "end_line": 1169
         }
       ]
     },
@@ -230,8 +242,8 @@
       },
       "regions": [
         {
-          "start_line": 1215,
-          "end_line": 1215
+          "start_line": 1216,
+          "end_line": 1216
         }
       ]
     },
@@ -243,8 +255,8 @@
       },
       "regions": [
         {
-          "start_line": 2603,
-          "end_line": 2605
+          "start_line": 2605,
+          "end_line": 2607
         }
       ]
     },
@@ -256,8 +268,8 @@
       },
       "regions": [
         {
-          "start_line": 2068,
-          "end_line": 2068
+          "start_line": 2069,
+          "end_line": 2069
         }
       ]
     },
@@ -269,8 +281,8 @@
       },
       "regions": [
         {
-          "start_line": 3738,
-          "end_line": 3747
+          "start_line": 3740,
+          "end_line": 3749
         }
       ]
     },
@@ -282,8 +294,8 @@
       },
       "regions": [
         {
-          "start_line": 948,
-          "end_line": 948
+          "start_line": 949,
+          "end_line": 949
         }
       ]
     },
@@ -295,8 +307,8 @@
       },
       "regions": [
         {
-          "start_line": 1010,
-          "end_line": 1010
+          "start_line": 1011,
+          "end_line": 1011
         }
       ]
     },
@@ -308,8 +320,8 @@
       },
       "regions": [
         {
-          "start_line": 1012,
-          "end_line": 1012
+          "start_line": 1013,
+          "end_line": 1013
         }
       ]
     },
@@ -321,8 +333,8 @@
       },
       "regions": [
         {
-          "start_line": 1008,
-          "end_line": 1008
+          "start_line": 1009,
+          "end_line": 1009
         }
       ]
     },
@@ -334,8 +346,8 @@
       },
       "regions": [
         {
-          "start_line": 1893,
-          "end_line": 1896
+          "start_line": 1894,
+          "end_line": 1897
         }
       ]
     },
@@ -347,8 +359,8 @@
       },
       "regions": [
         {
-          "start_line": 2417,
-          "end_line": 2420
+          "start_line": 2418,
+          "end_line": 2421
         }
       ]
     },
@@ -360,8 +372,8 @@
       },
       "regions": [
         {
-          "start_line": 2422,
-          "end_line": 2424
+          "start_line": 2423,
+          "end_line": 2425
         }
       ]
     },
@@ -373,8 +385,8 @@
       },
       "regions": [
         {
-          "start_line": 2425,
-          "end_line": 2425
+          "start_line": 2426,
+          "end_line": 2426
         }
       ]
     },
@@ -386,8 +398,8 @@
       },
       "regions": [
         {
-          "start_line": 2437,
-          "end_line": 2437
+          "start_line": 2438,
+          "end_line": 2438
         }
       ]
     },
@@ -399,8 +411,8 @@
       },
       "regions": [
         {
-          "start_line": 2440,
-          "end_line": 2440
+          "start_line": 2441,
+          "end_line": 2441
         }
       ]
     },
@@ -412,8 +424,8 @@
       },
       "regions": [
         {
-          "start_line": 2600,
-          "end_line": 2602
+          "start_line": 2602,
+          "end_line": 2604
         }
       ]
     },
@@ -425,8 +437,8 @@
       },
       "regions": [
         {
-          "start_line": 2084,
-          "end_line": 2091
+          "start_line": 2085,
+          "end_line": 2092
         }
       ]
     },
@@ -451,8 +463,8 @@
       },
       "regions": [
         {
-          "start_line": 3259,
-          "end_line": 3260
+          "start_line": 3261,
+          "end_line": 3262
         }
       ]
     },
@@ -464,8 +476,8 @@
       },
       "regions": [
         {
-          "start_line": 3237,
-          "end_line": 3246
+          "start_line": 3239,
+          "end_line": 3248
         }
       ]
     },
@@ -477,8 +489,8 @@
       },
       "regions": [
         {
-          "start_line": 2243,
-          "end_line": 2244
+          "start_line": 2244,
+          "end_line": 2245
         }
       ]
     },
@@ -490,8 +502,8 @@
       },
       "regions": [
         {
-          "start_line": 2004,
-          "end_line": 2004
+          "start_line": 2005,
+          "end_line": 2005
         }
       ]
     },
@@ -503,8 +515,8 @@
       },
       "regions": [
         {
-          "start_line": 2097,
-          "end_line": 2097
+          "start_line": 2098,
+          "end_line": 2098
         }
       ]
     },
@@ -516,8 +528,8 @@
       },
       "regions": [
         {
-          "start_line": 2108,
-          "end_line": 2108
+          "start_line": 2109,
+          "end_line": 2109
         }
       ]
     },
@@ -529,8 +541,8 @@
       },
       "regions": [
         {
-          "start_line": 2740,
-          "end_line": 2740
+          "start_line": 2742,
+          "end_line": 2742
         }
       ]
     },
@@ -542,8 +554,8 @@
       },
       "regions": [
         {
-          "start_line": 2685,
-          "end_line": 2688
+          "start_line": 2687,
+          "end_line": 2690
         }
       ]
     },
@@ -555,8 +567,8 @@
       },
       "regions": [
         {
-          "start_line": 2022,
-          "end_line": 2024
+          "start_line": 2023,
+          "end_line": 2025
         }
       ]
     },
@@ -568,8 +580,8 @@
       },
       "regions": [
         {
-          "start_line": 225,
-          "end_line": 229
+          "start_line": 226,
+          "end_line": 230
         }
       ]
     },
@@ -581,8 +593,8 @@
       },
       "regions": [
         {
-          "start_line": 2181,
-          "end_line": 2183
+          "start_line": 2182,
+          "end_line": 2184
         }
       ]
     },
@@ -594,8 +606,8 @@
       },
       "regions": [
         {
-          "start_line": 2194,
-          "end_line": 2196
+          "start_line": 2195,
+          "end_line": 2197
         }
       ]
     },
@@ -607,8 +619,8 @@
       },
       "regions": [
         {
-          "start_line": 2202,
-          "end_line": 2205
+          "start_line": 2203,
+          "end_line": 2206
         }
       ]
     },
@@ -620,8 +632,8 @@
       },
       "regions": [
         {
-          "start_line": 2116,
-          "end_line": 2118
+          "start_line": 2117,
+          "end_line": 2119
         }
       ]
     },
@@ -646,8 +658,8 @@
       },
       "regions": [
         {
-          "start_line": 1114,
-          "end_line": 1114
+          "start_line": 1115,
+          "end_line": 1115
         }
       ]
     },
@@ -659,8 +671,8 @@
       },
       "regions": [
         {
-          "start_line": 1507,
-          "end_line": 1507
+          "start_line": 1508,
+          "end_line": 1508
         }
       ]
     },
@@ -672,8 +684,8 @@
       },
       "regions": [
         {
-          "start_line": 751,
-          "end_line": 761
+          "start_line": 752,
+          "end_line": 762
         }
       ]
     },
@@ -685,8 +697,8 @@
       },
       "regions": [
         {
-          "start_line": 1121,
-          "end_line": 1124
+          "start_line": 1122,
+          "end_line": 1125
         }
       ]
     },
@@ -698,8 +710,8 @@
       },
       "regions": [
         {
-          "start_line": 2472,
-          "end_line": 2477
+          "start_line": 2473,
+          "end_line": 2478
         }
       ]
     },
@@ -711,8 +723,8 @@
       },
       "regions": [
         {
-          "start_line": 3457,
-          "end_line": 3457
+          "start_line": 3459,
+          "end_line": 3459
         }
       ]
     },
@@ -724,8 +736,8 @@
       },
       "regions": [
         {
-          "start_line": 3202,
-          "end_line": 3202
+          "start_line": 3204,
+          "end_line": 3204
         }
       ]
     },
@@ -737,8 +749,8 @@
       },
       "regions": [
         {
-          "start_line": 2586,
-          "end_line": 2589
+          "start_line": 2588,
+          "end_line": 2591
         }
       ]
     },
@@ -750,14 +762,117 @@
       },
       "regions": [
         {
-          "start_line": 2609,
-          "end_line": 2609
+          "start_line": 2611,
+          "end_line": 2611
         }
       ]
     },
     {
       "patch_source": {
         "file": "HandyBalatro\\lovely\\ui.toml",
+        "pattern": "self.GAME = saveTable and saveTable.GAME or self:init_game_object()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2068,
+          "end_line": 2068
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_show_deck_preview.toml",
+        "pattern": "G.CONTROLLER.held_buttons.triggerleft",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 3124,
+          "end_line": 3124
+        },
+        {
+          "start_line": 3137,
+          "end_line": 3137
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "replace_card.states.visible = false",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1631,
+          "end_line": 1631
+        },
+        {
+          "start_line": 1813,
+          "end_line": 1813
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "chips = 0,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1952,
+          "end_line": 1952
+        },
+        {
+          "start_line": 1972,
+          "end_line": 1972
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if G.GAME.chips - G.GAME.blind.chips >= 0 or G.GAME.current_round.hands_left < 1 then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3329,
+          "end_line": 3329
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "ante = 1,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2009,
+          "end_line": 2009
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if new_game_obj then self.GAME = self:init_game_object() end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1272,
+          "end_line": 1272
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
         "pattern": "self.GAME = saveTable and saveTable.GAME or self:init_game_object()",
         "patch_type": "pattern"
       },
@@ -770,117 +885,14 @@
     },
     {
       "patch_source": {
-        "file": "HandyBalatro\\lovely\\controls_show_deck_preview.toml",
-        "pattern": "G.CONTROLLER.held_buttons.triggerleft",
-        "patch_type": "regex"
-      },
-      "regions": [
-        {
-          "start_line": 3122,
-          "end_line": 3122
-        },
-        {
-          "start_line": 3135,
-          "end_line": 3135
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "replace_card.states.visible = false",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 1630,
-          "end_line": 1630
-        },
-        {
-          "start_line": 1812,
-          "end_line": 1812
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "chips = 0,",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 1951,
-          "end_line": 1951
-        },
-        {
-          "start_line": 1971,
-          "end_line": 1971
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "if G.GAME.chips - G.GAME.blind.chips >= 0 or G.GAME.current_round.hands_left < 1 then",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 3327,
-          "end_line": 3327
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "ante = 1,",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2008,
-          "end_line": 2008
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "if new_game_obj then self.GAME = self:init_game_object() end",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 1271,
-          "end_line": 1271
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Talisman-main\\lovely.toml",
-        "pattern": "self.GAME = saveTable and saveTable.GAME or self:init_game_object()",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 2066,
-          "end_line": 2066
-        }
-      ]
-    },
-    {
-      "patch_source": {
         "file": "Talisman-main\\lovely.toml",
         "pattern": "function Game:update_hand_played(dt)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 3317,
-          "end_line": 3318
+          "start_line": 3319,
+          "end_line": 3320
         }
       ]
     },
@@ -892,8 +904,8 @@
       },
       "regions": [
         {
-          "start_line": 2824,
-          "end_line": 2824
+          "start_line": 2826,
+          "end_line": 2826
         }
       ]
     },
@@ -905,8 +917,8 @@
       },
       "regions": [
         {
-          "start_line": 3121,
-          "end_line": 3121
+          "start_line": 3123,
+          "end_line": 3123
         }
       ]
     },
@@ -918,8 +930,8 @@
       },
       "regions": [
         {
-          "start_line": 2063,
-          "end_line": 2063
+          "start_line": 2064,
+          "end_line": 2064
         }
       ]
     },
@@ -931,8 +943,8 @@
       },
       "regions": [
         {
-          "start_line": 2224,
-          "end_line": 2233
+          "start_line": 2225,
+          "end_line": 2234
         }
       ]
     },
@@ -944,8 +956,8 @@
       },
       "regions": [
         {
-          "start_line": 2077,
-          "end_line": 2083
+          "start_line": 2078,
+          "end_line": 2084
         }
       ]
     },
@@ -957,8 +969,34 @@
       },
       "regions": [
         {
-          "start_line": 3285,
-          "end_line": 3298
+          "start_line": 3287,
+          "end_line": 3300
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\tags.toml",
+        "pattern": "G.FUNCS.blind_chip_UI_scale(G.hand_text_area.blind_chips)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2524,
+          "end_line": 2524
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\vanilla-ui.toml",
+        "pattern": "boot_timer('prep stage', 'splash prep',1)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 217,
+          "end_line": 217
         }
       ]
     }

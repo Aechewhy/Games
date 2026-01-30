@@ -3,6 +3,30 @@
   "entries": [
     {
       "patch_source": {
+        "file": "DVPreview_v4.1.2\\lovely\\preview.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 536,
+          "end_line": 581
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "DVPreview_v4.1.2\\lovely\\simulation.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 582,
+          "end_line": 626
+        }
+      ]
+    },
+    {
+      "patch_source": {
         "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
         "pattern": "(?<indent>[\\t ]*)self\\.STATES = \\{",
         "patch_type": "regex"

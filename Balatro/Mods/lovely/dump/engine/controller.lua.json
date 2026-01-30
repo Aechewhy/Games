@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 1048,
-          "end_line": 1050
+          "start_line": 1054,
+          "end_line": 1056
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 1141,
-          "end_line": 1152
+          "start_line": 1147,
+          "end_line": 1158
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 1088,
-          "end_line": 1101
+          "start_line": 1094,
+          "end_line": 1107
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 1249,
-          "end_line": 1262
+          "start_line": 1255,
+          "end_line": 1268
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 1200,
-          "end_line": 1218
+          "start_line": 1206,
+          "end_line": 1224
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 1370,
-          "end_line": 1370
+          "start_line": 1376,
+          "end_line": 1376
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 1231,
-          "end_line": 1233
+          "start_line": 1237,
+          "end_line": 1239
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "regions": [
         {
-          "start_line": 1219,
-          "end_line": 1219
+          "start_line": 1225,
+          "end_line": 1225
         }
       ]
     },
@@ -191,8 +191,8 @@
       },
       "regions": [
         {
-          "start_line": 1347,
-          "end_line": 1347
+          "start_line": 1353,
+          "end_line": 1353
         }
       ]
     },
@@ -204,8 +204,8 @@
       },
       "regions": [
         {
-          "start_line": 1354,
-          "end_line": 1354
+          "start_line": 1360,
+          "end_line": 1360
         }
       ]
     },
@@ -217,8 +217,8 @@
       },
       "regions": [
         {
-          "start_line": 1390,
-          "end_line": 1390
+          "start_line": 1396,
+          "end_line": 1396
         }
       ]
     },
@@ -230,8 +230,8 @@
       },
       "regions": [
         {
-          "start_line": 1413,
-          "end_line": 1413
+          "start_line": 1419,
+          "end_line": 1419
         }
       ]
     },
@@ -271,8 +271,21 @@
       },
       "regions": [
         {
-          "start_line": 1162,
-          "end_line": 1163
+          "start_line": 1168,
+          "end_line": 1169
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-v4.17\\lovely\\keybinds.toml",
+        "pattern": "function Controller:key_press_update(key, dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1048,
+          "end_line": 1053
         }
       ]
     }

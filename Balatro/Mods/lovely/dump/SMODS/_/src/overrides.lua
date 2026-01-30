@@ -895,8 +895,45 @@ function G.UIDEF.view_deck(unplayed_only)
 		SUITS[SMODS.Suit.obj_buffer[i]] = {}
 		suit_map[#suit_map + 1] = SMODS.Suit.obj_buffer[i]
 	end
+	local visible_suits_carto = Cartomancer.get_visible_suits_smods((view_deck_unplayed_only or unplayed_only), args and args.cycle_config.current_option or 1)
+	local SUITS_SORTED = Cartomancer.tablecopy(SUITS)
 	for k, v in ipairs(G.playing_cards) do
-		if v.base.suit then table.insert(SUITS[v.base.suit], v) end
+	  if v.base.suit then
+	  local greyed
+	  if (view_deck_unplayed_only or unplayed_only) and not ((v.area and v.area == G.deck) or v.ability.wheel_flipped) then
+	    greyed = true
+	  end
+	  local card_string = v:cart_to_string {deck_view = true, greyed = true}
+	  if greyed then
+	    card_string = string.format('%sGreyed', card_string)
+	  end
+	
+	  if greyed and Cartomancer.SETTINGS.deck_view_hide_drawn_cards then
+	  -- Ignore this card.
+	  elseif not SUITS[v.base.suit][card_string] then
+	    -- Initiate stack
+	    table.insert(SUITS_SORTED[v.base.suit], card_string)
+	
+	    if visible_suits_carto[v.base.suit] then
+	      local _scale = 0.7
+	      local copy = BALIATRO and copy_card(v, nil, _scale, nil, nil, true)
+	                  or copy_card(v, nil, _scale)
+	
+	      copy.greyed = greyed
+	      copy.stacked_quantity = 1
+	
+	      SUITS[v.base.suit][card_string] = copy
+	    else
+	      SUITS[v.base.suit][card_string] = "uhhh don't ever crash from this code pretty please?"
+	    end
+	  else
+	    -- Stack cards
+	    local stacked_card = SUITS[v.base.suit][card_string]
+	    if type(stacked_card) == 'table' then -- it crashed from that code above :(
+	      stacked_card.stacked_quantity = stacked_card.stacked_quantity + 1
+	    end
+	  end
+	  end
 	end
 	local num_suits = 0
 	for j = 1, #suit_map do
@@ -918,7 +955,7 @@ function G.UIDEF.view_deck(unplayed_only)
 					6.5 * G.CARD_W,
 					(0.6) * G.CARD_H,
 					{
-						card_limit = #SUITS[visible_suit[j]],
+						card_limit = #SUITS_SORTED[visible_suit[j]],
 						type = 'title',
 						view_deck = true,
 						highlight_limit = 0,
@@ -931,21 +968,19 @@ function G.UIDEF.view_deck(unplayed_only)
 					{n = G.UIT.R, config = {align = "cm", padding = 0}, nodes = {
 						{n = G.UIT.O, config = {object = view_deck}}}}
 				)
-				for i = 1, #SUITS[visible_suit[j]] do
-					if SUITS[visible_suit[j]][i] then
-						local greyed, _scale = nil, 0.7
-						if unplayed_only and not ((SUITS[visible_suit[j]][i].area and SUITS[visible_suit[j]][i].area == G.deck) or SUITS[visible_suit[j]][i].ability.wheel_flipped) then
-							greyed = true
-						end
-						local copy = copy_card(SUITS[visible_suit[j]][i], nil, _scale)
-						copy.greyed = greyed
-						copy.T.x = view_deck.T.x + view_deck.T.w / 2
-						copy.T.y = view_deck.T.y
+-- -- -- -- -- -- -- -- -- --
+for i = 1, #SUITS_SORTED[visible_suit[j]] do
+  local card_string = SUITS_SORTED[visible_suit[j]][i]
+  local card = SUITS[visible_suit[j]][card_string]
 
-						copy:hard_set_T()
-						view_deck:emplace(copy)
-					end
-				end
+  card.T.x = view_deck.T.x + view_deck.T.w/2
+  card.T.y = view_deck.T.y
+  card:create_quantity_display()
+
+  card:hard_set_T()
+  view_deck:emplace(card)
+end
+-- -- -- -- -- -- -- -- -- --
 			end
 		end
 	end
@@ -1167,7 +1202,8 @@ function G.UIDEF.view_deck(unplayed_only)
 			})
 		}} or nil,
 		{n = G.UIT.R, config = {align = "cm", padding = 0}, nodes = {
-			modded and {n = G.UIT.R, config = {align = "cm"}, nodes = {
+			      Cartomancer.add_view_deck_ui(view_deck_unplayed_only or unplayed_only),
+						modded and {n = G.UIT.R, config = {align = "cm"}, nodes = {
 				{n = G.UIT.C, config = {padding = 0.3, r = 0.1, colour = mix_colours(G.C.BLUE, G.C.WHITE, 0.7)}, nodes = {}},
 				{n = G.UIT.T, config = {text = ' ' .. localize('ph_deck_preview_effective'), colour = G.C.WHITE, scale = 0.3}},}}
 			or nil,
@@ -1202,8 +1238,45 @@ G.FUNCS.your_suits_page = function(args)
 		SUITS[SMODS.Suit.obj_buffer[i]] = {}
 		suit_map[#suit_map + 1] = SMODS.Suit.obj_buffer[i]
 	end
+	local visible_suits_carto = Cartomancer.get_visible_suits_smods((view_deck_unplayed_only or unplayed_only), args and args.cycle_config.current_option or 1)
+	local SUITS_SORTED = Cartomancer.tablecopy(SUITS)
 	for k, v in ipairs(G.playing_cards) do
-		if v.base.suit then table.insert(SUITS[v.base.suit], v) end
+	  if v.base.suit then
+	  local greyed
+	  if (view_deck_unplayed_only or unplayed_only) and not ((v.area and v.area == G.deck) or v.ability.wheel_flipped) then
+	    greyed = true
+	  end
+	  local card_string = v:cart_to_string {deck_view = true, greyed = true}
+	  if greyed then
+	    card_string = string.format('%sGreyed', card_string)
+	  end
+	
+	  if greyed and Cartomancer.SETTINGS.deck_view_hide_drawn_cards then
+	  -- Ignore this card.
+	  elseif not SUITS[v.base.suit][card_string] then
+	    -- Initiate stack
+	    table.insert(SUITS_SORTED[v.base.suit], card_string)
+	
+	    if visible_suits_carto[v.base.suit] then
+	      local _scale = 0.7
+	      local copy = BALIATRO and copy_card(v, nil, _scale, nil, nil, true)
+	                  or copy_card(v, nil, _scale)
+	
+	      copy.greyed = greyed
+	      copy.stacked_quantity = 1
+	
+	      SUITS[v.base.suit][card_string] = copy
+	    else
+	      SUITS[v.base.suit][card_string] = "uhhh don't ever crash from this code pretty please?"
+	    end
+	  else
+	    -- Stack cards
+	    local stacked_card = SUITS[v.base.suit][card_string]
+	    if type(stacked_card) == 'table' then -- it crashed from that code above :(
+	      stacked_card.stacked_quantity = stacked_card.stacked_quantity + 1
+	    end
+	  end
+	  end
 	end
 	local num_suits = 0
 	for j = 1, #suit_map do
@@ -1226,7 +1299,7 @@ G.FUNCS.your_suits_page = function(args)
 				6.5 * G.CARD_W,
 				(0.6) * G.CARD_H,
 				{
-					card_limit = #SUITS[visible_suit[j]],
+					card_limit = #SUITS_SORTED[visible_suit[j]],
 					type = 'title',
 					view_deck = true,
 					highlight_limit = 0,
@@ -1239,21 +1312,19 @@ G.FUNCS.your_suits_page = function(args)
 				{n = G.UIT.R, config = {align = "cm", padding = 0}, nodes = {
 					{n = G.UIT.O, config = {object = view_deck}}}}
 			)
-			for i = 1, #SUITS[visible_suit[j]] do
-				if SUITS[visible_suit[j]][i] then
-					local greyed, _scale = nil, 0.7
-					if view_deck_unplayed_only and not ((SUITS[visible_suit[j]][i].area and SUITS[visible_suit[j]][i].area == G.deck) or SUITS[visible_suit[j]][i].ability.wheel_flipped) then
-						greyed = true
-					end
-					local copy = copy_card(SUITS[visible_suit[j]][i], nil, _scale)
-					copy.greyed = greyed
-					copy.T.x = view_deck.T.x + view_deck.T.w / 2
-					copy.T.y = view_deck.T.y
+-- -- -- -- -- -- -- -- -- --
+for i = 1, #SUITS_SORTED[visible_suit[j]] do
+  local card_string = SUITS_SORTED[visible_suit[j]][i]
+  local card = SUITS[visible_suit[j]][card_string]
 
-					copy:hard_set_T()
-					view_deck:emplace(copy)
-				end
-			end
+  card.T.x = view_deck.T.x + view_deck.T.w/2
+  card.T.y = view_deck.T.y
+  card:create_quantity_display()
+
+  card:hard_set_T()
+  view_deck:emplace(card)
+end
+-- -- -- -- -- -- -- -- -- --
 		end
 	end
 
@@ -1470,7 +1541,8 @@ G.FUNCS.your_suits_page = function(args)
 			}
 		},
 		{n = G.UIT.R, config = {align = "cm", padding = 0.05}, nodes = {
-			modded and {n = G.UIT.R, config = {align = "cm"}, nodes = {
+			      Cartomancer.add_view_deck_ui(view_deck_unplayed_only or unplayed_only),
+						modded and {n = G.UIT.R, config = {align = "cm"}, nodes = {
 				{n = G.UIT.C, config = {padding = 0.3, r = 0.1, colour = mix_colours(G.C.BLUE, G.C.WHITE, 0.7)}, nodes = {}},
 				{n = G.UIT.T, config = {text = ' ' .. localize('ph_deck_preview_effective'), colour = G.C.WHITE, scale = 0.3}},}}
 			or nil,
