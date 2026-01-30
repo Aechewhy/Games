@@ -954,7 +954,7 @@ function modulate_sound(dt)
   for k, v in pairs(G.ARGS.ambient_sounds) do
     AC[k] = AC[k] or {}
     AC[k].per = (k == 'ambientOrgan1') and 0.7 or (k == 'ambientFire1' and 1.1) or (k == 'ambientFire2' and 1.05) or 1
-    AC[k].vol = (not G.video_organ and G.STATE == G.STATES.SPLASH) and 0 or AC[k].vol and v.volfunc(AC[k].vol) or 0
+    AC[k].vol = Cartomancer.handle_flames_volume((not G.video_organ and G.STATE == G.STATES.SPLASH) and 0 or AC[k].vol and v.volfunc(AC[k].vol) or 0)
     if type(AC[k].vol) == "table" then
     	if AC[k].vol > to_big(1e300) then
     		AC[k].vol = 1e300

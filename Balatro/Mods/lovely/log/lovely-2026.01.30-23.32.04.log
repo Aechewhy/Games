@@ -1,0 +1,185 @@
+INFO - [♥] Lovely 0.9.0
+INFO - [♥] Game directory is at "Z:\\home\\aechewhy\\Games\\Balatro"
+INFO - [♥] Writing logs to "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] No blacklist.txt in Mods/lovely.
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\blinds-info.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.4.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.6.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\blinds-info.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.4.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.6.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Cartomancer-main\\lovely\\stackable-deck-steamodded.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Cleaning up game-dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\game-dump"
+INFO - [♥] Initialization complete in 174ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'modded and {' on target 'main.lua' for pattern patch from Cartomancer-main\lovely\stackable-deck-steamodded-0.9.8.toml resulted in no matches
+INFO - [♥] Applied 24 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+WARN - [♥] Regex 'function Controller:update([\s\S]+?)^end' on target 'engine/controller.lua' for regex patch from MobileLikeDragging\lovely\controller.toml resulted in 4 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then' on target 'engine/controller.lua' for pattern patch from Galdur\lovely.toml resulted in no matches
+INFO - [♥] Applied 23 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 11 patches to 'tag.lua'
+INFO - [♥] Applied 6 patches to 'engine/event.lua'
+INFO - [♥] Applied 2 patches to 'engine/node.lua'
+INFO - [♥] Applied 4 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 4 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 4 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.ARGS.score_intensity.earned_score = G.GAME.current_round.current_hand.chips*G.GAME.current_round.current_hand.mult\n' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'function localize(args, misc_cat)\nif args and args.vars then\n' on target 'functions/misc_functions.lua' for pattern patch from UnBlind-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 93 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 78 patches to 'game.lua'
+INFO - [♥] Applied 5 patches to 'globals.lua'
+WARN - [♥] Pattern 'self.config.chosen = true' on target 'engine/ui.lua' for pattern patch from Cartomancer-main\lovely\vanilla-ui.toml resulted in no matches
+INFO - [♥] Applied 21 patches to 'engine/ui.lua'
+WARN - [♥] Pattern 'create_option_cycle({label = localize(\'b_set_gamespeed\'),scale = 0.8, options = {0.5, 1, 2, 4}, opt_callback = \'change_gamespeed\', current_option = (G.SETTINGS.GAMESPEED == 0.5 and 1 or G.SETTINGS.GAMESPEED == 4 and 4 or G.SETTINGS.GAMESPEED + 1)}),' on target 'functions/UI_definitions.lua' for pattern patch from Saturn-main\lovely\core.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '    if not G.OVERLAY_MENU then\n        for k, v in pairs(G.P_CENTERS) do' on target 'functions/UI_definitions.lua' for pattern patch from Cartomancer-main\lovely\peek-shop.toml resulted in no matches
+INFO - [♥] Applied 169 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_scoring_hold.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 83 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() card:juice_up(0.7);return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'if card then card:juice_up(0.8, 0.5) end' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'card:juice_up(0.6, 0.1)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.chips) == \'number\' and type(G.GAME.current_round.current_hand.chips) == \'number\') and (vals.chips - G.GAME.current_round.current_hand.chips) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.mult) == \'number\' and type(G.GAME.current_round.current_hand.mult) == \'number\')and (vals.mult - G.GAME.current_round.current_hand.mult) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() card:juice_up(0.7);return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if card then card:juice_up(0.8, 0.5) end' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card:juice_up(0.6, 0.1)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 174 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if G.pack_cards and (G.pack_cards.cards[1]) and' on target 'functions/button_callbacks.lua' for pattern patch from MobileLikeDragging\lovely\button_callbacks.toml resulted in no matches
+WARN - [♥] Pattern 'if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then' on target 'functions/button_callbacks.lua' for pattern patch from CardSleeves-1.8.0\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 84 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'Xmult_mod = G.P_CENTERS.v_observatory.config.extra' on target 'card.lua' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+WARN - [♥] Pattern 'message = localize{type = \'variable\', key = \'a_xmult\', vars = {G.P_CENTERS.v_observatory.config.extra}},' on target 'card.lua' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+WARN - [♥] Pattern 'if self.edition and not silent then' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur\lovely.toml resulted in no matches
+WARN - [♥] Regex 'self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for regex patch from CardSleeves-1.8.0\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 258 patches to 'card.lua'
+INFO - [♥] Applied 33 patches to 'cardarea.lua'
+INFO - [♥] Applied 45 patches to 'blind.lua'
+INFO - [♥] Applied 10 patches to 'card_character.lua'
+INFO - [♥] Applied 19 patches to 'engine/text.lua'
+WARN - [♥] Regex '= amount > 0' on target '=[SMODS _ "src/utils.lua"]' for regex patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/utils.lua"]'
+WARN - [♥] Pattern 'card_limit = #SUITS[suit_map[j]],' on target '=[SMODS _ "src/overrides.lua"]' for pattern patch from Cartomancer-main\lovely\stackable-deck-steamodded.toml resulted in no matches
+WARN - [♥] Pattern 'card_limit = #SUITS[visible_suit[j]],' on target '=[SMODS _ "src/overrides.lua"]' for pattern patch from Cartomancer-main\lovely\stackable-deck-steamodded.toml resulted in no matches
+WARN - [♥] Regex '\t\t\tfor i = 1\\, \\#SUITS\\[suit_map\\[j\\]\\] do\n\t\t\t\tif SUITS\\[suit_map\\[j\\]\\]\\[i\\] then\n\t\t\t\t\tlocal greyed\\, _scale = nil\\, 0\\.7\n\t\t\t\t\tif unplayed_only and not \\(\\(SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.area and SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.area == G\\.deck\\) or SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.ability\\.wheel_flipped\\) then\n\t\t\t\t\t\tgreyed = true\n\t\t\t\t\tend\n\t\t\t\t\tlocal copy = copy_card\\(SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\, nil\\, _scale[^\\)\\n]*\\)\n\t\t\t\t\tcopy\\.greyed = greyed\n\t\t\t\t\tcopy\\.T\\.x = view_deck\\.T\\.x \\+ view_deck\\.T\\.w \\/ 2\n\t\t\t\t\tcopy\\.T\\.y = view_deck\\.T\\.y\n\n\t\t\t\t\tcopy:hard_set_T\\(\\)\n\t\t\t\t\tview_deck:emplace\\(copy\\)\n\t\t\t\tend\n\t\t\tend' on target '=[SMODS _ "src/overrides.lua"]' for regex patch from Cartomancer-main\lovely\stackable-deck-steamodded.toml resulted in no matches
+INFO - [♥] Applied 9 patches to '=[SMODS _ "src/overrides.lua"]'
+WARN - [♥] Pattern 'x_mult = card.ability.extra' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2026-01-30 23:32:05 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2026-01-30 23:32:05 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-1224a
+INFO - [G] Order not set for config dictionary: speed_multiplier_settings_toggle
+INFO - [G] Order not set for config dictionary: speed_multiplier_default_value
+INFO - [G] Order not set for config dictionary: animation_skip_settings_toggle
+INFO - [G] Order not set for config dictionary: animation_skip_default_value
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:32:05 :: ERROR :: StackTrace :: Oops! The game crashed
+main.lua:1543: bad argument #1 to 'load' (function expected, got nil)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:610'
+	Local variables:
+	 msg = string: "main.lua:1543: bad argument #1 to 'load' (function expected, got nil)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE function at file 'boot.lua:352' (best guess)
+	Local variables:
+	 errhand = Lua function '?' (defined at line 596 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 596 of chunk main.lua)
+(3) global C function 'load'
+(4) Lua global 'initBrainstorm' at file 'main.lua:1543'
+	Local variables:
+	 lovely = table: 0x00f07c88  {repo:https://github.com/ethangreen-dev/lovely-injector, version:0.9.0, set_var:function: 0x00f020b8, remove_var:function: 0x00f02150, mod_dir:C:/users/steamuser/AppData/Roaming/Balatro/Mods (more...)}
+	 nativefs = table: 0x04de8ad0  {unmount:function: 0x04de8bb8, newFile:function: 0x04de8b78, write:function: 0x04de9040, mount:function: 0x04de8fe0, getWorkingDirectory:function: 0x04de90a8 (more...)}
+	 (*temporary) = C function: assert
+(5) Lua upvalue 'game_start_up_ref' at file 'game.lua:162'
+	Local variables:
+	 self = table: 0x03a85eb8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_HIDE_BG:false, COLLABS:table: 0x03a89bd0, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_SKIP_TUTORIAL:false (more...)}
+	 settings = string: "return {[\"enable_action_buttons\"]=true,[\"paused\"]=false,[\"rumble\"]=1,[\"COMP\"]={[\"prev_name\"]=\"\",[\"name\"]=\"\",[\"score\"]=966,},[\"language\"]=\"en-us\",[\"colourblind_option\"]=false,[\"play_button_pos\"]=2,[\"CUSTOM_DECK\"]={[\"Collabs\"]={[\"Spades\"]=\"fos_spades_skin\",[\"Hearts\"]=\"fos_hearts_skin\",[\"Diamonds\"]=\"hades_diamonds_skin\",[\"Clubs\"]=\"fos_clubs_skin\",},},[\"QUEUED_CHANGE\"]={},[\"run_stake_stickers\"]=false,[\"colour_palettes\"]={[\"Spades\"]=\"lc\",[\"Hearts\"]=\"lc\",[\"Diamonds\"]=\"lc\",[\"Clubs\"]=\"lc\",},[\"move_select_joker_drag_area\"]=false,[\"crashreports\"]=false,[\"tutorial_progress\"]={[\"hold_parts\"]={},[\"section\"]=\"big_blind\",[\"completed_parts\"]={[\"first_hand_3\"]=true,[\"small_blind\"]=true,[\"big_blind\"]=true,[\"first_hand_4\"]=true,[\"shop_1\"]=true,[\"first_hand_section\"]=true,[\"first_hand_2\"]=true,[\"first_hand\"]=true,},},[\"ambient_control\"]={[\"ambientFire1\"]={[\"per\"]=1.1,[\"vol\"]=0,},[\"ambientOrgan1\"]={[\"per\"]=0.7,[\"vol\"]=0,},[\"ambientFire2\"]={[\"per\"]=1.05,[\"vol\"]=0,},[\"ambientFire3\"]={[\"per\"]=1,[\"vol\"]=0,},},[\"drag_area_opacity\"]=90,[\"screenshake\"]=50,[\"WINDOW\"]={[\"vsync\"]=1,[\"display_names\"]={[1]=\"[NONE]\",},[\"screenmode\"]=\"Borderless\",[\"DISPLAYS\"]={[1]={[\"name\"]=\"[NONE]\",[\"screen_res\"]={[\"w\"]=1920,[\"h\"]=1080,},},},[\"selected_display\"]=1,},[\"enable_drag_select\"]=true,[\"GAMESPEED\"]=4,[\"SOUND\"]={[\"volume\"]=50,[\"music_volume\"]=100,[\"game_sounds_volume\"]=100,},[\"music_control\"]={[\"current_track\"]=\"\",[\"desired_track\"]=\"\",[\"lerp\"]=1,},[\"ACHIEVEMENTS_EARNED\"]={},[\"tutorial_complete\"]=true,[\"current_setup\"]=\"Continue\",[\"version\"]=\"1.0.1o-FULL\",[\"profile\"]=1,[\"DEMO\"]={[\"win_CTA_shown\"]=true,[\"quit_CTA_shown\"]=true,[\"timed_CTA_shown\"]=true,[\"total_uptime\"]=0.0085414,},[\"GRAPHICS\"]={[\"texture_scaling\"]=2,[\"crt\"]=70,[\"shadows\"]=\"On\",[\"bloom\"]=1,},}"
+	 settings_ver = nil
+	 new_colour_proto = table: 0x03a8e680  {Spades:table: 0x03a8e908, Hearts:table: 0x03a8e778, Diamonds:table: 0x03a8e830, Clubs:table: 0x03a8e9a0}
+	 sound_files = table: 0x04edc428  {1:ambientFire1.ogg, 2:ambientFire2.ogg, 3:ambientFire3.ogg, 4:ambientOrgan1.ogg, 5:button.ogg, 6:cancel.ogg, 7:card1.ogg, 8:card3.ogg, 9:cardFan2.ogg (more...)}
+	 shader_files = table: 0x04ee0b38  {1:CRT.fs, 2:background.fs, 3:booster.fs, 4:debuff.fs, 5:dissolve.fs, 6:flame.fs, 7:flash.fs, 8:foil.fs, 9:gold_seal.fs, 10:holo.fs, 11:hologram.fs (more...)}
+(6) Lua upvalue 'start_up_ref' at file 'main.lua:1461'
+	Local variables:
+	 self = table: 0x03a85eb8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_HIDE_BG:false, COLLABS:table: 0x03a89bd0, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_SKIP_TUTORIAL:false (more...)}
+(7) Lua upvalue 'su' at file 'main.lua:1766'
+	Local variables:
+	 self = table: 0x03a85eb8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_HIDE_BG:false, COLLABS:table: 0x03a89bd0, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_SKIP_TUTORIAL:false (more...)}
+(8) Lua method 'start_up' at file 'main.lua:2720'
+	Local variables:
+	 self = table: 0x03a85eb8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_HIDE_BG:false, COLLABS:table: 0x03a89bd0, F_QUIT_BUTTON:true, F_ENGLISH_ONLY:false, F_SKIP_TUTORIAL:false (more...)}
+(9) Lua field 'load' at file 'main.lua:958'
+(10) Lua function '?' at file 'main.lua:905' (best guess)
+(11) global C function 'xpcall'
+(12) LÖVE function at file 'boot.lua:368' (best guess)
+	Local variables:
+	 result = boolean: true
+	 main = nil
+(13) global C function 'xpcall'
+(14) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:32:05 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-1224a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.9.0
+Platform: Windows

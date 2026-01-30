@@ -9,12 +9,122 @@
       },
       "regions": [
         {
-          "start_line": 1025,
-          "end_line": 1025
+          "start_line": 1060,
+          "end_line": 1060
         },
         {
-          "start_line": 1331,
-          "end_line": 1331
+          "start_line": 1402,
+          "end_line": 1402
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "\tfor k, v in ipairs(G.playing_cards) do\n\t\tif v.base.suit* then table.insert(SUITS[v.base.suit], v) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 898,
+          "end_line": 936
+        },
+        {
+          "start_line": 1241,
+          "end_line": 1279
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "card_limit = #SUITS[suit_map[j]],",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'card_limit = #SUITS[suit_map[j]],' on target '=[SMODS _ \"src/overrides.lua\"]' for pattern patch from Cartomancer-main\\lovely\\stackable-deck-steamodded.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "card_limit = #SUITS[visible_suit[j]],",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 958,
+          "end_line": 958
+        },
+        {
+          "start_line": 1302,
+          "end_line": 1302
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "card_limit = #SUITS[visible_suit[j]],",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'card_limit = #SUITS[visible_suit[j]],' on target '=[SMODS _ \"src/overrides.lua\"]' for pattern patch from Cartomancer-main\\lovely\\stackable-deck-steamodded.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "\t\t\tmodded and {n = G.UIT.R, config = {align = \"cm\"}, nodes = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1205,
+          "end_line": 1206
+        },
+        {
+          "start_line": 1544,
+          "end_line": 1545
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "\t\t\tfor i = 1\\, \\#SUITS\\[suit_map\\[j\\]\\] do\n\t\t\t\tif SUITS\\[suit_map\\[j\\]\\]\\[i\\] then\n\t\t\t\t\tlocal greyed\\, _scale = nil\\, 0\\.7\n\t\t\t\t\tif unplayed_only and not \\(\\(SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.area and SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.area == G\\.deck\\) or SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\.ability\\.wheel_flipped\\) then\n\t\t\t\t\t\tgreyed = true\n\t\t\t\t\tend\n\t\t\t\t\tlocal copy = copy_card\\(SUITS\\[suit_map\\[j\\]\\]\\[i\\]\\, nil\\, _scale[^\\)\\n]*\\)\n\t\t\t\t\tcopy\\.greyed = greyed\n\t\t\t\t\tcopy\\.T\\.x = view_deck\\.T\\.x \\+ view_deck\\.T\\.w \\/ 2\n\t\t\t\t\tcopy\\.T\\.y = view_deck\\.T\\.y\n\n\t\t\t\t\tcopy:hard_set_T\\(\\)\n\t\t\t\t\tview_deck:emplace\\(copy\\)\n\t\t\t\tend\n\t\t\tend",
+        "patch_type": "regex"
+      },
+      "regions": [],
+      "warnings": [
+        "Regex '\\t\\t\\tfor i = 1\\\\, \\\\#SUITS\\\\[suit_map\\\\[j\\\\]\\\\] do\\n\\t\\t\\t\\tif SUITS\\\\[suit_map\\\\[j\\\\]\\\\]\\\\[i\\\\] then\\n\\t\\t\\t\\t\\tlocal greyed\\\\, _scale = nil\\\\, 0\\\\.7\\n\\t\\t\\t\\t\\tif unplayed_only and not \\\\(\\\\(SUITS\\\\[suit_map\\\\[j\\\\]\\\\]\\\\[i\\\\]\\\\.area and SUITS\\\\[suit_map\\\\[j\\\\]\\\\]\\\\[i\\\\]\\\\.area == G\\\\.deck\\\\) or SUITS\\\\[suit_map\\\\[j\\\\]\\\\]\\\\[i\\\\]\\\\.ability\\\\.wheel_flipped\\\\) then\\n\\t\\t\\t\\t\\t\\tgreyed = true\\n\\t\\t\\t\\t\\tend\\n\\t\\t\\t\\t\\tlocal copy = copy_card\\\\(SUITS\\\\[suit_map\\\\[j\\\\]\\\\]\\\\[i\\\\]\\\\, nil\\\\, _scale[^\\\\)\\\\n]*\\\\)\\n\\t\\t\\t\\t\\tcopy\\\\.greyed = greyed\\n\\t\\t\\t\\t\\tcopy\\\\.T\\\\.x = view_deck\\\\.T\\\\.x \\\\+ view_deck\\\\.T\\\\.w \\\\/ 2\\n\\t\\t\\t\\t\\tcopy\\\\.T\\\\.y = view_deck\\\\.T\\\\.y\\n\\n\\t\\t\\t\\t\\tcopy:hard_set_T\\\\(\\\\)\\n\\t\\t\\t\\t\\tview_deck:emplace\\\\(copy\\\\)\\n\\t\\t\\t\\tend\\n\\t\\t\\tend' on target '=[SMODS _ \"src/overrides.lua\"]' for regex patch from Cartomancer-main\\lovely\\stackable-deck-steamodded.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "\t\t\t\tfor i = 1\\, \\#SUITS\\[visible_suit\\[j\\]\\] do\n\t\t\t\t\tif SUITS\\[visible_suit\\[j\\]\\]\\[i\\] then\n\t\t\t\t\t\tlocal greyed\\, _scale = nil\\, 0\\.7[\\s\\S]*\n\t\t\t\t\t\tcopy:hard_set_T\\(\\)\n\t\t\t\t\t\tview_deck:emplace\\(copy\\)\n\t\t\t\t\tend\n\t\t\t\tend",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 971,
+          "end_line": 983
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded.toml",
+        "pattern": "\t\t\tfor i = 1\\, \\#SUITS\\[visible_suit\\[j\\]\\] do\n\t\t\t\tif SUITS\\[visible_suit\\[j\\]\\]\\[i\\] then\n\t\t\t\t\tlocal greyed\\, _scale = nil\\, 0\\.7[\\s\\S]*\n\t\t\t\t\tcopy:hard_set_T\\(\\)\n\t\t\t\t\tview_deck:emplace\\(copy\\)\n\t\t\t\tend\n\t\t\tend",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1315,
+          "end_line": 1327
         }
       ]
     }

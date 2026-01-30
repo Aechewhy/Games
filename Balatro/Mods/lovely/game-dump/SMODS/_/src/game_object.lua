@@ -1510,7 +1510,19 @@ Set `prefix_config.key = false` on your object instead.]]):format(obj.key), obj.
                             {n=G.UIT.O, config={object = G.pack_cards}},}}}}}},
                 {n=G.UIT.R, config={align = "cm"}, nodes={}},
                 {n=G.UIT.R, config={align = "tm"}, nodes={
-                    {n=G.UIT.C,config={align = "tm", padding = 0.05, minw = 2.4}, nodes={}},
+                    {n=G.UIT.C,config={align = "tm", padding = 0.05, minw = 2.4}, nodes= not Cartomancer.SETTINGS.peek_shop and {} or {
+                      {n=G.UIT.R,config={minh =0.2}, nodes={}},
+                      {n=G.UIT.R,config={align = "tm",padding = 0.2, minh = 1.2, minw = 1.8, r=0.15,colour = G.C.GREY, button = 'carto_peek_shop', func = 'carto_can_peek_shop', hover = true,shadow = true, }, nodes = {
+                        {n=G.UIT.C, config={align = "tm"}, nodes= {
+                          {n=G.UIT.R, config={align = "tm"}, nodes = {
+                            {n=G.UIT.T, config={text = localize('carto_peek_shop_1'), scale = 0.5, colour = G.C.WHITE, shadow = true, }},
+                          }},
+                          {n=G.UIT.R, config={align = "tm"}, nodes = {
+                            {n=G.UIT.T, config={text = localize('carto_peek_shop_2'), scale = 0.5, colour = G.C.WHITE, shadow = true, }}
+                          }},
+                        }}
+                      }}
+                    }},
                     {n=G.UIT.C,config={align = "tm", padding = 0.05}, nodes={
                         UIBox_dyn_container({
                             {n=G.UIT.C, config={align = "cm", padding = 0.05, minw = 4}, nodes={

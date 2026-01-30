@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 1059,
-          "end_line": 1062
+          "start_line": 1061,
+          "end_line": 1064
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 1027,
-          "end_line": 1027
+          "start_line": 1029,
+          "end_line": 1029
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 1032,
-          "end_line": 1032
+          "start_line": 1034,
+          "end_line": 1034
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 854,
-          "end_line": 861
+          "start_line": 855,
+          "end_line": 862
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 875,
-          "end_line": 875
+          "start_line": 876,
+          "end_line": 876
         }
       ]
     },
@@ -74,24 +74,16 @@
       },
       "regions": [
         {
-          "start_line": 625,
-          "end_line": 625
-        },
-        {
-          "start_line": 699,
-          "end_line": 699
+          "start_line": 626,
+          "end_line": 626
         },
         {
           "start_line": 700,
           "end_line": 700
         },
         {
-          "start_line": 710,
-          "end_line": 710
-        },
-        {
-          "start_line": 710,
-          "end_line": 710
+          "start_line": 701,
+          "end_line": 701
         },
         {
           "start_line": 711,
@@ -102,44 +94,52 @@
           "end_line": 711
         },
         {
-          "start_line": 713,
-          "end_line": 713
+          "start_line": 712,
+          "end_line": 712
         },
         {
-          "start_line": 713,
-          "end_line": 713
+          "start_line": 712,
+          "end_line": 712
         },
         {
           "start_line": 714,
           "end_line": 714
         },
         {
-          "start_line": 730,
-          "end_line": 730
+          "start_line": 714,
+          "end_line": 714
         },
         {
-          "start_line": 730,
-          "end_line": 730
-        },
-        {
-          "start_line": 731,
-          "end_line": 731
+          "start_line": 715,
+          "end_line": 715
         },
         {
           "start_line": 731,
           "end_line": 731
         },
         {
-          "start_line": 733,
-          "end_line": 733
+          "start_line": 731,
+          "end_line": 731
         },
         {
-          "start_line": 733,
-          "end_line": 733
+          "start_line": 732,
+          "end_line": 732
+        },
+        {
+          "start_line": 732,
+          "end_line": 732
         },
         {
           "start_line": 734,
           "end_line": 734
+        },
+        {
+          "start_line": 734,
+          "end_line": 734
+        },
+        {
+          "start_line": 735,
+          "end_line": 735
         }
       ]
     },
@@ -197,8 +197,8 @@
       },
       "regions": [
         {
-          "start_line": 563,
-          "end_line": 563
+          "start_line": 564,
+          "end_line": 564
         }
       ]
     },
@@ -210,12 +210,12 @@
       },
       "regions": [
         {
-          "start_line": 704,
-          "end_line": 704
+          "start_line": 705,
+          "end_line": 705
         },
         {
-          "start_line": 721,
-          "end_line": 721
+          "start_line": 722,
+          "end_line": 722
         }
       ]
     },
@@ -227,8 +227,8 @@
       },
       "regions": [
         {
-          "start_line": 763,
-          "end_line": 763
+          "start_line": 764,
+          "end_line": 764
         }
       ]
     },
@@ -240,8 +240,8 @@
       },
       "regions": [
         {
-          "start_line": 825,
-          "end_line": 837
+          "start_line": 826,
+          "end_line": 838
         }
       ]
     },
@@ -253,8 +253,8 @@
       },
       "regions": [
         {
-          "start_line": 968,
-          "end_line": 981
+          "start_line": 969,
+          "end_line": 982
         }
       ]
     },
@@ -266,8 +266,8 @@
       },
       "regions": [
         {
-          "start_line": 1023,
-          "end_line": 1023
+          "start_line": 1024,
+          "end_line": 1024
         }
       ]
     },
@@ -279,8 +279,8 @@
       },
       "regions": [
         {
-          "start_line": 1095,
-          "end_line": 1097
+          "start_line": 1111,
+          "end_line": 1113
         }
       ]
     },
@@ -295,6 +295,69 @@
           "start_line": 329,
           "end_line": 331
         }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\vanilla-ui.toml",
+        "pattern": "if self.config.on_demand_tooltip or self.config.tooltip or self.config.detailed_tooltip then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 380,
+          "end_line": 380
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\vanilla-ui.toml",
+        "pattern": "function UIElement:hover()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1074,
+          "end_line": 1081
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\vanilla-ui.toml",
+        "pattern": "Node.hover(self)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1095,
+          "end_line": 1100
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\vanilla-ui.toml",
+        "pattern": "if self.config.choice then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1028,
+          "end_line": 1028
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\vanilla-ui.toml",
+        "pattern": "self.config.chosen = true",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'self.config.chosen = true' on target 'engine/ui.lua' for pattern patch from Cartomancer-main\\lovely\\vanilla-ui.toml resulted in no matches"
       ]
     }
   ]

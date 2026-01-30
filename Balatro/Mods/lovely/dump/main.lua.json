@@ -45,7 +45,7 @@
       "regions": [
         {
           "start_line": 1538,
-          "end_line": 1748
+          "end_line": 1749
         }
       ]
     },
@@ -56,8 +56,8 @@
       },
       "regions": [
         {
-          "start_line": 1749,
-          "end_line": 2958
+          "start_line": 1750,
+          "end_line": 2959
         }
       ]
     },
@@ -68,8 +68,20 @@
       },
       "regions": [
         {
-          "start_line": 2959,
-          "end_line": 2960
+          "start_line": 2960,
+          "end_line": 2961
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 2962,
+          "end_line": 3043
         }
       ]
     },
@@ -80,8 +92,8 @@
       },
       "regions": [
         {
-          "start_line": 2961,
-          "end_line": 3135
+          "start_line": 3044,
+          "end_line": 3218
         }
       ]
     },
@@ -252,6 +264,30 @@
       "regions": [],
       "warnings": [
         "Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \\'number\\' or type(G.GAME.current_round.current_hand.mult) ~= \\'number\\' then' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\saturn-compat.toml",
+        "pattern": "assert(load(nfs.read(Saturn.PATH .. \"/core/logic/hide_played.lua\")))()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1715,
+          "end_line": 1716
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Cartomancer-main\\lovely\\stackable-deck-steamodded-0.9.8.toml",
+        "pattern": "modded and {",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'modded and {' on target 'main.lua' for pattern patch from Cartomancer-main\\lovely\\stackable-deck-steamodded-0.9.8.toml resulted in no matches"
       ]
     }
   ]

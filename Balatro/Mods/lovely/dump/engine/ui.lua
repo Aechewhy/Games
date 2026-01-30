@@ -377,6 +377,7 @@ function UIElement:set_values(_T, recalculate)
     if self.config.button_UIE then self.states.collide.can = true; self.states.hover.can = false; self.states.click.can = true end
     if self.config.button then self.states.collide.can = true; self.states.click.can = true end
 
+    if self.config.cart_hover_func then self.states.collide.can = true end
     if self.config.on_demand_tooltip or self.config.tooltip or self.config.detailed_tooltip then 
         self.states.collide.can = true
     end
@@ -1025,6 +1026,7 @@ function UIElement:click()
 
         if self.config.choice then
             local chosen_temp = self.config.chosen
+            local chosen_temp = self.config.chosen
             local choices = self.UIBox:get_group(nil, self.config.group)
             for k, v in pairs(choices) do
                 if v.config and v.config.choice then v.config.chosen = false end
@@ -1069,6 +1071,14 @@ function UIElement:remove()
 end
 
 function UIElement:hover() 
+if self.config and self.config.cart_hover_func then
+  self.config.h_popup = self.config.cart_hover_func()
+  self.config.h_popup_config = {
+      align = self.config.hover_align or 'cr',
+      offset = Cartomancer.tablecopy(self.config.hover_offset or {x=0.2,y=0}),
+      parent = self,
+  }
+end
     if self.config and self.config.on_demand_tooltip then
         self.config.h_popup = create_popup_UIBox_tooltip(self.config.on_demand_tooltip)
         self.config.h_popup_config ={align=self.T.y > G.ROOM.T.h/2 and 'tm' or 'bm', offset = {x=0,y=self.T.y > G.ROOM.T.h/2 and -0.1 or 0.1}, parent = self}
@@ -1082,6 +1092,12 @@ function UIElement:hover()
         self.config.h_popup_config ={align="tm", offset = {x=0,y=-0.1}, parent = self}
     end
     Node.hover(self)
+    if self.config and self.config.cart_hover_func and self.config.hover_ease_to then
+        self.children.h_popup:set_alignment {
+            offset = {x = self.config.hover_ease_to.x, y = self.config.hover_ease_to.y},
+            major = self
+        }
+    end
 end
 
 function UIElement:stop_hover()

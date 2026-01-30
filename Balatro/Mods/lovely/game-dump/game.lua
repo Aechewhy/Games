@@ -214,6 +214,7 @@ function Game:start_up()
     initSteamodded()
 
     set_profile_progress()
+    Cartomancer.load_mod_file('internal/localization.lua', 'cartomancer.localization')
     boot_timer('prep stage', 'splash prep',1)
     self:splash_screen()
     boot_timer('splash prep', 'end',1)
@@ -2520,6 +2521,7 @@ function Game:start_run(args)
         reset_blinds()
     end
 
+    Cartomancer.update_tags_visibility()
     G.FUNCS.blind_chip_UI_scale(G.hand_text_area.blind_chips)
      
     self.HUD:recalculate()

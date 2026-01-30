@@ -46,6 +46,9 @@ function CardArea:init(X, Y, W, H, config)
 end
 
 function CardArea:emplace(card, location, stay_flipped)
+if self == G.jokers then
+    Cartomancer.handle_joker_added(card)
+end
     if location == 'front' or self.config.type == 'deck' then 
         table.insert(self.cards, 1, card)
     else
@@ -321,7 +324,7 @@ function CardArea:draw()
     if self.ARGS.invisible_area_types[self.config.type] or
         (self.config.type == 'hand' and ({[G.STATES.SHOP]=1, [G.STATES.TAROT_PACK]=1, [G.STATES.SPECTRAL_PACK]=1, [G.STATES.STANDARD_PACK]=1,[G.STATES.BUFFOON_PACK]=1,[G.STATES.PLANET_PACK]=1, [G.STATES.ROUND_EVAL]=1, [G.STATES.BLIND_SELECT]=1})[state]) or
         (self.config.type == 'hand' and state == G.STATES.SMODS_BOOSTER_OPENED) or
-        (self.config.type == 'deck' and self ~= G.deck) or
+        (self.config.type == 'deck' and self ~= G.deck and not self.draw_uibox) or
         (self.config.type == 'shop' and self ~= G.shop_vouchers) then
     else
         if not self.children.area_uibox then 
@@ -356,6 +359,9 @@ function CardArea:draw()
                 }
             end
         self.children.area_uibox:draw()
+        if self == G.jokers then
+            Cartomancer.add_visibility_controls()
+        end
     end
 
     self:draw_boundingrect()
@@ -455,17 +461,43 @@ end
 function CardArea:align_cards()
     if (self == G.hand or self == G.deck or self == G.discard or self == G.play) and G.view_deck and G.view_deck[1] and G.view_deck[1].cards then return end
     if self.config.type == 'deck' then
-            local deck_height = (self.config.deck_height or 0.15)/52
-            for k, card in ipairs(self.cards) do
-                if card.facing == 'front' then card:flip() end
-
-                if not card.states.drag.is then
-                    card.T.x = self.T.x + 0.5*(self.T.w - card.T.w) + self.shadow_parrallax.x*deck_height*(#self.cards/(self == G.deck and 1 or 2) - k) + 0.9*self.shuffle_amt*(1 - k*0.01)*(k%2 == 1 and 1 or -0)
-                    card.T.y = self.T.y + 0.5*(self.T.h - card.T.h) + self.shadow_parrallax.y*deck_height*(#self.cards/(self == G.deck and 1 or 2) - k)
-                    card.T.r = 0 + 0.3*self.shuffle_amt*(1 + k*0.05)*(k%2 == 1 and 1 or -0)
-                    card.T.x = card.T.x + card.shadow_parrallax.x/30
-                end
-            end
+                        local display_limit
+                        if not Cartomancer.SETTINGS.compact_deck_enabled then
+                            display_limit = 999999
+                        else
+                            display_limit = Cartomancer.SETTINGS.compact_deck_visible_cards
+                        end
+            
+                        local deck_height = (self.config.deck_height or 0.15)/52
+                        local total_cards = #self.cards <= display_limit and #self.cards or display_limit -- limit height
+                        local fixedX, fixedY, fixedR = nil, nil, nil
+            
+                        local height_multiplier = total_cards/((self == G.deck or self.draw_uibox) and 1 or 2)
+            
+                        for k, card in ipairs(self.cards) do
+                            if card.facing == 'front' then card:flip() end
+            
+                            if not card.states.drag.is then
+                                if fixedX then
+                                    card.T.x = fixedX
+                                    card.T.y = fixedY
+                                    card.T.r = fixedR -- rotation
+                                    card.states.visible = false
+                                else
+                                    card.T.x = self.T.x + 0.5*(self.T.w - card.T.w) + self.shadow_parrallax.x*deck_height*(height_multiplier - k) + 0.9*self.shuffle_amt*(1 - k*0.01)*(k%2 == 1 and 1 or -0)
+                                    card.T.y = self.T.y + 0.5*(self.T.h - card.T.h) + self.shadow_parrallax.y*deck_height*(height_multiplier - k)
+                                    card.T.r = 0 + 0.3*self.shuffle_amt*(1 + k*0.05)*(k%2 == 1 and 1 or -0)
+                                    card.T.x = card.T.x + card.shadow_parrallax.x/30
+                                    card.states.visible = true
+            
+                                    if k >= display_limit then
+                                        fixedX = card.T.x
+                                        fixedY = card.T.y
+                                        fixedR = card.T.r
+                                    end
+                                end
+                            end
+                        end
     end
     if self.config.type == 'discard' then
         for k, card in ipairs(self.cards) do
@@ -479,10 +511,13 @@ function CardArea:align_cards()
         end
     end
     if self.config.type == 'hand' and (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) then
+        local max_cards_override = (Cartomancer.SETTINGS.dynamic_hand_align and self.config.temp_limit - #self.cards > 5) and math.max(#self.cards, math.min(10, self.config.temp_limit))
+
         for k, card in ipairs(self.cards) do
             if not card.states.drag.is then 
                 card.T.r = 0.4*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w)
                 local highlight_height = G.HIGHLIGHT_H
                 if not card.highlighted then highlight_height = 0 end
@@ -493,11 +528,14 @@ function CardArea:align_cards()
         table.sort(self.cards, function (a, b) return a.T.x + a.T.w/2 < b.T.x + b.T.w/2 end)
     end  
     if self.config.type == 'hand' and not (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.PLANET_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) then
+        local max_cards_override = (Cartomancer.SETTINGS.dynamic_hand_align and self.config.temp_limit - #self.cards > 5) and math.max(#self.cards, math.min(10, self.config.temp_limit))
+
 
         for k, card in ipairs(self.cards) do
             if not card.states.drag.is then 
                 card.T.r = 0.2*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w)
 
                 local highlight_height = G.HIGHLIGHT_H
@@ -513,6 +551,7 @@ function CardArea:align_cards()
             if not card.states.drag.is then 
                 card.T.r = 0.2*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w)
                 local highlight_height = G.HIGHLIGHT_H
                 if not card.highlighted then highlight_height = 0 end
@@ -528,6 +567,7 @@ function CardArea:align_cards()
             if not card.states.drag.is then 
                 card.T.r = 0.2*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x+card.T.y) + (k%2 == 0 and 1 or -1)*0.08
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self_w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w) + (k%2 == 1 and 1 or -1)*0.27 + (self.T.w-self_w)/2
                 local highlight_height = G.HIGHLIGHT_H
                 if not card.highlighted then highlight_height = 0 end
@@ -542,6 +582,7 @@ function CardArea:align_cards()
             if not card.states.drag.is then 
                 card.T.r = 0
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w) + (self.config.card_limit == 1 and 0.5*(self.T.w - card.T.w) or 0)
                 local highlight_height = G.HIGHLIGHT_H
                 if not card.highlighted then highlight_height = 0 end
@@ -551,11 +592,23 @@ function CardArea:align_cards()
         end
         table.sort(self.cards, function (a, b) return a.T.x + a.T.w/2 < b.T.x + b.T.w/2 end)
     end 
-    if self.config.type == 'joker' or self.config.type == 'title_2' then
+    if self == G.jokers and G.jokers.cart_jokers_expanded then
+        local align_cards = Cartomancer.expand_G_jokers()
+    
+        -- This should work fine without cryptid. But because cryptid's patch is priority=0, it has to be this way
+        if not G.GAME.modifiers.cry_conveyor then 
+            table.sort(self.cards, function (a, b) return a.T.x + a.T.w/2 - 100*(a.pinned and a.sort_id or 0) < b.T.x + b.T.w/2 - 100*(b.pinned and b.sort_id or 0) end)
+        end
+        
+        if align_cards then
+            G.jokers:hard_set_cards()
+        end
+    elseif self.config.type == 'joker' or self.config.type == 'title_2' then
         for k, card in ipairs(self.cards) do
             if not card.states.drag.is then 
                 card.T.r = (self.config.flat and 0 or 0.1)*(-#self.cards/2 - 0.5 + k)/(#self.cards)+ (G.SETTINGS.reduced_motion and 0 or 1)*0.02*math.sin(2*G.TIMERS.REAL+card.T.x)
                 local max_cards = math.max(#self.cards, self.config.temp_limit)
+                if max_cards_override then max_cards = max_cards_override end
                 card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/math.max(max_cards-1, 1) - 0.5*(#self.cards-max_cards)/math.max(max_cards-1, 1)) + 0.5*(self.card_w - card.T.w)
                 if #self.cards > 2 or (#self.cards > 1 and self == G.consumeables) or (#self.cards > 1 and self.config.spread) then
                     card.T.x = self.T.x + (self.T.w-self.card_w)*((k-1)/(#self.cards-1)) + 0.5*(self.card_w - card.T.w)
@@ -641,6 +694,9 @@ function CardArea:draw_card_from(area, stay_flipped, discarded_only)
             if card then
                 if area == G.discard then
                     card.T.r = 0
+                end
+                if self == G.hand and not card.states.visible then
+                    card.states.visible = true
                 end
                 local stay_flipped = G.GAME and G.GAME.blind and G.GAME.blind:stay_flipped(self, card, area)
                 if (self == G.hand) and G.GAME.modifiers.flipped_cards then
