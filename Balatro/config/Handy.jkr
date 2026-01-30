@@ -9,7 +9,7 @@ return {
 	["hide_options_button"] = {
 		["enabled"] = false,
 	},
-	["notifications_level"] = 3,
+	["notifications_level"] = 4,
 	["move_highlight"] = {
 		["swap"] = {
 			["key_1"] = "Shift",
@@ -108,7 +108,7 @@ return {
 		["enabled"] = true,
 	},
 	["insta_buy_or_sell"] = {
-		["key_1"] = "Shift",
+		["key_1"] = "Right Mouse",
 		["key_2"] = "None",
 		["enabled"] = true,
 		["key_1_gamepad"] = "Left Bumper",
@@ -156,7 +156,7 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["enabled"] = true,
+		["enabled"] = false,
 		["key_1_gamepad"] = "None",
 		["key_2_gamepad"] = "None",
 	},
@@ -419,11 +419,11 @@ return {
 		["enabled"] = true,
 		["key_1_gamepad"] = "Left Stick",
 		["allow_deselect"] = {
-			["enabled"] = false,
+			["enabled"] = true,
 		},
 	},
 	["insta_use"] = {
-		["key_1"] = "Ctrl",
+		["key_1"] = "Middle Mouse",
 		["key_2"] = "None",
 		["enabled"] = true,
 		["key_1_gamepad"] = "Right Bumper",

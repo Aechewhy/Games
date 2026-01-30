@@ -69,7 +69,7 @@ return {
 					["enabled"] = false,
 				},
 				["insta_use"] = {
-					["key_1"] = "Ctrl",
+					["key_1"] = "Middle Mouse",
 					["key_2"] = "None",
 					["enabled"] = true,
 					["key_1_gamepad"] = "Right Bumper",
@@ -170,7 +170,7 @@ return {
 					},
 				},
 				["insta_buy_or_sell"] = {
-					["key_1"] = "Shift",
+					["key_1"] = "Right Mouse",
 					["key_2"] = "None",
 					["enabled"] = true,
 					["key_1_gamepad"] = "Left Bumper",

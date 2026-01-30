@@ -1,5 +1,5 @@
 return {
-	['clock_right_click_tutorial'] = true,
+	['clock_right_click_tutorial'] = false,
 	['clock_visible'] = true,
 	['clock_allow_drag'] = true,
 	['clock_persistent'] = true,
@@ -7,7 +7,7 @@ return {
 	['config_version'] = 5,
 	['clock_presets'] = {
 		[1] = {
-			['format'] = 4,
+			['format'] = 6,
 			['size'] = 0.5,
 			['colours'] = {
 				['back'] = 'DYN_UI.MAIN',
@@ -15,8 +15,8 @@ return {
 			},
 			['style'] = 'panel',
 			['position'] = {
-				['y'] = -0.51471145890458,
-				['x'] = 17.392449181701,
+				['y'] = -0.50874642032152,
+				['x'] = 18.432698424023,
 			},
 		},
 		[2] = {

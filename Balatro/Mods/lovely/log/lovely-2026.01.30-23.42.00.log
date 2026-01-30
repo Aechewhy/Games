@@ -259,3 +259,127 @@ INFO - [G] 2026-01-30 23:42:04 :: INFO  :: TIMER :: [0002] Injected Texture Pack
 INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before load
 INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
 INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:53:43 :: ERROR :: StackTrace :: Oops! The game crashed
+main.lua:2432: [string " Cartomancer - cartomancer.qol "]:72: attempt to compare number with table
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:610'
+	Local variables:
+	 msg = string: "main.lua:2432: [string \" Cartomancer - cartomancer.qol \"]:72: attempt to compare number with table"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE function at file 'boot.lua:352' (best guess)
+	Local variables:
+	 errhand = Lua function '?' (defined at line 596 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 596 of chunk main.lua)
+(3) global C function 'error'
+(4) Lua upvalue 'gfep' at file 'main.lua:2432'
+	Local variables:
+	 success = boolean: false
+	 err = string: "[string \" Cartomancer - cartomancer.qol \"]:72: attempt to compare number with table"
+(5) Lua upvalue 'evaluatePlayRef' at file 'main.lua:2574'
+	Local variables:
+	 e = table: 0x05a09000  {pixellated_rect:table: 0x05926458, click_offset:table: 0x07d6e6c8, children:table: 0x07e99148, parent:table: 0x06b668b0, T:table: 0x0853c088 (more...)}
+(6) Lua field 'evaluate_play' at line 152 of chunk '"5060"]'
+(7) Lua field 'func' at file 'functions/state_events.lua:508'
+(8) Lua method 'handle' at file 'engine/event.lua:96'
+	Local variables:
+	 self = table: 0x0b0a1290  {start_timer:true, timer:TOTAL, blockable:true, trigger:immediate, func:function: 0x0996dcd8, delay:0, complete:false, time:169.16005456944, blocking:true (more...)}
+	 _results = table: 0x13a36fa0  {blocking:true, pause_skip:false, time_done:false, completed:false}
+(9) Lua method 'update' at file 'engine/event.lua:185'
+	Local variables:
+	 self = table: 0x08441e38  {queues:table: 0x08441ec0, queue_last_processed:698.78333333303, append_count:0, append_queue:base, queue_dt:0.016666666666667, queue_timer:698.79033546202 (more...)}
+	 dt = number: 0.00961568
+	 forced = nil
+	 (for generator) = C function: next
+	 (for state) = table: 0x08441ec0  {unlock:table: 0x08441f60, galdur:table: 0x1055c3a0, other:table: 0x08442900, tutorial:table: 0x08442070, base:table: 0x08441fe8, achievement:table: 0x08442110 (more...)}
+	 (for control) = number: nan
+	 k = string: "base"
+	 v = table: 0x08441fe8  {1:table: 0x13b7e5b0, 2:table: 0x07ee92a0, 3:table: 0x0b0a1290, 4:table: 0x071dd3a8, 5:table: 0x04e41220, 6:table: 0x057e5198, 7:table: 0x07b7e600 (more...)}
+	 blocked = boolean: false
+	 i = number: 3
+	 results = table: 0x13a36fa0  {blocking:true, pause_skip:false, time_done:false, completed:false}
+(10) Lua upvalue 'gameUpdateRef' at file 'game.lua:2610'
+	Local variables:
+	 self = table: 0x03a7aa30  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06c6dd38, F_ENGLISH_ONLY:false, viewed_stake:8, HUD:table: 0x06bee9f8 (more...)}
+	 dt = number: 0.00961568
+	 http_resp = nil
+(11) Lua upvalue 'upd' at Steamodded file 'src/ui.lua:124' 
+	Local variables:
+	 self = table: 0x03a7aa30  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06c6dd38, F_ENGLISH_ONLY:false, viewed_stake:8, HUD:table: 0x06bee9f8 (more...)}
+	 dt = number: 0.00961568
+(12) Lua upvalue 'game_update_ref' at file 'main.lua:2410'
+	Local variables:
+	 self = table: 0x03a7aa30  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06c6dd38, F_ENGLISH_ONLY:false, viewed_stake:8, HUD:table: 0x06bee9f8 (more...)}
+	 dt = number: 0.00961568
+(13) Lua upvalue 'gameUpdateRef' at file 'src/core.lua:121' (from lovely module systemclock.core)
+	Local variables:
+	 self = table: 0x03a7aa30  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06c6dd38, F_ENGLISH_ONLY:false, viewed_stake:8, HUD:table: 0x06bee9f8 (more...)}
+	 dt = number: 0.00961568
+(14) Lua method 'update' at line 32 of chunk '"5060"]'
+	Local variables:
+	 self = table: 0x03a7aa30  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06c6dd38, F_ENGLISH_ONLY:false, viewed_stake:8, HUD:table: 0x06bee9f8 (more...)}
+	 dt = number: 0.00961568
+(15) Lua upvalue 'love_update_ref' at file 'main.lua:1005'
+	Local variables:
+	 dt = number: 0.00961568
+(16) Lua upvalue 'oldupd' at file 'modules/controller.lua:1079' (from lovely module handy/controller)
+	Local variables:
+	 dt = number: 0.00961568
+(17) Lua field 'update' at file 'main.lua:2443'
+	Local variables:
+	 dt = number: 0.00961568
+(18) Lua function '?' at file 'main.lua:944' (best guess)
+(19) global C function 'xpcall'
+(20) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 915 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-30 23:53:43 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-1224a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.9.0
+Platform: Windows
+Steamodded Mods:
+    1: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg, lord.ruby [ID: Talisman, Version: 2.7, Uses Lovely]
+    2: Hitman Cards by WaKa [ID: HitmanHearts, Version: 1.0.0]
+    3: Faces of Sin by TiltedHat, Victin [ID: fos, Version: 1.1.2]
+    4: Card Sleeves by Larswijn [ID: CardSleeves, Priority: -10, Version: 1.8.0, Uses Lovely]
+    5: unBlind - shop GUI by Soap (MeraGenio) [ID: unBlindShopGUI, Priority: 3, Version: 1.0.0, Uses Lovely]
+    6: Bicycle Standard Cards by Amari [ID: BicycleStandardCards, Version: 1.0.0]
+    7: Souls Borne Ring Shadow Die Twice by Mahuru [ID: souls_deck, Version: 1.0.1]
+    8: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2.1e, Uses Lovely]
+    9: Refreshed Decks by NooberTheAbsolute [ID: RefreshedDecks, Version: 1.0.0]
+    10: CupHead by Mahuru [ID: CH_deck, Version: 1.0.0]
+    11: Adventure Time Cards by Mahuru [ID: adv_deck, Version: 1.0.0]
+    12: ULTRAKILL Deck by Wael and cookieee [ID: Ultrakill_deck, Version: 1.0.0]
+    13: Celestial Funk by Lime_Effy [ID: celestial_funk_limeeffy, Version: 1.0.0]
+    14: rusty lake deck by pixal [ID: rustydeck]
+    15: Hades Cards by Galeandra [ID: hades, Version: 1.0.0]
+    16: Regular Show Deck by rynagon and NyxForKicks [ID: RegularShowDeck, Version: 1.0.0]
+    17: Hollow Knight Cards by Galeandra [ID: hk_deck, Version: 1.0.0]
+    18: Gravity Falls by therealdan55 [ID: GravityFalls, Version: 1.0.1]
+    19: Cartomancer by stupxd aka stupid [ID: cartomancer, Priority: 69, Version: 4.17, Uses Lovely]
+    20: Malverk by Eremel_ [ID: malverk, Priority: -999999, Version: 1.1.4, Uses Lovely]
+    21: Go to bed, Minty by wingedcatgirl [ID: gotobed, Priority: 10, Version: 1.1.1, Uses Lovely]
+    22: Saturn by OceanRamen [ID: Saturn, Version: 0.2.2-E-ALPHA, Uses Lovely]
+    23: Handy by SleepyG11 [ID: Handy, Version: 1.5.1m, Uses Lovely]
+    24: Marvel's Midnight Suns Tarot Cards by SeijiPuu [ID: MidnightTs, Version: 1.0.0]
+    25: Fancy Decks by NoScope1080 [ID: FancyDecks]
+    26: Alice in wonderland by Iroks [ID: Alice_in_wonderland, Version: 1.0.0]
+    27: SystemClock by Breezebuilder [ID: SystemClock, Priority: 100000, Version: 1.7.1, Uses Lovely]
+    28: JokerDisplay by nh6574 [ID: JokerDisplay, Priority: -1000000000, Version: 1.9.2, Uses Lovely]
+Lovely Mods:
+    1: MobileLikeDragging

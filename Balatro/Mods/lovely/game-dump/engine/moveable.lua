@@ -75,13 +75,10 @@ function Moveable:init(X,Y,W,H)
 
     self:calculate_parrallax()
 
-        if not self.added_moveable then
-            table.insert(G.MOVEABLES, self)
-            if getmetatable(self) == Moveable then 
-                table.insert(G.I.MOVEABLE, self)
-            end
-            self.added_moveable = true
-        end
+    table.insert(G.MOVEABLES, self)
+    if getmetatable(self) == Moveable then 
+        table.insert(G.I.MOVEABLE, self)
+    end
 end
 function Moveable:draw()
     Node.draw(self)

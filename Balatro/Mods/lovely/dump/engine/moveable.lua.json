@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 132,
-          "end_line": 132
+          "start_line": 129,
+          "end_line": 129
         }
       ]
     },
@@ -35,21 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 436,
-          "end_line": 439
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\fixes.toml",
-        "pattern": "    table.insert(G.MOVEABLES, self)\n    if getmetatable(self) == Moveable then \n        table.insert(G.I.MOVEABLE, self)\n    end",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 78,
-          "end_line": 84
+          "start_line": 433,
+          "end_line": 436
         }
       ]
     }

@@ -4744,7 +4744,6 @@ function Card:draw(layer)
     self.hover_tilt = 1
     
     if not self.states.visible then return end
-    if self.VT.x < -3 or self.VT.x > G.TILE_W + 2.5 then return end
     
     if (layer == 'shadow' or layer == 'both') then
         self.ARGS.send_to_shader = self.ARGS.send_to_shader or {}

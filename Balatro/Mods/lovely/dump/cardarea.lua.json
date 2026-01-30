@@ -9,8 +9,8 @@
       },
       "regions": [
         {
-          "start_line": 707,
-          "end_line": 708
+          "start_line": 651,
+          "end_line": 652
         }
       ]
     },
@@ -22,8 +22,8 @@
       },
       "regions": [
         {
-          "start_line": 701,
-          "end_line": 701
+          "start_line": 645,
+          "end_line": 645
         }
       ]
     },
@@ -35,8 +35,8 @@
       },
       "regions": [
         {
-          "start_line": 326,
-          "end_line": 326
+          "start_line": 323,
+          "end_line": 323
         }
       ]
     },
@@ -48,8 +48,8 @@
       },
       "regions": [
         {
-          "start_line": 513,
-          "end_line": 515
+          "start_line": 481,
+          "end_line": 481
         }
       ]
     },
@@ -61,8 +61,8 @@
       },
       "regions": [
         {
-          "start_line": 530,
-          "end_line": 532
+          "start_line": 495,
+          "end_line": 495
         }
       ]
     },
@@ -87,8 +87,8 @@
       },
       "regions": [
         {
-          "start_line": 740,
-          "end_line": 755
+          "start_line": 684,
+          "end_line": 699
         }
       ]
     },
@@ -100,8 +100,8 @@
       },
       "regions": [
         {
-          "start_line": 114,
-          "end_line": 117
+          "start_line": 111,
+          "end_line": 114
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "regions": [
         {
-          "start_line": 309,
-          "end_line": 312
+          "start_line": 306,
+          "end_line": 309
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "regions": [
         {
-          "start_line": 313,
-          "end_line": 314
+          "start_line": 310,
+          "end_line": 311
         }
       ]
     },
@@ -139,8 +139,8 @@
       },
       "regions": [
         {
-          "start_line": 335,
-          "end_line": 335
+          "start_line": 332,
+          "end_line": 332
         }
       ]
     },
@@ -152,8 +152,8 @@
       },
       "regions": [
         {
-          "start_line": 342,
-          "end_line": 342
+          "start_line": 339,
+          "end_line": 339
         }
       ]
     },
@@ -165,8 +165,8 @@
       },
       "regions": [
         {
-          "start_line": 331,
-          "end_line": 331
+          "start_line": 328,
+          "end_line": 328
         }
       ]
     },
@@ -178,8 +178,8 @@
       },
       "regions": [
         {
-          "start_line": 108,
-          "end_line": 109
+          "start_line": 105,
+          "end_line": 106
         }
       ]
     },
@@ -191,8 +191,8 @@
       },
       "regions": [
         {
-          "start_line": 192,
-          "end_line": 194
+          "start_line": 189,
+          "end_line": 191
         }
       ]
     },
@@ -204,8 +204,8 @@
       },
       "regions": [
         {
-          "start_line": 213,
-          "end_line": 216
+          "start_line": 210,
+          "end_line": 213
         }
       ]
     },
@@ -217,8 +217,8 @@
       },
       "regions": [
         {
-          "start_line": 209,
-          "end_line": 211
+          "start_line": 206,
+          "end_line": 208
         }
       ]
     },
@@ -230,8 +230,8 @@
       },
       "regions": [
         {
-          "start_line": 626,
-          "end_line": 626
+          "start_line": 573,
+          "end_line": 573
         }
       ]
     },
@@ -243,8 +243,8 @@
       },
       "regions": [
         {
-          "start_line": 159,
-          "end_line": 159
+          "start_line": 156,
+          "end_line": 156
         }
       ]
     },
@@ -256,8 +256,8 @@
       },
       "regions": [
         {
-          "start_line": 292,
-          "end_line": 292
+          "start_line": 289,
+          "end_line": 289
         }
       ]
     },
@@ -269,8 +269,8 @@
       },
       "regions": [
         {
-          "start_line": 137,
-          "end_line": 138
+          "start_line": 134,
+          "end_line": 135
         }
       ]
     },
@@ -282,8 +282,8 @@
       },
       "regions": [
         {
-          "start_line": 456,
-          "end_line": 456
+          "start_line": 450,
+          "end_line": 450
         }
       ]
     },
@@ -295,8 +295,8 @@
       },
       "regions": [
         {
-          "start_line": 222,
-          "end_line": 233
+          "start_line": 219,
+          "end_line": 230
         }
       ]
     },
@@ -308,8 +308,8 @@
       },
       "regions": [
         {
-          "start_line": 253,
-          "end_line": 266
+          "start_line": 250,
+          "end_line": 263
         }
       ]
     },
@@ -321,136 +321,8 @@
       },
       "regions": [
         {
-          "start_line": 609,
-          "end_line": 609
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\dynamic-hand-align.toml",
-        "pattern": "local max_cards = math.max(#self.cards, self.config.temp_limit)",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 520,
-          "end_line": 520
-        },
-        {
-          "start_line": 538,
-          "end_line": 538
-        },
-        {
-          "start_line": 554,
-          "end_line": 554
-        },
-        {
-          "start_line": 570,
-          "end_line": 570
-        },
-        {
-          "start_line": 585,
-          "end_line": 585
-        },
-        {
-          "start_line": 611,
-          "end_line": 611
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\hidden-jokers.toml",
-        "pattern": "self.children.area_uibox:draw()",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 362,
-          "end_line": 364
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\hidden-jokers.toml",
-        "pattern": "function CardArea:emplace(card, location, stay_flipped)",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 49,
-          "end_line": 51
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\limit-deck-size.toml",
-        "pattern": "local stay_flipped = G.GAME and G.GAME.blind and G.GAME.blind:stay_flipped(self, card*)",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 698,
-          "end_line": 700
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\limit-deck-size.toml",
-        "pattern": "(self.config.type == 'deck' and self ~= G.deck) or",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 327,
-          "end_line": 327
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\limit-deck-size.toml",
-        "pattern": "            local deck_height = (self.config.deck_height or 0.15)/52\n            for k, card in ipairs(self.cards) do\n                if card.facing == 'front' then card:flip() end\n\n                if not card.states.drag.is then\n                    card.T.x = self.T.x + 0.5*(self.T.w - card.T.w) + self.shadow_parrallax.x*deck_height*(#self.cards/(self == G.deck and 1 or 2) - k) + 0.9*self.shuffle_amt*(1 - k*0.01)*(k%2 == 1 and 1 or -0)\n                    card.T.y = self.T.y + 0.5*(self.T.h - card.T.h) + self.shadow_parrallax.y*deck_height*(#self.cards/(self == G.deck and 1 or 2) - k)\n                    card.T.r = 0 + 0.3*self.shuffle_amt*(1 + k*0.05)*(k%2 == 1 and 1 or -0)\n                    card.T.x = card.T.x + card.shadow_parrallax.x/30\n                end\n            end",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 464,
-          "end_line": 500
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\zoom-jokers.toml",
-        "pattern": "if self.config.type == 'joker' or self.config.type == 'title_2' then",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 595,
-          "end_line": 606
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\dynamic-hand-align.toml",
-        "pattern": "if self\\.config\\.type == \\'hand\\' and [^\\n]*then",
-        "patch_type": "regex"
-      },
-      "regions": [
-        {
-          "start_line": 513,
-          "end_line": 514
-        },
-        {
-          "start_line": 530,
-          "end_line": 531
+          "start_line": 557,
+          "end_line": 557
         }
       ]
     }

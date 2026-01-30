@@ -24,19 +24,6 @@
       "warnings": [
         "Pattern 'x_mult = card.ability.extra' on target '=[SMODS _ \"src/game_object.lua\"]' for pattern patch from Saturn-main\\lovely\\stack.toml resulted in no matches"
       ]
-    },
-    {
-      "patch_source": {
-        "file": "Cartomancer-main\\lovely\\peek-shop.toml",
-        "pattern": "{n=G.UIT.C,config={align = \"tm\", padding = 0.05, minw = 2.4}, nodes={}},",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 1513,
-          "end_line": 1525
-        }
-      ]
     }
   ]
 }
