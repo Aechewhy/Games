@@ -2410,3 +2410,138 @@ date       time     [thread name/id ]                   file:line    v |
 2026-01-31 12:26:39 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.014898 s
 2026-01-31 12:26:39 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 511613 bytes
 2026-01-31 12:26:39 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 12:26:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:26:45 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:26:45 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:26:45 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:26:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:26:50 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:26:52 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:26:52 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:26:53 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:26:53 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:26:55 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:26:55 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:26:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:26:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:08 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:08 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:27:08 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:27:11 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:13 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:13 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:13 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:27:13 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:27:15 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:27:15 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:27:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:19 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:27:19 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:27:22 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:27:59 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 12:27:59 [MainThread     ]              world.cpp:1526  INFO| World::Begin() A_Boss02 -> A_PostBoss01
+2026-01-31 12:27:59 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.012844 s
+2026-01-31 12:27:59 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.015323 s
+2026-01-31 12:27:59 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-01-31 12:27:59 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 515536 bytes
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1329  INFO| Loading next map: A_PostBoss01
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000006
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-01-31 12:27:59 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 184940 bytes
+2026-01-31 12:27:59 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: A_PostBoss01
+2026-01-31 12:27:59 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Tartarus.bank
+2026-01-31 12:27:59 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Tartarus.bank
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.078618
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-01-31 12:27:59 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-01-31 12:27:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.37
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest SwordWeapon
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest SwordWeapon
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest BowWeapon
+2026-01-31 12:28:00 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest BowWeapon
+2026-01-31 12:28:00 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: SwordWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: SwordWeapon
+2026-01-31 12:28:00 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: BowWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: BowWeapon
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: FistWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed FistWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: FistWeapon
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: GunWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg -- rb (error: No such file or directory)
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed GunWeapon.pkg
+2026-01-31 12:28:00 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: GunWeapon
+2026-01-31 12:28:15 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:24 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:28:24 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:28:25 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:26 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:37 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:43 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:44 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:28:58 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:28:58 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:29:04 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:29:20 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:29:20 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:29:28 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:29:53 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 12:30:05 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:30:05 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:30:07 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:30:22 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:30:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:30:49 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:31:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:32:17 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:32:28 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:32:29 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:32:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:33:16 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:33:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:33:27 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:33:33 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:33:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:33 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:35 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:48 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:34:49 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:24 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.76
+2026-01-31 12:35:25 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:30 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:49 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:53 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:35:56 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:36:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:36:28 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 12:36:28 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 12:36:30 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:37:03 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:37:04 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:37:08 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:37:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 12:37:16 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
