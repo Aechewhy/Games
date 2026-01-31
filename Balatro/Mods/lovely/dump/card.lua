@@ -238,6 +238,7 @@ function Card:set_ability(center, initial, delay_sprites)
     if self.ability and not initial then
         self.ability.card_limit = self.ability.card_limit - (self.config.center.config.card_limit or 0)
         self.ability.extra_slots_used = self.ability.extra_slots_used - (self.config.center.config.extra_slots_used or 0)
+        if self.area then self.area:handle_card_limit(-1 * (self.config.center.config.card_limit or 0), -1 * (self.config.center.config.extra_slots_used or 0)) end
     end
   
     if self.ability and not initial then
@@ -384,6 +385,7 @@ function Card:set_ability(center, initial, delay_sprites)
     -- handles card_limit/extra_slots_used changes
     self.ability.card_limit = self.ability.card_limit + (center.config.card_limit or 0)
     self.ability.extra_slots_used = self.ability.extra_slots_used + (center.config.extra_slots_used or 0)
+    if self.area then self.area:handle_card_limit(center.config.card_limit, center.config.extra_slots_used) end
     
     
     -- reset keys do not persist on ability change
@@ -594,6 +596,7 @@ function Card:set_seal(_seal, silent, immediate)
     if self.seal then
         self.ability.card_limit = self.ability.card_limit - (self.ability.seal.card_limit or 0)
         self.ability.extra_slots_used = self.ability.extra_slots_used - (self.ability.seal.extra_slots_used or 0)
+        if self.area then self.area:handle_card_limit(-1 * (self.ability.seal.card_limit or 0), -1 * (self.ability.seal.extra_slots_used or 0)) end
     end
     self.seal = nil
     if _seal then
@@ -639,6 +642,7 @@ function Card:set_seal(_seal, silent, immediate)
         end
         self.ability.card_limit = self.ability.card_limit + (self.ability.seal.card_limit or 0)
         self.ability.extra_slots_used = self.ability.extra_slots_used + (self.ability.seal.extra_slots_used or 0)
+        if self.area then self.area:handle_card_limit(self.ability.seal.card_limit, self.ability.seal.extra_slots_used) end
     end
     if self.ability.name == 'Gold Card' and self.seal == 'Gold' and self.playing_card then 
         check_for_unlock({type = 'double_gold'})
@@ -1512,7 +1516,9 @@ function Card:use_consumeable(area, copier)
         delay(0.5)
     end
     if self.ability.consumeable.hand_type then
+        update_hand_text({sound = 'button', volume = 0.7, pitch = 0.8, delay = 0.3}, {handname=localize(self.ability.consumeable.hand_type, 'poker_hands'),chips = G.GAME.hands[self.ability.consumeable.hand_type].chips, mult = G.GAME.hands[self.ability.consumeable.hand_type].mult, level=G.GAME.hands[self.ability.consumeable.hand_type].level})
         level_up_hand(used_tarot, self.ability.consumeable.hand_type)
+        update_hand_text({sound = 'button', volume = 0.7, pitch = 1.1, delay = 0}, {mult = 0, chips = 0, handname = '', level = ''})
     end
     if self.ability.consumeable.remove_card then
         local destroyed_cards = {}
@@ -2047,7 +2053,7 @@ function Card:open()
                 end
             end}))
 
-            SMODS.calculate_context({open_booster = true, card = self, booster = booster_obj})
+            SMODS.calculate_context({open_booster = true, card = self})
 
             if G.GAME.modifiers.inflation then 
                 G.GAME.inflation = G.GAME.inflation + 1
@@ -2621,18 +2627,40 @@ function Card:calculate_joker(context)
             for i = 1, #G.jokers.cards do
                 if G.jokers.cards[i] == self then other_joker = G.jokers.cards[i+1] end
             end
-            local ret = SMODS.blueprint_effect(self, other_joker, context)
-            if ret then
-                ret.colour = G.C.BLUE
-                return ret
+            if other_joker and other_joker ~= self and not other_joker.debuff and not context.no_blueprint then
+                if (context.blueprint or 0) > #G.jokers.cards then return end
+                local old_context_blueprint = context.blueprint
+                context.blueprint = (context.blueprint and (context.blueprint + 1)) or 1
+                local old_context_blueprint_card = context.blueprint_card
+                context.blueprint_card = context.blueprint_card or self
+                local eff_card = context.blueprint_card
+                local other_joker_ret = other_joker:calculate_joker(context)
+                context.blueprint = old_context_blueprint
+                context.blueprint_card = old_context_blueprint_card
+                if other_joker_ret then 
+                    other_joker_ret.card = eff_card
+                    other_joker_ret.colour = G.C.BLUE
+                    return other_joker_ret
+                end
             end
         end
         if self.ability.name == "Brainstorm" then
             local other_joker = G.jokers.cards[1]
-            local ret = SMODS.blueprint_effect(self, other_joker, context)
-            if ret then
-                ret.colour = G.C.RED
-                return ret
+            if other_joker and other_joker ~= self and not other_joker.debuff and not context.no_blueprint then
+                if (context.blueprint or 0) > #G.jokers.cards then return end
+                local old_context_blueprint = context.blueprint
+                context.blueprint = (context.blueprint and (context.blueprint + 1)) or 1
+                local old_context_blueprint_card = context.blueprint_card
+                context.blueprint_card = context.blueprint_card or self
+                local eff_card = context.blueprint_card
+                local other_joker_ret = other_joker:calculate_joker(context)
+                context.blueprint = old_context_blueprint
+                context.blueprint_card = old_context_blueprint_card
+                if other_joker_ret then 
+                    other_joker_ret.card = eff_card
+                    other_joker_ret.colour = G.C.RED
+                    return other_joker_ret
+                end
             end
         end
         if context.open_booster then
@@ -2711,7 +2739,6 @@ function Card:calculate_joker(context)
                         scalar_value = "extra",
                         message_colour = G.C.FILTER
                     })
-                    return nil, true
                 end
             return
         elseif context.reroll_shop then
@@ -2723,7 +2750,6 @@ function Card:calculate_joker(context)
                     message_key = 'a_mult',
                     message_colour = G.C.RED
                 })
-                return nil, true
             end
         elseif context.ending_shop then
             if self.ability.name == 'Perkeo' then
@@ -2780,8 +2806,7 @@ function Card:calculate_joker(context)
                     ref_value = "mult",
                     scalar_value = "extra",
                     message_key = 'a_mult',
-                    message_colour = G.C.RED,
-                    message_delay = 0.45,
+                    message_colour = G.C.RED
                 })
                 return nil, true
             end
@@ -2957,8 +2982,7 @@ function Card:calculate_joker(context)
             end
             return
         elseif context.destroying_card and not context.blueprint then
-            if self.ability.name == 'Sixth Sense' and #context.full_hand == 1 and context.full_hand[1]:get_id() == 6 and not context.full_hand[1].sixth_sense and G.GAME.current_round.hands_played == 0 then
-                context.full_hand[1].sixth_sense = true
+            if self.ability.name == 'Sixth Sense' and #context.full_hand == 1 and context.full_hand[1]:get_id() == 6 and G.GAME.current_round.hands_played == 0 then
                 if #G.consumeables.cards + G.GAME.consumeable_buffer < G.consumeables.config.card_limit then
                     G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
                     G.E_MANAGER:add_event(Event({
@@ -3042,7 +3066,6 @@ function Card:calculate_joker(context)
                         end,
                         message_key = 'a_xmult'
                     })
-                    return nil, true
                 end
                 return
             end
@@ -3066,8 +3089,7 @@ function Card:calculate_joker(context)
                     })
                     return true
                         end
-                    }))                    
-                    return nil, true
+                    }))
                 end
                 return
             end
@@ -3128,7 +3150,9 @@ function Card:calculate_joker(context)
             if self.ability.name == 'Burnt Joker' and G.GAME.current_round.discards_used <= 0 and not context.hook then
                 local text,disp_text = G.FUNCS.get_poker_hand_info(G.hand.highlighted)
                 card_eval_status_text(context_blueprint_card or self, 'extra', nil, nil, nil, {message = localize('k_upgrade_ex')})
+                update_hand_text({sound = 'button', volume = 0.7, pitch = 0.8, delay = 0.3}, {handname=localize(text, 'poker_hands'),chips = G.GAME.hands[text].chips, mult = G.GAME.hands[text].mult, level=G.GAME.hands[text].level})
                 level_up_hand(context.blueprint_card or self, text, nil, 1)
+                update_hand_text({sound = 'button', volume = 0.7, pitch = 1.1, delay = 0}, {mult = 0, chips = 0, handname = '', level = ''})
                 return nil, true
             end
         elseif context.discard then
@@ -3147,10 +3171,8 @@ function Card:calculate_joker(context)
                         scalar_value = "extra",
                         operation = "-",
                         message_key = 'a_xmult_minus',
-                        colour = G.C.RED,
-                        message_delay = 0.2,
+                        colour = G.C.RED
                     })
-                    return nil, true
                 end
             end
             if self.ability.name == 'Yorick' and not context.blueprint then
@@ -3162,10 +3184,8 @@ function Card:calculate_joker(context)
                         scalar_table = self.ability.extra,
                         scalar_value = "xmult",
                         message_key = 'a_xmult',
-                        message_colour = G.C.RED,
-                        message_delay = 0.2,
+                        message_colour = G.C.RED
                     })
-                    return nil, true
                 else
                     self.ability.yorick_discards = self.ability.yorick_discards - 1
                     return nil, true
@@ -3187,12 +3207,13 @@ function Card:calculate_joker(context)
             if self.ability.name == 'Castle' and
             not context.other_card.debuff and
             context.other_card:is_suit(G.GAME.current_round.castle_card.suit) and not context.blueprint then
-                SMODS.scale_card(self, {
-                    ref_table = self.ability.extra,
-                    ref_value = "chips",
-                    scalar_value = "chip_mod",
-                })
-                return nil, true
+                self.ability.extra.chips = self.ability.extra.chips + self.ability.extra.chip_mod
+                  
+                return {
+                    message = localize('k_upgrade_ex'),
+                    card = self,
+                    colour = G.C.CHIPS
+                }
             end
             if self.ability.name == 'Mail-In Rebate' and
             not context.other_card.debuff and
@@ -3212,10 +3233,8 @@ function Card:calculate_joker(context)
                     ref_value = "x_mult",
                     scalar_value = "extra",
                     message_key = 'a_xmult',
-                    message_colour = G.C.RED,
-                    message_delay = 0.45,
+                    message_colour = G.C.RED
                 })
-                return nil, true
             end
             if self.ability.name == 'Green Joker' and not context.blueprint and context.other_card == context.full_hand[#context.full_hand] then
                 local prev_mult = self.ability.mult
@@ -3231,7 +3250,6 @@ function Card:calculate_joker(context)
                         message_key = 'a_mult_minus',
                         message_colour = G.C.RED
                     })
-                    return nil, true
                 end
             end
             
@@ -3281,7 +3299,6 @@ function Card:calculate_joker(context)
                         scalar_value = "increase",
                         message_colour = G.C.MONEY
                     })
-                    return nil, true
                 end
                 if self.ability.name == 'Turtle Bean' and not context.blueprint then
                     if self.ability.extra.h_size - self.ability.extra.h_mod <= 0 then 
@@ -3302,7 +3319,6 @@ function Card:calculate_joker(context)
                                 G.hand:change_size(- change)
                             end
                         })
-                        return nil, true
                     end
                 end
                 if self.ability.name == 'Invisible Joker' and not context.blueprint then
@@ -3332,7 +3348,6 @@ function Card:calculate_joker(context)
                             colour = G.C.MULT,
                             operation = '-'
                         })
-                        return nil, true
                     end
                 end
                 if self.ability.name == 'To Do List' and not context.blueprint then
@@ -3356,7 +3371,6 @@ function Card:calculate_joker(context)
                         }
                     })
                     self:set_cost()
-                    return nil, true
                 end
                 if self.ability.name == 'Gift Card' then
                     for k, v in ipairs(G.jokers.cards) do
@@ -3444,12 +3458,11 @@ function Card:calculate_joker(context)
                             ref_table = self.ability.extra,
                             ref_value = "chips",
                             scalar_value = "chip_mod",
-                            no_message = true
+                            scaling_message = {
+                                extra = {focus = self, message = localize('k_upgrade_ex')},
+                                colour = G.C.CHIPS
+                            }
                         })
-                        return {
-                            extra = {focus = self, message = localize('k_upgrade_ex')},
-                            card = self
-                        }
                 end
                 if self.ability.name == 'Photograph' then
                     local first_face = nil
@@ -3817,7 +3830,6 @@ function Card:calculate_joker(context)
                             scalar_value = "extra",
                             message_colour = G.C.RED
                         })
-                        return nil, true
                     end
                     if self.ability.name == 'Space Joker' and SMODS.pseudorandom_probability(self, 'space', 1, self.ability.extra) then
                         return {
@@ -3832,7 +3844,6 @@ function Card:calculate_joker(context)
                             ref_value = "chips",
                             scalar_value = "chip_mod",
                         })
-                        return nil, true
                     end
                     if self.ability.name == 'Runner' and next(context.poker_hands['Straight']) and not context.blueprint then
                         SMODS.scale_card(self, {
@@ -3840,7 +3851,6 @@ function Card:calculate_joker(context)
                             ref_value = "chips",
                             scalar_value = "chip_mod",
                         })
-                        return nil, true
                     end
                     if self.ability.name == 'Midas Mask' and not context.blueprint then
                         local faces = {}
@@ -3892,7 +3902,6 @@ function Card:calculate_joker(context)
                                     ref_table[ref_value] = initial + scaling*#enhanced
                                 end
                             })
-                            return nil, true
                         end
                     end
                     if self.ability.name == 'To Do List' and context.scoring_name == self.ability.to_do_poker_hand then
@@ -3958,7 +3967,6 @@ function Card:calculate_joker(context)
                                 scalar_value = "extra",
                                 no_message = true
                             })
-                            return nil, true
                         end
                     end
                     if self.ability.name == 'Obelisk' and not context.blueprint then
@@ -3984,7 +3992,6 @@ function Card:calculate_joker(context)
                                 scalar_value = "extra",
                                 no_message = true
                             })
-                            return nil, true
                         end
                     end
                     if self.ability.name == 'Green Joker' and not context.blueprint then
@@ -3994,7 +4001,6 @@ function Card:calculate_joker(context)
                             scalar_table = self.ability.extra,
                             scalar_value = "hand_add"
                         })
-                        return nil, true
                     end
                 elseif context.after then
                     if self.ability.name == 'Ice Cream' and not context.blueprint then
@@ -4012,7 +4018,6 @@ function Card:calculate_joker(context)
                                 operation = "-",
                                 message_key = 'a_chips_minus'
                             })
-                            return nil, true
                         end
                     end
                     if self.ability.name == 'Seltzer' and not context.blueprint then
@@ -5233,7 +5238,7 @@ function Card:load(cardTable, other_card)
     elseif self.config.center.pixel_size and self.config.center.pixel_size.w then
         self.T.w = W*(self.config.center.pixel_size.w/71)
     end
-    self.VT.h = self.T.h
+    self.VT.h = self.T.H
     self.VT.w = self.T.w
 
     self.config.card_key = cardTable.save_fields.card

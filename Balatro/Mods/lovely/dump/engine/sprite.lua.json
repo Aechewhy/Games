@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\edition.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\edition.toml",
         "pattern": "if _send then G.SHADERS[_shader or 'dissolve']:send(_shader,_send) end",
         "patch_type": "pattern"
       },
@@ -16,7 +16,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\edition.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\edition.toml",
         "pattern": "love.graphics.setShader( G.SHADERS[_shader or 'dissolve'],  G.SHADERS[_shader or 'dissolve'])",
         "patch_type": "pattern"
       },

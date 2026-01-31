@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\atlas.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\atlas.toml",
         "pattern": "Node.init(self, args)",
         "patch_type": "pattern"
       },
@@ -16,7 +16,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "(?<indent>[\\t ]*)if +self\\.alignment\\.prev_offset\\.x == self\\.alignment\\.offset\\.x[\\s\\S]*?return end\n",
         "patch_type": "regex"
       },

@@ -24,7 +24,7 @@ function Event:init(config)
     
     if self.trigger == 'ease' then
         self.ease = {
-            type = config.type and string.lower(config.type) or config.ease and string.lower(config.ease) or 'lerp',
+            type = config.ease or 'lerp',
             ref_table = config.ref_table,
             ref_value = config.ref_value,
             start_val = config.ref_table[config.ref_value],
@@ -66,14 +66,17 @@ function Event:handle(_results)
             if self.ease.end_time >= G.TIMERS[self.timer] then
                 local percent_done = ((self.ease.end_time - G.TIMERS[self.timer])/(self.ease.end_time - self.ease.start_time))
 
-                local c1 = 1.70158
-                local c2 = c1 * 1.525
-                local c3 = c1 + 1
-                
-                assert(SMODS.ease_types[self.ease.type], "Event created with invalid ease type: "..self.ease.type..(self.func and SMODS.log_crash_info(debug.getinfo(self.func), true)))
-                percent_done = SMODS.ease_types[self.ease.type](percent_done, c1, c2, c3)
-                
-                self.ease.ref_table[self.ease.ref_value] = self.func(percent_done*self.ease.start_val + (1-percent_done)*self.ease.end_val)
+                if self.ease.type == 'lerp' then
+                    self.ease.ref_table[self.ease.ref_value] = self.func(percent_done*self.ease.start_val + (1-percent_done)*self.ease.end_val)
+                end
+                if self.ease.type == 'elastic' then
+                    percent_done = -math.pow(2, 10 * percent_done - 10) * math.sin((percent_done * 10 - 10.75) * 2*math.pi/3);
+                    self.ease.ref_table[self.ease.ref_value] = self.func(percent_done*self.ease.start_val + (1-percent_done)*self.ease.end_val)
+                end
+                if self.ease.type == 'quad' then
+                    percent_done = percent_done * percent_done;
+                    self.ease.ref_table[self.ease.ref_value] = self.func(percent_done*self.ease.start_val + (1-percent_done)*self.ease.end_val)
+                end
             else
                 self.ease.ref_table[self.ease.ref_value] = self.func(self.ease.end_val)
                 self.complete = true
@@ -120,9 +123,6 @@ function EventManager:add_event(event, queue, front)
     queue = queue or 'base'
     if event:is(Event) then
         if front then 
-        if self.append_queue == queue then
-            self.append_count = self.append_count + 1
-        end
             table.insert(self.queues[queue], 1, event)
         else
             self.queues[queue][#self.queues[queue]+1] = event
@@ -180,10 +180,7 @@ function EventManager:update(dt, forced)
                 G.ARGS.event_manager_update = G.ARGS.event_manager_update or {}
                 local results = G.ARGS.event_manager_update
                 results.blocking, results.completed, results.time_done, results.pause_skip = false, false, false, false
-                self.append_count = 0
-                self.append_queue = k
                 if (not blocked or not v[i].blockable) then v[i]:handle(results) end
-                i = i + self.append_count
                 if results.pause_skip then 
                     i = i + 1
                 else if not blocked and results.blocking then blocked = true end

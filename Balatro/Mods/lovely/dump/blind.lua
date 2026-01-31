@@ -14,7 +14,7 @@ function Blind:init(X, Y, W, H)
     self.states.collide.can = true
     self.colour = copy_table(G.C.BLACK)
     self.dark_colour = darken(self.colour, 0.2)
-    self.children.animatedSprite = SMODS.create_sprite(self.T.x, self.T.y, self.T.w, self.T.h, 'blind_chips', G.P_BLINDS.bl_small.pos)
+    self.children.animatedSprite = AnimatedSprite(self.T.x, self.T.y, self.T.w, self.T.h, G.ANIMATION_ATLAS['blind_chips'], G.P_BLINDS.bl_small.pos)
     self.children.animatedSprite.states = self.states
     self.children.animatedSprite.states.visible = false
     self.children.animatedSprite.states.drag.can = true
@@ -101,8 +101,7 @@ function Blind:set_blind(blind, reset, silent)
         self:set_text()
 
         local obj = self.config.blind
-        self.children.animatedSprite = SMODS.create_sprite(self.T.x, self.T.y, self.T.w, self.T.h, obj.atlas or 'blind_chips', obj.pos or G.P_BLINDS.bl_small.pos)
-        self.children.animatedSprite.states = self.states
+        self.children.animatedSprite.atlas = G.ANIMATION_ATLAS[obj.atlas] or G.ANIMATION_ATLAS['blind_chips']
         G.GAME.last_blind = G.GAME.last_blind or {}
         G.GAME.last_blind.boss = self.boss
         G.GAME.last_blind.name = self.name
@@ -683,7 +682,7 @@ function Blind:debuff_card(card, from_blind)
         end
         return
     end
-    if self.debuff and not self.disabled and card.playing_card then
+    if self.debuff and not self.disabled and card.area ~= G.jokers then
         if self.debuff.suit and card:is_suit(self.debuff.suit, true) then
             card:set_debuff(true)
             if card.debuff then card.debuffed_by_blind = true end
@@ -716,7 +715,7 @@ function Blind:debuff_card(card, from_blind)
             if card.debuff then card.debuffed_by_blind = true end
             return
         end
-    elseif self.name == 'Verdant Leaf' and not self.disabled and card.playing_card then card:set_debuff(true); if card.debuff then card.debuffed_by_blind = true end; return end
+    elseif self.name == 'Verdant Leaf' and not self.disabled and card.area ~= G.jokers then card:set_debuff(true); if card.debuff then card.debuffed_by_blind = true end; return end
     card:set_debuff(false)
 end
 
@@ -804,7 +803,7 @@ self.effect = blindTable.effect
 
     if G.P_BLINDS[blindTable.config_blind] then
     if self.config.blind.atlas then
-        self.children.animatedSprite.atlas = SMODS.get_atlas(self.config.blind.atlas)
+        self.children.animatedSprite.atlas = G.ANIMATION_ATLAS[self.config.blind.atlas]
     end
         self.blind_set = true
         self.children.animatedSprite.states.visible = true

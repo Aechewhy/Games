@@ -175,9 +175,6 @@ function end_round()
                 G.FUNCS.draw_from_hand_to_discard()
                 if G.GAME.blind:get_type() == 'Boss' then
                     G.GAME.voucher_restock = nil
-                    for k, v in pairs(G.GAME.hands) do
-                        v.played_this_ante = 0
-                    end
                     if G.GAME.modifiers.set_eternal_ante and (G.GAME.round_resets.ante == G.GAME.modifiers.set_eternal_ante) then 
                         for k, v in ipairs(G.jokers.cards) do
                             v:set_eternal(true)
@@ -308,34 +305,33 @@ G.FUNCS.draw_from_deck_to_hand = function(e)
 
     local hand_space = e
     local cards_to_draw = {}
-    local space_taken = 0
-    local limit = G.hand.config.card_limit - #G.hand.cards - (SMODS.cards_to_draw or 0)
-    local flags = SMODS.calculate_context({drawing_cards = true, amount = limit})
-    limit = flags.cards_to_draw or flags.modify or limit
-    local unfixed = not G.hand.config.fixed_limit
-    local n = 0
-    while n < #G.deck.cards and limit > 0 do
-        local card = G.deck.cards[#G.deck.cards-n]
-        local mod = unfixed and (card.ability.card_limit - card.ability.extra_slots_used) or 0
-        if limit - 1 + mod < 0 then
-        else    
-            limit = limit - 1 + mod
-            table.insert(cards_to_draw, card)
-            space_taken = space_taken + (1 - mod)
+    if not hand_space then
+        local limit = G.hand.config.card_limit - #G.hand.cards - (SMODS.cards_to_draw or 0)
+        local unfixed = not G.hand.config.fixed_limit
+        local n = 0
+        while n < #G.deck.cards do
+            local card = G.deck.cards[#G.deck.cards-n]
+            local mod = unfixed and (card.ability.card_limit - card.ability.extra_slots_used) or 0
+            if limit - 1 + mod < 0 then
+            else    
+                limit = limit - 1 + mod
+                table.insert(cards_to_draw, card)
+                if limit <= 0 then break end
+            end
+            n = n + 1
         end
-        n = n + 1
+        hand_space = #cards_to_draw
     end
-    hand_space = #cards_to_draw
     if G.GAME.blind.name == 'The Serpent' and
-        G.STATE == G.STATES.DRAW_TO_HAND and
         not G.GAME.blind.disabled and
         (G.GAME.current_round.hands_played > 0 or
         G.GAME.current_round.discards_used > 0) then
-            G.hand.config.card_limits.blind_restriction = hand_space - math.min(#G.deck.cards, 3)
             hand_space = math.min(#G.deck.cards, 3)
     end
+    local flags = SMODS.calculate_context({drawing_cards = true, amount = hand_space})
+    hand_space = math.min(#G.deck.cards, flags.cards_to_draw or flags.modify or hand_space)
     delay(0.3)
-    SMODS.cards_to_draw = (SMODS.cards_to_draw or 0) + space_taken
+    SMODS.cards_to_draw = (SMODS.cards_to_draw or 0) + math.max(hand_space, 0)
     SMODS.drawn_cards = {}
     for i=1, hand_space do --draw cards from deckL
         if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK then 
@@ -347,7 +343,7 @@ G.FUNCS.draw_from_deck_to_hand = function(e)
     G.E_MANAGER:add_event(Event({
         trigger = 'immediate',
         func = function()                
-            SMODS.cards_to_draw = SMODS.cards_to_draw - space_taken
+            SMODS.cards_to_draw = SMODS.cards_to_draw - math.max(hand_space, 0)
             return true
         end
     }))
@@ -380,9 +376,6 @@ G.FUNCS.discard_cards_from_highlighted = function(e, hook)
     local highlighted_count = math.min(#G.hand.highlighted, G.discard.config.card_limit - #G.play.cards)
     if highlighted_count > 0 then 
         update_hand_text({immediate = true, nopulse = true, delay = 0}, {mult = 0, chips = 0, level = '', handname = ''})
-        for name, parameter in pairs(SMODS.Scoring_Parameters) do
-            update_hand_text({immediate = true, nopulse = true, delay = 0}, {[name] = parameter.default_value})
-        end
         table.sort(G.hand.highlighted, function(a,b) return a.T.x < b.T.x end)
         inc_career_stat('c_cards_discarded', highlighted_count)
         SMODS.calculate_context({pre_discard = true, full_hand = G.hand.highlighted, hook = hook})
@@ -571,7 +564,6 @@ function evaluate_play_intro()
     
     G.GAME.hands[text].played = G.GAME.hands[text].played + 1
     G.GAME.hands[text].played_this_round = G.GAME.hands[text].played_this_round + 1
-    G.GAME.hands[text].played_this_ante = G.GAME.hands[text].played_this_ante + 1
     G.GAME.last_hand_played = text
     set_hand_usage(text)
     G.GAME.hands[text].visible = true
@@ -606,12 +598,7 @@ function evaluate_play_intro()
     if G.GAME.current_round.current_hand.handname ~= disp_text then delay(0.3) end
     update_hand_text({sound = G.GAME.current_round.current_hand.handname ~= disp_text and 'button' or nil, volume = 0.4, immediate = true, nopulse = nil,
                 delay = G.GAME.current_round.current_hand.handname ~= disp_text and 0.4 or 0}, {handname=disp_text, level=G.GAME.hands[text].level, mult = G.GAME.hands[text].mult, chips = G.GAME.hands[text].chips})
-    
-for name, parameter in pairs(SMODS.Scoring_Parameters) do
-    if name ~= 'chips' and name ~= 'mult' then update_hand_text({immediate = true}, {[name] = parameter.current}) end
-end
-SMODS.displayed_hand = text
-SMODS.displaying_scoring = true
+    SMODS.displayed_hand = text; SMODS.displaying_scoring = true
 
     return text, disp_text, poker_hands, scoring_hand, non_loc_disp_text, percent, percent_delta
     end

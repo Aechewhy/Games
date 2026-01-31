@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\crash_handler.toml",
         "patch_type": "copy"
       },
       "regions": [
@@ -15,7 +15,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\core.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\core.toml",
         "patch_type": "copy"
       },
       "regions": [
@@ -111,7 +111,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\crash_handler.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\crash_handler.toml",
         "pattern": "function love.errhand(msg)",
         "patch_type": "pattern"
       },
@@ -124,7 +124,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "--To control when steam communication happens, make sure to send updates to steam as little as possible",
         "patch_type": "pattern"
       },
@@ -137,7 +137,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "--Set up the render window and the stage for the splash screen, then enter the gameloop with :update",
         "patch_type": "pattern"
       },
@@ -150,7 +150,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "if os == 'OS X' or os == 'Windows' then",
         "patch_type": "pattern"
       },
@@ -163,7 +163,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "if os == 'OS X' then",
         "patch_type": "pattern"
       },
@@ -176,7 +176,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "st = require 'luasteam'",
         "patch_type": "pattern"
       },
@@ -193,7 +193,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "(?<indent>[\t ]*)if not \\(st.init and st:init\\(\\)\\) then\n[\t ]*(?<quit>love.event.quit\\(\\))",
         "patch_type": "regex"
       },

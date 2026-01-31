@@ -27,7 +27,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\booster.toml",
         "pattern": "(?<indent>[\\t ]*)self\\.STATES = \\{",
         "patch_type": "regex"
       },

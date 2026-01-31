@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "local s = {sound = love.audio.newSource(\"resources/sounds/\"..args.sound_code..'.ogg', should_stream and \"stream\" or 'static')}",
         "patch_type": "pattern"
       },
@@ -16,7 +16,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "DISABLE_SFX = false",
         "patch_type": "pattern"
       },
@@ -29,7 +29,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "elseif request.type == 'stop' then",
         "patch_type": "pattern"
       },
@@ -42,7 +42,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "s.original_pitch = args.per or 1",
         "patch_type": "pattern"
       },
@@ -55,7 +55,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "s.original_volume = args.vol or 1",
         "patch_type": "pattern"
       },
@@ -68,7 +68,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "RESTART_MUSIC()",
         "patch_type": "pattern"
       },
@@ -81,7 +81,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "for _, s in pairs(v) do",
         "patch_type": "pattern"
       },
@@ -94,7 +94,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\sound.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sound.toml",
         "pattern": "(?<indent>[\t ]*)function MODULATE\\(args\\)(\n.*){9}",
         "patch_type": "regex"
       },
@@ -107,7 +107,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\threads.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\threads.toml",
         "pattern": "if request then",
         "patch_type": "pattern"
       },

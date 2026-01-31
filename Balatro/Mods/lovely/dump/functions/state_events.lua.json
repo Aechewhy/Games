@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\achievements.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\achievements.toml",
         "pattern": "if not G.GAME.seeded and not G.GAME.challenge then",
         "patch_type": "pattern"
       },
@@ -17,209 +17,209 @@
           "end_line": 74
         },
         {
-          "start_line": 996,
-          "end_line": 996
+          "start_line": 983,
+          "end_line": 983
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++--\n--Joker Effects\n--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++--",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 652,
-          "end_line": 652
+          "start_line": 639,
+          "end_line": 639
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "--calculate the joker edition effects\nlocal edition_effects = eval_card(_card, {cardarea = G.jokers, full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, edition = true})\nif edition_effects.jokers then\n    edition_effects.jokers.edition = true\n    if edition_effects.jokers.chip_mod then\n        hand_chips = mod_chips(hand_chips + edition_effects.jokers.chip_mod)\n        update_hand_text({delay = 0}, {chips = hand_chips})\n        card_eval_status_text(_card, 'jokers', nil, percent, nil, {\n            message = localize{type='variable',key='a_chips',vars={edition_effects.jokers.chip_mod}},\n            chip_mod =  edition_effects.jokers.chip_mod,\n            colour =  G.C.EDITION,\n            edition = true})\n    end\n    if edition_effects.jokers.mult_mod then\n        mult = mod_mult(mult + edition_effects.jokers.mult_mod)\n        update_hand_text({delay = 0}, {mult = mult})\n        card_eval_status_text(_card, 'jokers', nil, percent, nil, {\n            message = localize{type='variable',key='a_mult',vars={edition_effects.jokers.mult_mod}},\n            mult_mod =  edition_effects.jokers.mult_mod,\n            colour = G.C.DARK_EDITION,\n            edition = true})\n    end\n    percent = percent+percent_delta\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 658,
-          "end_line": 662
+          "start_line": 645,
+          "end_line": 649
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "    if edition_effects.jokers then\n        if edition_effects.jokers.x_mult_mod then\n            mult = mod_mult(mult*edition_effects.jokers.x_mult_mod)\n            update_hand_text({delay = 0}, {mult = mult})\n            card_eval_status_text(_card, 'jokers', nil, percent, nil, {\n                message = localize{type='variable',key='a_xmult',vars={edition_effects.jokers.x_mult_mod}},\n                x_mult_mod =  edition_effects.jokers.x_mult_mod,\n                colour =  G.C.EDITION,\n                edition = true})\n        end\n        percent = percent+percent_delta\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 733,
-          "end_line": 738
+          "start_line": 720,
+          "end_line": 725
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, #G.jokers.cards + #G.consumeables.cards do\n    local _card = G.jokers.cards[i] or G.consumeables.cards[i - #G.jokers.cards]",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 657,
-          "end_line": 657
+          "start_line": 644,
+          "end_line": 644
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "            --calculate the joker effects\n            local effects = eval_card(_card, {cardarea = G.jokers, full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, joker_main = true})\n\n            --Any Joker effects\n            if effects.jokers then\n                local extras = {mult = false, hand_chips = false}\n                if effects.jokers.mult_mod then mult = mod_mult(mult + effects.jokers.mult_mod);extras.mult = true end\n                if effects.jokers.chip_mod then hand_chips = mod_chips(hand_chips + effects.jokers.chip_mod);extras.hand_chips = true end\n                if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end\n                update_hand_text({delay = 0}, {chips = extras.hand_chips and hand_chips, mult = extras.mult and mult})\n                card_eval_status_text(_card, 'jokers', nil, percent, nil, effects.jokers)\n                percent = percent+percent_delta\n            end",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 664,
-          "end_line": 680
+          "start_line": 651,
+          "end_line": 667
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "--Joker on Joker effects\nfor _, v in ipairs(G.jokers.cards) do\n    local effect = v:calculate_joker{full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, other_joker = _card}\n    if effect then\n        local extras = {mult = false, hand_chips = false}\n        if effect.mult_mod then mult = mod_mult(mult + effect.mult_mod);extras.mult = true end\n        if effect.chip_mod then hand_chips = mod_chips(hand_chips + effect.chip_mod);extras.hand_chips = true end\n        if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end\n        if extras.mult or extras.hand_chips then update_hand_text({delay = 0}, {chips = extras.hand_chips and hand_chips, mult = extras.mult and mult}) end\n        if extras.mult or extras.hand_chips then card_eval_status_text(v, 'jokers', nil, percent, nil, effect) end\n        percent = percent+percent_delta\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 682,
-          "end_line": 731
+          "start_line": 669,
+          "end_line": 718
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for j = 1, #G.jokers.cards do\n    local eval = nil\n    eval = G.jokers.cards[j]:calculate_joker({discard = true, other_card =  G.hand.highlighted[i], full_hand = G.hand.highlighted})\n    if eval then\n        if eval.remove then removed = true end\n        card_eval_status_text(G.jokers.cards[j], 'jokers', nil, 1, nil, eval)\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 396,
-          "end_line": 405
+          "start_line": 389,
+          "end_line": 398
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, #G.jokers.cards do\n    --calculate the joker effects\n    local effects = eval_card(G.jokers.cards[i], {cardarea = G.jokers, full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, before = true})\n    if effects.jokers then\n        card_eval_status_text(G.jokers.cards[i], 'jokers', nil, percent, nil, effects.jokers)\n        percent = percent + percent_delta\n        if effects.jokers.level_up then\n            level_up_hand(G.jokers.cards[i], text)\n        end\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 632,
-          "end_line": 637
+          "start_line": 619,
+          "end_line": 624
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "local nu_chip, nu_mult = G.GAME.selected_back:trigger_effect{context = 'final_scoring_step', chips = hand_chips, mult = mult}",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 740,
-          "end_line": 743
+          "start_line": 727,
+          "end_line": 730
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for j = 1, #G.jokers.cards do\n    destroyed = G.jokers.cards[j]:calculate_joker({destroying_card = scoring_hand[i], full_hand = G.play.cards})\n    if destroyed then break end\nend\n\nif scoring_hand[i].ability.name == 'Glass Card' and not scoring_hand[i].debuff and pseudorandom('glass') < G.GAME.probabilities.normal/scoring_hand[i].ability.extra then\n    destroyed = true\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 725,
-          "end_line": 750
+          "start_line": 712,
+          "end_line": 737
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "if destroyed_cards[1] then\n    for j=1, #G.jokers.cards do\n        eval_card(G.jokers.cards[j], {cardarea = G.jokers, remove_playing_cards = true, removed = destroyed_cards})\n    end\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 420,
-          "end_line": 425
+          "start_line": 413,
+          "end_line": 418
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, #G.jokers.cards do\n\n    --calculate the joker effects\n    local effects = eval_card(G.jokers.cards[i], {cardarea = G.jokers, full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, debuffed_hand = true})\n\n    --Any Joker effects\n    if effects.jokers then\n        card_eval_status_text(G.jokers.cards[i], 'jokers', nil, percent, nil, effects.jokers)\n        percent = percent+percent_delta\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 802,
-          "end_line": 805
+          "start_line": 789,
+          "end_line": 792
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, #G.jokers.cards do\n    --calculate the joker after hand played effects\n    local effects = eval_card(G.jokers.cards[i], {cardarea = G.jokers, full_hand = G.play.cards, scoring_hand = scoring_hand, scoring_name = text, poker_hands = poker_hands, after = true})\n    if effects.jokers then\n        card_eval_status_text(G.jokers.cards[i], 'jokers', nil, percent, nil, effects.jokers)\n        percent = percent + percent_delta\n    end\nend",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 866,
-          "end_line": 869
+          "start_line": 853,
+          "end_line": 856
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i = 1, #G.jokers.cards do\n    local ret = G.jokers.cards[i]:calculate_dollar_bonus()\n    if ret then\n        add_round_eval_row({dollars = ret, bonus = true, name='joker'..i, pitch = pitch, card = G.jokers.cards[i]})\n        pitch = pitch + 0.06\n        dollars = dollars + ret\n    end\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 971,
-          "end_line": 984
+          "start_line": 958,
+          "end_line": 971
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "G.GAME.selected_back:trigger_effect({context = 'eval'})\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 958,
-          "end_line": 958
+          "start_line": 945,
+          "end_line": 945
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i = 1, #G.jokers.cards do\n    local eval = nil\n    eval = G.jokers.cards[i]:calculate_joker({end_of_round = true, game_over = game_over})\n    if eval then\n        if eval.saved then\n            game_over = false\n        end\n        card_eval_status_text(G.jokers.cards[i], 'jokers', nil, nil, nil, eval)\n    end\n    G.jokers.cards[i]:calculate_rental()\n    G.jokers.cards[i]:calculate_perishable()\nend\n",
         "patch_type": "pattern"
       },
@@ -232,102 +232,115 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i = 1, #G.jokers.cards do\n    G.jokers.cards[i]:calculate_joker({setting_blind = true, blind = G.GAME.round_resets.blind})\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 281,
-          "end_line": 283
+          "start_line": 278,
+          "end_line": 280
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for j = 1, #G.jokers.cards do\n    G.jokers.cards[j]:calculate_joker({pre_discard = true, full_hand = G.hand.highlighted, hook = hook})\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 388,
-          "end_line": 390
+          "start_line": 381,
+          "end_line": 383
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, hand_space do --draw cards from deckL\n    if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK then\n        draw_card(G.deck,G.hand, i*100/hand_space,'up', true)\n    else\n        draw_card(G.deck,G.hand, i*100/hand_space,'up', true)\n    end\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 338,
-          "end_line": 339
+          "start_line": 334,
+          "end_line": 335
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "for i=1, hand_space do --draw cards from deckL\n    if G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK then\n        draw_card(G.deck,G.hand, i*100/hand_space,'up', true)\n    else\n        draw_card(G.deck,G.hand, i*100/hand_space,'up', true)\n    end\nend\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 347,
-          "end_line": 367
+          "start_line": 343,
+          "end_line": 363
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "draw_card(G.deck,G.hand, i*100/hand_space,'up', true)\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 342,
-          "end_line": 342
+          "start_line": 338,
+          "end_line": 338
         },
         {
-          "start_line": 344,
-          "end_line": 344
+          "start_line": 340,
+          "end_line": 340
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
+        "pattern": "if G.GAME.blind.name == 'The Serpent' and\n    not G.GAME.blind.disabled and\n    (G.GAME.current_round.hands_played > 0 or\n    G.GAME.current_round.discards_used > 0) then\n        hand_space = math.min(#G.deck.cards, 3)\nend\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 331,
+          "end_line": 332
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "G.GAME.current_round.discards_used = 0",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 246,
-          "end_line": 246
+          "start_line": 243,
+          "end_line": 243
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "local percent = 0.3\nlocal percent_delta = 0.08\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 603,
-          "end_line": 604
+          "start_line": 595,
+          "end_line": 596
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "local percent = (i-0.999)/(#G.hand.cards-0.998) + (j-1)*0.1",
         "patch_type": "pattern"
       },
@@ -340,163 +353,137 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "--Add all the pure bonus cards to the scoring hand\nlocal pures = {}\nfor i=1, #G.play.cards do\n    if next(find_joker('Splash')) then\n        scoring_hand[i] = G.play.cards[i]\n    else\n        if G.play.cards[i].ability.effect == 'Stone Card' then\n            local inside = false\n            for j=1, #scoring_hand do\n                if scoring_hand[j] == G.play.cards[i] then\n                    inside = true\n                end\n            end\n            if not inside then table.insert(pures, G.play.cards[i]) end\n        end\n    end\nend\nfor i=1, #pures do\n    table.insert(scoring_hand, pures[i])\nend\ntable.sort(scoring_hand, function (a, b) return a.T.x < b.T.x end )\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 579,
-          "end_line": 596
+          "start_line": 571,
+          "end_line": 588
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "delay = G.GAME.current_round.current_hand.handname ~= disp_text and 0.4 or 0}, {handname=disp_text, level=G.GAME.hands[text].level, mult = G.GAME.hands[text].mult, chips = G.GAME.hands[text].chips})",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 609,
-          "end_line": 614
+          "start_line": 601,
+          "end_line": 601
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "hand_chips = mod_chips(0)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 786,
-          "end_line": 786
+          "start_line": 773,
+          "end_line": 773
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "  func = (function() G.GAME.current_round.current_hand.handname = '';return true end)\n}))\ndelay(0.3)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 864,
-          "end_line": 864
+          "start_line": 851,
+          "end_line": 851
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "delay(0.4); ease_ante(1); delay(0.4); check_for_unlock({type = 'ante_up', ante = G.GAME.round_resets.ante + 1})\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 189,
-          "end_line": 189
+          "start_line": 186,
+          "end_line": 186
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\blind.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
         "pattern": "mult, hand_chips, modded = G.GAME.blind:modify_hand(G.play.cards, poker_hands, text, mult, hand_chips)",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 644,
-          "end_line": 644
+          "start_line": 631,
+          "end_line": 631
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\booster.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\booster.toml",
         "pattern": "if not (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK) and",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 303,
-          "end_line": 303
+          "start_line": 300,
+          "end_line": 300
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\card_limit.toml",
         "pattern": "local hand_space = e or*",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 309,
-          "end_line": 328
+          "start_line": 306,
+          "end_line": 324
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "hand_space = math.min(#G.deck.cards, 3)\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 334,
-          "end_line": 334
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\card_limit.toml",
-        "pattern": "if G.GAME.blind.name == 'The Serpent' and\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 330,
-          "end_line": 330
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "if scoring_hand[i].ability.effect ~= 'Stone Card' then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 360,
-          "end_line": 360
+          "start_line": 346,
+          "end_line": 349
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "G.GAME.cards_played[scoring_hand[i].base.value].suits[scoring_hand[i].base.suit] = true",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 362,
-          "end_line": 370
+          "start_line": 354,
+          "end_line": 356
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "local effects = {G.hand.cards[i]:get_end_of_round_effect()}",
         "patch_type": "pattern"
       },
@@ -509,46 +496,46 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "if G.hand.highlighted[i].ability.name == 'Glass Card' then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 409,
-          "end_line": 409
+          "start_line": 402,
+          "end_line": 402
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "if scoring_hand[i].ability.name == 'Glass Card' then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 750,
-          "end_line": 750
+          "start_line": 737,
+          "end_line": 737
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\enhancement.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\enhancement.toml",
         "pattern": "if cards_destroyed[i].ability.name == 'Glass Card' then",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 772,
-          "end_line": 772
+          "start_line": 759,
+          "end_line": 759
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\fixes.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
         "pattern": "local game_over = true",
         "patch_type": "pattern"
       },
@@ -561,7 +548,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\jimboquip.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\jimboquip.toml",
         "pattern": "Jimbo = Card_Character({x = 0, y = 5})\nlocal spot = G.OVERLAY_MENU:get_UIE_by_ID('jimbo_spot')\nspot.config.object:remove()\nspot.config.object = Jimbo\nJimbo.ui_object_updated = true\nJimbo:add_speech_bubble('wq_'..math.random(1,7), nil, {quip = true})\nJimbo:say_stuff(5)\n",
         "patch_type": "pattern"
       },
@@ -574,98 +561,85 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
-        "pattern": "update_hand_text({immediate = true, nopulse = true, delay = 0}, {mult = 0, chips = 0, level = '', handname = ''})\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 383,
-          "end_line": 385
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
         "pattern": "check_and_set_high_score('hand', hand_chips*mult)\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 813,
-          "end_line": 815
+          "start_line": 800,
+          "end_line": 802
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
         "pattern": "  func = (function() G.GAME.current_round.current_hand.handname = '';return true end)\n}))\ndelay(0.3)\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 853,
-          "end_line": 863
+          "start_line": 840,
+          "end_line": 850
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\shop.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
         "pattern": "G.GAME.current_round.voucher = get_next_voucher_key()\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 204,
-          "end_line": 204
+          "start_line": 201,
+          "end_line": 201
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\shop.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
         "pattern": "local chaos = find_joker('Chaos the Clown')\nG.GAME.current_round.free_rerolls = #chaos\n",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 258,
-          "end_line": 258
+          "start_line": 255,
+          "end_line": 255
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "(?<indent>[\\t ]*)(?<handtext>if modded then update_hand_text\\(\\{sound = 'chips2', modded = modded\\}, \\{chips = hand_chips, mult = mult\\}\\) end)(.*\\n)*?\\s+(?<delimiter>--\\++--)",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 646,
-          "end_line": 653
+          "start_line": 633,
+          "end_line": 640
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "(?<indent>[\\t ]*)local cards_destroyed = \\{\\}\\n(.*\\n)*?\\s+for j=1, #G\\.jokers\\.cards do\\n\\s+eval_card\\(G\\.jokers\\.cards\\[j\\], \\{cardarea = G\\.jokers, remove_playing_cards = true, removed = cards_destroyed\\}\\)\\n\\s+end",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 748,
-          "end_line": 759
+          "start_line": 735,
+          "end_line": 746
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "(?<indent>[\\t ]*)for i=1, #G\\.hand\\.cards do\\n\\s+--Check for hand doubling\\n(.*\\n)*?\\s+delay\\(0\\.3\\)",
         "patch_type": "regex"
       },
@@ -678,125 +652,99 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
         "pattern": "(?<indent>[\\t ]*)G\\.HUD_blind:get_UIE_by_ID\\('HUD_blind_debuff_1'\\):juice_up\\(0\\.3, 0\\)\n[\\t ]*G\\.HUD_blind:get_UIE_by_ID\\('HUD_blind_debuff_2'\\):juice_up\\(0\\.3, 0\\)\n[\\t ]*G\\.GAME\\.blind:juice_up\\(\\)",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 490,
-          "end_line": 490
+          "start_line": 483,
+          "end_line": 483
         },
         {
-          "start_line": 790,
-          "end_line": 790
+          "start_line": 777,
+          "end_line": 777
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\blind_ui.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
         "pattern": "hand_chips = mod_chips\\(0\\)(\\n.*)*?\\n[\\t ]*(?<juice>SMODS.juice_up_blind\\(\\))",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 790,
-          "end_line": 790
+          "start_line": 777,
+          "end_line": 777
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
         "pattern": "^(.*)hand_chips\\s*\\*\\s*mult(.*)$",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 811,
-          "end_line": 811
+          "start_line": 798,
+          "end_line": 798
         },
         {
-          "start_line": 816,
-          "end_line": 816
+          "start_line": 803,
+          "end_line": 803
         },
         {
-          "start_line": 818,
-          "end_line": 818
+          "start_line": 805,
+          "end_line": 805
         },
         {
-          "start_line": 820,
-          "end_line": 820
+          "start_line": 807,
+          "end_line": 807
         },
         {
-          "start_line": 832,
-          "end_line": 832
+          "start_line": 819,
+          "end_line": 819
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\compact_cashout.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\compact_cashout.toml",
         "pattern": "add_round_eval_row({name = 'bottom', dollars = dollars})",
         "patch_type": "pattern"
       },
       "regions": [
         {
-          "start_line": 1009,
-          "end_line": 1028
+          "start_line": 996,
+          "end_line": 1015
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\poker_hand.toml",
-        "pattern": "G.GAME.hands[text].played_this_round = G.GAME.hands[text].played_this_round + 1",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 574,
-          "end_line": 574
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\poker_hand.toml",
-        "pattern": "G.GAME.voucher_restock = nil",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 178,
-          "end_line": 180
-        }
-      ]
-    },
-    {
-      "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\compact_cashout.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\compact_cashout.toml",
         "pattern": "G\\.FUNCS\\.evaluate_round = function\\(\\)",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 929,
-          "end_line": 930
+          "start_line": 916,
+          "end_line": 917
         }
       ]
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\mod.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\mod.toml",
         "pattern": "(?<indent>[\\t ]*)reset_castle_card\\(\\)",
         "patch_type": "regex"
       },
       "regions": [
         {
-          "start_line": 217,
-          "end_line": 222
+          "start_line": 214,
+          "end_line": 219
         }
       ]
     },
@@ -856,8 +804,8 @@
           "end_line": 100
         },
         {
-          "start_line": 934,
-          "end_line": 934
+          "start_line": 921,
+          "end_line": 921
         }
       ]
     },
@@ -880,8 +828,8 @@
       },
       "regions": [
         {
-          "start_line": 1030,
-          "end_line": 1030
+          "start_line": 1017,
+          "end_line": 1017
         }
       ]
     },
@@ -959,8 +907,8 @@
       },
       "regions": [
         {
-          "start_line": 517,
-          "end_line": 517
+          "start_line": 510,
+          "end_line": 510
         }
       ]
     },
@@ -972,16 +920,16 @@
       },
       "regions": [
         {
-          "start_line": 292,
-          "end_line": 292
+          "start_line": 289,
+          "end_line": 289
         },
         {
-          "start_line": 439,
-          "end_line": 439
+          "start_line": 432,
+          "end_line": 432
         },
         {
-          "start_line": 528,
-          "end_line": 528
+          "start_line": 521,
+          "end_line": 521
         }
       ]
     },
@@ -993,8 +941,8 @@
       },
       "regions": [
         {
-          "start_line": 569,
-          "end_line": 569
+          "start_line": 562,
+          "end_line": 562
         }
       ]
     },
@@ -1006,8 +954,8 @@
       },
       "regions": [
         {
-          "start_line": 616,
-          "end_line": 618
+          "start_line": 603,
+          "end_line": 605
         }
       ]
     },
@@ -1019,8 +967,8 @@
       },
       "regions": [
         {
-          "start_line": 781,
-          "end_line": 784
+          "start_line": 768,
+          "end_line": 771
         }
       ]
     },
@@ -1032,8 +980,8 @@
       },
       "regions": [
         {
-          "start_line": 806,
-          "end_line": 810
+          "start_line": 793,
+          "end_line": 797
         }
       ]
     },
@@ -1045,8 +993,8 @@
       },
       "regions": [
         {
-          "start_line": 847,
-          "end_line": 852
+          "start_line": 834,
+          "end_line": 839
         }
       ]
     },
@@ -1058,8 +1006,8 @@
       },
       "regions": [
         {
-          "start_line": 505,
-          "end_line": 511
+          "start_line": 498,
+          "end_line": 504
         }
       ]
     },
@@ -1071,8 +1019,8 @@
       },
       "regions": [
         {
-          "start_line": 820,
-          "end_line": 820
+          "start_line": 807,
+          "end_line": 807
         }
       ]
     },
@@ -1084,8 +1032,8 @@
       },
       "regions": [
         {
-          "start_line": 853,
-          "end_line": 853
+          "start_line": 840,
+          "end_line": 840
         }
       ]
     },
@@ -1097,8 +1045,8 @@
       },
       "regions": [
         {
-          "start_line": 993,
-          "end_line": 993
+          "start_line": 980,
+          "end_line": 980
         }
       ]
     }

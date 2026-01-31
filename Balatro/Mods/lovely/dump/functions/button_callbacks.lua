@@ -1971,10 +1971,10 @@ function scale_number(number, scale, max, e_switch_point)
   G.E_SWITCH_POINT = G.E_SWITCH_POINT or 100000000000
   if not number or type(number) ~= 'number' then return scale end
   if not max then max = 10000 end
-  if math.abs(number) >= G.E_SWITCH_POINT then
+  if math.abs(number) >= (e_switch_point or G.E_SWITCH_POINT) then
     scale = scale*math.floor(math.log(max*10, 10))/math.floor(math.log(1000000*10, 10))
-  elseif math.abs(number) >= max then
-    scale = scale*math.floor(math.log(max*10, 10))/math.floor(math.log(math.abs(number)*10, 10))
+  elseif number >= max then
+    scale = scale*math.floor(math.log(max*10, 10))/math.floor(math.log(number*10, 10))
   end
   return scale
 end
@@ -2375,7 +2375,7 @@ end
                   prev_state == G.STATES.SMODS_BOOSTER_OPENED or
                   prev_state == G.STATES.BUFFOON_PACK) and G.booster_pack then
                   if nc and area == G.pack_cards and not select_to then G.pack_cards:remove_card(card); G.consumeables:emplace(card) end
-                  if area ~= G.pack_cards then
+                  if area == G.consumeables then
                     G.booster_pack.alignment.offset.y = G.booster_pack.alignment.offset.py
                     G.booster_pack.alignment.offset.py = nil
                   elseif G.GAME.pack_choices and G.GAME.pack_choices > 1 then

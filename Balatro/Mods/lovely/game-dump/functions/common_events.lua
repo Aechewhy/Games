@@ -470,19 +470,10 @@ end
 
 function level_up_hand(card, hand, instant, amount)
     amount = amount or 1
-    SMODS.upgrade_poker_hands({
-        hands = hand,
-        func = function(base, hand, parameter)
-                return base + G.GAME.hands[hand]['l_' .. parameter] * amount
-        end,
-        level_up = amount,
-        from = card,
-        instant = instant
-    })
-    --[[
     G.GAME.hands[hand].level = math.max(0, G.GAME.hands[hand].level + amount)
-    G.GAME.hands[hand].mult = math.max(G.GAME.hands[hand].s_mult + G.GAME.hands[hand].l_mult*(G.GAME.hands[hand].level - 1), 1)
-    G.GAME.hands[hand].chips = math.max(G.GAME.hands[hand].s_chips + G.GAME.hands[hand].l_chips*(G.GAME.hands[hand].level - 1), 0)
+    for name, parameter in pairs(SMODS.Scoring_Parameters) do
+        if G.GAME.hands[hand][name] then parameter:level_up_hand(amount, G.GAME.hands[hand]) end
+    end
     if not instant and not Talisman.config_file.disable_anims then
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.2, func = function()
             play_sound('tarot1')
@@ -507,7 +498,6 @@ function level_up_hand(card, hand, instant, amount)
         trigger = 'immediate',
         func = (function() check_for_unlock{type = 'upgrade_hand', hand = hand, level = G.GAME.hands[hand].level} return true end)
     }))
-    ]]
 end
 
 function update_hand_text(config, vals)
@@ -579,7 +569,7 @@ end
 
 function eval_card(card, context)
     context = context or {}
-    if not card:can_calculate(context.ignore_debuff, context.remove_playing_cards or context.joker_type_destroyed) then
+    if not card:can_calculate(context.ignore_debuff, context.remove_playing_cards) then
         if card.ability.rental then
             local ret = {}
             ret[SMODS.Stickers.rental] = card:calculate_sticker(context, 'rental')
@@ -1187,7 +1177,7 @@ function add_round_eval_row(config)
                 if config.name == 'blind1' then
                     local stake_sprite = get_stake_sprite(G.GAME.stake or 1, 0.5)
                     local obj = G.GAME.blind.config.blind
-                    local blind_sprite = SMODS.create_sprite(0, 0, 1.2, 1.2, obj.atlas or 'blind_chips', copy_table(G.GAME.blind.pos))
+                    local blind_sprite = AnimatedSprite(0, 0, 1.2, 1.2, G.ANIMATION_ATLAS[obj.atlas] or G.ANIMATION_ATLAS['blind_chips'], copy_table(G.GAME.blind.pos))
                     blind_sprite:define_draw_steps({
                         {shader = 'dissolve', shadow_height = 0.05},
                         {shader = 'dissolve'}
@@ -1211,7 +1201,7 @@ function add_round_eval_row(config)
                         }}
                     }}) 
                 elseif string.find(config.name, 'tag') then
-                    local blind_sprite = SMODS.create_sprite(0, 0, 0.7,0.7, 'tags', copy_table(config.pos))
+                    local blind_sprite = Sprite(0, 0, 0.7,0.7, G.ASSET_ATLAS['tags'], copy_table(config.pos))
                     blind_sprite:define_draw_steps({
                         {shader = 'dissolve', shadow_height = 0.05},
                         {shader = 'dissolve'}
@@ -1589,7 +1579,7 @@ function check_for_unlock(args)
                 ret = true
                 unlock_card(card)
             end
-            if args.type == 'min_hand_size' and G.hand and G.hand.config.true_card_limit <= card.unlock_condition.extra then
+            if args.type == 'min_hand_size' and G.hand and G.hand.config.card_limit <= card.unlock_condition.extra then
                 ret = true
                 unlock_card(card)
             end
@@ -2225,7 +2215,6 @@ function create_playing_card(card_init, area, skip_materialize, silent, colours,
     G.playing_card = (G.playing_card and G.playing_card + 1) or 1
     local _area = area or G.hand
     local card = Card(_area.T.x, _area.T.y, G.CARD_W, G.CARD_H, card_init.front, card_init.center, {playing_card = G.playing_card})
-    card:add_to_deck()
     table.insert(G.playing_cards, card)
     card.playing_card = G.playing_card
 
@@ -2348,8 +2337,7 @@ local rarity = _rarity or SMODS.poll_rarity("Joker", 'rarity'..G.GAME.round_rese
         --if pool is empty
         if _pool_size == 0 then
             _pool = EMPTY(G.ARGS.TEMP_POOL)
-            if _rarity and SMODS.Rarities[_rarity] and SMODS.Rarities[_rarity].disable_if_empty then _pool[#_pool + 1] = "empty_rarity"
-            elseif SMODS.ObjectTypes[_type] and SMODS.ObjectTypes[_type].default and G.P_CENTERS[SMODS.ObjectTypes[_type].default] then
+            if SMODS.ObjectTypes[_type] and SMODS.ObjectTypes[_type].default and G.P_CENTERS[SMODS.ObjectTypes[_type].default] then
                 _pool[#_pool+1] = SMODS.ObjectTypes[_type].default
             elseif _type == 'Tarot' or _type == 'Tarot_Planet' then _pool[#_pool + 1] = "c_strength"
             elseif _type == 'Planet' then _pool[#_pool + 1] = "c_pluto"
@@ -2400,24 +2388,11 @@ function create_card(_type, area, legendary, _rarity, skip_materialize, soulable
 
     --should pool be skipped with a forced key
     if not forced_key and soulable and (not G.GAME.banned_keys['c_soul']) then
-        local soul_total_rate = 0
-        local non_soul_rate = 1
-        local modded_souls = {}
         for _, v in ipairs(SMODS.Consumable.legendaries) do
             if (_type == v.type.key or _type == v.soul_set) and not (G.GAME.used_jokers[v.key] and not SMODS.showman(v.key) and not v.can_repeat_soul) and SMODS.add_to_pool(v) then
-                soul_total_rate = soul_total_rate + v.soul_rate
-                non_soul_rate = non_soul_rate * (1 - v.soul_rate)
-                non_soul_rate = math.max(non_soul_rate, 0)
-                table.insert(modded_souls, v)
-            end
-        end
-        local roll = pseudorandom('soul_smods_'.._type..G.GAME.round_resets.ante)
-        local threshold = 1
-        for _, v in ipairs(modded_souls) do
-            threshold = threshold - v.soul_rate/soul_total_rate * (1-non_soul_rate)
-            if roll > threshold then
-                forced_key = v.key
-                break
+                if pseudorandom('soul_'..v.key.._type..G.GAME.round_resets.ante) > (1 - v.soul_rate) then
+                    forced_key = v.key
+                end
             end
         end
         if (_type == 'Tarot' or _type == 'Spectral' or _type == 'Tarot_Planet') and
@@ -2923,7 +2898,7 @@ function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, h
     elseif _c.generate_ui and type(_c.generate_ui) == 'function' then
         local specific_vars = specific_vars or {}
         _c:generate_ui(info_queue, card, desc_nodes, specific_vars, full_UI_table)
-        if desc_nodes ~= full_UI_table.main and not desc_nodes.name then
+        if desc_nodes ~= full_UI_table.main then
             -- TODO should be moved into generate_ui;
             -- also the multiple generate_ui cases should be refactored
             -- to work off a base implementation
@@ -3205,16 +3180,12 @@ function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, h
     end
 
     if card and card.ability and (card.ability.extra_slots_used or 0) ~= 0 then
-        local str = 'generic_extra_slots'
-        if card.ability.set == 'Default' or card.ability.set == 'Enhanced' then str = str .. '_pc' end
-        info_queue[#info_queue + 1] = {set = 'Other', key = str, vars = {card.ability.extra_slots_used + 1}}
+        info_queue[#info_queue + 1] = {set = 'Other', key = 'generic_extra_slots', vars = {card.ability.extra_slots_used + 1}}
     end
     if card and card.ability and (card.ability.card_limit or 0) ~= 0 then
         if not (card.edition and card.edition.card_limit == card.ability.card_limit) then
             local amount = card.ability.card_limit - (card.edition and card.edition.card_limit or 0)
-            local str = 'generic_card_limit'
-            if card.ability.set == 'Default' or card.ability.set == 'Enhanced' then str = str .. '_pc' end
-            info_queue[#info_queue + 1] = {set = 'Other', key = amount == 1 and str or str..'_plural', vars = {localize({type='variable', key= amount > 0 and 'a_chips' or 'a_chips_minus', vars ={math.abs(amount)}})}}
+            info_queue[#info_queue + 1] = {set = 'Other', key = amount == 1 and 'generic_card_limit' or 'generic_card_limit_plural', vars = {localize({type='variable', key= amount > 0 and 'a_chips' or 'a_chips_minus', vars ={math.abs(amount)}})}}
         end
     end
     if first_pass and not (_c.set == 'Edition') and badges then

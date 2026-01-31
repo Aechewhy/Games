@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if not selected_back then selected_back = G.P_CENTERS.b_red end",
         "patch_type": "pattern"
       },
@@ -16,7 +16,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if not new_back then new_back = G.P_CENTERS.b_red end",
         "patch_type": "pattern"
       },
@@ -29,7 +29,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "function Back:apply_to_run()",
         "patch_type": "pattern"
       },
@@ -42,7 +42,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if self.effect.config.randomize_rank_suit then",
         "patch_type": "pattern"
       },
@@ -55,7 +55,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if not args then return end",
         "patch_type": "pattern"
       },
@@ -68,7 +68,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if not back_config.unlock_condition then",
         "patch_type": "pattern"
       },
@@ -81,7 +81,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "localize{type = 'descriptions', key = 'demo_locked', set = \"Other\", nodes = loc_nodes, vars = loc_args}",
         "patch_type": "pattern"
       },
@@ -94,7 +94,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "loc_args = {other_name}",
         "patch_type": "pattern"
       },
@@ -107,7 +107,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "loc_args = {tostring(back_config.unlock_condition.amount)}",
         "patch_type": "pattern"
       },
@@ -120,7 +120,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "loc_args = {other_name, colours = {get_stake_col(back_config.unlock_condition.stake)}}",
         "patch_type": "pattern"
       },
@@ -133,7 +133,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if name_to_check == 'Blue Deck'*",
         "patch_type": "pattern"
       },
@@ -146,7 +146,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "if self.effect.config.voucher then\n",
         "patch_type": "pattern"
       },
@@ -159,7 +159,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\shop.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
         "pattern": "if self.effect.config.no_interest then\n",
         "patch_type": "pattern"
       },
@@ -172,7 +172,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\back.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\back.toml",
         "pattern": "key = back_config\\.key",
         "patch_type": "regex"
       },
@@ -185,7 +185,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\better_calc.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
         "pattern": "(?<indent>[\\t ]*)(?<line>Card.apply_to_run\\(nil, G\\.P_CENTERS\\[.*?\\]\\))",
         "patch_type": "regex"
       },

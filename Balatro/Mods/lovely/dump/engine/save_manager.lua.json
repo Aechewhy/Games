@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\threads.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\threads.toml",
         "pattern": "if request then",
         "patch_type": "pattern"
       },

@@ -33,7 +33,6 @@ function AnimatedSprite:set_sprite_pos(sprite_pos)
     self.current_animation = {
         current = 0,
         frames = self.animation.frames,
-        FPS = self.atlas.fps or G.ANIMATION_FPS,
         w = self.animation.w,
         h = self.animation.h}
 
@@ -76,7 +75,7 @@ function AnimatedSprite:draw_self()
 end
 
 function AnimatedSprite:animate()
-    local new_frame = math.floor(self.current_animation.FPS*(G.TIMERS.REAL - self.offset_seconds))%self.current_animation.frames
+    local new_frame = math.floor(G.ANIMATION_FPS*(G.TIMERS.REAL - self.offset_seconds))%self.current_animation.frames
     if new_frame ~= self.current_animation.current then
         self.current_animation.current = new_frame
         self.frame_offset = math.floor(self.animation.w*(self.current_animation.current))

@@ -131,12 +131,7 @@ function Game:start_up()
         local extension = string.sub(filename, -3)
         if extension == '.fs' then
             local shader_name = string.sub(filename, 1, -4)
-            local shader = "resources/shaders/"..filename
-            local lovely_success, lovely = pcall(require, "lovely")
-            if lovely_success and lovely.apply_patches then
-                shader = assert(lovely.apply_patches(filename, love.filesystem.read(shader)))
-            end
-            self.SHADERS[shader_name] = love.graphics.newShader(shader)
+            self.SHADERS[shader_name] = love.graphics.newShader("resources/shaders/"..filename)
         end
     end
 
@@ -1113,7 +1108,6 @@ function Game:set_render_settings()
         self.ANIMATION_ATLAS[self.animation_atli[i].name].px = self.animation_atli[i].px
         self.ANIMATION_ATLAS[self.animation_atli[i].name].py = self.animation_atli[i].py
         self.ANIMATION_ATLAS[self.animation_atli[i].name].frames = self.animation_atli[i].frames
-        self.ANIMATION_ATLAS[self.animation_atli[i].name].atlas_table = "ANIMATION_ATLAS"
     end
 
     for i=1, #self.asset_atli do
@@ -1506,7 +1500,7 @@ function Game:splash_screen()
                     func = (function()
                     local card, card_pos = make_splash_card({scale = 2 - i/300})
                     local speed = math.max(2. - i*0.005, 0.001)
-                    ease_value(card.T, 'scale', -card.T.scale, nil, nil, nil, 1.*speed)
+                    ease_value(card.T, 'scale', -card.T.scale, nil, nil, nil, 1.*speed, 'elastic')
                     ease_value(card.T, 'x', -card_pos.x, nil, nil, nil, 0.9*speed)
                     ease_value(card.T, 'y', -card_pos.y, nil, nil, nil, 0.9*speed)
                     local temp_pitch = i*0.007 + 0.6
@@ -2046,7 +2040,6 @@ function Game:start_run(args)
 
     local saveTable = args.savetext or nil
     if G.SAVED_GAME then SMODS.save_game = G.SAVED_GAME.GAME.smods_version else SMODS.save_game = nil end
-    SMODS.cards_to_draw = nil
     G.SAVED_GAME = nil
 
     self:prep_stage(G.STAGES.RUN, saveTable and saveTable.STATE or G.STATES.BLIND_SELECT)
@@ -2332,16 +2325,11 @@ function Game:start_run(args)
     self.play = CardArea(
         0, 0,
         CAI.play_W,CAI.play_H, 
-        {card_limit = 5, type = 'play', negative_info = 'playing_card'})
+        {card_limit = 5, type = 'play'})
     
     G.playing_cards = {}
 
     set_screen_positions()
-    for _, mod in ipairs(SMODS.mod_list) do
-        if mod.can_load and mod.custom_card_areas and type(mod.custom_card_areas) == "function" then
-            mod.custom_card_areas(self)
-        end
-    end
 
     G.SPLASH_BACK = Sprite(-30, -6, G.ROOM.T.w+60, G.ROOM.T.h+12, G.ASSET_ATLAS["ui_1"], {x = 2, y = 0})
     G.SPLASH_BACK:set_alignment({

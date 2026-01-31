@@ -932,11 +932,7 @@ function modulate_sound(dt)
   if not is_number(G.GAME.current_round.current_hand.chips) or not is_number(G.GAME.current_round.current_hand.mult) then
     G.ARGS.score_intensity.earned_score = 0
   else
-    local all_numbers = true
-    for name, parameter in pairs(SMODS.Scoring_Parameters) do
-        if not is_number(G.GAME.current_round.current_hand[name]) then all_numbers = false end
-    end
-    G.ARGS.score_intensity.earned_score = all_numbers and math.min(to_number(SMODS.calculate_round_score(true)), 1e300) or 0
+    G.ARGS.score_intensity.earned_score = math.min(to_number(SMODS.calculate_round_score(true)), 1e300)
   end
   G.ARGS.score_intensity.required_score = G.GAME.blind and G.GAME.blind.chips or 0
   G.ARGS.score_intensity.flames = math.min(1, (G.STAGE == G.STAGES.RUN and 1 or 0)*(
@@ -1481,9 +1477,6 @@ function set_consumeable_usage(card)
         G.GAME.consumeable_usage_total.planet = G.GAME.consumeable_usage_total.planet + 1
         G.GAME.consumeable_usage_total.tarot_planet = G.GAME.consumeable_usage_total.tarot_planet + 1
       elseif card.config.center.set == 'Spectral' then  G.GAME.consumeable_usage_total.spectral = G.GAME.consumeable_usage_total.spectral + 1
-      else 
-          G.GAME.consumeable_usage_total[card.config.center.set:lower()] = G.GAME.consumeable_usage_total[card.config.center.set:lower()] or 0
-          G.GAME.consumeable_usage_total[card.config.center.set:lower()] = G.GAME.consumeable_usage_total[card.config.center.set:lower()] + 1
       end
 
       G.GAME.consumeable_usage_total.all = G.GAME.consumeable_usage_total.all + 1
@@ -1936,7 +1929,6 @@ function card_from_control(control)
   local _card = Card(G.deck.T.x, G.deck.T.y, G.CARD_W, G.CARD_H, G.P_CARDS[control.s..'_'..control.r], G.P_CENTERS[control.e or 'c_base'], {playing_card = G.playing_card})
   if control.d then _card:set_edition({[control.d] = true}, true, true) end
   if control.g then _card:set_seal(control.g, true, true) end
-  _card:add_to_deck()
   G.deck:emplace(_card)
   table.insert(G.playing_cards, _card)
 end
@@ -2214,16 +2206,81 @@ function get_stake_sprite(_stake, _scale)
 end
 
 function get_front_spriteinfo(_front)
-  if _front and _front.suit and (_front.value == 'Jack' or _front.value == 'Queen' or _front.value == 'King') then
-    if G.SETTINGS.CUSTOM_DECK and G.SETTINGS.CUSTOM_DECK.Collabs[_front.suit] then
-      local _collab = G.SETTINGS.CUSTOM_DECK.Collabs[_front.suit]
-      if (_collab == 'default') or (not G.ASSET_ATLAS[_collab..'_'..(G.SETTINGS.colourblind_option and 2 or 1)]) then 
-      else
-        return G.ASSET_ATLAS[_collab..'_'..(G.SETTINGS.colourblind_option and 2 or 1)], G.COLLABS.pos[_front.value]
-      end
+  if _front and _front.suit and G.SETTINGS.CUSTOM_DECK and G.SETTINGS.CUSTOM_DECK.Collabs then
+    local collab = G.SETTINGS.CUSTOM_DECK.Collabs[_front.suit]
+    if collab then
+        local deckSkin = SMODS.DeckSkins[collab]
+        if deckSkin then
+            if deckSkin.outdated then
+                local hasRank = false
+                for i = 1, #deckSkin.ranks do
+                    if deckSkin.ranks[i] == _front.value then hasRank = true break end
+                end
+                if hasRank then
+                    local atlas = G.ASSET_ATLAS[G.SETTINGS.colour_palettes[_front.suit] == 'hc' and deckSkin.hc_atlas or deckSkin.lc_atlas]
+                    if atlas then
+                        if deckSkin.pos_style == 'collab' then
+                            return atlas, G.COLLABS.pos[_front.value]
+                        elseif deckSkin.pos_style == 'suit' then
+                            return atlas, { x = _front.pos.x, y = 0}
+                        elseif deckSkin.pos_style == 'deck' then
+                            return atlas, _front.pos
+                        elseif deckSkin.pos_style == 'ranks' or nil then
+                            for i, rank in ipairs(deckSkin.ranks) do
+                                if rank == _front.value then
+                                    return atlas, { x = i - 1, y = 0}
+                                end
+                            end
+                        end
+                    end
+                end
+                return G.ASSET_ATLAS[G.SETTINGS.colour_palettes[_front.suit] == 'hc' and _front.hc_atlas or _front.lc_atlas or {}] or G.ASSET_ATLAS[_front.atlas] or G.ASSET_ATLAS["cards_"..(G.SETTINGS.colour_palettes[_front.suit] == 'hc' and 2 or 1)], _front.pos
+            else
+                local palette = deckSkin.palette_map and deckSkin.palette_map[G.SETTINGS.colour_palettes[_front.suit] or ''] or (deckSkin.palettes or {})[1]
+                local hasRank = false
+                for i = 1, #palette.ranks do
+                    if palette.ranks[i] == _front.value then hasRank = true break end
+                end
+                if hasRank then
+                    local atlas = G.ASSET_ATLAS[palette.atlas]
+                    if type(palette.pos_style) == "table" then
+                        if palette.pos_style[_front.value] then
+                            if palette.pos_style[_front.value].atlas then
+                                atlas = G.ASSET_ATLAS[palette.pos_style[_front.value].atlas]
+                            end
+                            if palette.pos_style[_front.value].pos then
+                                return atlas, palette.pos_style[_front.value].pos
+                            end
+                        elseif palette.pos_style.fallback_style then
+                            if palette.pos_style.fallback_style == 'collab' then
+                                return atlas, G.COLLABS.pos[_front.value]
+                            elseif palette.pos_style.fallback_style == 'suit' then
+                                return atlas, { x = _front.pos.x, y = 0}
+                            elseif palette.pos_style.fallback_style == 'deck' then
+                                return atlas, _front.pos
+                            end
+                        end
+                    elseif palette.pos_style == 'collab' then
+                        return atlas, G.COLLABS.pos[_front.value]
+                    elseif palette.pos_style == 'suit' then
+                        return atlas, { x = _front.pos.x, y = 0}
+                    elseif palette.pos_style == 'deck' then
+                        return atlas, _front.pos
+                    elseif palette.pos_style == 'ranks' or nil then
+                        for i, rank in ipairs(palette.ranks) do
+                            if rank == _front.value then
+                                return atlas, { x = i - 1, y = 0}
+                            end
+                        end
+                    end
+                end
+                return G.ASSET_ATLAS[palette.hc_default and _front.hc_atlas or _front.lc_atlas or {}] or G.ASSET_ATLAS[_front.atlas] or G.ASSET_ATLAS["cards_"..(palette.hc_default and 2 or 1)], _front.pos
+            end
+        end
     end
-  end
-  return G.ASSET_ATLAS[_front.atlas] or G.ASSET_ATLAS["cards_"..(G.SETTINGS.colourblind_option and 2 or 1)], _front.pos
+end
+
+  return G.ASSET_ATLAS[G.SETTINGS.colourblind_option and _front.hc_atlas or _front.lc_atlas or {}] or G.ASSET_ATLAS[_front.atlas] or G.ASSET_ATLAS["cards_"..(G.SETTINGS.colourblind_option and 2 or 1)], _front.pos
 end
 
 function get_stake_col(_stake)

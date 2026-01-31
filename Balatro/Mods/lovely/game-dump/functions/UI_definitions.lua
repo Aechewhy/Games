@@ -148,7 +148,12 @@ function create_UIBox_notify_alert(_achievement, _type)
     _type == 'Voucher' and G.ASSET_ATLAS["Voucher"] or
     _type == 'Back' and G.ASSET_ATLAS["centers"] or
     G.ASSET_ATLAS["icons"]
+    local _smods_atlas = _c and ((G.SETTINGS.colourblind_option and _c.hc_atlas or _c.lc_atlas) or _c.atlas)
+    if _smods_atlas then
+        _atlas = G.ASSET_ATLAS[_smods_atlas] or _atlas
+    end
 
+  if SMODS.Achievements[_achievement] then _c = SMODS.Achievements[_achievement]; _atlas = G.ASSET_ATLAS[_c.atlas] end
   local t_s = Sprite(0,0,1.5*(_atlas.px/_atlas.py),1.5,_atlas, _c and _c.pos or {x=3, y=0})
   t_s.states.drag.can = false
   t_s.states.hover.can = false
@@ -834,11 +839,7 @@ end
           end
           for _, v in ipairs(rates) do
             if polled_rate > check_rate and polled_rate <= check_rate + v.val then
-              local args = {set = v.type, area = area, key_append = 'sho'}
-              local flags = SMODS.calculate_context({create_shop_card = true, set = v.type})
-              local create_flags = SMODS.merge_defaults(flags.shop_create_flags or {}, args)
-              local card = SMODS.create_card(create_flags)
-              SMODS.calculate_context({modify_shop_card = true, card = card})
+              local card = create_card(v.type, area, nil, nil, nil, nil, nil, 'sho')
               create_shop_card_ui(card, v.type, area)
               G.E_MANAGER:add_event(Event({
                   func = (function()
@@ -1031,17 +1032,14 @@ end
             T = {args.pos.x,args.pos.y,0,0},
             definition = 
               {n=G.UIT.ROOT, config = {align = args.cover_align or 'cm', minw = (args.cover and args.cover.T.w or 0.001) + (args.cover_padding or 0), minh = (args.cover and args.cover.T.h or 0.001) + (args.cover_padding or 0), padding = 0.03, r = 0.1, emboss = args.emboss, colour = args.cover_colour}, nodes={
-                type(args.text) == 'string' and {n=G.UIT.O, config={draw_layer = 1, object = DynaText({scale = args.scale, string = args.text, maxw = args.maxw, colours = {args.colour},float = true, shadow = true, silent = not args.noisy, args.scale, pop_in = 0, pop_in_rate = 6, rotate = args.rotate or nil})}} or
-                args.text,
+                {n=G.UIT.O, config={draw_layer = 1, object = DynaText({scale = args.scale, string = args.text, maxw = args.maxw, colours = {args.colour},float = true, shadow = true, silent = not args.noisy, args.scale, pop_in = 0, pop_in_rate = 6, rotate = args.rotate or nil})}},
               }}, 
             config = args.uibox_config
           }
           args.AT.attention_text = true
 
-          if type(args.text) == 'string' then
-              args.text = args.AT.UIRoot.children[1].config.object
-              args.text:pulse(0.5)
-          end
+          args.text = args.AT.UIRoot.children[1].config.object
+          args.text:pulse(0.5)
           
           if args.cover then
             Particles(args.pos.x,args.pos.y, 0,0, {
@@ -1083,9 +1081,7 @@ end
         func = function()
           if not args.start_time then
             args.start_time = G.TIMERS.TOTAL
-            if Object.is(args.text, DynaText) then
-                args.text:pop_out(3)
-            end
+            args.text:pop_out(3)
           else
             --args.AT:align_to_attach()
             args.fade = math.max(0, 1 - 3*(G.TIMERS.TOTAL - args.start_time))
@@ -1720,8 +1716,7 @@ function create_UIBox_blind_choice(type, run_info)
     config = G.P_BLINDS[G.GAME.round_resets.blind_choices[type]],
   }
 
-  blind_choice.animation =  SMODS.create_sprite(0,0, 1.4, 1.4, SMODS.get_atlas(blind_choice.config.atlas) or  'blind_chips',   blind_choice.config.pos) 
-
+  blind_choice.animation = AnimatedSprite(0,0, 1.4, 1.4, G.ANIMATION_ATLAS[blind_choice.config.atlas] or G.ANIMATION_ATLAS['blind_chips'],  blind_choice.config.pos)
   blind_choice.animation:define_draw_steps({
     {shader = 'dissolve', shadow_height = 0.05},
     {shader = 'dissolve'}
@@ -2367,7 +2362,7 @@ function create_text_input(args)
   local position_text_colour = lighten(copy_table(G.C.BLUE), 0.4)
 
   ui_letters[#ui_letters+1] = {n=G.UIT.T, config={ref_table = args, ref_value = 'current_prompt_text', scale = args.text_scale, colour = lighten(copy_table(args.colour), 0.4), id = args.id..'_prompt'}}
-  ui_letters[#ui_letters+1] = {n=G.UIT.B, config={r = 0.03,w=0, h=0.4, colour = position_text_colour, id = args.id..'_position', func = 'flash'}}
+  ui_letters[#ui_letters+1] = {n=G.UIT.B, config={r = 0.03,w=0.1, h=0.4, colour = position_text_colour, id = args.id..'_position', func = 'flash'}}
 
   local t = 
        {n=G.UIT.C, config={align = "cm", colour = G.C.CLEAR}, nodes = {
@@ -3303,8 +3298,7 @@ function create_UIBox_round_scores_row(score, text_colour)
   if score == 'defeated_by' then 
     label = localize('k_defeated_by')
     local blind_choice = {config = G.GAME.blind.config.blind or G.P_BLINDS.bl_small}
-    blind_choice.animation =  SMODS.create_sprite(0,0, 1.4, 1.4, SMODS.get_atlas(blind_choice.config.atlas) or  'blind_chips',   blind_choice.config.pos) 
-
+    blind_choice.animation = AnimatedSprite(0,0, 1.4, 1.4, G.ANIMATION_ATLAS[blind_choice.config.atlas] or G.ANIMATION_ATLAS['blind_chips'],  blind_choice.config.pos)
     blind_choice.animation:define_draw_steps({
       {shader = 'dissolve', shadow_height = 0.05},
       {shader = 'dissolve'}
@@ -3382,8 +3376,8 @@ function create_UIBox_hand_tip(handname)
   }}
 end
 
-function create_UIBox_current_hand_row(handname, simple, in_collection)
-    return (in_collection or SMODS.is_poker_hand_visible(handname)) and
+function create_UIBox_current_hand_row(handname, simple)
+  return SMODS.is_poker_hand_visible(handname) and
   (not simple and
     {n=G.UIT.R, config={align = "cm", padding = 0.05, r = 0.1, colour = darken(G.C.JOKER_GREY, 0.1), emboss = 0.05, hover = true, force_focus = true, on_demand_tooltip = {text = localize(handname, 'poker_hand_descriptions'), filler = {func = create_UIBox_hand_tip, args = handname}}}, nodes={
       {n=G.UIT.C, config={align = "cl", padding = 0, minw = 5}, nodes={
@@ -3409,7 +3403,7 @@ function create_UIBox_current_hand_row(handname, simple, in_collection)
           {n=G.UIT.T, config={text = '  #', scale = 0.45, colour = G.C.UI.TEXT_LIGHT, shadow = true}}
         }},
       {n=G.UIT.C, config={align = "cm", padding = 0.05, colour = G.C.L_BLACK,r = 0.1, minw = 0.9}, nodes={
-        {n=G.UIT.O, config={object = DynaText({string = {tostring(in_collection and G.PROFILES[G.SETTINGS.profile].hand_usage[string.gsub(handname, " ", "")] and G.PROFILES[G.SETTINGS.profile].hand_usage[string.gsub(handname, " ", "")].count or G.GAME.hands[handname].played)}, maxw = 0.9, scale = 0.45, colours = {G.C.FILTER}, shadow = true})}},
+        {n=G.UIT.T, config={text = G.GAME.hands[handname].played, scale = 0.45, colour = G.C.FILTER, shadow = true}},
       }}
     }}
   or {n=G.UIT.R, config={align = "cm", padding = 0.05, r = 0.1, colour = darken(G.C.JOKER_GREY, 0.1), force_focus = true, emboss = 0.05, hover = true, on_demand_tooltip = {text = localize(handname, 'poker_hand_descriptions'), filler = {func = create_UIBox_hand_tip, args = handname}}, focus_args = {snap_to = (simple and handname == 'Straight Flush')}}, nodes={
@@ -3534,14 +3528,7 @@ function G.UIDEF.current_stake()
     for i = G.GAME.stake-1, 2, -1 do
       local _stake_desc = {}
       local _stake_center = G.P_CENTER_POOLS.Stake[i]
-      local t, res = {}, {}
-      if _stake_center.loc_vars and type(_stake_center.loc_vars) == 'function' then
-        res = _stake_center:loc_vars() or {}
-      end
-      t.vars = res.vars or {}
-      t.key = res.key or _stake_center.key
-      t.set = res.set or _stake_center.set
-      localize{type = 'descriptions', key = t.key, set = t.set, nodes = _stake_desc, vars = t.vars}
+      localize{type = 'descriptions', key = _stake_center.key, set = _stake_center.set, nodes = _stake_desc}
       local _full_desc = {}
       for k, v in ipairs(_stake_desc) do
         _full_desc[#_full_desc+1] = {n=G.UIT.R, config={align = "cm"}, nodes=v}
@@ -3559,14 +3546,7 @@ function G.UIDEF.current_stake()
   local stake_sprite = get_stake_sprite(G.GAME.stake, 0.8)
   local _stake_desc = {}
   local _stake_center = G.P_CENTER_POOLS.Stake[G.GAME.stake]
-  local t, res = {}, {}
-  if _stake_center.loc_vars and type(_stake_center.loc_vars) == 'function' then
-    res = _stake_center:loc_vars() or {}
-  end
-  t.vars = res.vars or {}
-  t.key = res.key or _stake_center.key
-  t.set = res.set or _stake_center.set
-  localize{type = 'descriptions', key = t.key, set = t.set, nodes = _stake_desc, vars = t.vars}
+  localize{type = 'descriptions', key = _stake_center.key, set = _stake_center.set, nodes = _stake_desc}
   local _full_desc = {}
   for k, v in ipairs(_stake_desc) do
     _full_desc[#_full_desc+1] = {n=G.UIT.R, config={align = "cm"}, nodes=v}
@@ -4412,8 +4392,7 @@ function create_UIBox_your_collection_blinds(exit)
     if math.ceil(#blind_tab/6) > 6 then
         s = s * 6/math.ceil(#blind_tab/6)
     end
-    local temp_blind =  SMODS.create_sprite(0,0,s,s,  discovered and v.atlas or 'blind_chips',  discovered and v.pos or G.b_undiscovered.pos) 
-
+    local temp_blind = AnimatedSprite(0,0,s,s, G.ANIMATION_ATLAS[discovered and v.atlas or 'blind_chips'], discovered and v.pos or G.b_undiscovered.pos)
     temp_blind:define_draw_steps({
       {shader = 'dissolve', shadow_height = 0.05},
       {shader = 'dissolve'}
@@ -5909,16 +5888,7 @@ end
 function G.UIDEF.stake_description(_stake)
   local _stake_center = G.P_CENTER_POOLS.Stake[_stake]
   local ret_nodes = {}
-  local t, res = {}, {}
-  if _stake_center then
-    if _stake_center.loc_vars and type(_stake_center.loc_vars) == 'function' then
-      res = _stake_center:loc_vars() or {}
-    end
-    t.vars = res.vars or {}
-    t.key = res.key or _stake_center.key
-    t.set = res.set or _stake_center.set
-    localize{type = 'descriptions', key = t.key, set = t.set, nodes = ret_nodes, vars = t.vars}
-  end
+  if _stake_center then localize{type = 'descriptions', key = _stake_center.key, set = _stake_center.set, nodes = ret_nodes} end 
 
   local desc_t = {}
   for k, v in ipairs(ret_nodes) do
@@ -5927,7 +5897,7 @@ function G.UIDEF.stake_description(_stake)
 
   return {n=G.UIT.C, config={align = "cm", padding = 0.05, r = 0.1, colour = G.C.L_BLACK}, nodes={
     {n=G.UIT.R, config={align = "cm", padding = 0}, nodes={
-      {n=G.UIT.T, config={text = localize{type = 'name_text', key = t.key, set = t.set}, scale = 0.35, colour = G.C.WHITE}}
+      {n=G.UIT.T, config={text = localize{type = 'name_text', key = _stake_center.key, set = _stake_center.set}, scale = 0.35, colour = G.C.WHITE}}
     }},
     {n=G.UIT.R, config={align = "cm", padding = 0.03, colour = G.C.WHITE, r = 0.1, minh = 1, minw = 5.5}, nodes=desc_t}
   }}
@@ -6052,7 +6022,6 @@ function G.UIDEF.challenge_description(_id, daily, is_row)
       10*joker_size,
       0.6*G.CARD_H, 
       {card_limit = get_challenge_rule(challenge, 'modifiers', 'joker_limit') or 5,
-      negative_info = 'joker',
       card_w = joker_size*G.CARD_W, type = 'title_2', highlight_limit = 0})
     
   if challenge.jokers  then 
@@ -6076,7 +6045,6 @@ function G.UIDEF.challenge_description(_id, daily, is_row)
     3*joker_size,
     0.6*G.CARD_H, 
     {card_limit = get_challenge_rule(challenge, 'modifiers', 'consumable_limit') or 2,
-    negative_info = 'consumable',
     card_w = joker_size*G.CARD_W, type = 'title_2', spread = true, highlight_limit = 0})
 
   if challenge.consumeables then 
@@ -6099,7 +6067,6 @@ function G.UIDEF.challenge_description(_id, daily, is_row)
     3*joker_size,
     0.6*G.CARD_H, 
     {card_limit = nil,
-    negative_info = 'consumable',
     card_w = joker_size*G.CARD_W, type = 'title_2', spread = true, highlight_limit = 0})
 
   if challenge.vouchers then 
@@ -6303,8 +6270,7 @@ function G.UIDEF.challenge_description_tab(args)
         table.sort(other_tab, function (a, b) return a.order < b.order end)
 
         for k, v in ipairs(other_tab) do
-          local temp_blind =  SMODS.create_sprite(0,0,1,1, G.ANIMATION_ATLAS[v.atlas or ''] or  'blind_chips',  v.pos) 
-
+          local temp_blind = AnimatedSprite(0,0,1,1, G.ANIMATION_ATLAS[v.atlas or ''] or G.ANIMATION_ATLAS['blind_chips'], v.pos)
           temp_blind:define_draw_steps({
             {shader = 'dissolve', shadow_height = 0.05},
             {shader = 'dissolve'}
@@ -6434,7 +6400,7 @@ function G.UIDEF.challenge_description_tab(args)
         0,0,
         5.5*G.CARD_W,
               (0.42 - (num_suits <= 4 and 0 or num_suits >= 8 and 0.28 or 0.07 * (num_suits - 4))) * G.CARD_H,
-        {card_limit = #SUITS[suit_map[j]], type = 'title_2', view_deck = true, highlight_limit = 0, card_w = G.CARD_W*0.5, draw_layers = {'card'}, negative_info = 'playing_card'})
+        {card_limit = #SUITS[suit_map[j]], type = 'title_2', view_deck = true, highlight_limit = 0, card_w = G.CARD_W*0.5, draw_layers = {'card'}})
       table.insert(deck_tables, 
       {n=G.UIT.R, config={align = "cm", padding = 0}, nodes={
         {n=G.UIT.O, config={object = view_deck}}
@@ -7186,8 +7152,7 @@ function UnBlind_create_UIBox_blind(type) -- Main definition for the whole of th
 	-- how im sending bs to the lovely consol when i gotta (I keep forgetting how i did it)
 	-- local g = sendDebugMessage(DataDumper(blind_choice), "UNBLIND ◙◙◙◙◙◙◙◙◙◙")
 
-	blind_choice.animation =  SMODS.create_sprite(0,0, 0.75, 0.75, G.ANIMATION_ATLAS[blind_choice.config.atlas] or  'blind_chips',   blind_choice.config.pos) 
-
+	blind_choice.animation = AnimatedSprite(0,0, 0.75, 0.75, G.ANIMATION_ATLAS[blind_choice.config.atlas] or G.ANIMATION_ATLAS['blind_chips'],  blind_choice.config.pos)
 	blind_choice.animation:define_draw_steps({   {shader = 'dissolve', shadow_height = 0.05},  {shader = 'dissolve'}  })
 	local temp_blind = blind_choice.animation
 	local extras = nil

@@ -13,13 +13,14 @@ function CardArea:init(X, Y, W, H, config)
     self.config = setmetatable({card_limits = {card_limit}}, {
         __index = function(t, key)
             if key == "card_limit" then
-                return (t.card_limits.total_slots or 0) - (t.card_limits.extra_slots_used or 0)
+                return t.card_limits.card_limit        
             end
         end,
         __newindex = function(t, key, value)
             if key == 'card_limit' then
-                if not t.card_limits.base then rawset(t.card_limits, 'base', value) end
-                rawset(t.card_limits, 'mod', value - t.card_limits.base - (t.card_limits.extra_slots or 0))
+                t.true_card_limit = t.true_card_limit or 0
+                if not t.no_true_limit then rawset(t, 'true_card_limit', math.max(0, t.true_card_limit + value - (t.card_limits.card_limit or 0))) end
+                rawset(t.card_limits, key, value)
             else
                 rawset(t, key, value)
             end
@@ -33,6 +34,7 @@ function CardArea:init(X, Y, W, H, config)
     self.highlighted = {}
     self.config.highlighted_limit = config.highlight_limit or 5
     self.config.card_limit = config.card_limit or 52
+    self.config.true_card_limit = self.config.card_limit
     self.config.temp_limit = self.config.card_limit
     self.config.card_count = 0
     self.config.type = config.type or 'deck'
@@ -46,6 +48,7 @@ function CardArea:init(X, Y, W, H, config)
 end
 
 function CardArea:emplace(card, location, stay_flipped)
+    self:handle_card_limit(card.ability.card_limit, card.ability.extra_slots_used)
     if location == 'front' or self.config.type == 'deck' then 
         table.insert(self.cards, 1, card)
     else
@@ -97,6 +100,7 @@ function CardArea:remove_card(card, discarded_only)
     for i = #self.cards,1,-1 do
         if self.cards[i] == card then
             card:remove_from_area()
+            self:handle_card_limit(-1 * (card.ability.card_limit or 0), -1 * (card.ability.extra_slots_used or 0))
             table.remove(self.cards, i)
             self:remove_from_highlighted(card, true)
             break
@@ -109,7 +113,7 @@ end
 
 function CardArea:change_size(delta)
     if true then
-        self.config.card_limits.mod = (self.config.card_limits.mod or 0) + delta
+        self:handle_card_limit(delta)
         return
     end
     if delta ~= 0 then 
@@ -303,12 +307,9 @@ function CardArea:update(dt)
     end
     --Check and see if controller is being used
     if G.CONTROLLER.HID.controller and self ~= G.hand then self:unhighlight_all() end
-    if self == G.deck and (self.config.card_limit ~= #G.playing_cards or self.config.total_slots ~= #G.playing_cards) then
-        self.config.card_limit = #G.playing_cards
-        self.config.card_limits.total_slots = #G.playing_cards
-    end
-    self:handle_card_limit()
-    self.config.temp_limit = math.max(#self.cards, self.config.card_limit or 0)
+    if self == G.deck and (self.config.card_limit ~= #G.playing_cards or self.config.true_card_limit ~= #G.playing_cards) then self.config.card_limit = #G.playing_cards; self.config.true_card_limit = #G.playing_cards end
+    self.config.temp_limit = math.max(#self.cards, self.config.card_limit)
+    self.config.card_count = self:count_extra_slots_used(self.cards)
 end
 
 function CardArea:draw()
@@ -325,18 +326,18 @@ function CardArea:draw()
         (self.config.type == 'shop' and self ~= G.shop_vouchers) then
     else
         if not self.children.area_uibox then 
-                local card_count = not self.config.no_card_count and self ~= G.shop_vouchers and {n=G.UIT.R, config={align = self == G.jokers and 'cl' or self == G.hand and 'cm' or 'cr', padding = 0.03, no_fill = true}, nodes={
+                local card_count = self ~= G.shop_vouchers and {n=G.UIT.R, config={align = self == G.jokers and 'cl' or self == G.hand and 'cm' or 'cr', padding = 0.03, no_fill = true}, nodes={
                     {n=G.UIT.B, config={w = 0.1,h=0.1}},
                     {n=G.UIT.T, config={ref_table = self.config, ref_value = 'card_count', scale = 0.3, colour = G.C.WHITE}},
                     {n=G.UIT.T, config={text = '/', scale = 0.3, colour = G.C.WHITE}},
-                    {n=G.UIT.T, config={ref_table = self.config.card_limits, ref_value = 'total_slots', scale = 0.3, colour = G.C.WHITE}},
+                    {n=G.UIT.T, config={ref_table = self.config, ref_value = 'true_card_limit', scale = 0.3, colour = G.C.WHITE}},
                     {n=G.UIT.B, config={w = 0.1,h=0.1}}
                 }} or nil
 
                 self.children.area_uibox = UIBox{
                     definition = 
                         {n=G.UIT.ROOT, config = {align = 'cm', colour = G.C.CLEAR}, nodes={
-                            {n=G.UIT.R, config={minw = self.T.w,minh = self.T.h,align = "cm", padding = 0.1, mid = true, r = 0.1, colour = self.config.bg_colour or self ~= G.shop_vouchers and {0,0,0,0.1} or nil, ref_table = self}, nodes={
+                            {n=G.UIT.R, config={minw = self.T.w,minh = self.T.h,align = "cm", padding = 0.1, mid = true, r = 0.1, colour = self ~= G.shop_vouchers and {0,0,0,0.1} or nil, ref_table = self}, nodes={
                                 self == G.shop_vouchers and 
                                 {n=G.UIT.C, config={align = "cm", paddin = 0.1, func = 'shop_voucher_empty', visible = false}, nodes={
                                     {n=G.UIT.R, config={align = "cm"}, nodes={
@@ -684,13 +685,14 @@ function CardArea:load(cardAreaTable)
     self.config = setmetatable(cardAreaTable.config, {
         __index = function(t, key)
             if key == "card_limit" then
-                return (t.card_limits.total_slots or 0) - (t.card_limits.extra_slots_used or 0)
+                return t.card_limits.card_limit        
             end
         end,
         __newindex = function(t, key, value)
             if key == 'card_limit' then
-                if not t.card_limits.base then rawset(t.card_limits, 'base', value) end
-                rawset(t.card_limits, 'mod', value - t.card_limits.base - (t.card_limits.extra_slots or 0))
+                t.true_card_limit = t.true_card_limit or 0
+                if not t.no_true_limit then rawset(t, 'true_card_limit', math.max(0, t.true_card_limit + value - (t.card_limits.card_limit or 0))) end
+                rawset(t.card_limits, key, value)
             else
                 rawset(t, key, value)
             end

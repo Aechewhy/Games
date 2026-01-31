@@ -3,7 +3,7 @@
   "entries": [
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\scoring_calculation.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
         "pattern": "if self == G.CONTROLLER.text_input_hook then \n",
         "patch_type": "pattern"
       },
@@ -16,7 +16,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
         "pattern": "if self.config.choice then",
         "patch_type": "pattern"
       },
@@ -29,7 +29,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
         "pattern": "self.config.chosen = true",
         "patch_type": "pattern"
       },
@@ -42,7 +42,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
         "pattern": "--Draw the 'chosen triangle'\n",
         "patch_type": "pattern"
       },
@@ -55,7 +55,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_elements.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
         "pattern": "love.graphics.polygon(\"fill\", get_chosen_triangle_from_rect(self.layered_parallax.x, self.layered_parallax.y, self.VT.w*G.TILESIZE, self.VT.h*G.TILESIZE, self.config.chosen == 'vert'))",
         "patch_type": "pattern"
       },
@@ -68,7 +68,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
         "pattern": "self.config.lang.font",
         "patch_type": "regex"
       },
@@ -145,7 +145,7 @@
     },
     {
       "patch_source": {
-        "file": "smods-1.0.0-beta-1224a\\lovely\\ui_additional_text_props.toml",
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
         "pattern": "node.config.lang.font",
         "patch_type": "regex"
       },
