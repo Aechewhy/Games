@@ -1,0 +1,223 @@
+{
+  lang = "en"
+  Texts = [
+    "_append"
+
+/* SWORD */
+
+    {
+      Id = "SwordAndShieldTrait"
+      DisplayName = "Aspect of Athena"
+      Description = "You have {$Keywords.SwordAndShieldKeyword}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Special} Damage & Area: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P} \n\n {#ItalicFormatDark}As the blade was designed, they foresaw the wiser also bearing a shield."
+    }
+    {
+      Id = "SwordAndShieldTrait_Delta"
+      DisplayName = "Aspect of Athena"
+      Description = "You have {$Keywords.SwordAndShieldKeyword}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Special} Damage & Area: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}As the blade was designed, they foresaw the wiser also bearing a shield."
+    }
+    {
+      Id = "SwordAndShieldTrait_Tray"
+      DisplayName = "Aspect of Athena"
+      Description = "You have {$Keywords.SwordAndShieldKeyword}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Special} Damage & Area: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "SwordAndShieldKeyword"
+      DisplayName = "Shield"
+      Description = "For blocking."
+    }
+    {
+      Id = "SwordAndShieldChargeSpeedTrait"
+      InheritFrom = "ShieldChargeSpeedTrait"
+    }
+    {
+      Id = "SwordAndShieldPerfectRushTrait"
+      InheritFrom = "ShieldPerfectRushTrait"
+    }
+    {
+      Id = "SwordAndShieldRushProjectileTrait"
+      InheritFrom = "ShieldRushProjectileTrait"
+    }
+    {
+      Id = "SwordAndShieldBlockEmpowerTrait"
+      InheritFrom = "ShieldBlockEmpowerTrait"
+    }
+    {
+      Id = "SwordAndShieldDashAOETrait"
+      InheritFrom = "ShieldDashAOETrait"
+      DisplayName = "Dashing Spin"
+    }
+
+/* SPEAR */
+
+    {
+      Id = "SpearJumpTrait"
+      DisplayName = "Aspect of Hermes"
+      Description = "Your {$Keywords.Attack} knock foes away.\n {!Icons.Bullet}{#PropertyFormat}Bonus Attack Speed & Move Speed: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipSpeed:P} \n\n {#ItalicFormatDark}It delivers no pain and no mercy."
+    }
+    {
+      Id = "SpearJumpTrait_Delta"
+      DisplayName = "Aspect of Hermes"
+      Description = "Your {$Keywords.Attack} knock foes away.\n {!Icons.Bullet}{#PropertyFormat}Bonus Attack Speed & Move Speed: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}It delivers no pain and no mercy."
+    }
+    {
+      Id = "SpearJumpTrait_Tray"
+      DisplayName = "Aspect of Hermes"
+      Description = "Your {$Keywords.Attack} knocks foes away.\n {!Icons.Bullet}{#PropertyFormat}Bonus Attack Speed & Move Speed: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipSpeed:P}"
+    }
+    {
+      Id = "SpearJumpSharedTrait"
+      DisplayName = "Celestial Spin"
+      Description = "Your {$Keywords.Spin} inflicts {$Keywords.SpearJumpSharedKeyword}.\n {!Icons.Bullet}{#PropertyFormat}Attack & Spin Shared Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageTransfer}%"
+    }
+    {
+      Id = "SpearJumpSharedKeyword"
+      DisplayName = "Shared Suffering"
+      Description = "For {#BoldFormatGraft}7 Sec.{#PreviousFormat}, some of the damage dealt by your {#BoldFormat}Attack{#PreviousFormat}, {#BoldFormat}Dash-Strike {#PreviousFormat}or {#BoldFormat}Spin Attack {#PreviousFormat}is reapplied to {#ItalicFormat}all {#PreviousFormat}afflicted foes."
+    }
+
+/* SHIELD */
+
+    {
+      Id = "ShieldPerfectCatchTrait"
+      DisplayName = "Aspect of Cerberus"
+      Description = "After your {$Keywords.Special}, you can {$Keywords.ShieldPerfectCatchKeyword}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ShieldPerfectCatchKeyword} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P} \n\n {#ItalicFormatDark}The guardian of hell, too, wants to catch the shield."
+    }
+    {
+      Id = "ShieldPerfectCatchTrait_Delta"
+      DisplayName = "Aspect of Cerberus"
+      Description = "After your {$Keywords.Special}, you can {$Keywords.ShieldPerfectCatchKeyword}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ShieldPerfectCatchKeyword} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}The guardian of hell, too, wants to catch the shield."
+    }
+    {
+      Id = "ShieldPerfectCatchTrait_Tray"
+      DisplayName = "Aspect of Cerberus"
+      Description = "After your {$Keywords.Special}, you can {$Keywords.ShieldPerfectCatchKeyword}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ShieldPerfectCatchKeyword} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "ShieldPerfectCatchKeyword"
+      DisplayName = "Perfect Catch"
+      Description = "Use {#BoldFormat}Attack {#PreviousFormat}or {#BoldFormat}Dash-Strike {#PreviousFormat}immediately after catching your shield."
+    }
+    {
+      Id = "ShieldPerfectCatchAoETrait"
+      DisplayName = "Magnetic Flight"
+      Description = "Your {$Keywords.Special} creates a blast that pulls foes in. \n {!Icons.Bullet}{#PropertyFormat}Blast Base Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage}"
+    }
+    {
+      Id = "Objective_PerfectCatch"
+      DisplayName = "Press {A2} while Flashing to Perfect Catch"
+    }
+
+/* BOW */
+
+    {
+      Id = "BowAndKickTrait"
+      DisplayName = "Aspect of Apollo"
+      Description = "Your {$Keywords.Attack} is slower, but you can kick.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.PowerShot} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageIncrease:P} \n\n {#ItalicFormatDark}Melodic strings and light feet for dancing the war song."
+    }
+    {
+      Id = "BowAndKickTrait_Delta"
+      DisplayName = "Aspect of Apollo"
+      Description = "Your {$Keywords.Attack} is slower, but you can kick.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.PowerShot} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}Melodic strings and light feet for dancing the war song."
+    }
+    {
+      Id = "BowAndKickTrait_Tray"
+      DisplayName = "Aspect of Apollo"
+      Description = "Your {$Keywords.Attack} is slower, but you can kick.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.PowerShot} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageIncrease:P}"
+    }
+    {
+      Id = "BowAndKickKillTrait"
+      InheritFrom = "FistKillTrait"
+    }
+    {
+      Id = "BowAndKickDefenseTrait"
+      InheritFrom = "FistAttackDefenseTrait"
+      Description = "After using your {$Keywords.Special}, become {$Keywords.Sturdy} for {#AltUpgradeFormat}{$TooltipData.TooltipDuration} {#PreviousFormat}Sec."
+    }
+    {
+      Id = "BowAndKickSpecialLandTrait"
+      InheritFrom = "FistSpecialLandTrait"
+    }
+    {
+      Id = "BowAndKickKnockbackTrait"
+      DisplayName = "Repulse kick"
+      Description = "Your {$Keywords.Special} creates a {$Keywords.ForceNova} around you."
+    }
+    {
+      Id = "BowAndKickMarkTrait"
+      DisplayName = "Flying Kick"
+      Description = "After you {$Keywords.Attack}, use {$Keywords.Special} to leap towards the last foe struck, dealing {#UpgradeFormat}+200% {#PreviousFormat}damage."
+    }
+    {
+      Id = "BowAndKickDelayTrait"
+      DisplayName = "Echo Shot"
+      Description = "Your {$Keywords.Attack} fires {#AltUpgradeFormat}2 {#PreviousFormat}shots, but each deals {#AltPenaltyFormat}-30% {#PreviousFormat}damage."
+    }
+
+/* FISTS */
+
+    {
+      Id = "FistRushTrait"
+      DisplayName = "Aspect of Chronos"
+      Description = "You're cursed with {$Keywords.FistRushKeyword}, hold {$Keywords.Special} to slow down time.\n {!Icons.Bullet}{#PropertyFormat}Damage Resistance: \Column 380 {#ItalicFormat}Up to {#UpgradeFormat}{$TooltipData.TooltipDamageReduction:P} \n\n {#ItalicFormatDark}No time for writing this..."
+    }
+    {
+      Id = "FistRushTrait_Delta"
+      DisplayName = "Aspect of Chronos"
+      Description = "You're cursed with {$Keywords.FistRushKeyword}, hold {$Keywords.Special} to slow down time.\n {!Icons.Bullet}{#PropertyFormat}Damage Resistance: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n\n {#ItalicFormatDark}No time for writing this..."
+    }
+    {
+      Id = "FistRushTrait_Tray"
+      DisplayName = "Aspect of Chronos"
+      Description = "You're cursed with {$Keywords.FistRushKeyword}, hold {$Keywords.Special} to slow down time.\n {!Icons.Bullet}{#PropertyFormat}Damage Resistance: \Column 380 {#ItalicFormat}Up to {#UpgradeFormat}{$TooltipData.TooltipDamageReduction:P}"
+    }
+    {
+      Id = "FistRushKeyword"
+      DisplayName = "Time Bending"
+      Description = "Each time your {#BoldFormat}Attack {#PreviousFormat}hits a foe, everything moves faster, up to {#PenaltyFormat}+40%{#PreviousFormat}. You also take less damage the faster time passes."
+    }
+    {
+      Id = "FistRushChargeTrait"
+      DisplayName = "Centaur Kick"
+      Description = "Charge your {$Keywords.Special} at {#ItalicFormat}normal speed {#PreviousFormat}for up to {#UpgradeFormat}+300% {#PreviousFormat}base damage. Your {$Keywords.Special} no longer interrupts {$Keywords.FistRushKeyword}."
+    }
+    {
+      Id = "FistRushFireballTrait"
+      DisplayName = "Sync Shot"
+      Description = "Your {$Keywords.Special} becomes a charged shot that deals {#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}base damage. Release on the {#ItalicFormat}third {#PreviousFormat}flash for {#BoldFormat}Power Shot{#PreviousFormat}.\n {!Icons.Bullet}{#PropertyFormat}Power Shot Base Damage: \Column 380 {#UpgradeFormat}100"
+    }
+
+/* GUN */
+
+    {
+      Id = "GunSharedTrait"
+      DisplayName = "Aspect of Helios"
+      Description = "Your {$Keywords.Special} inflicts {$Keywords.RamaSpecial}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.RamaSpecial} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageTransfer}% {#PreviousFormat}{#ItalicFormat}of Attack \n\n {#ItalicFormatDark}Through its eyes, the Sun himself can shine below the surface."
+    }
+    {
+      Id = "GunSharedTrait_Delta"
+      DisplayName = "Aspect of Helios"
+      Description = "Your {$Keywords.Special} inflicts {$Keywords.RamaSpecial}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.RamaSpecial} Damage: \Column 380 {#PreviousFormat}{#OldFormat}{$TooltipData.OldTotal[1]}%{#PreviousFormat}{!Icons.RightArrow}{#UpgradeFormat}{$TooltipData.NewTotal[1]}%{#PreviousFormat} \n\n {#ItalicFormatDark}Through its eyes, the Sun himself can shine below the surface."
+    }
+    {
+      Id = "GunSharedTrait_Tray"
+      DisplayName = "Aspect of Helios"
+      Description = "Your {$Keywords.Special} inflicts {$Keywords.RamaSpecial}.\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.RamaSpecial} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageTransfer}% {#PreviousFormat}{#ItalicFormat}of Attack"
+    }
+    {
+      Id = "GunSharedClusterBombTrait"
+      InheritFrom = "GunGrenadeClusterTrait"
+      Description = "Your {$Keywords.Special} fires {#UpgradeFormat}+2 {#PreviousFormat}bombs."
+    }
+    {
+      Id = "GunSharedSingleBombTrait"
+      DisplayName = "Seeking Bomb"
+      Description = "Your {$Keywords.Special} seeks the nearest foe and deals {#UpgradeFormat}{$TooltipData.TooltipDamageIncrease:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GunSharedDeathTrait"
+      DisplayName = "Shared Fate"
+      Description = "When a foe is slain, all {#BoldFormat}Shared Suffering {#PreviousFormat}afflicted foes take damage.\n {!Icons.Bullet}{#PropertyFormat}Death Damage: \Column 380 {#UpgradeFormat}120"
+    }
+
+  ]
+}

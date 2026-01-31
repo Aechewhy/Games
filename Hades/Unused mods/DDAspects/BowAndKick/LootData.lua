@@ -1,0 +1,6 @@
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickKillTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickDefenseTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickSpecialLandTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickKnockbackTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickMarkTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "BowAndKickDelayTrait")

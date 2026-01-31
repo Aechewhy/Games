@@ -1,0 +1,70 @@
+{
+  Animations = [
+    "_append"
+    {
+      Name = "WeaponEnchantment_Sword_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\sword_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Sword_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\sword_enchantment_ddaspects"
+    }
+
+    {
+      Name = "WeaponEnchantment_Spear_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\spear_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Spear_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\spear_enchantment_ddaspects"
+    }
+
+    {
+      Name = "WeaponEnchantment_Shield_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\shield_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Shield_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\shield_enchantment_ddaspects"
+    }
+
+    {
+      Name = "WeaponEnchantment_Bow_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\bow_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Bow_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\bow_enchantment_ddaspects"
+    }
+
+    {
+      Name = "WeaponEnchantment_Fist_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\fist_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Fist_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\fist_enchantment_ddaspects"
+    }
+
+    {
+      Name = "WeaponEnchantment_Gun_DDAspects_Large"
+      InheritFrom = "WeaponEnchantment"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\gun_enchantment_ddaspects"
+    }
+    {
+      Name = "WeaponEnchantment_Gun_DDAspects_Small"
+      InheritFrom = "WeaponEnchantmentTray"
+      FilePath = "GUI\Screens\WeaponEnchantmentIcons\gun_enchantment_ddaspects"
+    }
+  ]
+}

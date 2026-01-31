@@ -1,0 +1,47 @@
+{
+  Animations = [
+    "_append"
+    {
+      Name = "Codex_Portrait_Sword_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Sword_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "Codex_Portrait_Spear_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Spear_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "Codex_Portrait_Shield_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Shield_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "Codex_Portrait_Bow_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Bow_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "Codex_Portrait_Fist_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Fist_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+    {
+      Name = "Codex_Portrait_Gun_DDAspects"
+      InheritFrom = "Codex_Portrait_Base_01"
+      FilePath = "Portraits\Codex\CodexPortrait_Gun_DDAspects"
+      EndFrame = 1
+      StartFrame = 1
+    }
+  ]
+}

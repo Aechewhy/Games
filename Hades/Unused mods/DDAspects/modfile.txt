@@ -1,0 +1,29 @@
+Include "SpearJump/modfile.txt"
+Include "BowAndKick/modfile.txt"
+Include "GunShared/modfile.txt"
+Include "SwordAndShield/modfile.txt"
+Include "FistRush/modfile.txt"
+Include "ShieldPerfectCatch/modfile.txt"
+
+Import "Common/OtherMods.lua"
+
+:: Text
+Include "Common/Languages/modfile.txt"
+To "Scripts/KeywordData.lua"
+Import "Common/KeywordData.lua"
+To "Scripts/ObjectiveData.lua"
+Import "Common/ObjectiveData.lua"
+
+:: Assets
+To "Win/Packages/GUIDDAspects.pkg"
+Replace "Common/GUIDDAspects.pkg"
+To "Win/Packages/720p/GUIDDAspects.pkg"
+Replace "Common/GUIDDAspects.pkg"
+To "Win/Packages/GUIDDAspects.pkg_manifest"
+Replace "Common/GUIDDAspects.pkg_manifest"
+To "Win/Packages/720p/GUIDDAspects.pkg_manifest"
+Replace "Common/GUIDDAspects.pkg_manifest"
+To "Game/Animations/PortraitAnimations.sjson"
+SJSON "Common/PortraitAnimations.sjson"
+To "Game/Animations/GUIAnimations.sjson"
+SJSON "Common/GUIAnimations.sjson"
