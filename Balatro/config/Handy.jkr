@@ -68,12 +68,8 @@ return {
 	["swap_controller_cursor_stick"] = {
 		["enabled"] = false,
 	},
-	["insta_buy_or_sell"] = {
-		["key_1"] = "Right Mouse",
-		["key_2"] = "None",
-		["enabled"] = true,
-		["key_1_gamepad"] = "Left Bumper",
-		["key_2_gamepad"] = "None",
+	["prevent_if_debugplus"] = {
+		["enabled"] = false,
 	},
 	["misc"] = {
 		["open_mod_settings"] = {
@@ -137,9 +133,17 @@ return {
 		["key_2_gamepad"] = "None",
 	},
 	["nopeus_interaction"] = {
-		["key_2_gamepad"] = "None",
+		["increase"] = {
+			["key_1"] = "Wheel Up",
+			["key_2"] = "None",
+			["enabled"] = true,
+			["key_1_gamepad"] = "None",
+			["key_2_gamepad"] = "None",
+		},
 		["key_1"] = "]",
-		["enabled"] = false,
+		["no_hold"] = {
+			["enabled"] = false,
+		},
 		["key_2"] = "None",
 		["decrease"] = {
 			["key_1"] = "Wheel Down",
@@ -148,25 +152,21 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["no_hold"] = {
-			["enabled"] = false,
-		},
-		["key_1_gamepad"] = "None",
-		["increase"] = {
-			["key_1"] = "Wheel Up",
-			["key_2"] = "None",
-			["enabled"] = true,
-			["key_1_gamepad"] = "None",
-			["key_2_gamepad"] = "None",
-		},
-	},
-	["prevent_if_debugplus"] = {
 		["enabled"] = false,
+		["key_1_gamepad"] = "None",
+		["key_2_gamepad"] = "None",
+	},
+	["insta_use"] = {
+		["key_1"] = "Middle Mouse",
+		["key_2"] = "None",
+		["enabled"] = true,
+		["key_1_gamepad"] = "Right Bumper",
+		["key_2_gamepad"] = "None",
 	},
 	["__gamepad_buy_sell_use_default_overrided"] = true,
 	["controller_sensivity"] = {
-		["enabled"] = true,
 		["mult"] = 1,
+		["enabled"] = true,
 	},
 	["scoring_hold"] = {
 		["any_moment"] = {
@@ -235,6 +235,27 @@ return {
 			["key_1_gamepad"] = "Right Bumper",
 			["key_2_gamepad"] = "None",
 		},
+		["skip_blind"] = {
+			["key_1"] = "None",
+			["key_2"] = "None",
+			["enabled"] = true,
+			["key_1_gamepad"] = "(X)",
+			["key_2_gamepad"] = "None",
+		},
+		["sort_by_suit"] = {
+			["key_1"] = "Wheel Down",
+			["key_2"] = "None",
+			["enabled"] = true,
+			["key_1_gamepad"] = "Left Bumper",
+			["key_2_gamepad"] = "None",
+		},
+		["view_deck"] = {
+			["key_1"] = "D",
+			["key_2"] = "None",
+			["enabled"] = true,
+			["key_1_gamepad"] = "Right Trigger",
+			["key_2_gamepad"] = "None",
+		},
 		["play"] = {
 			["key_1"] = "None",
 			["key_2"] = "None",
@@ -249,28 +270,7 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["view_deck"] = {
-			["key_1"] = "D",
-			["key_2"] = "None",
-			["enabled"] = true,
-			["key_1_gamepad"] = "Right Trigger",
-			["key_2_gamepad"] = "None",
-		},
 		["enabled"] = true,
-		["sort_by_suit"] = {
-			["key_1"] = "Wheel Down",
-			["key_2"] = "None",
-			["enabled"] = true,
-			["key_1_gamepad"] = "Left Bumper",
-			["key_2_gamepad"] = "None",
-		},
-		["skip_blind"] = {
-			["key_1"] = "None",
-			["key_2"] = "None",
-			["enabled"] = true,
-			["key_1_gamepad"] = "(X)",
-			["key_2_gamepad"] = "None",
-		},
 	},
 	["speed_multiplier"] = {
 		["multiply"] = {
@@ -280,17 +280,12 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["key_2_gamepad"] = "None",
+		["key_2"] = "None",
 		["settings_toggle"] = {
 			["enabled"] = true,
 		},
 		["default_value"] = 1,
-		["key_1"] = "Alt",
-		["key_1_gamepad"] = "None",
-		["key_2"] = "None",
-		["no_hold"] = {
-			["enabled"] = false,
-		},
+		["enabled"] = true,
 		["divide"] = {
 			["key_1"] = "Wheel Down",
 			["key_2"] = "None",
@@ -298,7 +293,12 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["enabled"] = true,
+		["key_1"] = "Alt",
+		["no_hold"] = {
+			["enabled"] = false,
+		},
+		["key_1_gamepad"] = "None",
+		["key_2_gamepad"] = "None",
 	},
 	["presets"] = {
 		["load_1"] = {
@@ -342,7 +342,7 @@ return {
 		["key_2_gamepad"] = "None",
 	},
 	["animation_skip"] = {
-		["key_2_gamepad"] = "None",
+		["key_2"] = "None",
 		["decrease"] = {
 			["key_1"] = "Wheel Down",
 			["key_2"] = "None",
@@ -350,12 +350,12 @@ return {
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
 		},
-		["key_2"] = "None",
-		["key_1"] = "Left Bracket",
+		["enabled"] = true,
+		["default_value"] = 1,
 		["settings_toggle"] = {
 			["enabled"] = true,
 		},
-		["default_value"] = 1,
+		["key_2_gamepad"] = "None",
 		["increase"] = {
 			["key_1"] = "Wheel Up",
 			["key_2"] = "None",
@@ -367,18 +367,18 @@ return {
 			["enabled"] = false,
 		},
 		["key_1_gamepad"] = "None",
-		["enabled"] = true,
+		["key_1"] = "Left Bracket",
 	},
 	["dangerous_actions"] = {
+		["animation_skip_unsafe"] = {
+			["enabled"] = false,
+		},
 		["sell_all"] = {
 			["key_1"] = "None",
 			["key_2"] = "None",
 			["enabled"] = false,
 			["key_1_gamepad"] = "None",
 			["key_2_gamepad"] = "None",
-		},
-		["animation_skip_unsafe"] = {
-			["enabled"] = false,
 		},
 		["speed_multiplier_uncap"] = {
 			["enabled"] = false,
@@ -414,19 +414,19 @@ return {
 	},
 	["insta_highlight"] = {
 		["key_1"] = "Left Mouse",
-		["key_2_gamepad"] = "Left Mouse",
 		["key_2"] = "None",
-		["enabled"] = true,
-		["key_1_gamepad"] = "Left Stick",
 		["allow_deselect"] = {
 			["enabled"] = true,
 		},
+		["enabled"] = true,
+		["key_1_gamepad"] = "Left Stick",
+		["key_2_gamepad"] = "Left Mouse",
 	},
-	["insta_use"] = {
-		["key_1"] = "Middle Mouse",
+	["insta_buy_or_sell"] = {
+		["key_1"] = "Right Mouse",
 		["key_2"] = "None",
 		["enabled"] = true,
-		["key_1_gamepad"] = "Right Bumper",
+		["key_1_gamepad"] = "Left Bumper",
 		["key_2_gamepad"] = "None",
 	},
 	["insta_actions_trigger_mode"] = 1,

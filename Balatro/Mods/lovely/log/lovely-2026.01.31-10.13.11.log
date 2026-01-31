@@ -1,0 +1,430 @@
+INFO - [♥] Lovely 0.9.0
+INFO - [♥] Game directory is at "Z:\\home\\aechewhy\\Games\\Balatro"
+INFO - [♥] Writing logs to "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] No blacklist.txt in Mods/lovely.
+INFO - [♥] Found .lovelyignore in 'FancyDecks', skipping it.
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\DVPreview_v4.1.2\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\DVPreview_v4.1.2\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\DVPreview_v4.1.2\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.2.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\DVPreview_v4.1.2\\lovely\\settings.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.1.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_misc.toml", ignoring it
+WARN - [♥] Unknown key `patches.0.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely\\controls_show_deck_preview.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.10.?.overwrite` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Saturn-main\\lovely\\rem_anim.toml", ignoring it
+WARN - [♥] Unknown key `patches.111.?.match_indent` found in patch file "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\Talisman-main\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Cleaning up game-dump directory at "C:\\users\\steamuser\\AppData\\Roaming\\Balatro\\Mods\\lovely\\game-dump"
+INFO - [♥] Initialization complete in 194ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 23 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+WARN - [♥] Regex 'function Controller:update([\s\S]+?)^end' on target 'engine/controller.lua' for regex patch from MobileLikeDragging\lovely\controller.toml resulted in 4 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then' on target 'engine/controller.lua' for pattern patch from Galdur\lovely.toml resulted in no matches
+INFO - [♥] Applied 22 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 11 patches to 'tag.lua'
+INFO - [♥] Applied 6 patches to 'engine/event.lua'
+INFO - [♥] Applied 2 patches to 'engine/node.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 4 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 4 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.ARGS.score_intensity.earned_score = G.GAME.current_round.current_hand.chips*G.GAME.current_round.current_hand.mult\n' on target 'functions/misc_functions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'function localize(args, misc_cat)\nif args and args.vars then\n' on target 'functions/misc_functions.lua' for pattern patch from UnBlind-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 92 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 76 patches to 'game.lua'
+INFO - [♥] Applied 8 patches to 'globals.lua'
+INFO - [G] [typist] keymap = { ["reroll"] = [[r]], ["buy_and_use"] = [[v]], ["buy"] = [[c]], ["cardarea_map"] = { ["["] = [[function: 0x039b0c50]], ["/"] = [[function: 0x039b0c30]], ["'"] = [[function: 0x039b0c70]], }, ["preview_deck"] = [[z]], ["free_select_map"] = { ["i"] = 13, ["f"] = 4, ["q"] = 16, ["y"] = 11, ["k"] = 8, ["j"] = 7, ["d"] = 3, ["l"] = 9, ["e"] = 18, ["t"] = 20, ["u"] = 12, ["g"] = 5, ["r"] = 19, ["o"] = 14, ["s"] = 2, ["w"] = 17, [";"] = 10, ["h"] = 6, ["a"] = 1, ["p"] = 15, }, ["enter"] = [[return]], ["select_multiple_left"] = [[lshift]], ["escape"] = [[escape]], ["cheat"] = { ["leader_left"] = [[q]], ["ranks_map"] = { ["4"] = 4, ["8"] = 8, ["1"] = 10, ["5"] = 5, ["9"] = 9, ["6"] = 6, ["k"] = 13, ["j"] = 11, ["3"] = 3, ["7"] = 7, ["2"] = 2, ["q"] = 12, ["a"] = 14, ["0"] = 10, }, ["suits_map"] = { ["d"] = [[Diamonds]], ["h"] = [[Hearts]], ["s"] = [[Spades]], ["c"] = [[Clubs]], }, ["best_flush"] = [[f]], ["best_hand"] = [[b]], ["leader_right"] = [[p]], ["reverse_left"] = [[lshift]], ["reverse_right"] = [[rshift]], }, ["hand"] = { ["right5"] = [[.]], ["reorder_by_enhancements"] = [[b]], ["sort_by_rank"] = [[v]], ["invert_selection"] = [[m]], ["left5"] = [[,]], ["sort_by_suit"] = [[c]], ["deselect_all"] = [[n]], }, ["select_multiple_right"] = [[rshift]], ["dismiss"] = [[tab]], ["debug_leader_left"] = [[lctrl]], ["global_map"] = { ["escape"] = [[function: 0x039b07c8]], ["x"] = [[function: 0x039b07a8]], }, ["skip"] = [[s]], ["unacorn_card"] = [[\]], ["proceed"] = [[space]], ["debug_leader_right"] = [[rctrl]], ["top_area_free_select_map"] = { ["4"] = 4, ["8"] = 8, ["1"] = 1, ["5"] = 5, ["9"] = 9, ["6"] = 6, ["3"] = 3, ["7"] = 7, ["2"] = 2, ["0"] = 10, }, }
+layout_name = "qwerty"
+INFO - [♥] Applied 18 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 154 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from HandyBalatro\lovely\controls_scoring_hold.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 83 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from HandyBalatro\lovely\controls_animation_skip.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() card:juice_up(0.7);return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'if card then card:juice_up(0.8, 0.5) end' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'card:juice_up(0.6, 0.1)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.chips) == \'number\' and type(G.GAME.current_round.current_hand.chips) == \'number\') and (vals.chips - G.GAME.current_round.current_hand.chips) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local delta = (type(vals.mult) == \'number\' and type(G.GAME.current_round.current_hand.mult) == \'number\')and (vals.mult - G.GAME.current_round.current_hand.mult) or 0' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() card:juice_up(0.7);return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if card then card:juice_up(0.8, 0.5) end' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card:juice_up(0.6, 0.1)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 174 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if G.pack_cards and (G.pack_cards.cards[1]) and' on target 'functions/button_callbacks.lua' for pattern patch from MobileLikeDragging\lovely\button_callbacks.toml resulted in no matches
+WARN - [♥] Pattern 'if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then' on target 'functions/button_callbacks.lua' for pattern patch from CardSleeves-1.8.0\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 81 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Saturn-main\lovely\rem_anim.toml resulted in no matches
+WARN - [♥] Pattern 'Xmult_mod = G.P_CENTERS.v_observatory.config.extra' on target 'card.lua' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+WARN - [♥] Pattern 'message = localize{type = \'variable\', key = \'a_xmult\', vars = {G.P_CENTERS.v_observatory.config.extra}},' on target 'card.lua' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+WARN - [♥] Pattern 'if self.edition and not silent then' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({func = (function() G.GAME.dollar_buffer = 0; return true end)}))' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur\lovely.toml resulted in no matches
+WARN - [♥] Regex 'self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for regex patch from CardSleeves-1.8.0\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 259 patches to 'card.lua'
+INFO - [♥] Applied 25 patches to 'cardarea.lua'
+INFO - [♥] Applied 45 patches to 'blind.lua'
+INFO - [♥] Applied 10 patches to 'card_character.lua'
+INFO - [♥] Applied 19 patches to 'engine/text.lua'
+WARN - [♥] Regex '= amount > 0' on target '=[SMODS _ "src/utils.lua"]' for regex patch from Talisman-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/overrides.lua"]'
+WARN - [♥] Pattern 'x_mult = card.ability.extra' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Saturn-main\lovely\stack.toml resulted in no matches
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2026-01-31 10:13:12 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2026-01-31 10:13:12 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-1224a
+INFO - [G] Order not set for config dictionary: speed_multiplier_settings_toggle
+INFO - [G] Order not set for config dictionary: speed_multiplier_default_value
+INFO - [G] Order not set for config dictionary: animation_skip_settings_toggle
+INFO - [G] Order not set for config dictionary: animation_skip_default_value
+INFO - [G] [Blueprint] Starting to load config
+INFO - [G] [Blueprint] Reading config file: 
+INFO - [G] [Blueprint] return {
+	["INTERNAL_debug"] = false,
+	["brainstorm"] = true,
+	["blueprint"] = true,
+}
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [G] Loaded all Blueprint mod shaders successfully
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Found lone Lua file AbsoluteDeck.lua in Mods directory :: Please place the files for each mod in its own subdirectory.
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): AbsoluteDeck.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: AbsoluteDeck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): AdevntureTimeCards.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: adv_deck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): AdevntureTimeCards.lua
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Duplicate Mod ID: adv_deck
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Duplicate Mod prefix adv used by adv_deck, adv_deck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): Alice in wonderland.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: Alice_in_wonderland
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): BalatroSouls.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: souls_deck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): BicycleStandardCards.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: BicycleStandardCards
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: celestial_funk_limeeffy
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): CupHead.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: CH_deck
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Found lone Lua file EscapeExitButton.lua in Mods directory :: Please place the files for each mod in its own subdirectory.
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): EscapeExitButton.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: EscapeExitButton
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): FancyDecks.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: FancyDecks
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): GravityFallsDeck.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: GravityFalls
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): HadesCards.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: hades
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded.lua
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Duplicate Mod ID: Handy
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): HollowKnightCards.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: hk_deck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): RunReviewer.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: RunReviewer
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/JokerDisplay-main/manifest.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Found lone Lua file LabyrinthDeck.lua in Mods directory :: Please place the files for each mod in its own subdirectory.
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): LabyrinthDeck.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: LabyrinthDeck
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): MidnightTarot.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: MidnightTs
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/MobileLikeDragging/manifest.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): ADeckCreatorModule.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: ADeckCreatorModule
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): RefreshedDecks.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: RefreshedDecks
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): RegularShowDeck.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: RegularShowDeck
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: Loader :: Found lone Lua file UltimateRandom.lua in Mods directory :: Please place the files for each mod in its own subdirectory.
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): UltimateRandom.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: UltimateRandomDeck
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): ultrakillskin.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: Ultrakill_deck
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): facesofsin.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: fos
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: balatro-safety
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/balatro-typist-mod-main/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/jimbos_metrics-master/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/back.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/blind.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/card.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/card_character.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/cardarea.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/game.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/globals.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/main.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/dump/tag.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/back.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/blind.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/card.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/card_character.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/cardarea.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/game.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/globals.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/main.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\users\steamuser\AppData\Roaming\Balatro\Mods/lovely/game-dump/tag.lua.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): rustdeck.lua
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Saving Mod Info: rustydeck
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: CardSleeves :: CardSleeves v1.8.0 loaded~!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin Alice_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin Alice_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin Alice_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin Alice_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin bicycle_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin bicycle_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin bicycle_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin bicycle_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin CH_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: TRACE :: Loader :: Mod FancyDecks was unable to load: 
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin GravityFalls_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin GravityFalls_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin GravityFalls_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin GravityFalls_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin RSD_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin UK_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin UK_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin UK_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin UK_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin adv_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin fos_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin fos_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin fos_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin fos_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: DEBUG :: DefaultLogger :: FacesOfSin :: Loaded Textures
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin hades_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin hk_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin rusty_Hotel!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin rusty_Past within!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin rusty_Samsara!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin rusty_Paradox!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin souls_hearts_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin souls_clubs_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin souls_diamonds_skin!
+INFO - [G] 2026-01-31 10:13:13 :: WARN  :: DeckSkin :: Old DeckSkin formatting detected on DeckSkin souls_spades_skin!
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: TIMER :: [0000] Injected Fonts in 0.005 ms
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: TIMER :: [0000] Injected DynaTextEffects in 0.002 ms
+INFO - [G] 2026-01-31 10:13:13 :: INFO  :: TIMER :: [0000] Injected Language in 0.005 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.293 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0051] Injected Atlas in 611.511 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0008] Injected Sound in 8.284 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0002] Injected nil in 0.015 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0008] Injected Stake in 0.182 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.027 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected ObjectType in 0.089 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0070] Injected Center in 0.791 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0007] Injected Undiscovered Sprite in 0.030 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0002] Injected Blind in 0.027 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected Seal in 0.164 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected Suit in 0.089 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0013] Injected Rank in 0.135 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0062] Injected DeckSkin in 0.462 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0017] Injected JimboQuip in 0.052 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.136 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0020] Injected Challenge in 0.101 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0000] Injected Tag in 0.005 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.083 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0001] Injected Shader in 4.835 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.021 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.065 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0002] Injected Scoring_Parameters in 0.192 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0007] Injected Scoring_Calculations in 0.027 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0022] Injected Draw Step in 0.195 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 13.743 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0004] Injected AltTexture in 90.839 ms
+INFO - [G] 2026-01-31 10:13:14 :: INFO  :: TIMER :: [0002] Injected Texture Pack in 0.025 ms
+INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-31 10:19:01 :: ERROR :: StackTrace :: Oops! The game crashed
+functions/common_events.lua:2759: attempt to compare number with boolean
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:610'
+	Local variables:
+	 msg = string: "functions/common_events.lua:2759: attempt to compare number with boolean"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE metamethod at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 596 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 596 of chunk main.lua)
+(3) Lua upvalue 'GetNewBoss' at file 'functions/common_events.lua:2759'
+	Local variables:
+	 eligible_bosses = table: 0x0b288608  {bl_club:0, bl_arm:0, bl_wheel:0, bl_mouth:0, bl_eye:0, bl_pillar:0, bl_hook:0, bl_head:0, bl_goad:0, bl_tooth:0, bl_empty:true, bl_manacle:0 (more...)}
+	 min_use = number: 0
+	 (for generator) = C function: next
+	 (for state) = table: 0x0b288608  {bl_club:0, bl_arm:0, bl_wheel:0, bl_mouth:0, bl_eye:0, bl_pillar:0, bl_hook:0, bl_head:0, bl_goad:0, bl_tooth:0, bl_empty:true, bl_manacle:0 (more...)}
+	 (for control) = number: nan
+	 k = string: "bl_empty"
+	 v = boolean: true
+	 (*temporary) = boolean: true
+	 (*temporary) = boolean: true
+	 (*temporary) = number: 8
+	 (*temporary) = number: 3
+	 (*temporary) = C function: builtin#62
+	 (*temporary) = string: "attempt to compare number with boolean"
+(4) Lua global 'get_new_boss' at file 'Mods/RPG Classes/DeckCreator.lua:2890'
+	Local variables:
+	 deck = table: 0x0babe8d8  {pos:table: 0x13daa368, name:Magic Deck, loc_name:Magic Deck, effect:table: 0x07de0d28, atlas:centers}
+(5) Lua global 'reset_blinds' at file 'functions/common_events.lua:2705'
+	Local variables:
+	 (*temporary) = table: 0x096e1570  {Small:bl_small, Boss:bl_psychic, Big:bl_big}
+(6) Lua upvalue 'CashOut' at file 'functions/button_callbacks.lua:3075'
+	Local variables:
+	 e = table: 0x06112498  {pixellated_rect:table: 0x0b37fcb8, click_offset:table: 0x0797fda8, children:table: 0x06348f88, parent:table: 0x079b8578, T:table: 0x0797fc48 (more...)}
+(7) Lua function '(anonymous)' at file 'Mods/RPG Classes/DeckCreator.lua:1662' (best guess)
+	Local variables:
+	 e = table: 0x06112498  {pixellated_rect:table: 0x0b37fcb8, click_offset:table: 0x0797fda8, children:table: 0x06348f88, parent:table: 0x079b8578, T:table: 0x0797fc48 (more...)}
+	 isSkipShopOptionsEnabled = boolean: false
+(8) Lua method 'click' at file 'engine/ui.lua:1023'
+	Local variables:
+	 self = table: 0x06112498  {pixellated_rect:table: 0x0b37fcb8, click_offset:table: 0x0797fda8, children:table: 0x06348f88, parent:table: 0x079b8578, T:table: 0x0797fc48 (more...)}
+(9) Lua method 'update' at file 'engine/controller.lua:590'
+	Local variables:
+	 self = table: 0x054afab0  {held_button_times:table: 0x05b28f90, focus_cursor_stack_level:1, snap_cursor_to:table: 0x08990378, interrupt:table: 0x05b28fe0, r_cursor_up:table: 0x054afde0 (more...)}
+	 dt = number: 0.00704676
+(10) Lua upvalue 'gameUpdateRef' at file 'game.lua:2748'
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(11) Lua upvalue 'orig_game_update' at Steamodded file 'src/ui.lua:124' 
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(12) Lua upvalue 'upd' at file 'main.lua:1833'
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(13) Lua upvalue 'game_update_ref' at file 'main.lua:2818'
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(14) Lua upvalue 'gameUpdateRef' at file 'src/core.lua:121' (from lovely module systemclock.core)
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(15) Lua method 'update' at line 32 of chunk '"5060"]'
+	Local variables:
+	 self = table: 0x03aaf0d0  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x06256088, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x03b0e2d8 (more...)}
+	 dt = number: 0.00704676
+(16) Lua upvalue 'love_update_ref' at file 'main.lua:1006'
+	Local variables:
+	 dt = number: 0.00704676
+(17) Lua upvalue 'oldupd' at file 'modules/controller.lua:1079' (from lovely module handy/controller)
+	Local variables:
+	 dt = number: 0.00704676
+(18) Lua field 'update' at file 'main.lua:2851'
+	Local variables:
+	 dt = number: 0.00704676
+(19) Lua function '?' at file 'main.lua:944' (best guess)
+(20) global C function 'xpcall'
+(21) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 915 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-01-31 10:19:01 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-1224a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.9.0
+Platform: Windows
+Steamodded Mods:
+    1: JokerSellValue by OppositeWolf770 [ID: JokerSellValue, Priority: 100000, Version: 1.3.0]
+    2: Card Sleeves by Larswijn [ID: CardSleeves, Priority: -10, Version: 1.8.0, Uses Lovely]
+    3: typist by kasimeka [ID: typist, Version: 1.8.3, Uses Lovely]
+    4: Bicycle Standard Cards by Amari [ID: BicycleStandardCards, Version: 1.0.0]
+    5: Souls Borne Ring Shadow Die Twice by Mahuru [ID: souls_deck, Version: 1.0.1]
+    6: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2.1e, Uses Lovely]
+    7: Refreshed Decks by NooberTheAbsolute [ID: RefreshedDecks, Version: 1.0.0]
+    8: CupHead by Mahuru [ID: CH_deck, Version: 1.0.0]
+    9: Run Reviewer by MilcK [ID: RunReviewer]
+    10: rusty lake deck by pixal [ID: rustydeck]
+    11: Regular Show Deck by rynagon and NyxForKicks [ID: RegularShowDeck, Version: 1.0.0]
+    12: Jimbo's Metrics by CraftedCart [ID: jimbos_metrics, Version: 0.1.0]
+    13: Gravity Falls by therealdan55 [ID: GravityFalls, Version: 1.0.1]
+    14: Saturn by OceanRamen [ID: Saturn, Version: 0.2.2-E-ALPHA, Uses Lovely]
+    15: Labyrinth Deck by MathIsFun_ [ID: LabyrinthDeck]
+    16: Marvel's Midnight Suns Tarot Cards by SeijiPuu [ID: MidnightTs, Version: 1.0.0]
+    17: SystemClock by Breezebuilder [ID: SystemClock, Priority: 100000, Version: 1.7.1, Uses Lovely]
+    18: JokerDisplay by nh6574 [ID: JokerDisplay, Priority: -1000000000, Version: 1.9.2, Uses Lovely]
+    19: Faces of Sin by TiltedHat, Victin [ID: fos, Version: 1.1.2]
+    20: Hitman Cards by WaKa [ID: HitmanHearts, Version: 1.0.0]
+    21: Escape Exit Button by Steamo [ID: EscapeExitButton]
+    22: Adventure Time Cards by Mahuru [ID: adv_deck, Version: 1.0.0]
+    23: Balatro Safety by Zei33 [ID: balatro-safety, Version: 1.0.0]
+    24: Alice in wonderland by Iroks [ID: Alice_in_wonderland, Version: 1.0.0]
+    25: Ultimate Random Deck by Steamo [ID: UltimateRandomDeck]
+    26: Hollow Knight Cards by Galeandra [ID: hk_deck, Version: 1.0.0]
+    27: unBlind - shop GUI by Soap (MeraGenio) [ID: unBlindShopGUI, Priority: 3, Version: 1.0.0, Uses Lovely]
+    28: ULTRAKILL Deck by Wael and cookieee [ID: Ultrakill_deck, Version: 1.0.0]
+    29: Malverk by Eremel_ [ID: malverk, Priority: -999999, Version: 1.1.3a, Uses Lovely]
+    30: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg, lord.ruby [ID: Talisman, Version: 2.7, Uses Lovely]
+    31: Blueprint by stupxd aka stupid, Jonathan [ID: blueprint, Priority: 69, Version: 3.3, Uses Lovely]
+    32: Go to bed, Minty by wingedcatgirl [ID: gotobed, Priority: 10, Version: 1.1.1, Uses Lovely]
+    33: Hades Cards by Galeandra [ID: hades, Version: 1.0.0]
+    34: Handy by SleepyG11 [ID: Handy, Version: 1.5.1m, Uses Lovely]
+    35: Celestial Funk by Lime_Effy [ID: celestial_funk_limeeffy, Version: 1.0.0]
+    36: RPG Classes by playfulrainbow [ID: ADeckCreatorModule]
+    37: Absolute Deck by Steamo [ID: AbsoluteDeck]
+Lovely Mods:
+    1: MobileLikeDragging
+    2: DVPreview_v4.1.2
