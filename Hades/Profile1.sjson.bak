@@ -2,12 +2,11 @@
   WindowHeight = 1080
   UseMouse = true
   NewUpdateSoundRevisionViewed = 38290
-  BackupSaveCount = 1
+  BackupSaveCount = 2
   LastRoadmapRevisionViewed = 38290
   SwapInterval = 0
   DisplayIndex = 0
   ShowGameplayTimer = true
-  ValidCheckpoint = false
   LastPatchNoteRevisionViewed = 38290
   ControlsResetRevisionViewed = 38290
   Y = 1080
