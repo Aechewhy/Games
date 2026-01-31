@@ -4210,3 +4210,94 @@ date       time     [thread name/id ]                   file:line    v |
 2026-01-31 13:19:11 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
 2026-01-31 13:19:11 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
 2026-01-31 13:19:11 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-01-31 13:19:12 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.51
+2026-01-31 13:19:28 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:19:48 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 13:20:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:20:24 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:20:49 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:20:50 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:21:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:21:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:21:42 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:21:46 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:21:52 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:22:01 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:22:05 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:22:08 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017429 s
+2026-01-31 13:22:08 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.021117 s
+2026-01-31 13:22:08 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 730948 bytes
+2026-01-31 13:22:08 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 13:22:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-01-31 13:22:27 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-01-31 13:22:37 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Boss01 -> DeathArea
+2026-01-31 13:22:37 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015943 s
+2026-01-31 13:22:37 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019185 s
+2026-01-31 13:22:37 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 662394 bytes
+2026-01-31 13:22:37 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-01-31 13:22:37 [NoName         ]              world.cpp:1329  INFO| Loading next map: DeathArea
+2026-01-31 13:22:37 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-01-31 13:22:37 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-01-31 13:22:37 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest DeathArea
+2026-01-31 13:22:37 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 650798 bytes
+2026-01-31 13:22:37 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest DeathArea
+2026-01-31 13:22:37 [NoName         ]              world.cpp:1398   DBG| load packages took 0.004243
+2026-01-31 13:22:37 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-01-31 13:22:37 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: DeathArea.pkg
+2026-01-31 13:22:37 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: DeathArea
+2026-01-31 13:22:37 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: DeathArea.bank
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.034515
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: DeathArea
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest DemeterUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest DemeterUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest ZeusUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest ZeusUpgrade
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: DemeterUpgrade.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: DemeterUpgrade
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ZeusUpgrade.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ZeusUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AthenaUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AthenaUpgrade
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AthenaUpgrade.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AthenaUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AresUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AresUpgrade
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AresUpgrade.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AresUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AphroditeUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AphroditeUpgrade
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AphroditeUpgrade.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AphroditeUpgrade
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Charts
+2026-01-31 13:22:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Charts
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Charts.pkg
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Charts
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-01-31 13:22:38 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-01-31 13:22:38 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldThrow
+2026-01-31 13:22:38 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldThrow
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldThrow.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldThrow
+2026-01-31 13:22:38 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-01-31 13:22:38 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-01-31 13:22:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-01-31 13:22:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.49
+2026-01-31 13:22:47 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 13:22:47 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-01-31 13:22:48 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\ExitConfirmDialog.sjson -- rb (error: No such file or directory)
+2026-01-31 13:22:48 [MainThread     ]       audiomanager.cpp:158    DBG| AudioManager.reset
+2026-01-31 13:22:48 [MainThread     ]       audiomanager.cpp:3420   DBG| AudioManager.reset, excludeId = -1, fullWipe = true
+2026-01-31 13:22:48 [MainThread     ]     profilemanager.cpp:126   INFO| saveProfile()
+2026-01-31 13:22:48 [NoName         ]     profilemanager.cpp:90    INFO| beginning profile write
+2026-01-31 13:22:48 [NoName         ]     profilemanager.cpp:110   INFO| profile write done
+2026-01-31 13:22:48 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\MainMenuScreen.sjson -- rb (error: No such file or directory)
+2026-01-31 13:22:50 [MainThread     ]     profilemanager.cpp:126   INFO| saveProfile()
+2026-01-31 13:22:50 [NoName         ]     profilemanager.cpp:90    INFO| beginning profile write
+2026-01-31 13:22:50 [MainThread     ]                app.cpp:255    DBG| Shutting down
+2026-01-31 13:22:50 [MainThread     ]           ingameui.cpp:37    INFO| InGameUI Destroy
+2026-01-31 13:22:50 [NoName         ]     profilemanager.cpp:110   INFO| profile write done
+2026-01-31 13:22:50 [MainThread     ]             luaext.cpp:445   INFO| Lua interface destroyed
