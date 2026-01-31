@@ -21,9 +21,8 @@ function loadAPIs()
 
     function SMODS.GameObject:__call(o)
         o = o or {}
-        -- Removed by Malverk
-        -- assert(o.mod == nil, "Created object should not have \"mod\" field defined.")
-        o.mod = o.mod or SMODS.current_mod
+        assert(o.mod == nil, "Created object should not have \"mod\" field defined.")
+        o.mod = SMODS.current_mod
         o.original_mod = o.mod
         setmetatable(o, self)
         for _, v in ipairs(o.required_params or {}) do

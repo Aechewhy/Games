@@ -1705,7 +1705,7 @@
     },
     {
       "patch_source": {
-        "file": "Malverk-main\\lovely\\ui.toml",
+        "file": "Malverk-1.1.3a\\lovely\\ui.toml",
         "pattern": "local customize = nil",
         "patch_type": "pattern"
       },
@@ -1718,7 +1718,7 @@
     },
     {
       "patch_source": {
-        "file": "Malverk-main\\lovely\\ui.toml",
+        "file": "Malverk-1.1.3a\\lovely\\ui.toml",
         "pattern": "local customize = UIBox_button{ label = {localize('b_customize_deck')}, button = \"customize_deck\", minw = 5}",
         "patch_type": "pattern"
       },

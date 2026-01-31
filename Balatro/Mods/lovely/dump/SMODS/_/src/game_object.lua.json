@@ -3,19 +3,6 @@
   "entries": [
     {
       "patch_source": {
-        "file": "Malverk-main\\lovely\\ui.toml",
-        "pattern": "assert(o.mod == nil, \"Created object should not have \\\"mod\\\" field defined.\")\no.mod = SMODS.current_mod\n",
-        "patch_type": "pattern"
-      },
-      "regions": [
-        {
-          "start_line": 24,
-          "end_line": 26
-        }
-      ]
-    },
-    {
-      "patch_source": {
         "file": "Saturn-main\\lovely\\stack.toml",
         "pattern": "x_mult = card.ability.extra",
         "patch_type": "pattern"
