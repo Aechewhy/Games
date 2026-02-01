@@ -5,7 +5,7 @@
 	"setting.mat_antialias"		"4"
 	"setting.mat_aaquality"		"0"
 	"setting.mat_forceaniso"		"16"
-	"setting.mat_vsync"		"1"
+	"setting.mat_vsync"		"0"
 	"setting.mat_triplebuffered"		"0"
 	"setting.mat_grain_scale_override"		"1.056000"
 	"setting.mat_monitorgamma"		"2.200000"
