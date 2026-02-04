@@ -6595,3 +6595,342 @@ date       time     [thread name/id ]                   file:line    v |
 2026-02-04 14:49:16 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
 2026-02-04 14:49:16 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
 2026-02-04 14:49:16 [MainThread     ]            program.cpp:369   INFO| Window Inactive
+2026-02-04 14:52:57 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 14:52:57 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 14:52:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:53:07 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:53:43 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:53:43 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:53:56 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:53:57 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:53:57 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Hub -> D_Mini11
+2026-02-04 14:53:57 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014365 s
+2026-02-04 14:53:57 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017520 s
+2026-02-04 14:53:57 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:53:57 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 667461 bytes
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini11
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000008
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:53:57 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 123715 bytes
+2026-02-04 14:53:57 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini11
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.003242
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:53:57 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:53:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.05
+2026-02-04 14:53:58 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:04 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:09 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:11 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015931 s
+2026-02-04 14:54:11 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019126 s
+2026-02-04 14:54:11 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 670955 bytes
+2026-02-04 14:54:11 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:14 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:14 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini11 -> D_Mini08
+2026-02-04 14:54:14 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.041897 s
+2026-02-04 14:54:14 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.045051 s
+2026-02-04 14:54:14 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:54:14 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 660567 bytes
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini08
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:54:14 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 76068 bytes
+2026-02-04 14:54:14 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini08
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002248
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:54:14 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:54:15 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.50
+2026-02-04 14:54:15 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:19 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:20 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:20 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015875 s
+2026-02-04 14:54:20 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019143 s
+2026-02-04 14:54:20 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 659881 bytes
+2026-02-04 14:54:20 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:22 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:24 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:24 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini08 -> D_Mini13
+2026-02-04 14:54:24 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016981 s
+2026-02-04 14:54:24 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020175 s
+2026-02-04 14:54:24 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:54:24 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 658904 bytes
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini13
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000010
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:54:24 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 82817 bytes
+2026-02-04 14:54:24 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini13
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002400
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:54:24 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:54:24 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.21
+2026-02-04 14:54:27 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:32 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:32 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:32 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015146 s
+2026-02-04 14:54:32 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018315 s
+2026-02-04 14:54:32 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 659597 bytes
+2026-02-04 14:54:32 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:37 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:37 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini13 -> D_Mini03
+2026-02-04 14:54:37 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016620 s
+2026-02-04 14:54:37 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019761 s
+2026-02-04 14:54:37 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:54:37 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 658764 bytes
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini03
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000008
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:54:37 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 62818 bytes
+2026-02-04 14:54:37 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini03
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002649
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:54:37 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:54:37 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.62
+2026-02-04 14:54:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:42 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:42 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015421 s
+2026-02-04 14:54:42 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018643 s
+2026-02-04 14:54:42 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 661167 bytes
+2026-02-04 14:54:42 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:44 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:46 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:54:46 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini03 -> D_Combat03
+2026-02-04 14:54:46 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016782 s
+2026-02-04 14:54:46 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020024 s
+2026-02-04 14:54:46 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:54:46 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 662039 bytes
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Combat03
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:54:46 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 158650 bytes
+2026-02-04 14:54:46 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Combat03
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002397
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:54:46 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:54:46 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.17
+2026-02-04 14:54:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:54:57 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:55:12 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 14:55:12 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-02-04 14:55:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:55:26 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:55:27 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:55:43 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:55:45 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:55:53 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015604 s
+2026-02-04 14:55:53 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018952 s
+2026-02-04 14:55:53 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 669210 bytes
+2026-02-04 14:55:53 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:56:01 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:56:01 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Combat03 -> D_Hub
+2026-02-04 14:56:01 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017588 s
+2026-02-04 14:56:01 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020847 s
+2026-02-04 14:56:01 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:56:01 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 676756 bytes
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Hub
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000009
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:56:01 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 389110 bytes
+2026-02-04 14:56:01 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Hub
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.003435
+2026-02-04 14:56:01 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:56:02 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:56:02 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:56:02 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:56:02 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.70
+2026-02-04 14:56:03 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:56:08 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:56:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:56:41 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:56:41 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Hub -> D_Mini01
+2026-02-04 14:56:41 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015077 s
+2026-02-04 14:56:41 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018305 s
+2026-02-04 14:56:41 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:56:41 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 680133 bytes
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini01
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:56:41 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 71262 bytes
+2026-02-04 14:56:41 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini01
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002421
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:56:41 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:56:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.09
+2026-02-04 14:56:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:56:51 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:56:58 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:56:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:56:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:01 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:01 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015605 s
+2026-02-04 14:57:01 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018880 s
+2026-02-04 14:57:01 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 682322 bytes
+2026-02-04 14:57:01 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:07 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:07 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini01 -> D_Mini11
+2026-02-04 14:57:07 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017143 s
+2026-02-04 14:57:07 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020409 s
+2026-02-04 14:57:07 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:57:07 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 673454 bytes
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini11
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000008
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:57:07 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 123715 bytes
+2026-02-04 14:57:07 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini11
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002131
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:57:07 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:57:07 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.54
+2026-02-04 14:57:08 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:10 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:19 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:19 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017480 s
+2026-02-04 14:57:19 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020717 s
+2026-02-04 14:57:19 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 675666 bytes
+2026-02-04 14:57:19 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:20 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:22 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:22 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini11 -> D_Mini03
+2026-02-04 14:57:22 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016246 s
+2026-02-04 14:57:22 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019493 s
+2026-02-04 14:57:22 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:57:22 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 674145 bytes
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini03
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:57:22 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 62818 bytes
+2026-02-04 14:57:22 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini03
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.001939
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:57:22 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:57:22 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.18
+2026-02-04 14:57:23 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:32 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:33 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:34 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:34 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017391 s
+2026-02-04 14:57:34 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020727 s
+2026-02-04 14:57:34 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:34 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 676206 bytes
+2026-02-04 14:57:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:38 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini03 -> D_Mini12
+2026-02-04 14:57:38 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.032772 s
+2026-02-04 14:57:38 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.035995 s
+2026-02-04 14:57:38 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:57:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 674969 bytes
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Mini12
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000008
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:57:38 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 78542 bytes
+2026-02-04 14:57:38 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Mini12
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002258
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:57:38 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:57:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.74
+2026-02-04 14:57:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:41 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:42 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:43 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016061 s
+2026-02-04 14:57:43 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019353 s
+2026-02-04 14:57:43 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 676643 bytes
+2026-02-04 14:57:43 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:45 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:47 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:57:47 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Mini12 -> D_Reprieve01
+2026-02-04 14:57:47 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017616 s
+2026-02-04 14:57:47 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020909 s
+2026-02-04 14:57:47 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:57:47 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 676039 bytes
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Reprieve01
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:57:47 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 121845 bytes
+2026-02-04 14:57:47 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Reprieve01
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002528
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:57:47 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:57:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.33
+2026-02-04 14:57:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:57:52 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:58:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:58:05 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Reprieve01 -> D_Hub
+2026-02-04 14:58:05 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017920 s
+2026-02-04 14:58:05 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.021971 s
+2026-02-04 14:58:05 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:58:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 693655 bytes
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Hub
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000009
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:58:05 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 389110 bytes
+2026-02-04 14:58:05 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Hub
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.003306
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:58:05 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:58:05 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.72
+2026-02-04 14:58:06 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:58:16 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:58:19 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 14:58:19 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-02-04 14:58:20 [MainThread     ]            program.cpp:369   INFO| Window Inactive
