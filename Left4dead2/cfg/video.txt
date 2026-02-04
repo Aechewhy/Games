@@ -7,7 +7,7 @@
 	"setting.mat_forceaniso"		"16"
 	"setting.mat_vsync"		"0"
 	"setting.mat_triplebuffered"		"0"
-	"setting.mat_grain_scale_override"		"1.056000"
+	"setting.mat_grain_scale_override"		"0.000000"
 	"setting.mat_monitorgamma"		"2.200000"
 	"setting.gpu_mem_level"		"2"
 	"setting.mem_level"		"0"
