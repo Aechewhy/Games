@@ -6120,3 +6120,478 @@ date       time     [thread name/id ]                   file:line    v |
 2026-02-04 14:39:56 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
 2026-02-04 14:40:08 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
 2026-02-04 14:40:09 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:40:16 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015736 s
+2026-02-04 14:40:16 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018716 s
+2026-02-04 14:40:16 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 602523 bytes
+2026-02-04 14:40:16 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:40:23 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:40:25 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:40:25 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Combat04 -> C_Reprieve01
+2026-02-04 14:40:25 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016078 s
+2026-02-04 14:40:25 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019034 s
+2026-02-04 14:40:25 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:40:25 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 600988 bytes
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Reprieve01
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000006
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:40:25 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 164278 bytes
+2026-02-04 14:40:25 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Reprieve01
+2026-02-04 14:40:25 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:40:25 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.078625
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:40:25 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:40:26 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.25
+2026-02-04 14:40:26 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:40:36 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:40:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:40:38 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Reprieve01 -> C_Combat11
+2026-02-04 14:40:38 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016208 s
+2026-02-04 14:40:38 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019142 s
+2026-02-04 14:40:38 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:40:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 603270 bytes
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Combat11
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:40:38 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 275129 bytes
+2026-02-04 14:40:38 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Combat11
+2026-02-04 14:40:38 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:40:38 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.084172
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:40:38 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:40:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.20
+2026-02-04 14:40:40 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:05 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:13 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017039 s
+2026-02-04 14:41:13 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019956 s
+2026-02-04 14:41:13 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 603124 bytes
+2026-02-04 14:41:13 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:41:16 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:18 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:41:18 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Combat11 -> C_Shop01
+2026-02-04 14:41:18 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.039452 s
+2026-02-04 14:41:18 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.042397 s
+2026-02-04 14:41:18 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:41:18 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 603426 bytes
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Shop01
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:41:18 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 113389 bytes
+2026-02-04 14:41:18 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Shop01
+2026-02-04 14:41:18 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:41:18 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.081428
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:41:18 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:41:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.11
+2026-02-04 14:41:19 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:22 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:41:50 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:41:51 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:41:51 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Shop01 -> C_Combat08
+2026-02-04 14:41:51 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014620 s
+2026-02-04 14:41:51 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017590 s
+2026-02-04 14:41:51 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:41:51 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 606862 bytes
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Combat08
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000008
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:41:51 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:41:51 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 201537 bytes
+2026-02-04 14:41:51 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Combat08
+2026-02-04 14:41:51 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:41:52 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:41:52 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.065399
+2026-02-04 14:41:52 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:41:52 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:41:52 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:41:52 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:41:52 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.21
+2026-02-04 14:41:53 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:42:17 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:42:19 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:42:34 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:42:35 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:42:36 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014647 s
+2026-02-04 14:42:36 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017614 s
+2026-02-04 14:42:36 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 609597 bytes
+2026-02-04 14:42:36 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:42:51 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:42:54 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:42:54 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Combat08 -> RoomSecret03
+2026-02-04 14:42:54 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014328 s
+2026-02-04 14:42:54 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017285 s
+2026-02-04 14:42:54 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 606702 bytes
+2026-02-04 14:42:54 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1329  INFO| Loading next map: RoomSecret03
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Chaos
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Chaos
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000258
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Chaos.pkg
+2026-02-04 14:42:55 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 62841 bytes
+2026-02-04 14:42:55 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: RoomSecret03
+2026-02-04 14:42:55 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: ChaosRealm.bank
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Chaos
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.029049
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest ZeusUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest ZeusUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AthenaUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AthenaUpgrade
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ZeusUpgrade.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ZeusUpgrade
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AthenaUpgrade.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AthenaUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AphroditeUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AphroditeUpgrade
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AphroditeUpgrade.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AphroditeUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AresUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AresUpgrade
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Charts
+2026-02-04 14:42:55 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Charts
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AresUpgrade.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AresUpgrade
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Charts.pkg
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Charts
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:42:55 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:42:55 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldThrow
+2026-02-04 14:42:55 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldThrow
+2026-02-04 14:42:55 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-02-04 14:42:55 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldThrow.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldThrow
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-02-04 14:42:55 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-02-04 14:42:55 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.67
+2026-02-04 14:43:02 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:16 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:16 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:16 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: TrialUpgrade.pkg
+2026-02-04 14:43:16 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:43:16 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:16 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg -- rb (error: No such file or directory)
+2026-02-04 14:43:16 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed TrialUpgrade.pkg
+2026-02-04 14:43:16 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: TrialUpgrade
+2026-02-04 14:43:16 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:36 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:43:38 [MainThread     ]              world.cpp:1526  INFO| World::Begin() RoomSecret03 -> C_Combat13
+2026-02-04 14:43:38 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016224 s
+2026-02-04 14:43:38 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019193 s
+2026-02-04 14:43:38 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 612276 bytes
+2026-02-04 14:43:38 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Combat13
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Elysium
+2026-02-04 14:43:38 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 206713 bytes
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Elysium
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1398   DBG| load packages took 0.002829
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Elysium.pkg
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:43:38 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Combat13
+2026-02-04 14:43:38 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.044523
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Elysium
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AthenaUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AthenaUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest ZeusUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest ZeusUpgrade
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AthenaUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AthenaUpgrade
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ZeusUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ZeusUpgrade
+2026-02-04 14:43:38 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:38 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: TrialUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg -- rb (error: No such file or directory)
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed TrialUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: TrialUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AphroditeUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AphroditeUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AresUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AresUpgrade
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AphroditeUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AphroditeUpgrade
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AresUpgrade.pkg
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AresUpgrade
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Charts
+2026-02-04 14:43:38 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Charts
+2026-02-04 14:43:38 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Charts.pkg
+2026-02-04 14:43:38 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:43:39 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Charts
+2026-02-04 14:43:39 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:43:39 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:43:39 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldThrow
+2026-02-04 14:43:39 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldThrow
+2026-02-04 14:43:39 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldThrow.pkg
+2026-02-04 14:43:39 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldThrow
+2026-02-04 14:43:39 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-02-04 14:43:39 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-02-04 14:43:39 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-02-04 14:43:39 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-02-04 14:43:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.18
+2026-02-04 14:43:40 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:42 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:46 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:46 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:47 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:51 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:43:55 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:02 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:10 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:23 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:27 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:44:36 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:46 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:48 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:56 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:44:56 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016211 s
+2026-02-04 14:44:56 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019190 s
+2026-02-04 14:44:56 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 614119 bytes
+2026-02-04 14:44:56 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:45:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:45:05 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Combat13 -> C_PreBoss01
+2026-02-04 14:45:05 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014227 s
+2026-02-04 14:45:05 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017213 s
+2026-02-04 14:45:05 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:45:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 612395 bytes
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_PreBoss01
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000007
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:45:05 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 146498 bytes
+2026-02-04 14:45:05 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_PreBoss01
+2026-02-04 14:45:05 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:45:05 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.086988
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:45:05 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:45:05 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.55
+2026-02-04 14:45:06 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:10 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:45:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:41 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:45:41 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_PreBoss01 -> C_Boss01
+2026-02-04 14:45:41 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.014957 s
+2026-02-04 14:45:41 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.017980 s
+2026-02-04 14:45:41 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:45:41 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 618751 bytes
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_Boss01
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000009
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:45:41 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 336279 bytes
+2026-02-04 14:45:41 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_Boss01
+2026-02-04 14:45:41 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:45:41 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.075403
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:45:41 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:45:42 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest PoseidonUpgrade
+2026-02-04 14:45:42 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest PoseidonUpgrade
+2026-02-04 14:45:42 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-04 14:45:42 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: PoseidonUpgrade
+2026-02-04 14:45:42 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.22
+2026-02-04 14:45:52 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:53 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:53 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:45:54 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:46:31 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:46:32 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:47:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:47:01 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:47:28 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:47:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:12 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:18 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:21 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015083 s
+2026-02-04 14:48:21 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018156 s
+2026-02-04 14:48:21 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 620813 bytes
+2026-02-04 14:48:21 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:48:27 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:48:27 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_Boss01 -> C_PostBoss01
+2026-02-04 14:48:27 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015853 s
+2026-02-04 14:48:27 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018897 s
+2026-02-04 14:48:27 [MainThread     ]       audiomanager.cpp:1057   DBG| Skipped unloading map banks
+2026-02-04 14:48:27 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 622159 bytes
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1329  INFO| Loading next map: C_PostBoss01
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000010
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:48:27 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 186342 bytes
+2026-02-04 14:48:27 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: C_PostBoss01
+2026-02-04 14:48:27 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: Elysium.bank
+2026-02-04 14:48:27 [NoName         ]       audiomanager.cpp:832    DBG| Already loaded :Elysium.bank
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.075938
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:48:27 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:48:27 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.68
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest SwordWeapon
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest SwordWeapon
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest SpearWeapon
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest SpearWeapon
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest BowWeapon
+2026-02-04 14:48:28 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest BowWeapon
+2026-02-04 14:48:28 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: SwordWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: SwordWeapon
+2026-02-04 14:48:28 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: SpearWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: SpearWeapon
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: BowWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: BowWeapon
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: FistWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\FistWeapon.pkg -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed FistWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: FistWeapon
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: GunWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\GunWeapon.pkg -- rb (error: No such file or directory)
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed GunWeapon.pkg
+2026-02-04 14:48:28 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: GunWeapon
+2026-02-04 14:48:31 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:56 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:48:59 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:00 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:01 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:02 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:03 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:49:05 [MainThread     ]              world.cpp:1526  INFO| World::Begin() C_PostBoss01 -> D_Intro
+2026-02-04 14:49:05 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015506 s
+2026-02-04 14:49:05 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018618 s
+2026-02-04 14:49:05 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 626437 bytes
+2026-02-04 14:49:05 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Intro
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Styx
+2026-02-04 14:49:05 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 130184 bytes
+2026-02-04 14:49:05 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Intro
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.003234
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Styx
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1398   DBG| load packages took 0.004891
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Styx.pkg
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Styx
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AphroditeUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AphroditeUpgrade
+2026-02-04 14:49:05 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AphroditeUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AphroditeUpgrade
+2026-02-04 14:49:05 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: TrialUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg -- rb (error: No such file or directory)
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed TrialUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: TrialUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AthenaUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AthenaUpgrade
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AthenaUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AthenaUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest ZeusUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest ZeusUpgrade
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ZeusUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ZeusUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AresUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AresUpgrade
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AresUpgrade.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AresUpgrade
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Charts
+2026-02-04 14:49:05 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Charts
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Charts.pkg
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Charts
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:49:05 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:49:05 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldThrow
+2026-02-04 14:49:05 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldThrow
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldThrow.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldThrow
+2026-02-04 14:49:05 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-02-04 14:49:05 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-02-04 14:49:05 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-02-04 14:49:05 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.39
+2026-02-04 14:49:06 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 14:49:15 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 14:49:15 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Intro -> D_Hub
+2026-02-04 14:49:15 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.015468 s
+2026-02-04 14:49:15 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.018546 s
+2026-02-04 14:49:15 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 14:49:15 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 629649 bytes
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Hub
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000012
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 14:49:15 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 389110 bytes
+2026-02-04 14:49:15 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Hub
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.003225
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 14:49:15 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 14:49:15 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.58
+2026-02-04 14:49:15 [MainThread     ]            program.cpp:369   INFO| Window Inactive
+2026-02-04 14:49:15 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 14:49:15 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 14:49:16 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 14:49:16 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-02-04 14:49:16 [MainThread     ]            program.cpp:369   INFO| Window Inactive
