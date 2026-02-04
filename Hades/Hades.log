@@ -6934,3 +6934,114 @@ date       time     [thread name/id ]                   file:line    v |
 2026-02-04 14:58:19 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
 2026-02-04 14:58:19 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
 2026-02-04 14:58:20 [MainThread     ]            program.cpp:369   INFO| Window Inactive
+2026-02-04 15:02:26 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 15:02:26 [MainThread     ]            program.cpp:352   INFO| Window Active
+2026-02-04 15:02:29 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:02:37 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 15:02:37 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Hub -> D_Boss01
+2026-02-04 15:02:37 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.017238 s
+2026-02-04 15:02:37 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.020544 s
+2026-02-04 15:02:37 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 15:02:37 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 699532 bytes
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1329  INFO| Loading next map: D_Boss01
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1398   DBG| load packages took 0.000011
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 15:02:37 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 134020 bytes
+2026-02-04 15:02:37 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: D_Boss01
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.002649
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 15:02:37 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 15:02:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.27
+2026-02-04 15:02:41 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 15:02:41 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-02-04 15:03:17 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:03:22 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 9 bytes
+2026-02-04 15:03:49 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:03:57 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:03:58 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:03:58 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:03:58 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:04:03 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:04:38 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:04:39 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:04:43 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:05:15 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 0, BufferMaxLoad: 0.75
+2026-02-04 15:05:31 [MainThread     ]              world.cpp:1526  INFO| World::Begin() D_Boss01 -> DeathArea
+2026-02-04 15:05:31 [MainThread     ]    progressmanager.cpp:936   INFO| Lua::Save() : 0.016628 s
+2026-02-04 15:05:31 [MainThread     ]    progressmanager.cpp:916   INFO| GatherSaveData : 0.019748 s
+2026-02-04 15:05:31 [NoName         ]     binarysavedata.cpp:17    INFO| Writing 638076 bytes
+2026-02-04 15:05:31 [MainThread     ]       audiomanager.cpp:1062   DBG| Unloading map banks
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1370  INFO| PreScriptLoad
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1329  INFO| Loading next map: DeathArea
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1382  INFO| PreScriptLoad Done
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest DeathArea
+2026-02-04 15:05:31 [NoName         ]     binaryloaddata.cpp:12    INFO| Reading 650798 bytes
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest DeathArea
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1398   DBG| load packages took 0.004092
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1420   DBG| loadScriptsTask Done 
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: DeathArea.pkg
+2026-02-04 15:05:31 [NoName         ]       audiomanager.cpp:1022   DBG| Loading map banks for: DeathArea
+2026-02-04 15:05:31 [NoName         ]       audiomanager.cpp:775    DBG| Loading bank: DeathArea.bank
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1360   DBG| Map Load took 0.053922
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: DeathArea
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1424   DBG| Finished Asset Loading 
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1431   DBG| Calling PostLoad
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AphroditeUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AphroditeUpgrade
+2026-02-04 15:05:31 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AphroditeUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AphroditeUpgrade
+2026-02-04 15:05:31 [NoName         ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: TrialUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg_manifest -- rb (error: No such file or directory)
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Win\Packages\TrialUpgrade.pkg -- rb (error: No such file or directory)
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:401    ERR| Package load failed TrialUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: TrialUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AthenaUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AthenaUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest ZeusUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest ZeusUpgrade
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AthenaUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AthenaUpgrade
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ZeusUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ZeusUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest AresUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest AresUpgrade
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: AresUpgrade.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: AresUpgrade
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:436   INFO| Start reading manifest Charts
+2026-02-04 15:05:31 [NoName         ]   gameassetmanager.cpp:489   INFO| Done reading manifest Charts
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: Charts.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: Charts
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1433   DBG| Finished PostLaod
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1435   DBG| Finished Asset Loading 
+2026-02-04 15:05:31 [NoName         ]              world.cpp:1440   DBG| end of postLoadTask
+2026-02-04 15:05:31 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldThrow
+2026-02-04 15:05:31 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldThrow
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldThrow.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldThrow
+2026-02-04 15:05:31 [MainThread     ]   gameassetmanager.cpp:436   INFO| Start reading manifest ShieldWeapon
+2026-02-04 15:05:31 [MainThread     ]   gameassetmanager.cpp:489   INFO| Done reading manifest ShieldWeapon
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:515   INFO| Loading package: ShieldWeapon.pkg
+2026-02-04 15:05:31 [GameAssetManagerLoadThread]   gameassetmanager.cpp:545   INFO| Package Loaded: ShieldWeapon
+2026-02-04 15:05:32 [RenderThread   ]     rendercommands.cpp:625   INFO| Resetting RenderMesh Caches. ResetRequest: 1, BufferMaxLoad: 0.23
+2026-02-04 15:05:40 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\PauseScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 15:05:40 [MainThread     ]              world.cpp:1593  INFO| World::Stop()
+2026-02-04 15:05:41 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\ExitConfirmDialog.sjson -- rb (error: No such file or directory)
+2026-02-04 15:05:42 [MainThread     ]       audiomanager.cpp:158    DBG| AudioManager.reset
+2026-02-04 15:05:42 [MainThread     ]       audiomanager.cpp:3420   DBG| AudioManager.reset, excludeId = -1, fullWipe = true
+2026-02-04 15:05:42 [MainThread     ]     profilemanager.cpp:126   INFO| saveProfile()
+2026-02-04 15:05:42 [NoName         ]     profilemanager.cpp:90    INFO| beginning profile write
+2026-02-04 15:05:42 [NoName         ]     profilemanager.cpp:110   INFO| profile write done
+2026-02-04 15:05:42 [MainThread     ]  windowsfilesystem.cpp:209    ERR| Error opening file: Z:\home\aechewhy\Games\Hades\Content\Game\MainMenuScreen.sjson -- rb (error: No such file or directory)
+2026-02-04 15:05:44 [MainThread     ]     profilemanager.cpp:126   INFO| saveProfile()
+2026-02-04 15:05:44 [NoName         ]     profilemanager.cpp:90    INFO| beginning profile write
+2026-02-04 15:05:44 [MainThread     ]                app.cpp:255    DBG| Shutting down
+2026-02-04 15:05:44 [MainThread     ]           ingameui.cpp:37    INFO| InGameUI Destroy
+2026-02-04 15:05:44 [NoName         ]     profilemanager.cpp:110   INFO| profile write done
+2026-02-04 15:05:45 [MainThread     ]             luaext.cpp:445   INFO| Lua interface destroyed
