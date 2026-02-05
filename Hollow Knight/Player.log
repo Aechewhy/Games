@@ -10,7 +10,7 @@ Direct3D:
     VRAM:     8188 MB
     Driver:   35.0.99999.9999
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.136 seconds
+- Completed reload, in  0.124 seconds
 OnLevelWasLoaded was found on GameMap
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -25,7 +25,7 @@ D3D11 device created for Microsoft Media Foundation video decoding.
 <RI> Initialized touch support.
 The class named 'ConfigManager' is abstract. The script class can't be abstract!
 
-UnloadTime: 0.691000 ms
+UnloadTime: 0.739700 ms
 Graphics tier changed to High
 
 Steam initializing
@@ -43,14 +43,14 @@ Restored language code 'EN'
 
 
 Unloading 362 unused Assets to reduce memory usage. Loaded Objects now: 3824.
-Total: 1.531600 ms (FindLiveObjects: 0.161400 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.236000 ms  DeleteObjects: 0.070000 ms)
+Total: 1.497200 ms (FindLiveObjects: 0.198300 ms CreateObjectMapping: 0.063000 ms MarkObjects: 1.168300 ms  DeleteObjects: 0.059400 ms)
 
 Steam stats received.
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
 Didn't need to wait for PlayerPrefs load.
 
-UnloadTime: 9.594600 ms
+UnloadTime: 6.061200 ms
 DontDestroyOnLoad only works for root GameObjects or components on root GameObjects.
 
 Performing automatic level start.
@@ -194,18 +194,81 @@ Failed to retrieve achievement state for COMPLETIONGG
 pd.maxHealth: 5 pd.maxHealthBase: 5
 
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 46211.
-Total: 96.094300 ms (FindLiveObjects: 2.467200 ms CreateObjectMapping: 1.016300 ms MarkObjects: 92.506200 ms  DeleteObjects: 0.095000 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 46212.
+Total: 86.189800 ms (FindLiveObjects: 2.008900 ms CreateObjectMapping: 0.706400 ms MarkObjects: 83.374700 ms  DeleteObjects: 0.090200 ms)
 
-Setting up 8 worker threads for Enlighten.
-  Thread -> id: 270 -> priority: 1 
-  Thread -> id: 274 -> priority: 1 
-  Thread -> id: 278 -> priority: 1 
-  Thread -> id: 280 -> priority: 1 
-  Thread -> id: 27c -> priority: 1 
-  Thread -> id: 284 -> priority: 1 
-  Thread -> id: 28c -> priority: 1 
-  Thread -> id: 288 -> priority: 1 
-Shutting down Steam API.
+Making UI menu lean.
 
-Waiting on threads to park on joinable thread list timed out.
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerCollisionEnter2D
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+Deferring level start (marked as manual).
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 180 unused Assets to reduce memory usage. Loaded Objects now: 50414.
+Total: 115.582700 ms (FindLiveObjects: 2.060000 ms CreateObjectMapping: 0.752700 ms MarkObjects: 112.344900 ms  DeleteObjects: 0.415600 ms)
+
+Failed to retrieve achievement state for CHARMED
+
+Pushing achievement CHARMED
+
+Subscribing to controller detection.
+
+Unsubscribing from controller detection.
+
+Object Pool attached to GlobalPool has run out of Run Effects prefabs, Instantiating an additional one.
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+AddEventHandlerComponent: PlayMakerFixedUpdate
+
+Deferring level start (marked as manual).
+
