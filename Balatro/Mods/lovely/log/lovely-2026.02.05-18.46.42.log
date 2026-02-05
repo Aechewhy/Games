@@ -295,3 +295,368 @@ INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before
 INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
 INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
 INFO - [G] LONG DT @ 596: 0.052501454458106
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-02-05 19:09:19 :: ERROR :: StackTrace :: Oops! The game crashed
+engine/ui.lua:144: bad argument #1 to 'getWidth' (string expected, got table)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:610'
+	Local variables:
+	 msg = string: "engine/ui.lua:144: bad argument #1 to 'getWidth' (string expected, got table)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE function at file 'boot.lua:352' (best guess)
+	Local variables:
+	 errhand = Lua function '?' (defined at line 596 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 596 of chunk main.lua)
+(3) method C function 'getWidth'
+(4) Lua method 'calculate_xywh' at file 'engine/ui.lua:144'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x0a8bb818  {content_dimensions:table: 0x0a8bb958, ARGS:table: 0x0a8bb930, UIT:1, children:table: 0x0a8bb840, parent:table: 0x0a8bb678, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x0709a9d8  {y:0.73, h:0, x:2.48, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x0c817330  {y:0.73, x:2.48}
+	 _ct = table: 0x08601dd0  {y:0, h:0, x:0, w:0}
+	 padding = number: 0
+	 scale = number: 0.3
+(5) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x0a8bb678  {content_dimensions:table: 0x0a8bb7b8, ARGS:table: 0x0a8bb790, UIT:3, children:table: 0x0a8bb6a0, parent:table: 0x0a8bb4d8, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x07099a20  {y:0.72, h:0, x:2.47, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x07099a48  {y:0.72, h:0, x:2.47, w:0.5}
+	 _ct = table: 0x0709a9d8  {y:0.73, h:0, x:2.48, w:0}
+	 padding = number: 0.01
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x0a8bb6a0  {1:table: 0x0a8bb818, 2:table: 0x0a8bb9d8}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x0a8bb818  {content_dimensions:table: 0x0a8bb958, ARGS:table: 0x0a8bb930, UIT:1, children:table: 0x0a8bb840, parent:table: 0x0a8bb678, UIBox:table: 0x06e53d50 (more...)}
+(6) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x0a8bb4d8  {content_dimensions:table: 0x0a8bb618, ARGS:table: 0x0a8bb5f0, UIT:3, children:table: 0x0a8bb500, parent:table: 0x080871e0, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x07ea8878  {y:0.67, h:0.319, x:2.42, w:1.8}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x070999c0  {y:0.67, h:0, x:2.42, w:0}
+	 _ct = table: 0x07099a20  {y:0.72, h:0, x:2.47, w:0}
+	 padding = number: 0.05
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x0a8bb500  {1:table: 0x0a8bb678, 2:table: 0x0a8bbb98, 3:table: 0x0a8bbd38}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x0a8bb678  {content_dimensions:table: 0x0a8bb7b8, ARGS:table: 0x0a8bb790, UIT:3, children:table: 0x0a8bb6a0, parent:table: 0x0a8bb4d8, UIBox:table: 0x06e53d50 (more...)}
+(7) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x080871e0  {content_dimensions:table: 0x08087320, ARGS:table: 0x080872f8, UIT:4, children:table: 0x08087208, parent:table: 0x08087040, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x07ea8720  {y:0.62, h:0, x:0.57, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x07ea8850  {y:0.62, h:0, x:0.57, w:0}
+	 _ct = table: 0x07ea8878  {y:0.67, h:0.319, x:2.42, w:1.8}
+	 padding = number: 0.05
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = number: 1.75
+	 _th = number: 0.269
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08087208  {1:table: 0x08087380, 2:table: 0x0a8bb4d8, 3:table: 0x0a8bc268, 4:table: 0x06f03850}
+	 (for control) = number: 2
+	 k = number: 2
+	 v = table: 0x0a8bb4d8  {content_dimensions:table: 0x0a8bb618, ARGS:table: 0x0a8bb5f0, UIT:3, children:table: 0x0a8bb500, parent:table: 0x080871e0, UIBox:table: 0x06e53d50 (more...)}
+(8) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x08087040  {content_dimensions:table: 0x08087180, ARGS:table: 0x08087158, UIT:3, children:table: 0x08087068, parent:table: 0x08086ea0, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x07ea85c8  {y:0.62, h:0, x:0.57, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x07ea86f8  {y:0.62, h:0, x:0.57, w:0}
+	 _ct = table: 0x07ea8720  {y:0.62, h:0, x:0.57, w:0}
+	 padding = number: 0
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08087068  {1:table: 0x080871e0, 2:table: 0x06f03bb0, 3:table: 0x0c767988, 4:table: 0x086bda58, 5:table: 0x078bf9f8, 6:table: 0x086bda28, 7:table: 0x0d0f3e80 (more...)}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x080871e0  {content_dimensions:table: 0x08087320, ARGS:table: 0x080872f8, UIT:4, children:table: 0x08087208, parent:table: 0x08087040, UIBox:table: 0x06e53d50 (more...)}
+(9) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x08086ea0  {content_dimensions:table: 0x08086fe0, ARGS:table: 0x08086fb8, UIT:4, children:table: 0x08086ec8, parent:table: 0x08086b60, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x091311c8  {y:0.62, h:0.05, x:0.57, w:0.05}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x07ea85a0  {y:0.62, h:0, x:0.57, w:0}
+	 _ct = table: 0x07ea85c8  {y:0.62, h:0, x:0.57, w:0}
+	 padding = number: 0
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08086ec8  {1:table: 0x08087040, 2:table: 0x068f6ac0, 3:table: 0x068f6c60, 4:table: 0x0c41e260, 5:table: 0x0ca2de80}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x08087040  {content_dimensions:table: 0x08087180, ARGS:table: 0x08087158, UIT:3, children:table: 0x08087068, parent:table: 0x08086ea0, UIBox:table: 0x06e53d50 (more...)}
+(10) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x08086b60  {content_dimensions:table: 0x08086ca0, ARGS:table: 0x08086c78, UIT:4, children:table: 0x08086b88, parent:table: 0x080869c0, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x09131070  {y:0.57, h:0, x:0.57, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x091311a0  {y:0.57, h:0, x:0.57, w:0}
+	 _ct = table: 0x091311c8  {y:0.62, h:0.05, x:0.57, w:0.05}
+	 padding = number: 0
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = number: 0.05
+	 _th = number: 0.05
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08086b88  {1:table: 0x08086d00, 2:table: 0x08086ea0, 3:table: 0x0c41e230}
+	 (for control) = number: 2
+	 k = number: 2
+	 v = table: 0x08086ea0  {content_dimensions:table: 0x08086fe0, ARGS:table: 0x08086fb8, UIT:4, children:table: 0x08086ec8, parent:table: 0x08086b60, UIBox:table: 0x06e53d50 (more...)}
+(11) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x080869c0  {content_dimensions:table: 0x08086b00, ARGS:table: 0x08086ad8, UIT:4, children:table: 0x080869e8, parent:table: 0x08086820, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x09130f18  {y:0.37, h:0, x:0.37, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x09131048  {y:0.37, h:0, x:0.37, w:7}
+	 _ct = table: 0x09131070  {y:0.57, h:0, x:0.57, w:0}
+	 padding = number: 0.2
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x080869e8  {1:table: 0x08086b60}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x08086b60  {content_dimensions:table: 0x08086ca0, ARGS:table: 0x08086c78, UIT:4, children:table: 0x08086b88, parent:table: 0x080869c0, UIBox:table: 0x06e53d50 (more...)}
+(12) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x08086820  {content_dimensions:table: 0x08086960, ARGS:table: 0x08086938, UIT:3, children:table: 0x08086848, parent:table: 0x08086680, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x09130dc0  {y:0.17, h:0, x:0.17, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x09130ef0  {y:0.17, h:1, x:0.17, w:1}
+	 _ct = table: 0x09130f18  {y:0.37, h:0, x:0.37, w:0}
+	 padding = number: 0.2
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08086848  {1:table: 0x080869c0, 2:table: 0x0aae4ad0}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x080869c0  {content_dimensions:table: 0x08086b00, ARGS:table: 0x08086ad8, UIT:4, children:table: 0x080869e8, parent:table: 0x08086820, UIBox:table: 0x06e53d50 (more...)}
+(13) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x08086680  {content_dimensions:table: 0x080867c0, ARGS:table: 0x08086798, UIT:4, children:table: 0x080866a8, parent:table: 0x080864e0, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x09130c68  {y:0.1, h:0, x:0.1, w:0}
+	 recalculate = nil
+	 _scale = number: 1
+	 _nt = table: 0x09130d98  {y:0.1, h:1, x:0.1, w:1}
+	 _ct = table: 0x09130dc0  {y:0.17, h:0, x:0.17, w:0}
+	 padding = number: 0.07
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x080866a8  {1:table: 0x08086820}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x08086820  {content_dimensions:table: 0x08086960, ARGS:table: 0x08086938, UIT:3, children:table: 0x08086848, parent:table: 0x08086680, UIBox:table: 0x06e53d50 (more...)}
+(14) Lua method 'calculate_xywh' at file 'engine/ui.lua:186'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 node = table: 0x080864e0  {parent:table: 0x06e53d50, ARGS:table: 0x08086530, UIT:7, children:table: 0x08086508, content_dimensions:table: 0x08086620, UIBox:table: 0x06e53d50 (more...)}
+	 _T = table: 0x06e53f30  {x:0, w:1, y:0, h:1, scale:1, r:0}
+	 recalculate = nil
+	 _scale = nil
+	 _nt = table: 0x09130c08  {y:0, h:57.5, x:0, w:100}
+	 _ct = table: 0x09130c68  {y:0.1, h:0, x:0.1, w:0}
+	 padding = number: 0.1
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 fac = number: 1
+	 _tw = nil
+	 _th = nil
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x08086508  {1:table: 0x08086680, 2:table: 0x0792a308}
+	 (for control) = number: 1
+	 k = number: 1
+	 v = table: 0x08086680  {content_dimensions:table: 0x080867c0, ARGS:table: 0x08086798, UIT:4, children:table: 0x080866a8, parent:table: 0x080864e0, UIBox:table: 0x06e53d50 (more...)}
+(15) Lua method 'init' at file 'engine/ui.lua:68'
+	Local variables:
+	 self = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+	 args = table: 0x06e53cf0  {config:table: 0x06e53bd8, definition:table: 0x09a4d5b8}
+(16) Lua global 'UIBox' at file 'engine/object.lua:35'
+	Local variables:
+	 self = table: 0x04702828  {remove_group:function: 0x046e9d30, draw:function: 0x04701d08, print_topology:function: 0x046ea100, recalculate:function: 0x04701d28, init:function: 0x046ef228 (more...)}
+	 obj = table: 0x06e53d50  {velocity:table: 0x07f59700, shadow_parrallax:table: 0x07f59df0, click_offset:table: 0x06e53f58, draw_layers:table: 0x07f59eb0, children:table: 0x07f594f8 (more...)}
+(17) Lua field 'overlay_menu' at file 'functions/button_callbacks.lua:1408'
+	Local variables:
+	 args = table: 0x0c86e8f8  {config:table: 0x06e53bd8, definition:table: 0x09a4d5b8}
+	 (*temporary) = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+(18) Lua function '?' at file 'RunReviewer.lua:19' (from mod with id RunReviewer) (best guess)
+	Local variables:
+	 arg_736_0 = table: 0x0c30df70  {pixellated_rect:table: 0x06f42380, click_offset:table: 0x0c9402f8, children:table: 0x06b73998, parent:table: 0x0ca89988, T:table: 0x0c940080 (more...)}
+(19) Lua method 'click' at file 'engine/ui.lua:1023'
+	Local variables:
+	 self = table: 0x0c30df70  {pixellated_rect:table: 0x06f42380, click_offset:table: 0x0c9402f8, children:table: 0x06b73998, parent:table: 0x0ca89988, T:table: 0x0c940080 (more...)}
+(20) Lua method 'update' at file 'engine/controller.lua:590'
+	Local variables:
+	 self = table: 0x05074398  {held_button_times:table: 0x05074d00, focus_cursor_stack_level:1, snap_cursor_to:table: 0x0c499880, interrupt:table: 0x05074d50, r_cursor_up:table: 0x050749f8 (more...)}
+	 dt = number: 0.0169747
+(21) Lua upvalue 'gameUpdateRef' at file 'game.lua:2736'
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0
+(22) Lua upvalue 'orig_game_update' at Steamodded file 'src/ui.lua:124' 
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0.0169747
+(23) Lua upvalue 'upd' at file 'main.lua:1833'
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0.0169747
+(24) Lua upvalue 'game_update_ref' at file 'main.lua:2818'
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0.0169747
+(25) Lua upvalue 'gameUpdateRef' at file 'src/core.lua:121' (from lovely module systemclock.core)
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0.0169747
+(26) Lua method 'update' at line 32 of chunk '"5060"]'
+	Local variables:
+	 self = table: 0x0467f0f8  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x069f90f0, F_ENGLISH_ONLY:false, __typist_TOP_AREA:table: 0x046dddb8 (more...)}
+	 dt = number: 0.0169747
+(27) Lua upvalue 'love_update_ref' at file 'main.lua:1006'
+	Local variables:
+	 dt = number: 0.0169747
+(28) Lua upvalue 'oldupd' at file 'modules/controller.lua:1079' (from lovely module handy/controller)
+	Local variables:
+	 dt = number: 0.0169747
+(29) Lua field 'update' at file 'main.lua:2851'
+	Local variables:
+	 dt = number: 0.0169747
+(30) Lua function '?' at file 'main.lua:944' (best guess)
+(31) global C function 'xpcall'
+(32) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 915 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2026-02-05 19:09:19 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-1016c-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.9.0
+Platform: Windows
+Steamodded Mods:
+    1: JokerSellValue by OppositeWolf770 [ID: JokerSellValue, Priority: 100000, Version: 1.3.0]
+    2: Card Sleeves by Larswijn [ID: CardSleeves, Priority: -10, Version: 1.8.0, Uses Lovely]
+    3: typist by kasimeka [ID: typist, Version: 1.8.3, Uses Lovely]
+    4: Bicycle Standard Cards by Amari [ID: BicycleStandardCards, Version: 1.0.0]
+    5: Souls Borne Ring Shadow Die Twice by Mahuru [ID: souls_deck, Version: 1.0.1]
+    6: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2.1e, Uses Lovely]
+    7: Refreshed Decks by NooberTheAbsolute [ID: RefreshedDecks, Version: 1.0.0]
+    8: CupHead by Mahuru [ID: CH_deck, Version: 1.0.0]
+    9: Run Reviewer by MilcK [ID: RunReviewer]
+    10: rusty lake deck by pixal [ID: rustydeck]
+    11: Regular Show Deck by rynagon and NyxForKicks [ID: RegularShowDeck, Version: 1.0.0]
+    12: Jimbo's Metrics by CraftedCart [ID: jimbos_metrics, Version: 0.1.0]
+    13: Gravity Falls by therealdan55 [ID: GravityFalls, Version: 1.0.1]
+    14: Saturn by OceanRamen [ID: Saturn, Version: 0.2.2-E-ALPHA, Uses Lovely]
+    15: Labyrinth Deck by MathIsFun_ [ID: LabyrinthDeck]
+    16: SystemClock by Breezebuilder [ID: SystemClock, Priority: 100000, Version: 1.7.1, Uses Lovely]
+    17: JokerDisplay by nh6574 [ID: JokerDisplay, Priority: -1000000000, Version: 1.9.2, Uses Lovely]
+    18: Faces of Sin by TiltedHat, Victin [ID: fos, Version: 1.1.2]
+    19: Hitman Cards by WaKa [ID: HitmanHearts, Version: 1.0.0]
+    20: Escape Exit Button by Steamo [ID: EscapeExitButton]
+    21: Adventure Time Cards by Mahuru [ID: adv_deck, Version: 1.0.0]
+    22: Balatro Safety by Zei33 [ID: balatro-safety, Version: 1.0.0]
+    23: Alice in wonderland by Iroks [ID: Alice_in_wonderland, Version: 1.0.0]
+    24: Ultimate Random Deck by Steamo [ID: UltimateRandomDeck]
+    25: Hollow Knight Cards by Galeandra [ID: hk_deck, Version: 1.0.0]
+    26: unBlind - shop GUI by Soap (MeraGenio) [ID: unBlindShopGUI, Priority: 3, Version: 1.0.0, Uses Lovely]
+    27: ULTRAKILL Deck by Wael and cookieee [ID: Ultrakill_deck, Version: 1.0.0]
+    28: Malverk by Eremel_ [ID: malverk, Priority: -999999, Version: 1.1.3a, Uses Lovely]
+    29: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg, lord.ruby [ID: Talisman, Version: 2.7, Uses Lovely]
+    30: Blueprint by stupxd aka stupid, Jonathan [ID: blueprint, Priority: 69, Version: 3.3, Uses Lovely]
+    31: Go to bed, Minty by wingedcatgirl [ID: gotobed, Priority: 10, Version: 1.1.1, Uses Lovely]
+    32: Hades Cards by Galeandra [ID: hades, Version: 1.0.0]
+    33: Handy by SleepyG11 [ID: Handy, Version: 1.5.1m, Uses Lovely]
+    34: Celestial Funk by Lime_Effy [ID: celestial_funk_limeeffy, Version: 1.0.0]
+    35: RPG Classes by playfulrainbow [ID: ADeckCreatorModule]
+    36: Absolute Deck by Steamo [ID: AbsoluteDeck]
+Lovely Mods:
+    1: MobileLikeDragging
+    2: DVPreview_v4.1.2
