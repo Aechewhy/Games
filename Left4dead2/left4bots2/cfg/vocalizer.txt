@@ -11,9 +11,10 @@ PlayerMoveOn = bot use,botname use
 PlayerStayTogether = bots cancel,botname cancel
 PlayerFollowMe = bot follow me,botname follow me
 PlayerHurryUp = bots hurry,botname hurry
-SmartLook = bot give,botname give
+SmartLook = bot give
 PlayerImWithYou = bots automation all,botname automation all
 PlayerAlertGiveItem = bot swap
 
 PlayerCoverMe = bots warp
 AskForHealth2 = bot tempheal
+PlayerBackUp = bots wait there
