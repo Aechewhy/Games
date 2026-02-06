@@ -3,8 +3,9 @@ PlayerWaitHere = bots wait,botname wait
 PlayerEmphaticGo = bots goto,botname goto
 
 PlayerWarnWitch = bot witch,botname witch
-PlayerWarnTank = bot throw molotov botname throw molotov
-PlayerWarnBoomer = bot throw vomitjar botname throw vomitjar
+PlayerWarnTank = bot throw molotov, botname throw molotov
+PlayerWarnBoomer = bot throw vomitjar, botname throw vomitjar
+PlayerWarnSmoker = bot throw pipebomb, botname throw pipebomb
 
 PlayerMoveOn = bot use,botname use
 PlayerStayTogether = bots cancel,botname cancel
