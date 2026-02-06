@@ -4,7 +4,7 @@ PlayerEmphaticGo = bots goto,botname goto
 
 PlayerWarnWitch = bot witch,botname witch
 PlayerWarnTank = bot throw molotov, botname throw molotov
-PlayerWarnBoomer = bot throw vomitjar, botname throw vomitjar
+PlayerWarnCharger = bot throw vomitjar, botname throw vomitjar
 PlayerWarnSmoker = bot throw pipebomb, botname throw pipebomb
 
 PlayerMoveOn = bot use,botname use
@@ -14,3 +14,5 @@ PlayerHurryUp = bots hurry,botname hurry
 SmartLook = bot give,botname give
 PlayerImWithYou = bots automation all,botname automation all
 PlayerAlertGiveItem = bot swap
+
+PlayerCoverMe = bots warp
