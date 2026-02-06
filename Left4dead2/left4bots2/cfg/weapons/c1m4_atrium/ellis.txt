@@ -1,3 +1,4 @@
+
 rifle_ak47,rifle_sg552,rifle_desert,rifle,shotgun_spas,autoshotgun,sniper_military,hunting_rifle,rifle_m60,grenade_launcher,smg_silenced,smg_mp5,shotgun_chrome,smg,pumpshotgun,sniper_scout,sniper_awp
 pistol_magnum,fireaxe,knife,katana,machete,golfclub,crowbar,cricket_bat,baseball_bat,tonfa,electric_guitar,frying_pan,shovel,pistol
 vomitjar,pipe_bomb,molotov
