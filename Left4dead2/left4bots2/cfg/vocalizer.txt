@@ -16,3 +16,4 @@ PlayerImWithYou = bots automation all,botname automation all
 PlayerAlertGiveItem = bot swap
 
 PlayerCoverMe = bots warp
+AskForHealth2 = bot tempheal
