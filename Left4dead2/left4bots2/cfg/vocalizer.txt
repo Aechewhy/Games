@@ -11,7 +11,7 @@ PlayerMoveOn = bot use,botname use
 PlayerStayTogether = bots cancel,botname cancel
 PlayerFollowMe = bot follow me,botname follow me
 PlayerHurryUp = bots hurry,botname hurry
-SmartLook = bot give, botname give
+PlayerYellRun = bot give, botname give
 PlayerAlertGiveItem = bot swap, botname swap
 
 PlayerCoverMe = bots warp
