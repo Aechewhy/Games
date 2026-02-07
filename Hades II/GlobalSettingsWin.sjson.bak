@@ -1,0 +1,10 @@
+{
+  GraphicsQualityPreset = "GraphicsQualityPreset_High"
+  NewUpdateSoundRevisionViewed = 133066
+  LastRoadmapRevisionViewed = 133066
+  LastPatchNoteRevisionViewed = 133066
+  FullScreen = true
+  Y = 1080
+  X = 1920
+  AutoDetectLowResAssets = false
+}

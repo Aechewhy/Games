@@ -1,0 +1,12 @@
+{
+  SprintAutoHold = true
+  MusicSubtitles = true
+  BackupSaveCount = 3
+  UseAnalytics = false
+  ValidCheckpoint = false
+  Brightness = 0.504450
+  ControlsResetRevisionViewed = 133066
+  CurrentSettingsCategory = 512
+  HUDOpacity = 0.802139
+  UseAltCursor = true
+}

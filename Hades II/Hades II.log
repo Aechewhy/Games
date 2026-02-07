@@ -1,0 +1,1742 @@
+date       time     [thread name/id ]                   file:line    v |
+2026-02-07 17:45:26 [MainThread      ]                Log.cpp:286   INFO| Opened log file Hades II.log
+2026-02-07 17:45:26 [MainThread      ]            Program.cpp:2284  INFO| Previous stack guard size was 0 bytes
+2026-02-07 17:45:26 [MainThread      ]    PlatformService.cpp:81    INFO| Processor Count : 16
+2026-02-07 17:45:26 [MainThread      ]            Program.cpp:2716  INFO| TotalRam: 15901696000
+2026-02-07 17:45:26 [MainThread      ]            Program.cpp:2717  INFO| Running Hades II in 64-bit
+2026-02-07 17:45:31 [MainThread      ]            Program.cpp:2814  INFO| Initial startup in 5.2 msec
+2026-02-07 17:45:31 [MainThread      ]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: activeProfile
+2026-02-07 17:45:31 [MainThread      ]     BinaryLoadData.cpp:12    INFO| Reading 16 bytes
+2026-02-07 17:45:31 [MainThread      ]     ProfileManager.cpp:46    INFO| Loading default profile Hades II Profile1
+2026-02-07 17:45:31 [MainThread      ]     ProfileManager.cpp:192   INFO| ProfileManager::Load(): Profile1 
+2026-02-07 17:45:31 [MainThread      ]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.sjson
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: SprintAutoHold = true
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: MusicSubtitles = true
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: BackupSaveCount = 2
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: UseAnalytics = false
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: ValidCheckpoint = false
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:791   INFO| ConfigOption: Brightness = 0.504450
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: ControlsResetRevisionViewed = 133066
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:791   INFO| ConfigOption: HUDOpacity = 0.501443
+2026-02-07 17:45:31 [MainThread      ]     ProfileManager.cpp:223   INFO| Load profile Profile1.sjson successful
+2026-02-07 17:45:31 [MainThread      ]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: GlobalSettingsWin.sjson
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:810   INFO| ConfigOption: GraphicsQualityPreset = GraphicsQualityPreset_High
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: NewUpdateSoundRevisionViewed = 133066
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: LastRoadmapRevisionViewed = 133066
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: LastPatchNoteRevisionViewed = 133066
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: FullScreen = true
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: Y = 1080
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: X = 1920
+2026-02-07 17:45:31 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: AutoDetectLowResAssets = false
+2026-02-07 17:45:31 [MainThread      ]     ProfileManager.cpp:223   INFO| Load profile GlobalSettingsWin.sjson successful
+2026-02-07 17:45:31 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 16 bytes
+2026-02-07 17:45:31 [MainThread      ]     BinarySaveData.cpp:17    INFO| Writing 16 bytes
+2026-02-07 17:45:31 [MainThread      ]            Program.cpp:2846  INFO| Profile load in 0.0 msec
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:379   INFO| ----Begin printing all displays available on the system----
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:383   INFO| Number of detected displays: 1
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:532   INFO| 2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:540   INFO| (320 x 200) (320 x 240) (640 x 350) (640 x 400) (720 x 400) (640 x 480) (720 x 480) 
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:540   INFO| (768 x 480) (864 x 486) (800 x 500) (960 x 540) (1024 x 576) (928 x 580) (800 x 600) 
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:540   INFO| (960 x 600) (1152 x 720) (1280 x 720) (1024 x 768) (1368 x 768) (1280 x 800) (1920 x 800) 
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:540   INFO| (1152 x 864) (1440 x 900) (1600 x 900) (1280 x 960) (1440 x 960) (1280 x 1024) (1400 x 1050) 
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:544   INFO| (1680 x 1050) (1440 x 1080) (1920 x 1080) 
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:548   INFO| ----Finish printing all displays available on the system----
+2026-02-07 17:45:31 [MainThread      ]         Resolution.cpp:160   INFO| Monitor modes:
+2026-02-07 17:45:31 [MainThread      ]            Program.cpp:2908  INFO| DisplayModes Configured
+2026-02-07 17:45:31 [MainThread      ]        WindowsBase.cpp:724   INFO| Created window app Hades II
+2026-02-07 17:45:31 [MainThread      ]         Resolution.cpp:160   INFO| Monitor modes:
+2026-02-07 17:45:31 [MainThread      ]            Program.cpp:3200  INFO| DisplayModes Configured
+2026-02-07 17:45:31 [MainThread      ]            Program.cpp:3216  INFO| PlatformService Initialized
+2026-02-07 17:45:31 [MainThread      ]   InputSystemWin64.cpp:1203  INFO| InputSystemSDL init. [initInputSystem]
+2026-02-07 17:45:31 [MainThread      ]   InputSystemWin64.cpp:243   INFO| SDL Initialized with SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS
+2026-02-07 17:45:31 [MainThread      ]   InputSystemWin64.cpp:252   INFO| SDL_HINT_JOYSTICK_RAWINPUT = 0
+2026-02-07 17:45:32 [MainThread      ]   InputSystemWin64.cpp:289   INFO| InputSystemSDL Initialized 
+2026-02-07 17:45:32 [MainThread      ]       SDL2_GamePad.cpp:315   INFO| Could not open file: gamecontrollerdb.txt
+2026-02-07 17:45:32 [MainThread      ]       SDL2_GamePad.cpp:356   INFO| SDL Version is: 2.32.6
+2026-02-07 17:45:32 [MainThread      ]            Program.cpp:3225  INFO| InputSystem Initialized
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2192  INFO| Aftermath GFSDK_Aftermath_EnableGpuCrashDumps failed
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2200  INFO| Graphics Adapter Preferece: AUTO
+2026-02-07 17:45:32 [MainThread      ]            AgsHelper.h:49    INFO| AMD Display Driver Version 4259504416
+2026-02-07 17:45:32 [MainThread      ]            AgsHelper.h:50    INFO| AMD Display Driver Version 5.4.1
+2026-02-07 17:45:32 [MainThread      ]            AgsHelper.h:51    INFO| AMD Radeon Software Version 99.10.2
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1724  INFO| GPU[0] detected. Vendor ID: 10de, Model ID: 28e0, Revision ID: 0, GPU Name: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1850  INFO| GPU[0] detected for possible selection. Vendor ID: 10de, Model ID: 28e0, Revision ID: 0, GPU Name: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1902  INFO| GPU[0] is selected as default GPU
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1903  INFO| Name of selected gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1904  INFO| Vendor id of selected gpu: 0x10de
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1905  INFO| Model id of selected gpu: 0x28e0
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1906  INFO| Revision id of selected gpu: 0
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:2424  INFO| Profile: AddDevice with FastCreate ON 0.616000
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2251  INFO| Aftermath GFSDK_Aftermath_DX12_Initialize failed
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2261  INFO| Amd driver version detected: 0
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2262  INFO| Nvidia driver version detected: 0
+2026-02-07 17:45:32 [MainThread      ]            Program.cpp:3244  INFO| Renderer Initialized
+2026-02-07 17:45:32 [MainThread      ]            Program.cpp:3256  INFO| Display 0: Generic Non-PnP Monitor
+2026-02-07 17:45:32 [MainThread      ]            Program.cpp:3257  INFO| Refresh Rate: 144 hz
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2520  INFO| ForgeRenderer::Load
+2026-02-07 17:45:32 [MainThread      ]            Program.cpp:3264  INFO| Renderer Loaded
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:227   INFO| DetectSystemMinSpec
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:229   INFO| Total RAM Megabytes: 15165
+2026-02-07 17:45:32 [MainThread      ]         Direct3D12.cpp:1584  INFO| Shared system graphics memory 11373 MB
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:233   INFO| Total Display Memory Megabytes: 19561
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:234   INFO| VRAM Megabytes: 8188
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:235   INFO| Shared Memory Megabytes: 11373
+2026-02-07 17:45:32 [MainThread      ]      ConfigOptions.cpp:237   INFO| Total processor cores: 16
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:146   INFO| Starting app: Ship 133066
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:93    INFO| ____________________________________Resolution::Resize __________________
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:94    INFO| VIEWPORT: X: 0  Y: 0 W: 1920 H: 1080
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:95    INFO| SCALE: X: 1.000000 Y: 1.000000
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:96    INFO| FULL_VIEWPORT: X: 0  Y: 0 W: 1920 H: 1080
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:97    INFO| ____________________________________Resolution::Resize__________________
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:169   INFO| Initializing graphics device: 1920x1080
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:174   INFO| Setting fullscreen: true
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:196   INFO| Create components
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:213   INFO| Full screen bloom
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:214   INFO| Frame rate counter
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:220   INFO| Done with constructor
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:223   INFO| Setting RandomSeed: 138035
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:465   INFO| App Initialize
+2026-02-07 17:45:32 [MainThread      ]        DrawManager.cpp:224   INFO| Started adding shader files
+2026-02-07 17:45:32 [MainThread      ]        DrawManager.cpp:272   INFO| Finished adding shader files
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2959  INFO| Early pipeline creation for Default, BS_AlphaBlend, DS_None
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2963  INFO| Early pipeline creation for Blit2D, BS_Opaque, DS_None
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2967  INFO| Early pipeline creation for Blit2DDepth, BS_Opaque, DS_DepthWrite
+2026-02-07 17:45:32 [MainThread      ]      ForgeRenderer.cpp:2971  INFO| Early pipeline creation finished
+2026-02-07 17:45:32 [MainThread      ]        DrawManager.cpp:275   INFO| Finished adding shader resources
+2026-02-07 17:45:32 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Launch.pkg
+2026-02-07 17:45:32 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Launch
+2026-02-07 17:45:32 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Launch
+2026-02-07 17:45:32 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Launch 4Mb in 0.00s
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:479   INFO| Load Launch Pkg took 0.004248 seconds
+2026-02-07 17:45:32 [MainThread      ]       Localization.cpp:270   INFO| SetLang = en
+2026-02-07 17:45:32 [MainThread      ]              Fonts.cpp:281   INFO| Font memory usage for lang en: 16742 kb / 28672 kb
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:486   INFO| Localization::Init() took 0.036518 seconds
+2026-02-07 17:45:32 [SmallTaskScheduler]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.ctrls
+2026-02-07 17:45:32 [SmallTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 850 bytes
+2026-02-07 17:45:32 [MainThread      ]       AudioManager.cpp:588   INFO| Streaming VO because ForceVoiceBankStreaming
+2026-02-07 17:45:32 [MainThread      ]    GameDataManager.cpp:266   INFO| Reading game data from Z:\home\aechewhy\Games\Hades II\Content\Game
+2026-02-07 17:45:32 [LoadTaskScheduler]             LuaExt.cpp:576   INFO| Lua interface destroyed
+2026-02-07 17:45:32 [MainThread      ]                App.cpp:334   INFO| App.resize 1920x1080 Fullscreen
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:93    INFO| ____________________________________Resolution::Resize __________________
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:94    INFO| VIEWPORT: X: 0  Y: 0 W: 1920 H: 1080
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:95    INFO| SCALE: X: 1.000000 Y: 1.000000
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:96    INFO| FULL_VIEWPORT: X: 0  Y: 0 W: 1920 H: 1080
+2026-02-07 17:45:32 [MainThread      ]         Resolution.cpp:97    INFO| ____________________________________Resolution::Resize__________________
+2026-02-07 17:45:33 [MainThread      ]       LaunchScreen.cpp:209   INFO| new LaunchScreen
+2026-02-07 17:45:33 [LoadTaskScheduler]       LaunchScreen.cpp:65    INFO| Load Manifests collect workload took 0.001514s
+2026-02-07 17:45:33 [MainThread      ]  PlatformAnalytics.cpp:30    INFO| Initializing Analytics
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:631   INFO| AudioManager.Initialize
+2026-02-07 17:45:33 [MainThread      ]  PlatformAnalytics.cpp:36    INFO| Done initializing Analytics: Disabled
+2026-02-07 17:45:33 [MainThread      ]            Program.cpp:3460  INFO| Application Init+Load 1.399000
+2026-02-07 17:45:33 [MainThread      ]            Program.cpp:3473  INFO| User Document Path found!!
+2026-02-07 17:45:33 [MainThread      ]            Program.cpp:3491  INFO| Log file created
+2026-02-07 17:45:33 [MainThread      ]            Program.cpp:3507  INFO| Data correctly read!!
+2026-02-07 17:45:33 [MainThread      ]            Program.cpp:3146  INFO| Running on Wine
+2026-02-07 17:45:33 [MainThread      ]        WindowsBase.cpp:1185  INFO| Application Init+Load 1.399000
+2026-02-07 17:45:33 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DefaultBlank blend state 5 depthState 2
+2026-02-07 17:45:33 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DefaultBlank blend state 7 depthState 2
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:746   INFO| FMOD Default Rate 48000 Mode 0 Speakers 0 Software Channels: 64
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:753   INFO| FMOD changed to Rate: 48000 Mode: 3 Speakers: 2 Software Channels: 35
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:837   INFO| FMOD post init Rate 48000 Mode 3 Speakers 2
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:838   INFO| FMOD driver: PulseAudio Output
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: MasterBank
+2026-02-07 17:45:33 [LoadTaskScheduler]       LaunchScreen.cpp:83    INFO| Load Manifests took 0.137504s
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: MasterBank (5Mb in 0.05s)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: MasterBank.strings
+2026-02-07 17:45:33 [LoadTaskScheduler]       LaunchScreen.cpp:108   INFO| binkAtlases took 0.022802s
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: GUI.pkg
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest GUI
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest GUI
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: MasterBank.strings (0Mb in 0.04s)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: Ambience
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: Ambience (77Mb in 0.04s)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: Music
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: Music (735Mb in 0.05s)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Melinoe (5318 lines in 0.015393 seconds)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: MelinoeField (4786 lines in 0.006944 seconds)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Storyteller (428 lines in 0.001774 seconds)
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:1336  INFO| AudioManager categories loaded
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:870   INFO| AudioManager.FModStartup complete
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:576   INFO| Audio package version: 132872
+2026-02-07 17:45:33 [LoadTaskScheduler]       AudioManager.cpp:656   INFO| AudioManager.Initialize complete
+2026-02-07 17:45:33 [LoadTaskScheduler]       LaunchScreen.cpp:150   INFO| AudioManager::Initialize took 0.298224s
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1060  INFO| Data package version: 132872
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:671   INFO| Reading game data from Z:\home\aechewhy\Games\Hades II\Content\Game
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1081  INFO| ReadUnitData took 0.005128 seconds
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1132  INFO| ReadWeaponData took 0.004265 seconds
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1137  INFO| Projectile took 0.021097 seconds
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: GUI 545Mb in 0.22s
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: GUI_Mouse.pkg
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest GUI_Mouse
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest GUI_Mouse
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: GUI_Mouse 0Mb in 0.00s
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: Fx.pkg
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest Fx
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1142  INFO| ReadObstacleData took 0.049112 seconds
+2026-02-07 17:45:33 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest Fx
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1147  INFO| Other Data took 0.009558 seconds
+2026-02-07 17:45:33 [LoadTaskScheduler]    GameDataManager.cpp:1152  INFO| ReadAllGrannyFilePaths took 0.000088 seconds
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: Fx 1248Mb in 0.60s
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: ScriptsBase.pkg
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest ScriptsBase
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest ScriptsBase
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: ScriptsBase 281Mb in 0.10s
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: Melinoe.pkg
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest Melinoe
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest Melinoe
+2026-02-07 17:45:34 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: Melinoe 54Mb in 0.01s
+2026-02-07 17:45:34 [LoadTaskScheduler]       LaunchScreen.cpp:125   INFO| Load BasePackages took 0.963431
+2026-02-07 17:45:34 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:45:35 [LoadTaskScheduler]    GameDataManager.cpp:1158  INFO| ReadAnimationData took 1.446385 seconds
+2026-02-07 17:45:35 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:35 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:35 [LoadTaskScheduler]    GameDataManager.cpp:1163  INFO| ReadTextData took 0.090612 seconds
+2026-02-07 17:45:35 [LoadTaskScheduler]    GameDataManager.cpp:1165  INFO| ReadGameData took 1.626288 seconds
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: GUI
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: GUI (4Mb in 0.03s)
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: Fx
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: Fx (21Mb in 0.04s)
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: ScriptsBase
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: ScriptsBase (19Mb in 0.05s)
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: Melinoe
+2026-02-07 17:45:35 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: Melinoe (0Mb in 0.04s)
+2026-02-07 17:45:35 [LoadTaskScheduler]       LaunchScreen.cpp:195   INFO| Waiting for manifest and audio took 0.973612s
+2026-02-07 17:45:35 [LoadTaskScheduler]       LaunchScreen.cpp:198   INFO| GameDataManager::MarkCachesPermanent took 0.013916s
+2026-02-07 17:45:35 [MainThread      ]       LaunchScreen.cpp:381   INFO| Done with boot load in 3.494457s
+2026-02-07 17:45:35 [MainThread      ]           InGameUI.cpp:69    INFO| InGameUI Construct
+2026-02-07 17:45:35 [MainThread      ]           InGameUI.cpp:250   INFO| Watermark: v1.133066
+2026-02-07 17:45:35 [MainThread      ]       LaunchScreen.cpp:679   INFO| Launch took 3.765310 seconds
+2026-02-07 17:45:35 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: MainMenu.pkg
+2026-02-07 17:45:35 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest MainMenu
+2026-02-07 17:45:35 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest MainMenu
+2026-02-07 17:45:35 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: MainMenu 65Mb in 0.02s
+2026-02-07 17:45:35 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DefaultBlank blend state 5 depthState 0
+2026-02-07 17:45:35 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Blit2DInv blend state 5 depthState 2
+2026-02-07 17:45:35 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::YUVA blend state 1 depthState 2
+2026-02-07 17:45:35 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DistanceFieldText blend state 1 depthState 2
+2026-02-07 17:45:36 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:45:38 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:38 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:39 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DistanceFieldFancy blend state 1 depthState 2
+2026-02-07 17:45:40 [LoadTaskScheduler]       PlatformFile.cpp:194   INFO| WindowsFile::DirectoryGetFiles(  Hades II  ,  , Profile*.sav  )
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:950   INFO| ProgressManager.load Profile1.sav IPlatformSaveDevice
+2026-02-07 17:45:40 [LoadTaskScheduler]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.sav
+2026-02-07 17:45:40 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 41730 bytes
+2026-02-07 17:45:40 [LoadTaskScheduler]     BinaryLoadData.cpp:35    INFO| Checksum expected = 9a1f8edf, was = 9a1f8edf
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:992   INFO| Load succeeded
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:950   INFO| ProgressManager.load Profile1.v.sav IPlatformSaveDevice
+2026-02-07 17:45:40 [LoadTaskScheduler]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.v.sav
+2026-02-07 17:45:40 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 9 bytes
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:992   INFO| Load succeeded
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:950   INFO| ProgressManager.load Profile1_Temp.sav IPlatformSaveDevice
+2026-02-07 17:45:40 [LoadTaskScheduler]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1_Temp.sav
+2026-02-07 17:45:40 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 49021 bytes
+2026-02-07 17:45:40 [LoadTaskScheduler]     BinaryLoadData.cpp:35    INFO| Checksum expected = 29f5bfb8, was = 29f5bfb8
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:992   INFO| Load succeeded
+2026-02-07 17:45:40 [MainThread      ] RemoteProfileScreen.cpp:629   INFO| ActiveProfile = Profile1
+2026-02-07 17:45:40 [MainThread      ] RemoteProfileScreen.cpp:649   INFO| Profile1 == Profile1, ActiveProfile Index = 0
+2026-02-07 17:45:40 [MainThread      ] RemoteProfileScreen.cpp:731   INFO| Finishing Creating Components For RemoteProfileScreen
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:69    INFO| SetupProfiles
+2026-02-07 17:45:40 [LoadTaskScheduler]       PlatformFile.cpp:194   INFO| WindowsFile::DirectoryGetFiles(  Hades II  ,  , *.sjson  )
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:74    INFO| Total saves :3
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:199   INFO| Getting Preferred Save
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:207   INFO| MainSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:214   INFO| tempSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:221   INFO| mainSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:83    INFO| localSaveFileName  :Profile1.sav
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:86    INFO| !saveFileName.empty()
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:89    INFO| mProfileButtons[0]->mDataValue: Profile1
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:199   INFO| Getting Preferred Save
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:207   INFO| MainSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:214   INFO| tempSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:221   INFO| mainSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:227   INFO| tempSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:247   INFO| mainSaveIndex >= 0
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:83    INFO| localSaveFileName  :
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:199   INFO| Getting Preferred Save
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:207   INFO| MainSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:214   INFO| tempSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:221   INFO| mainSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:227   INFO| tempSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:247   INFO| mainSaveIndex >= 0
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:83    INFO| localSaveFileName  :
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:199   INFO| Getting Preferred Save
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:207   INFO| MainSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:214   INFO| tempSaveInfo
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:221   INFO| mainSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:227   INFO| tempSaveIndex >
+2026-02-07 17:45:40 [LoadTaskScheduler]    ProgressManager.cpp:247   INFO| mainSaveIndex >= 0
+2026-02-07 17:45:40 [LoadTaskScheduler] RemoteProfileScreen.cpp:83    INFO| localSaveFileName  :
+2026-02-07 17:45:40 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColor blend state 1 depthState 2
+2026-02-07 17:45:42 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:45:47 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5056 ms
+2026-02-07 17:45:48 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:48 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:45:49 [MainThread      ] RemoteProfileScreen.cpp:828   INFO| Enter Profile Button
+2026-02-07 17:45:50 [MainThread      ] RemoteProfileScreen.cpp:512   INFO| Enter StartOrContinueGame
+2026-02-07 17:45:50 [MainThread      ] RemoteProfileScreen.cpp:531   INFO| loading CheckPoint
+2026-02-07 17:45:50 [MainThread      ]    ProgressManager.cpp:1334  INFO| ProgressManager.load Profile1.sav IPlatformSaveDevice
+2026-02-07 17:45:50 [SmallTaskScheduler]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.sav
+2026-02-07 17:45:50 [SmallTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 41730 bytes
+2026-02-07 17:45:50 [SmallTaskScheduler]     BinaryLoadData.cpp:35    INFO| Checksum expected = 9a1f8edf, was = 9a1f8edf
+2026-02-07 17:45:50 [MainThread      ]    ProgressManager.cpp:1400  INFO| Load succeeded
+2026-02-07 17:45:50 [MainThread      ]                App.cpp:1644  INFO| App.Reset Start
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 0) (594kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 0) (297kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 0) (223kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 0) (295kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 0) (79kb)
+2026-02-07 17:45:50 [MainThread      ]             LuaExt.cpp:576   INFO| Lua interface destroyed
+2026-02-07 17:45:50 [MainThread      ]       AudioManager.cpp:356   INFO| AudioManager.reset
+2026-02-07 17:45:50 [MainThread      ]       AudioManager.cpp:3766  INFO| AudioManager.reset, excludeId = -1, fullWipe = true
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Launch
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Launch bank: 0.00 ms
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Launch package: 0.01 ms
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: MainMenu
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	MainMenu bank: 0.00 ms
+2026-02-07 17:45:50 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	MainMenu package: 0.17 ms
+2026-02-07 17:45:50 [MainThread      ]     ProfileManager.cpp:46    INFO| Loading default profile Hades II Profile1
+2026-02-07 17:45:50 [MainThread      ]     ProfileManager.cpp:192   INFO| ProfileManager::Load(): Profile1 
+2026-02-07 17:45:50 [MainThread      ]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: Profile1.sjson
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: SprintAutoHold = true
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: MusicSubtitles = true
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: BackupSaveCount = 2
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: UseAnalytics = false
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: ValidCheckpoint = false
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:791   INFO| ConfigOption: Brightness = 0.504450
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: ControlsResetRevisionViewed = 133066
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:791   INFO| ConfigOption: HUDOpacity = 0.501443
+2026-02-07 17:45:50 [MainThread      ]     ProfileManager.cpp:223   INFO| Load profile Profile1.sjson successful
+2026-02-07 17:45:50 [MainThread      ]       PCSaveDevice.cpp:321   INFO| Opened save file for reading: GlobalSettingsWin.sjson
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:810   INFO| ConfigOption: GraphicsQualityPreset = GraphicsQualityPreset_High
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: NewUpdateSoundRevisionViewed = 133066
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: LastRoadmapRevisionViewed = 133066
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: LastPatchNoteRevisionViewed = 133066
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: FullScreen = true
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: Y = 1080
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:784   INFO| ConfigOption: X = 1920
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:777   INFO| ConfigOption: AutoDetectLowResAssets = false
+2026-02-07 17:45:50 [MainThread      ]     ProfileManager.cpp:223   INFO| Load profile GlobalSettingsWin.sjson successful
+2026-02-07 17:45:50 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 16 bytes
+2026-02-07 17:45:50 [MainThread      ]     BinarySaveData.cpp:17    INFO| Writing 16 bytes
+2026-02-07 17:45:50 [MainThread      ]      ConfigOptions.cpp:366   INFO| Set GraphicsQualityPreset: GraphicsQualityPreset_High
+2026-02-07 17:45:50 [MainThread      ]                App.cpp:1720  INFO| App.Reset Finished
+2026-02-07 17:45:50 [MainThread      ]              World.cpp:1373  INFO| World::Begin()  -> Hub_Main
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 0) (594kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 0) (297kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 0) (223kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 0) (295kb)
+2026-02-07 17:45:50 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 0) (79kb)
+2026-02-07 17:45:50 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.002167 seconds)
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (Hub_Main)
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 17:45:50 [LoadTaskScheduler]    ProgressManager.cpp:1261  INFO| ProgressManager::LoadLua 41505 -> 232287 5.596603 : 0.001607 s
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.001636 seconds)
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 17:45:50 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: BiomeHub.pkg
+2026-02-07 17:45:50 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 1289152 bytes
+2026-02-07 17:45:50 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest BiomeHub
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.007641 seconds)
+2026-02-07 17:45:50 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 17:45:50 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest BiomeHub
+2026-02-07 17:45:50 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: BiomeHub 514Mb in 0.18s
+2026-02-07 17:45:50 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: BiomeHub
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: BiomeHub (18Mb in 0.04s)
+2026-02-07 17:45:51 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.237311 seconds)
+2026-02-07 17:45:51 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 17:45:51 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: FrogFamiliar.pkg
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: FrogFamiliar 2Mb in 0.00s
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PolecatFamiliar.pkg
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: PolecatFamiliar 1Mb in 0.00s
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HoundFamiliar.pkg
+2026-02-07 17:45:51 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: HoundFamiliar 2Mb in 0.00s
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: FrogFamiliar
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: FrogFamiliar (0Mb in 0.03s)
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: PolecatFamiliar
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: PolecatFamiliar (0Mb in 0.05s)
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: HoundFamiliar
+2026-02-07 17:45:51 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: HoundFamiliar (0Mb in 0.04s)
+2026-02-07 17:45:51 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 17:45:51 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.421272 seconds)
+2026-02-07 17:45:51 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 17:45:51 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.03 seconds
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hades (332 lines in 0.005293 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponBlink.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponBlink
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponBlink
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponBlink 2Mb in 0.00s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponBlink
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponBlink (0Mb in 0.04s)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponCast.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponCast
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponCast
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponCast 36Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponCast
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponCast (0Mb in 0.02s)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponStaffSwing.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponStaffSwing
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponStaffSwing
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponStaffSwing 50Mb in 0.03s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponStaffSwing
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponStaffSwing (1Mb in 0.03s)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Moros.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Moros
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Moros
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Moros 53Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Odysseus (586 lines in 0.001921 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Odysseus.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Odysseus
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Odysseus
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Odysseus 53Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Nemesis (414 lines in 0.001568 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Nemesis.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Nemesis
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Nemesis
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Nemesis 48Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hypnos (47 lines in 0.001200 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hypnos.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hypnos
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hypnos
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hypnos 56Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hecate (830 lines in 0.002092 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hecate.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hecate
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hecate
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hecate 55Mb in 0.02s
+2026-02-07 17:45:51 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Dora (640 lines in 0.001745 seconds)
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Dora.pkg
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Dora
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Dora
+2026-02-07 17:45:51 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Dora 36Mb in 0.01s
+2026-02-07 17:45:51 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.366661 seconds)
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::ZOnly blend state 1 depthState 4
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::ShadowMap blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Lighting3DFast blend state 1 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::LighterColor2D blend state 5 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Overlay2D blend state 5 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Light blend state 7 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Blit2D blend state 7 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColor blend state 1 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Lighting3DFast blend state 0 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Lighting3DFast blend state 8 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::ColorGrading blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::GaussianBlurWithBloomExtract blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::GaussianBlur blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::BloomCombine blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Granny3D blend state 1 depthState 3
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::LightAndShadow blend state 7 depthState 0
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Shadow3D blend state 5 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::ShadowCast3D blend state 1 depthState 2
+2026-02-07 17:45:51 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Granny3DSprite blend state 1 depthState 2
+2026-02-07 17:46:02 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DistanceFieldText blend state 1 depthState 0
+2026-02-07 17:46:02 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::DistanceFieldFancy blend state 1 depthState 0
+2026-02-07 17:46:02 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Displacement2D blend state 5 depthState 0
+2026-02-07 17:46:09 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:46:11 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:46:28 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:46:29 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:46:29 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:46:37 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 846 bytes
+2026-02-07 17:46:37 [MainThread      ]     BinarySaveData.cpp:17    INFO| Writing 846 bytes
+2026-02-07 17:46:37 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 17:46:37 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 17:46:37 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 17:46:39 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColor blend state 0 depthState 0
+2026-02-07 17:46:40 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColor blend state 8 depthState 0
+2026-02-07 17:46:42 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::YUVA blend state 0 depthState 0
+2026-02-07 17:47:27 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::YUVA blend state 1 depthState 0
+2026-02-07 17:47:39 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:47:40 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:47:40 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:47:41 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 17:47:46 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5056 ms
+2026-02-07 17:47:51 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5048 ms
+2026-02-07 17:47:56 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5040 ms
+2026-02-07 17:48:01 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5032 ms
+2026-02-07 17:48:03 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:48:03 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 17:51:19 [MainThread      ]              World.cpp:1373  INFO| World::Begin() Hub_Main -> Hub_PreRun
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 1) (594kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 0) (297kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 0) (223kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 0) (295kb)
+2026-02-07 17:51:19 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 9) (79kb)
+2026-02-07 17:51:19 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001258 s
+2026-02-07 17:51:19 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001592 s
+2026-02-07 17:51:19 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 82078 bytes
+2026-02-07 17:51:19 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = cd24e07 bytes
+2026-02-07 17:51:19 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.038077 seconds)
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (Hub_PreRun)
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 17:51:19 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 82078 bytes
+2026-02-07 17:51:19 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 383694 bytes
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.005265 seconds)
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Odysseus in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Nemesis in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hypnos in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hecate in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Dora in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hades in 0.00s
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 17:51:19 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.027098 seconds)
+2026-02-07 17:51:19 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 17:51:19 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.06 seconds
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Skelly (667 lines in 0.005450 seconds)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.001755 seconds)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Nyx (116 lines in 0.001280 seconds)
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Skelly.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Skelly
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Skelly
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Skelly 32Mb in 0.01s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponAxe.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponAxe
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponAxe
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponAxe 13Mb in 0.01s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponDagger.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponDagger
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponDagger
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponDagger 17Mb in 0.01s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponTorch.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponTorch
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponTorch
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponTorch 19Mb in 0.01s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponLob.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponLob
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponLob
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponLob 26Mb in 0.01s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponSuit.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponSuit
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponSuit
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponSuit 51Mb in 0.02s
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponAxe
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponAxe (0Mb in 0.05s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponDagger
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponDagger (0Mb in 0.04s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponTorch
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponTorch (0Mb in 0.04s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponLob
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponLob (1Mb in 0.04s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponSuit
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponSuit (2Mb in 0.05s)
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: CatFamiliar.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: CatFamiliar 2Mb in 0.00s
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: RavenFamiliar.pkg
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest RavenFamiliar
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest RavenFamiliar
+2026-02-07 17:51:19 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: RavenFamiliar 2Mb in 0.00s
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: CatFamiliar
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: CatFamiliar (0Mb in 0.04s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: RavenFamiliar
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: RavenFamiliar (0Mb in 0.04s)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AphroditeKeepsake (3 lines in 0.001354 seconds)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ApolloKeepsake (2 lines in 0.000868 seconds)
+2026-02-07 17:51:19 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ArachneKeepsake (2 lines in 0.000748 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AresKeepsake (2 lines in 0.000789 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ArtemisKeepsake (2 lines in 0.000746 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AthenaKeepsake (2 lines in 0.000712 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ChaosKeepsake (2 lines in 0.000993 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: CharonKeepsake (2 lines in 0.000677 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ChronosKeepsake (2 lines in 0.001108 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: CirceKeepsake (2 lines in 0.000970 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DemeterKeepsake (2 lines in 0.000938 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DionysusKeepsake (2 lines in 0.000998 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DoraKeepsake (2 lines in 0.000775 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: EchoKeepsake (2 lines in 0.000878 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ErisKeepsake (2 lines in 0.000994 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HadesKeepsake (2 lines in 0.001027 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HecateKeepsake (3 lines in 0.001022 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HephaestusKeepsake (2 lines in 0.000896 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HeraclesKeepsake (2 lines in 0.000807 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HeraKeepsake (4 lines in 0.000945 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HermesKeepsake (2 lines in 0.000816 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HestiaKeepsake (2 lines in 0.000836 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: IcarusKeepsake (2 lines in 0.000758 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: MedeaKeepsake (2 lines in 0.000839 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: MorosKeepsake (2 lines in 0.000835 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: NarcissusKeepsake (4 lines in 0.000994 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: NemesisKeepsake (4 lines in 0.001042 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: OdysseusKeepsake (2 lines in 0.000776 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: PersephoneKeepsake (2 lines in 0.000763 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: PoseidonKeepsake (2 lines in 0.000773 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: SeleneKeepsake (2 lines in 0.000702 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: SkellyKeepsake (3 lines in 0.000797 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ZagreusKeepsake (2 lines in 0.000700 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ZeusKeepsake (2 lines in 0.000810 seconds)
+2026-02-07 17:51:20 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Chaos (353 lines in 0.001241 seconds)
+2026-02-07 17:51:20 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.491703 seconds)
+2026-02-07 17:51:25 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::MultiplyAndLerp blend state 1 depthState 0
+2026-02-07 17:51:25 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::MultiplyAndLerp blend state 0 depthState 0
+2026-02-07 17:51:25 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColorMultiplyAndLerp blend state 0 depthState 0
+2026-02-07 17:52:01 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:53:07 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 17:53:07 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 17:53:07 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 17:53:51 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001228 s
+2026-02-07 17:53:51 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001560 s
+2026-02-07 17:53:51 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 76942 bytes
+2026-02-07 17:53:51 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 1e111e54 bytes
+2026-02-07 17:53:51 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 76942 bytes
+2026-02-07 17:55:37 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::Granny3D blend state 5 depthState 3
+2026-02-07 17:56:02 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:56:34 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:56:46 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 17:56:46 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 17:56:46 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 17:56:50 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:57:00 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::RadialBlur blend state 1 depthState 2
+2026-02-07 17:57:07 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 17:57:07 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 17:57:07 [MainThread      ]              World.cpp:1373  INFO| World::Begin() Hub_PreRun -> F_Opening01
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 2) (594kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 1) (297kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 0) (223kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 17:57:07 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 11) (79kb)
+2026-02-07 17:57:07 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001161 s
+2026-02-07 17:57:07 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001410 s
+2026-02-07 17:57:07 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 56896 bytes
+2026-02-07 17:57:07 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 31f41732 bytes
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponStaffSwing
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponStaffSwing bank: 0.00 ms
+2026-02-07 17:57:07 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 56896 bytes
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponStaffSwing package: 1.07 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponBlink
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponBlink bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponBlink package: 0.02 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponCast
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponCast bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponCast package: 0.69 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: BiomeHub
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	BiomeHub bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	BiomeHub package: 4.73 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: FrogFamiliar
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	FrogFamiliar bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	FrogFamiliar package: 0.01 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: PolecatFamiliar
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	PolecatFamiliar bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	PolecatFamiliar package: 0.01 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: HoundFamiliar
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	HoundFamiliar bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	HoundFamiliar package: 0.01 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Moros
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Moros bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Moros package: 0.13 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Odysseus
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Odysseus bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Odysseus package: 0.12 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Nemesis
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Nemesis bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Nemesis package: 0.09 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hypnos
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hypnos bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hypnos package: 0.17 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hecate
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hecate bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hecate package: 0.12 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Dora
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Dora bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Dora package: 0.12 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Skelly
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Skelly bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Skelly package: 0.09 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponAxe
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponAxe bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponAxe package: 0.20 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponDagger
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponDagger bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponDagger package: 0.16 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponTorch
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponTorch bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponTorch package: 0.53 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponLob
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponLob bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponLob package: 0.28 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponSuit
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponSuit bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponSuit package: 0.56 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: CatFamiliar
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	CatFamiliar bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	CatFamiliar package: 0.01 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: RavenFamiliar
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	RavenFamiliar bank: 0.00 ms
+2026-02-07 17:57:07 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	RavenFamiliar package: 0.01 ms
+2026-02-07 17:57:07 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.024630 seconds)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Opening01)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 17:57:07 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: BiomeF.pkg
+2026-02-07 17:57:07 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest BiomeF
+2026-02-07 17:57:07 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 279112 bytes
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003014 seconds)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 17:57:07 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest BiomeF
+2026-02-07 17:57:07 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: BiomeF 259Mb in 0.16s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: BiomeF
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: BiomeF (13Mb in 0.03s)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.200932 seconds)
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: PersephoneKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: DoraKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HadesKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HeraclesKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: CharonKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: AresKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: MedeaKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HermesKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HeraKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: AthenaKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: DemeterKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ZeusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ChaosKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ArtemisKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: SkellyKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ErisKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Skelly in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: PoseidonKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HestiaKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: NarcissusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: DionysusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ChronosKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Nyx in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: OdysseusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HephaestusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: SeleneKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: EchoKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: CirceKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: NemesisKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: MorosKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ArachneKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ApolloKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: ZagreusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: IcarusKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: AphroditeKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Chaos in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HecateKeepsake in 0.00s
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 17:57:07 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.223084 seconds)
+2026-02-07 17:57:08 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 17:57:08 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.04 seconds
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Demeter (237 lines in 0.001305 seconds)
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Demeter.pkg
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Demeter
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Demeter
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Demeter 36Mb in 0.01s
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponBlink.pkg
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponBlink
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponBlink
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponBlink 2Mb in 0.00s
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponBlink
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponBlink (0Mb in 0.05s)
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponCast.pkg
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponCast
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponCast
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponCast 36Mb in 0.02s
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponCast
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponCast (0Mb in 0.02s)
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponStaffSwing.pkg
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponStaffSwing
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponStaffSwing
+2026-02-07 17:57:08 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponStaffSwing 50Mb in 0.03s
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponStaffSwing
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponStaffSwing (1Mb in 0.03s)
+2026-02-07 17:57:08 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.001027 seconds)
+2026-02-07 17:57:08 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.205865 seconds)
+2026-02-07 17:57:11 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 17:57:24 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::ColorGradingLerp blend state 5 depthState 2
+2026-02-07 17:57:38 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 17:57:38 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 17:57:38 [SmallTaskScheduler]       PCSaveDevice.cpp:131    ERR| CopyFileW(Hades II\Profile1.v.sav, Hades II\Profile1.v.sav.bak, false) Failed: Path not found.
+
+2026-02-07 17:58:35 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:59:36 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 17:59:36 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 17:59:36 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 17:59:48 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001222 s
+2026-02-07 17:59:48 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001525 s
+2026-02-07 17:59:48 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 61786 bytes
+2026-02-07 17:59:48 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 31bb9419 bytes
+2026-02-07 17:59:48 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 17:59:48 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 61786 bytes
+2026-02-07 17:59:48 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 17:59:51 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 17:59:58 [MainThread      ] MiscSettingsScreen.cpp:1334  INFO| Option UseAltCursor changed from false -> true
+2026-02-07 17:59:58 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 17:59:58 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 17:59:58 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 18:00:10 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:00:10 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:00:10 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Demeter
+2026-02-07 18:00:10 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Demeter bank: 0.00 ms
+2026-02-07 18:00:10 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Demeter package: 0.14 ms
+2026-02-07 18:00:10 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Opening01 -> F_Combat21
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 1) (297kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 0) (223kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:00:10 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 11) (79kb)
+2026-02-07 18:00:10 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001344 s
+2026-02-07 18:00:10 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001639 s
+2026-02-07 18:00:10 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 67558 bytes
+2026-02-07 18:00:10 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = fd964e53 bytes
+2026-02-07 18:00:10 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.010195 seconds)
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat21)
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:00:10 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 67558 bytes
+2026-02-07 18:00:10 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 237322 bytes
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003877 seconds)
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:00:10 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:00:10 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Demeter in 0.00s
+2026-02-07 18:00:10 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:00:10 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.020198 seconds)
+2026-02-07 18:00:10 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:00:10 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:00:10 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.052322 seconds)
+2026-02-07 18:00:28 [RenderThread    ]      ForgeRenderer.cpp:7037  INFO| Creating pipeline for effect: ShaderEffectType::AddColorMultiplyAndLerp blend state 1 depthState 0
+2026-02-07 18:00:36 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001324 s
+2026-02-07 18:00:36 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001641 s
+2026-02-07 18:00:36 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 69612 bytes
+2026-02-07 18:00:36 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 6c89733 bytes
+2026-02-07 18:00:36 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:00:36 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 69612 bytes
+2026-02-07 18:00:36 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:00:43 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:00:43 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:00:43 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat21 -> F_Combat04
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 4) (297kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 2) (223kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:00:43 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 12) (79kb)
+2026-02-07 18:00:43 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001260 s
+2026-02-07 18:00:43 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001542 s
+2026-02-07 18:00:43 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 67729 bytes
+2026-02-07 18:00:43 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 836ea08c bytes
+2026-02-07 18:00:43 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.009203 seconds)
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat04)
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000004 seconds)
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:00:43 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 67729 bytes
+2026-02-07 18:00:43 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 161435 bytes
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.002668 seconds)
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:00:43 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:00:43 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.014894 seconds)
+2026-02-07 18:00:43 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:00:43 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:00:43 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.052684 seconds)
+2026-02-07 18:01:01 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001293 s
+2026-02-07 18:01:01 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001615 s
+2026-02-07 18:01:01 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 69473 bytes
+2026-02-07 18:01:01 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 53f16420 bytes
+2026-02-07 18:01:01 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:01:01 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 69473 bytes
+2026-02-07 18:01:01 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:01:07 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:01:07 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:01:07 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat04 -> F_Combat06
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 4) (297kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 2) (223kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:01:07 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:01:07 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001306 s
+2026-02-07 18:01:07 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001590 s
+2026-02-07 18:01:07 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 67991 bytes
+2026-02-07 18:01:07 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 42910166 bytes
+2026-02-07 18:01:07 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.006702 seconds)
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat06)
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:01:07 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 67991 bytes
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:01:07 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 196344 bytes
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.002753 seconds)
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:01:07 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:01:07 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.017371 seconds)
+2026-02-07 18:01:07 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:01:07 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:01:07 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hestia (234 lines in 0.005039 seconds)
+2026-02-07 18:01:07 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hestia.pkg
+2026-02-07 18:01:07 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hestia
+2026-02-07 18:01:07 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hestia
+2026-02-07 18:01:07 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hestia 54Mb in 0.02s
+2026-02-07 18:01:07 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:01:07 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.082497 seconds)
+2026-02-07 18:01:25 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:01:49 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:01:49 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:01:49 [SmallTaskScheduler]       PCSaveDevice.cpp:131    ERR| CopyFileW(Hades II\Profile1.v.sav, Hades II\Profile1.v.sav.bak, false) Failed: Path not found.
+
+2026-02-07 18:01:49 [SmallTaskScheduler]       PCSaveDevice.cpp:131    ERR| MoveFileExW(Hades II\Profile15EDF.tmp, Hades II\Profile1.v.sav, MOVEFILE_REPLACE_EXISTING | MOVEFILE_COPY_ALLOWED) Failed: Path not found.
+
+2026-02-07 18:01:49 [SmallTaskScheduler]      ScreenManager.cpp:177    ERR| Error message: SaveLoad Error: Code: SaveErrorPC, Message: Failed to save, FileName: Profile1.v.sav, Container: Profile1, Directory: 
+2026-02-07 18:01:49 [MainThread      ]      ScreenManager.cpp:260    ERR| Processing error: SaveLoad Error: Code: SaveErrorPC, Message: Failed to save, FileName: Profile1.v.sav, Container: Profile1, Directory: 
+2026-02-07 18:02:16 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001420 s
+2026-02-07 18:02:16 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001788 s
+2026-02-07 18:02:16 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 80524 bytes
+2026-02-07 18:02:16 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 55add033 bytes
+2026-02-07 18:02:16 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:02:16 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 80524 bytes
+2026-02-07 18:02:16 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:02:27 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:02:27 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:02:27 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hestia
+2026-02-07 18:02:27 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hestia bank: 0.00 ms
+2026-02-07 18:02:27 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hestia package: 0.20 ms
+2026-02-07 18:02:27 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat06 -> F_Combat10
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 3) (223kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:02:27 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:02:27 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001502 s
+2026-02-07 18:02:27 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001852 s
+2026-02-07 18:02:27 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 78226 bytes
+2026-02-07 18:02:27 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 173498c3 bytes
+2026-02-07 18:02:27 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.008038 seconds)
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000003 seconds)
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat10)
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000004 seconds)
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:02:27 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 78226 bytes
+2026-02-07 18:02:27 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 142572 bytes
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003319 seconds)
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:02:27 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:02:27 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:02:27 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hestia in 0.00s
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:02:27 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.015413 seconds)
+2026-02-07 18:02:28 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:02:28 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:02:28 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.000834 seconds)
+2026-02-07 18:02:28 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.051762 seconds)
+2026-02-07 18:02:45 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001575 s
+2026-02-07 18:02:45 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001938 s
+2026-02-07 18:02:45 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 80273 bytes
+2026-02-07 18:02:45 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = ec37f324 bytes
+2026-02-07 18:02:45 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:02:45 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 80273 bytes
+2026-02-07 18:02:45 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:02:56 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:02:56 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:02:56 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat10 -> F_Combat01
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 3) (223kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:02:56 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:02:56 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001516 s
+2026-02-07 18:02:56 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001856 s
+2026-02-07 18:02:56 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 78752 bytes
+2026-02-07 18:02:56 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 232e48ec bytes
+2026-02-07 18:02:56 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.006739 seconds)
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat01)
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000003 seconds)
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:02:56 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 78752 bytes
+2026-02-07 18:02:56 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 198664 bytes
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.002872 seconds)
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:02:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:02:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:02:56 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:02:56 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.017005 seconds)
+2026-02-07 18:02:56 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:02:56 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:02:56 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Poseidon (325 lines in 0.005157 seconds)
+2026-02-07 18:02:56 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Poseidon.pkg
+2026-02-07 18:02:56 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Poseidon
+2026-02-07 18:02:56 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Poseidon
+2026-02-07 18:02:56 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Poseidon 47Mb in 0.02s
+2026-02-07 18:02:56 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:02:56 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.076335 seconds)
+2026-02-07 18:03:09 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:03:09 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:03:15 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:04:34 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001529 s
+2026-02-07 18:04:34 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001894 s
+2026-02-07 18:04:34 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 84315 bytes
+2026-02-07 18:04:34 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 54d3cbbe bytes
+2026-02-07 18:04:34 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:04:34 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 84315 bytes
+2026-02-07 18:04:34 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:04:38 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:04:38 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Poseidon
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Poseidon bank: 0.00 ms
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Poseidon package: 0.14 ms
+2026-02-07 18:04:38 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat01 -> F_MiniBoss01
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 3) (594kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 1) (295kb)
+2026-02-07 18:04:38 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:04:38 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001571 s
+2026-02-07 18:04:38 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.001917 s
+2026-02-07 18:04:38 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 83115 bytes
+2026-02-07 18:04:38 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 891b0041 bytes
+2026-02-07 18:04:38 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.008614 seconds)
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_MiniBoss01)
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:04:38 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 83115 bytes
+2026-02-07 18:04:38 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 220930 bytes
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.002889 seconds)
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:04:38 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:04:38 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:04:38 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:04:38 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Poseidon in 0.00s
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:04:38 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.019927 seconds)
+2026-02-07 18:04:38 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:04:38 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:04:38 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Poseidon (325 lines in 0.000874 seconds)
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Poseidon.pkg
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Poseidon
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Poseidon
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Poseidon 47Mb in 0.02s
+2026-02-07 18:04:38 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:04:38 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.000750 seconds)
+2026-02-07 18:04:38 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.068810 seconds)
+2026-02-07 18:04:53 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:04:53 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:05:16 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:05:22 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 18:05:23 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:05:23 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:05:51 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001689 s
+2026-02-07 18:05:51 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002102 s
+2026-02-07 18:05:51 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 94547 bytes
+2026-02-07 18:05:51 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = a066ace4 bytes
+2026-02-07 18:05:51 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:05:51 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 94547 bytes
+2026-02-07 18:05:51 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:06:13 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:06:13 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:06:13 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Poseidon
+2026-02-07 18:06:13 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Poseidon bank: 0.00 ms
+2026-02-07 18:06:13 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Poseidon package: 0.13 ms
+2026-02-07 18:06:13 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_MiniBoss01 -> F_Combat17
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:06:13 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:06:13 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001808 s
+2026-02-07 18:06:13 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002206 s
+2026-02-07 18:06:13 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 92951 bytes
+2026-02-07 18:06:13 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 3c671e85 bytes
+2026-02-07 18:06:13 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.009882 seconds)
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat17)
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000004 seconds)
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:06:13 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 92951 bytes
+2026-02-07 18:06:13 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 259416 bytes
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.002788 seconds)
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:06:13 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:06:13 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:06:13 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:06:13 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 18:06:13 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Poseidon in 0.00s
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:06:13 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.021035 seconds)
+2026-02-07 18:06:13 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:06:13 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:06:13 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.052125 seconds)
+2026-02-07 18:06:42 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:06:42 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:07:03 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001708 s
+2026-02-07 18:07:03 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002159 s
+2026-02-07 18:07:03 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 98343 bytes
+2026-02-07 18:07:03 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 77e9fb76 bytes
+2026-02-07 18:07:03 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:07:03 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 98343 bytes
+2026-02-07 18:07:03 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:07:19 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:07:19 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:07:19 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat17 -> F_Combat20
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:07:19 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:07:19 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001773 s
+2026-02-07 18:07:19 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002200 s
+2026-02-07 18:07:19 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 96757 bytes
+2026-02-07 18:07:19 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = f60f6bc8 bytes
+2026-02-07 18:07:19 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.010676 seconds)
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat20)
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:07:19 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 96757 bytes
+2026-02-07 18:07:19 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 272678 bytes
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003393 seconds)
+2026-02-07 18:07:19 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:07:19 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:07:19 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:07:19 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:07:20 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:07:20 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.022585 seconds)
+2026-02-07 18:07:20 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:07:20 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:07:20 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.052713 seconds)
+2026-02-07 18:07:57 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001907 s
+2026-02-07 18:07:57 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002357 s
+2026-02-07 18:07:57 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 99607 bytes
+2026-02-07 18:07:57 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 902cb225 bytes
+2026-02-07 18:07:57 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:07:57 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 99607 bytes
+2026-02-07 18:07:57 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:08:03 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:08:03 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:08:03 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat20 -> F_Combat18
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:08:03 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:08:03 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001750 s
+2026-02-07 18:08:03 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002173 s
+2026-02-07 18:08:03 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 96452 bytes
+2026-02-07 18:08:03 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 3e370893 bytes
+2026-02-07 18:08:03 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 96452 bytes
+2026-02-07 18:08:03 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.010607 seconds)
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat18)
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000003 seconds)
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:08:03 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 296677 bytes
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003160 seconds)
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:08:03 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:08:03 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:08:03 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:08:03 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.024249 seconds)
+2026-02-07 18:08:03 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:08:03 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:08:03 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Demeter (237 lines in 0.000738 seconds)
+2026-02-07 18:08:03 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Demeter.pkg
+2026-02-07 18:08:03 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Demeter
+2026-02-07 18:08:03 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Demeter
+2026-02-07 18:08:03 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Demeter 36Mb in 0.01s
+2026-02-07 18:08:03 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:08:03 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.073915 seconds)
+2026-02-07 18:08:37 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:08:40 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:08:40 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:08:40 [SmallTaskScheduler]       PCSaveDevice.cpp:131    ERR| CopyFileW(Hades II\Profile1.v.sav, Hades II\Profile1.v.sav.bak, false) Failed: Path not found.
+
+2026-02-07 18:09:13 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001829 s
+2026-02-07 18:09:13 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002265 s
+2026-02-07 18:09:13 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 103092 bytes
+2026-02-07 18:09:13 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = f0f0f1bc bytes
+2026-02-07 18:09:13 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:09:13 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 103092 bytes
+2026-02-07 18:09:13 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:09:24 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:09:24 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:09:24 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Demeter
+2026-02-07 18:09:24 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Demeter bank: 0.00 ms
+2026-02-07 18:09:24 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Demeter package: 0.14 ms
+2026-02-07 18:09:24 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat18 -> F_Combat15
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 15) (297kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:09:24 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 13) (79kb)
+2026-02-07 18:09:24 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001827 s
+2026-02-07 18:09:24 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002235 s
+2026-02-07 18:09:24 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 99108 bytes
+2026-02-07 18:09:24 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = a1c48cb7 bytes
+2026-02-07 18:09:24 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.010665 seconds)
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Combat15)
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000003 seconds)
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000005 seconds)
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:09:24 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 99108 bytes
+2026-02-07 18:09:24 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 181893 bytes
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003008 seconds)
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:09:24 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:09:24 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:09:24 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:09:24 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Demeter in 0.00s
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:09:24 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.017085 seconds)
+2026-02-07 18:09:24 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:09:24 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:09:24 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.053375 seconds)
+2026-02-07 18:09:40 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:09:40 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:10:00 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001831 s
+2026-02-07 18:10:00 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002275 s
+2026-02-07 18:10:00 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 103150 bytes
+2026-02-07 18:10:00 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 60e1498b bytes
+2026-02-07 18:10:00 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:10:00 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 103150 bytes
+2026-02-07 18:10:00 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:10:06 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:10:06 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:10:06 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Combat15 -> F_PreBoss01
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:10:06 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:10:06 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001799 s
+2026-02-07 18:10:06 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002226 s
+2026-02-07 18:10:06 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 99591 bytes
+2026-02-07 18:10:06 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = d1b28f3a bytes
+2026-02-07 18:10:06 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.008374 seconds)
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_PreBoss01)
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000003 seconds)
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:10:06 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 99591 bytes
+2026-02-07 18:10:06 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 194833 bytes
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003265 seconds)
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:10:06 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:10:06 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:10:06 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:10:06 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.019866 seconds)
+2026-02-07 18:10:06 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:10:06 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:10:06 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.000750 seconds)
+2026-02-07 18:10:06 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Selene.pkg
+2026-02-07 18:10:06 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Selene
+2026-02-07 18:10:06 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Selene
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Selene 56Mb in 0.02s
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hestia.pkg
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hestia
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hestia
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hestia 54Mb in 0.02s
+2026-02-07 18:10:07 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hestia (234 lines in 0.000785 seconds)
+2026-02-07 18:10:07 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Charon (138 lines in 0.004737 seconds)
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Charon.pkg
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Charon
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Charon
+2026-02-07 18:10:07 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Charon 54Mb in 0.03s
+2026-02-07 18:10:07 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.139237 seconds)
+2026-02-07 18:10:29 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 18:10:30 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 18:10:35 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5056 ms
+2026-02-07 18:10:40 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5048 ms
+2026-02-07 18:10:41 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:10:41 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:10:56 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:10:56 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Charon
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Charon bank: 0.00 ms
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Charon package: 0.22 ms
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hestia
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hestia bank: 0.00 ms
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hestia package: 0.14 ms
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Selene
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Selene bank: 0.00 ms
+2026-02-07 18:10:56 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Selene package: 0.18 ms
+2026-02-07 18:10:56 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_PreBoss01 -> F_Boss01
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 24) (594kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:10:56 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:10:56 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001798 s
+2026-02-07 18:10:56 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002217 s
+2026-02-07 18:10:56 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 98930 bytes
+2026-02-07 18:10:56 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 22080804 bytes
+2026-02-07 18:10:56 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.009956 seconds)
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (F_Boss01)
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000003 seconds)
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:10:56 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 98930 bytes
+2026-02-07 18:10:56 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 279118 bytes
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003072 seconds)
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: DemeterUpgrade.pkg
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HestiaUpgrade.pkg
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PoseidonUpgrade.pkg
+2026-02-07 18:10:56 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hestia in 0.00s
+2026-02-07 18:10:56 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 18:10:56 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Charon in 0.00s
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: Hecate.pkg
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest Hecate
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest Hecate
+2026-02-07 18:10:56 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: Hecate 55Mb in 0.02s
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:10:56 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.046763 seconds)
+2026-02-07 18:10:57 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:10:57 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:10:57 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.001112 seconds)
+2026-02-07 18:10:57 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hecate (830 lines in 0.001075 seconds)
+2026-02-07 18:10:57 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HecateField (478 lines in 0.001386 seconds)
+2026-02-07 18:10:57 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.058108 seconds)
+2026-02-07 18:11:11 [MainThread      ]            Program.cpp:512   INFO| Window Inactive
+2026-02-07 18:11:16 [RenderThread    ]            Program.cpp:2068  INFO| Render thread waiting for commands for 5056 ms
+2026-02-07 18:11:18 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:11:18 [MainThread      ]            Program.cpp:492   INFO| Window Active
+2026-02-07 18:11:58 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 9 bytes
+2026-02-07 18:11:58 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 9 bytes
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hecate
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hecate bank: 0.00 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hecate package: 0.24 ms
+2026-02-07 18:14:08 [MainThread      ]              World.cpp:1373  INFO| World::Begin() F_Boss01 -> Hub_Main
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 46) (594kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:14:08 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:14:08 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001794 s
+2026-02-07 18:14:08 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002271 s
+2026-02-07 18:14:08 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 107115 bytes
+2026-02-07 18:14:08 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 9bbbdf62 bytes
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponBlink
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponBlink bank: 0.00 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponBlink package: 0.10 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponCast
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponCast bank: 0.00 ms
+2026-02-07 18:14:08 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 107115 bytes
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponCast package: 0.79 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponStaffSwing
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponStaffSwing bank: 0.00 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponStaffSwing package: 0.95 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: BiomeF
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	BiomeF bank: 0.00 ms
+2026-02-07 18:14:08 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	BiomeF package: 1.93 ms
+2026-02-07 18:14:08 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.014406 seconds)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (Hub_Main)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000002 seconds)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: BiomeHub.pkg
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:581   INFO| Start reading manifest BiomeHub
+2026-02-07 18:14:08 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 1289152 bytes
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.006563 seconds)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:642   INFO| Done reading manifest BiomeHub
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: BiomeHub 514Mb in 0.32s
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: BiomeHub
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: BiomeHub (18Mb in 0.03s)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.349743 seconds)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: HecateField in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Selene in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hecate in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: FrogFamiliar.pkg
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: FrogFamiliar 2Mb in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: PolecatFamiliar.pkg
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: PolecatFamiliar 1Mb in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:668   INFO| Loading package: HoundFamiliar.pkg
+2026-02-07 18:14:08 [LoadTaskScheduler]   GameAssetManager.cpp:697   INFO| Package Loaded: HoundFamiliar 2Mb in 0.00s
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: FrogFamiliar
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: FrogFamiliar (0Mb in 0.03s)
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: PolecatFamiliar
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: PolecatFamiliar (0Mb in 0.05s)
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:966   INFO| Loading bank: HoundFamiliar
+2026-02-07 18:14:08 [LoadTaskScheduler]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: HoundFamiliar (0Mb in 0.04s)
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:14:08 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.538282 seconds)
+2026-02-07 18:14:09 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:14:09 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.05 seconds
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hades (332 lines in 0.001144 seconds)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponBlink.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponBlink
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponBlink
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponBlink 2Mb in 0.00s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponBlink
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponBlink (0Mb in 0.05s)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponCast.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponCast
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponCast
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponCast 36Mb in 0.02s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponCast
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponCast (0Mb in 0.02s)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponStaffSwing.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponStaffSwing
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponStaffSwing
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponStaffSwing 50Mb in 0.03s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponStaffSwing
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponStaffSwing (1Mb in 0.03s)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Moros.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Moros
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Moros
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Moros 53Mb in 0.02s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hypnos (47 lines in 0.000688 seconds)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hypnos.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hypnos
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hypnos
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hypnos 56Mb in 0.03s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Hecate (830 lines in 0.001121 seconds)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Hecate.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Hecate
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Hecate
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Hecate 55Mb in 0.03s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Odysseus (586 lines in 0.001084 seconds)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Odysseus.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Odysseus
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Odysseus
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Odysseus 53Mb in 0.03s
+2026-02-07 18:14:09 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Nemesis (414 lines in 0.000970 seconds)
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Nemesis.pkg
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Nemesis
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Nemesis
+2026-02-07 18:14:09 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Nemesis 48Mb in 0.02s
+2026-02-07 18:14:09 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.388618 seconds)
+2026-02-07 18:19:18 [MainThread      ]              World.cpp:1373  INFO| World::Begin() Hub_Main -> Hub_PreRun
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 46) (594kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:19:18 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:19:18 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001969 s
+2026-02-07 18:19:18 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002473 s
+2026-02-07 18:19:18 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 126829 bytes
+2026-02-07 18:19:18 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 6e50184c bytes
+2026-02-07 18:19:18 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 126829 bytes
+2026-02-07 18:19:18 [MainThread      ]              World.cpp:1435  INFO| Finished World::Begin (0.040061 seconds)
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1298  INFO| Started preScriptLoadTask
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1263  INFO| Started loadMapDataTask (Hub_PreRun)
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1304  INFO| Finished preScriptLoadTask (0.000001 seconds)
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1313  INFO| Started loadPackagesTask
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1317  INFO| Finished loadPackagesTask (0.000004 seconds)
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1324  INFO| Started postLoadTask
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1334  INFO| Done waiting for packages and pre-scripts task
+2026-02-07 18:19:18 [LoadTaskScheduler]     BinaryLoadData.cpp:12    INFO| Reading 383694 bytes
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1292  INFO| Finished loadMapDataTask (0.003142 seconds)
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1341  INFO| Calling PostLoad
+2026-02-07 18:19:18 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Odysseus in 0.00s
+2026-02-07 18:19:18 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Nemesis in 0.00s
+2026-02-07 18:19:18 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hypnos in 0.00s
+2026-02-07 18:19:18 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hecate in 0.00s
+2026-02-07 18:19:18 [LoadTaskScheduler]       AudioManager.cpp:1273  INFO| Unloaded Voice bank: Hades in 0.00s
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1343  INFO| Finished PostLoad
+2026-02-07 18:19:18 [LoadTaskScheduler]              World.cpp:1348  INFO| Finished postLoadTask (0.025740 seconds)
+2026-02-07 18:19:18 [MainThread      ]              World.cpp:1359  INFO| Started loadScreen onExit
+2026-02-07 18:19:18 [MainThread      ]      ScriptManager.cpp:1001  INFO| Lua GC took 0.06 seconds
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Skelly (667 lines in 0.001128 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Selene (469 lines in 0.000766 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Nyx (116 lines in 0.000673 seconds)
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: Skelly.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest Skelly
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest Skelly
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: Skelly 32Mb in 0.01s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponAxe.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponAxe
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponAxe
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponAxe 13Mb in 0.01s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponDagger.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponDagger
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponDagger
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponDagger 17Mb in 0.01s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponTorch.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponTorch
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponTorch
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponTorch 19Mb in 0.01s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponLob.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponLob
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponLob
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponLob 26Mb in 0.01s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: WeaponSuit.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest WeaponSuit
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest WeaponSuit
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: WeaponSuit 51Mb in 0.02s
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponAxe
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponAxe (0Mb in 0.02s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponDagger
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponDagger (0Mb in 0.05s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponTorch
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponTorch (0Mb in 0.04s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponLob
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponLob (1Mb in 0.04s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: WeaponSuit
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: WeaponSuit (2Mb in 0.04s)
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: CatFamiliar.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: CatFamiliar 2Mb in 0.00s
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: RavenFamiliar.pkg
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest RavenFamiliar
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest RavenFamiliar
+2026-02-07 18:19:18 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: RavenFamiliar 2Mb in 0.00s
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: CatFamiliar
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: CatFamiliar (0Mb in 0.04s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:966   INFO| Loading bank: RavenFamiliar
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:981   INFO| Audio bank loaded successfully: RavenFamiliar (0Mb in 0.04s)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AphroditeKeepsake (3 lines in 0.000539 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ApolloKeepsake (2 lines in 0.000364 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ArachneKeepsake (2 lines in 0.000388 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AresKeepsake (2 lines in 0.003917 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ArtemisKeepsake (2 lines in 0.000454 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: AthenaKeepsake (2 lines in 0.000464 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ChaosKeepsake (2 lines in 0.000542 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: CharonKeepsake (2 lines in 0.000338 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ChronosKeepsake (2 lines in 0.000420 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: CirceKeepsake (2 lines in 0.000415 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DemeterKeepsake (2 lines in 0.000337 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DionysusKeepsake (2 lines in 0.000421 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: DoraKeepsake (2 lines in 0.000357 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: EchoKeepsake (2 lines in 0.000480 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ErisKeepsake (2 lines in 0.000425 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HadesKeepsake (2 lines in 0.000393 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HecateKeepsake (3 lines in 0.000393 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HephaestusKeepsake (2 lines in 0.000398 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HeraclesKeepsake (2 lines in 0.000448 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HeraKeepsake (4 lines in 0.000420 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HermesKeepsake (2 lines in 0.000378 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: HestiaKeepsake (2 lines in 0.000391 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: IcarusKeepsake (2 lines in 0.000470 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: MedeaKeepsake (2 lines in 0.000476 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: MorosKeepsake (2 lines in 0.000525 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: NarcissusKeepsake (4 lines in 0.000395 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: NemesisKeepsake (4 lines in 0.000438 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: OdysseusKeepsake (2 lines in 0.000401 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: PersephoneKeepsake (2 lines in 0.000491 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: PoseidonKeepsake (2 lines in 0.000457 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: SeleneKeepsake (2 lines in 0.000697 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: SkellyKeepsake (3 lines in 0.000455 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ZagreusKeepsake (2 lines in 0.000439 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: ZeusKeepsake (2 lines in 0.000425 seconds)
+2026-02-07 18:19:18 [MainThread      ]       AudioManager.cpp:1233  INFO| Voice bank loaded successfully: Chaos (353 lines in 0.000616 seconds)
+2026-02-07 18:19:18 [MainThread      ]              World.cpp:1366  INFO| Finished loadScreen onExit (0.457048 seconds)
+2026-02-07 18:19:46 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001900 s
+2026-02-07 18:19:46 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002421 s
+2026-02-07 18:19:46 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 120961 bytes
+2026-02-07 18:19:46 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = d5d6b4c bytes
+2026-02-07 18:19:46 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 120961 bytes
+2026-02-07 18:21:08 [MainThread      ]    ProgressManager.cpp:1106  INFO| Lua::Save() : 0.001945 s
+2026-02-07 18:21:08 [MainThread      ]    ProgressManager.cpp:1038  INFO| GatherSaveData : 0.002456 s
+2026-02-07 18:21:08 [MainThread      ]     BinarySaveData.cpp:42    INFO| PrepareForWrite dataSize = 122323 bytes
+2026-02-07 18:21:08 [MainThread      ]     BinarySaveData.cpp:47    INFO| PrepareForWrite checksum = 98008787 bytes
+2026-02-07 18:21:08 [SmallTaskScheduler]     BinarySaveData.cpp:17    INFO| Writing 122323 bytes
+2026-02-07 18:21:58 [MainThread      ]              World.cpp:1447  INFO| World::Stop()
+2026-02-07 18:21:59 [MainThread      ]       AudioManager.cpp:356   INFO| AudioManager.reset
+2026-02-07 18:21:59 [MainThread      ]       AudioManager.cpp:3766  INFO| AudioManager.reset, excludeId = -1, fullWipe = true
+2026-02-07 18:21:59 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 18:21:59 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 46) (594kb)
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:21:59 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 18:21:59 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponCast
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponCast bank: 0.00 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponCast package: 0.88 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponStaffSwing
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponStaffSwing bank: 0.00 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponStaffSwing package: 1.02 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponBlink
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponBlink bank: 0.00 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponBlink package: 0.02 ms
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:668   INFO| Loading package: MainMenu.pkg
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:581   INFO| Start reading manifest MainMenu
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:642   INFO| Done reading manifest MainMenu
+2026-02-07 18:21:59 [MainThread      ]   GameAssetManager.cpp:697   INFO| Package Loaded: MainMenu 65Mb in 0.03s
+2026-02-07 18:22:05 [MainThread      ]     ProfileManager.cpp:145   INFO| saveProfile()
+2026-02-07 18:22:05 [MainThread      ]     MainMenuScreen.cpp:882   INFO| MainMenuScreen::ExitGame()
+2026-02-07 18:22:05 [SmallTaskScheduler]     ProfileManager.cpp:96    INFO| beginning profile write
+2026-02-07 18:22:05 [SmallTaskScheduler]     ProfileManager.cpp:126   INFO| profile write done
+2026-02-07 18:22:05 [RenderThread    ]            Program.cpp:2114  INFO| renderThread exit
+2026-02-07 18:22:06 [MainThread      ]            Program.cpp:183   INFO| IrisMainApp::Exit()
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:231   INFO| App Shutdown
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:246   INFO| ScreenManager Shutdown
+2026-02-07 18:22:06 [MainThread      ]           InGameUI.cpp:60    INFO| InGameUI Destroy
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:256   INFO| AudioManager Shutdown
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:259   INFO| World Shutdown
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| Projectile 0 / 217 (max 46) (594kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| HomingProjectile 0 / 108 (max 19) (297kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| BeamProjectile 0 / 81 (max 0) (225kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| LobProjectile 0 / 81 (max 0) (224kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| ArcProjectile 0 / 81 (max 4) (223kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| InstantProjectile 0 / 108 (max 5) (295kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| Effect 0 / 256 (max 24) (79kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| GunWeapon 0 / 32 (max 9) (68kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| BlinkWeapon 0 / 32 (max 2) (13kb)
+2026-02-07 18:22:06 [MainThread      ]                 Pool.h:210   INFO| RamWeapon 0 / 32 (max 1) (13kb)
+2026-02-07 18:22:06 [MainThread      ]             LuaExt.cpp:576   INFO| Lua interface destroyed
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:268   INFO| InputHandler Shutdown
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:282   INFO| Component Shutdown
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: GUI
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	GUI bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	GUI package: 5.42 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: GUI_Mouse
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	GUI_Mouse bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	GUI_Mouse package: 0.04 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Fx
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Fx bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Fx package: 9.87 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: ScriptsBase
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	ScriptsBase bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	ScriptsBase package: 1.75 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Melinoe
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Melinoe bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Melinoe package: 0.29 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: BiomeHub
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	BiomeHub bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	BiomeHub package: 2.85 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: FrogFamiliar
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	FrogFamiliar bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	FrogFamiliar package: 0.01 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: PolecatFamiliar
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	PolecatFamiliar bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	PolecatFamiliar package: 0.02 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: HoundFamiliar
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	HoundFamiliar bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	HoundFamiliar package: 0.01 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Moros
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Moros bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Moros package: 0.10 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hypnos
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hypnos bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hypnos package: 0.12 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Hecate
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Hecate bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Hecate package: 0.10 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Odysseus
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Odysseus bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Odysseus package: 0.09 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Nemesis
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Nemesis bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Nemesis package: 0.07 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: Skelly
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	Skelly bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	Skelly package: 0.05 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponAxe
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponAxe bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponAxe package: 0.16 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponDagger
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponDagger bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponDagger package: 0.13 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponTorch
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponTorch bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponTorch package: 0.42 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponLob
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponLob bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponLob package: 0.22 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: WeaponSuit
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	WeaponSuit bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	WeaponSuit package: 0.46 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: CatFamiliar
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	CatFamiliar bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	CatFamiliar package: 0.01 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: RavenFamiliar
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	RavenFamiliar bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	RavenFamiliar package: 0.01 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:894   INFO| Unloading: MainMenu
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:899   INFO| 	MainMenu bank: 0.00 ms
+2026-02-07 18:22:06 [MainThread      ]   GameAssetManager.cpp:906   INFO| 	MainMenu package: 0.07 ms
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:288   INFO| DrawManager Shutdown
+2026-02-07 18:22:06 [MainThread      ]        DrawManager.cpp:137   INFO| DrawManager::Exit
+2026-02-07 18:22:06 [MainThread      ]           Granny3D.cpp:886   INFO| Granny3D::Exit()
+2026-02-07 18:22:06 [MainThread      ]      ForgeRenderer.cpp:2600  INFO| ForgeRenderer::Unload
+2026-02-07 18:22:06 [MainThread      ]     ResourceLoader.cpp:556   INFO| Was not cleaned up 2
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:297   INFO| PlayerManager Shutdown
+2026-02-07 18:22:06 [MainThread      ]                App.cpp:311   INFO| App Shutdown Finished
+2026-02-07 18:22:06 [MainThread      ]   InputSystemWin64.cpp:1213  INFO| InputSystemSDL exit [exitPlatformInputSystem()].
+2026-02-07 18:22:06 [MainThread      ]   InputSystemWin64.cpp:297   INFO| InputSystemSDL Exit. [Exit()]
+2026-02-07 18:22:06 [MainThread      ]            Program.cpp:200   INFO| PlatformAnalytics Cleanup
+2026-02-07 18:22:06 [MainThread      ]                Log.cpp:103   INFO| Log::Exit
