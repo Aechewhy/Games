@@ -1,0 +1,13 @@
+return {
+	["quit_on_die"] = false,
+	["bedtime"] = {
+		["start_hour"] = 22,
+		["active"] = true,
+		["start_minute"] = 0,
+		["end_hour"] = 8,
+		["end_minute"] = 0,
+	},
+	["quit_on_win"] = true,
+	["no_endless"] = false,
+	["no_main_menu"] = false,
+}

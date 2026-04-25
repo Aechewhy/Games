@@ -1,0 +1,29 @@
+[manifest]
+version = "1.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.copy]
+target = "globals.lua"
+position = "append"
+sources = [
+  "src/Init.lua"
+]
+
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = [
+  "src/Core.lua",
+  "src/Utils.lua"
+]
+
+[[patches]]
+[patches.copy]
+target = "functions/UI_definitions.lua"
+position = "append"
+sources = [
+  "src/Interface.lua"
+]

@@ -1,0 +1,20 @@
+return {
+	["disable_perishable"] = false,
+	["disable_collapse"] = false,
+	["disable_rental"] = false,
+	["joker_count"] = true,
+	["default_rows"] = {
+		["reminder"] = true,
+		["modifiers"] = true,
+		["extra"] = true,
+	},
+	["hide_by_default"] = false,
+	["shift_to_hide"] = false,
+	["enabled"] = true,
+	["small_rows"] = {
+		["reminder"] = false,
+		["modifiers"] = true,
+		["extra"] = false,
+	},
+	["hide_empty"] = true,
+}

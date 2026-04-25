@@ -1,0 +1,1896 @@
+{
+  "buffer_name": "functions/UI_definitions.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "UnBlind-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 6901,
+          "end_line": 7142
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "UnBlind-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 7143,
+          "end_line": 7372
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\achievements.toml",
+        "pattern": "local t_s = Sprite(0,0,1.5*(_atlas.px/_atlas.py),1.5,_atlas, _c and _c.pos or {x=3, y=0})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 156,
+          "end_line": 156
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\atlas.toml",
+        "pattern": "G.ASSET_ATLAS[\"icons\"]",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 151,
+          "end_line": 154
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
+        "pattern": "G.GAME.tags[#G.GAME.tags+1] = _tag\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1482,
+          "end_line": 1483
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "blind_matrix[math.ceil((k-1)/5+0.001)][1+((k-1)%5)] = {n=G.UIT.C, config={align = \"cm\", padding = 0.1}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4433,
+          "end_line": 4443
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "table.sort(blind_tab, function (a, b) return a.order < b.order end)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4380,
+          "end_line": 4380
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "local loc_target = localize{type = 'raw_descriptions', key = blind_choice.config.key, set = 'Blind', vars = {localize(G.GAME.current_round.most_played_poker_hand, 'poker_hands')}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1765,
+          "end_line": 1775
+        },
+        {
+          "start_line": 6954,
+          "end_line": 6964
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "local loc_target = localize{type = 'raw_descriptions', key = blind.key, set = 'Blind', vars = vars or blind.vars}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4514,
+          "end_line": 4520
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "local temp_blind = AnimatedSprite(0,0,1,1, G.ANIMATION_ATLAS['blind_chips'], v.pos)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6268,
+          "end_line": 6268
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
+        "pattern": "if blind_state == 'Select' then blind_state = 'Current' end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1785,
+          "end_line": 1790
+        },
+        {
+          "start_line": 6975,
+          "end_line": 6980
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
+        "pattern": "{n=G.UIT.R, config={align = \"cm\", id = 'row_blind', minw = 1, minh = 3.75}, nodes={}},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1624,
+          "end_line": 1626
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\booster.toml",
+        "pattern": "if card.ability.consumeable then\n    if (card.area == G.pack_cards and G.pack_cards) then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 292,
+          "end_line": 301
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\card_limit.toml",
+        "pattern": "{card_limit = G.GAME.shop.joker_max, type = 'shop', highlight_limit = 1})\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 711,
+          "end_line": 711
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "if AUT.info then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1254,
+          "end_line": 1264
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "local total_rate = G.GAME.joker_rate + G.GAME.tarot_rate + G.GAME.planet_rate + G.GAME.playing_card_rate + G.GAME.spectral_rate",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 821,
+          "end_line": 824
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "{n=G.UIT.O, config={object = face_cards}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2881,
+          "end_line": 2881
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "table.insert(t, create_toggle({label = localize('b_high_contrast_cards'), ref_table = G.SETTINGS, ref_value = 'colourblind_option', callback = G.FUNCS.refresh_contrast_mode}))",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2903,
+          "end_line": 2918
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "label = \"Production\",\nchosen = true,\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4768,
+          "end_line": 4769
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "label = \"Collabs\",",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5236,
+          "end_line": 5236
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\edition.toml",
+        "pattern": "return G.BADGE_COL[key] or {1, 0, 0, 1}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1349,
+          "end_line": 1351
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\edition.toml",
+        "pattern": "if v == 'negative_consumable' then v = 'negative' end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1247,
+          "end_line": 1249
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\gradient.toml",
+        "pattern": "args.colour = copy_table(args.colour or G.C.WHITE)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1003,
+          "end_line": 1003
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\gradient.toml",
+        "pattern": "args.cover_colour = copy_table(args.cover_colour or G.C.RED)\nargs.cover_colour_l = copy_table(lighten(args.cover_colour, 0.2))\nargs.cover_colour_d = copy_table(darken(args.cover_colour, 0.2))\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1012,
+          "end_line": 1014
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\gradient.toml",
+        "pattern": "args.backdrop_colour = copy_table(args.backdrop_colour)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1061,
+          "end_line": 1061
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\hand_limit.toml",
+        "pattern": "{n=G.UIT.R, config={align = \"bcm\", padding = 0}, nodes={\n    {n=G.UIT.T, config={text = localize('b_play_hand'), scale = text_scale, colour = G.C.UI.TEXT_LIGHT, focus_args = {button = 'x', orientation = 'bm'}, func = 'set_button_pip'}}\n}},\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1109,
+          "end_line": 1111
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\hand_limit.toml",
+        "pattern": "{n=G.UIT.R, config={align = \"cm\", padding = 0}, nodes={\n    {n=G.UIT.T, config={text = localize('b_discard'), scale = text_scale, colour = G.C.UI.TEXT_LIGHT, focus_args = {button = 'y', orientation = 'bm'}, func = 'set_button_pip'}}\n}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1115,
+          "end_line": 1120
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\multi_box_descriptions.toml",
+        "pattern": "if AUT.info then\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1265,
+          "end_line": 1272
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\multi_box_descriptions.toml",
+        "pattern": "return {n=G.UIT.ROOT, config = {align = 'cm', colour = G.C.CLEAR}, nodes={\n    {n=G.UIT.C, config={align = \"cm\", func = 'show_infotip',object = Moveable(),ref_table = next(info_boxes) and info_boxes or nil}, nodes={\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1284,
+          "end_line": 1308
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\multi_box_descriptions.toml",
+        "pattern": "            badges[1] and {n=G.UIT.R, config={align = \"cm\", padding = 0.03}, nodes=badges} or nil,\n            }}\n        }}\n    }},\n}}\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1318,
+          "end_line": 1330
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\multi_box_descriptions.toml",
+        "pattern": "return {n=G.UIT.R, config={align = \"cm\", colour = empty and G.C.CLEAR or G.C.UI.BACKGROUND_WHITE, r = 0.1, padding = 0.04, minw = 2, minh = 0.8, emboss = not empty and 0.05 or nil, filler = true}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1154,
+          "end_line": 1154
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\number_formatting.toml",
+        "pattern": "{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3388,
+          "end_line": 3388
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\number_formatting.toml",
+        "pattern": "{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3394,
+          "end_line": 3394
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "function tally_sprite(pos, value, tooltip)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3739,
+          "end_line": 3739
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "local _r, _s = string.sub(k, 3, 3), string.sub(k, 1, 1)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6359,
+          "end_line": 6359
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "local keep, _e, _d, _g = true, nil, nil, nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6361,
+          "end_line": 6366
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\poker_hand_screen.toml",
+        "pattern": "local card = Card(0,0, 0.5*G.CARD_W, 0.5*G.CARD_H, G.P_CARDS[v[1]], G.P_CENTERS.c_base)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3358,
+          "end_line": 3360
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\poker_hand_screen.toml",
+        "pattern": "local r = {n=G.UIT.R, config={align = \"cm\", padding = 0.03}, nodes={\n                {n=G.UIT.T, config={text = text[i],colour = G.C.UI.TEXT_DARK, scale = 0.4}}}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1407,
+          "end_line": 1407
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\poker_hand_screen.toml",
+        "pattern": "return (G.GAME.hands[handname].visible) and",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3375,
+          "end_line": 3375
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\rarity.toml",
+        "pattern": "return G.BADGE_COL[key] or {1, 0, 0, 1}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1352,
+          "end_line": 1354
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\rarity.toml",
+        "pattern": "if AUT.card_type == 'Joker' or (AUT.badges and AUT.badges.force_rarity) then card_type = ({localize('k_common'), localize('k_uncommon'), localize('k_rare'), localize('k_legendary')})[card.config.center.rarity] end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1218,
+          "end_line": 1218
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
+        "pattern": "contents.hand =",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1556,
+          "end_line": 1556
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
+        "pattern": "contents.dollars_chips = {n=G.UIT.R, config={align = \"cm\",r=0.1, padding = 0,colour = G.C.DYN_UI.BOSS_MAIN, emboss = 0.05, id = 'row_dollars_chips'}, nodes={\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1582,
+          "end_line": 1583
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\seal.toml",
+        "pattern": "return G.BADGE_COL[key] or {1, 0, 0, 1}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1355,
+          "end_line": 1357
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
+        "pattern": "G.GAME.shop.joker_max*1.02*G.CARD_W,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 709,
+          "end_line": 709
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
+        "pattern": "local edition_poll = pseudorandom(pseudoseed('illusion'))\nlocal edition = {}\nif edition_poll > 1 - 0.15 then edition.polychrome = true\nelseif edition_poll > 0.5 then edition.holo = true\nelse edition.foil = true\nend\ncard:set_edition(edition)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 853,
+          "end_line": 853
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "if G.PROFILES[G.SETTINGS.profile].all_unlocked then max_stake = 8 end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5907,
+          "end_line": 5907
+        },
+        {
+          "start_line": 5924,
+          "end_line": 5926
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "for i = 1, math.min(max_stake+1, 8) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5909,
+          "end_line": 5909
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "for i = G.GAME.stake-1, 2, -1 do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3522,
+          "end_line": 3522
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "other_col = {n=G.UIT.R, config={align = \"cm\", padding = 0.05, r = 0.1, colour = G.C.L_BLACK}, nodes=stake_desc_rows}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3537,
+          "end_line": 3537
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "G.viewed_stake = math.min(max_stake+1, G.viewed_stake)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5928,
+          "end_line": 5928
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\stake.toml",
+        "pattern": "local max_stake = get_deck_win_stake(G.GAME.viewed_back.effect.center.key)\nif G.PROFILES[G.SETTINGS.profile].all_unlocked then max_stake = #G.P_CENTER_POOLS['Stake'] end\n\nG.viewed_stake = math.min(max_stake+1, G.viewed_stake)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5922,
+          "end_line": 5927
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\sticker.toml",
+        "pattern": "return G.BADGE_COL[key] or {1, 0, 0, 1}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1358,
+          "end_line": 1360
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "G.GAME.viewed_back = Back(G.P_CENTERS.b_red)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4246,
+          "end_line": 4247
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "local t = create_UIBox_generic_options({ back_func = 'your_collection', contents = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3950,
+          "end_line": 3959
+        },
+        {
+          "start_line": 4001,
+          "end_line": 4010
+        },
+        {
+          "start_line": 4047,
+          "end_line": 4056
+        },
+        {
+          "start_line": 4097,
+          "end_line": 4106
+        },
+        {
+          "start_line": 4268,
+          "end_line": 4277
+        },
+        {
+          "start_line": 4352,
+          "end_line": 4361
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "create_option_cycle({options = ordered_names, opt_callback = 'change_viewed_back', current_option = 1, colour = G.C.RED, w = 4.5, focus_args = {snap_to = true}, mid = ",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4278,
+          "end_line": 4278
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "   if args.info then \n     t = {n=args.col and G.UIT.C or G.UIT.R, config={align = \"cm\"}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2175,
+          "end_line": 2181
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "{n=G.UIT.T, config={scale = 0.35,text = args.count.tally..' / '..args.count.of, colour = {1,1,1,0.9}}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6872,
+          "end_line": 6872
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "local card_type_colour = get_type_colour(card.config.center or card.config, card)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1205,
+          "end_line": 1205
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "badges[#badges + 1] = create_badge(((card.ability.name == 'Pluto' or card.ability.name == 'Ceres' or card.ability.name == 'Eris') and localize('k_dwarf_planet')) or (card.ability.name == 'Planet X' and localize('k_planet_q') or card_type),card_type_colour, nil, 1.2)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1239,
+          "end_line": 1243
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "function info_tip_from_rows(desc_nodes, name)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1168,
+          "end_line": 1173
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "{n=G.UIT.R, config={align = \"tm\", minh = 0.36, padding = 0.03}, nodes={{n=G.UIT.T, config={text = name, scale = 0.32, colour = G.C.UI.TEXT_LIGHT}}}},\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1179,
+          "end_line": 1179
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "tab_buttons[#tab_buttons+1] = UIBox_button({id = 'tab_but_'..(v.label or ''), ref_table = v, button = 'change_tab', label = {v.label}, minh = 0.8*args.scale, minw = 2.5*args.scale, col = true, choice = true, scale = args.text_scale, chosen = v.chosen, func = v.func, focus_args = {type = 'none'}})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2323,
+          "end_line": 2323
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "args.current_prompt_text = ''",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2352,
+          "end_line": 2352
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "ui_letters[#ui_letters+1] = {n=G.UIT.T, config={ref_table = args, ref_value = 'current_prompt_text', scale = args.text_scale, colour = lighten(copy_table(args.colour), 0.4), id = 'prompt'}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2364,
+          "end_line": 2364
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "ui_letters[i] = {n=G.UIT.T, config={ref_table = text.letters, ref_value = i, scale = args.text_scale, colour = G.C.UI.TEXT_LIGHT, id = 'letter_'..i}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2358,
+          "end_line": 2358
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "ui_letters[#ui_letters+1] = {n=G.UIT.B, config={r = 0.03,w=0.1, h=0.4, colour = position_text_colour, id = 'position', func = 'flash'}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2365,
+          "end_line": 2365
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "{n=G.UIT.C, config={align = \"cm\", draw_layer = 1, colour = G.C.CLEAR}, nodes = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2368,
+          "end_line": 2368
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "{n=G.UIT.C, config={id = 'text_input', align = \"cm\", padding = 0.05, r = 0.1, draw_layer = 2, hover = true, colour = args.colour,minw = args.w, min_h = args.h, button = 'select_text_input', shadow = true}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2369,
+          "end_line": 2369
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "if deck_center.unlock_condition.type == 'win_deck' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4663,
+          "end_line": 4672
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)blind_choice.animation = AnimatedSprite\\(0,0, 1.4, 1.4, (?<atlas>G.ANIMATION_ATLAS\\['blind_chips'\\]),  blind_choice.config.pos\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1719,
+          "end_line": 1719
+        },
+        {
+          "start_line": 3296,
+          "end_line": 3296
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "(?<indent>[\t ]*)local temp_blind = AnimatedSprite\\(0,0,1.3,1.3, G.ANIMATION_ATLAS\\['blind_chips'\\], discovered and v.pos or G.b_undiscovered.pos\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4385,
+          "end_line": 4390
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind.toml",
+        "pattern": "[\\t ]*\\(k==6 or k ==16 or k == 26\\) and \\{n=G.UIT.B, config=\\{h=0.2,w=0.5\\}\\} or nil,\\n[\\t ]*\\{n=G.UIT.O, config=\\{object = temp_blind, focus_with_object = true\\}\\},\\n[\\t ]*\\(k==5 or k ==15 or k == 25\\) and \\{n=G.UIT.B, config=\\{h=0.2,w=0.5\\}\\} or nil,\\n[\\t ]*\\}\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4444,
+          "end_line": 4443
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
+        "pattern": "(?<indent>[\\t ]*)text_table\\[1\\] and \\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minh = 0\\.7, padding = 0\\.05, minw = 2\\.9}, nodes=\\{\n[\\t ]*  text_table\\[1\\] and \\{n=G\\.UIT\\.R, config=\\{align = \"cm\", maxw = 2\\.8\\}, nodes=\\{\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{id = blind_choice\\.config\\.key, ref_table = \\{val = ''\\}, ref_value = 'val', scale = 0\\.32, colour = disabled and G\\.C\\.UI\\.TEXT_INACTIVE or G\\.C\\.WHITE, shadow = not disabled, func = 'HUD_blind_debuff_prefix'\\}\\},\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{text = text_table\\[1\\] or '\\-', scale = 0\\.32, colour = disabled and G\\.C\\.UI\\.TEXT_INACTIVE or G\\.C\\.WHITE, shadow = not disabled\\}\\}\n[\\t ]*  \\}\\} or nil,\n[\\t ]*  text_table\\[2\\] and \\{n=G\\.UIT\\.R, config=\\{align = \"cm\", maxw = 2\\.8\\}, nodes=\\{\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{text = text_table\\[2\\] or '\\-', scale = 0\\.32, colour = disabled and G\\.C\\.UI\\.TEXT_INACTIVE or G\\.C\\.WHITE, shadow = not disabled\\}\\}\n[\\t ]*  \\}\\} or nil,\n[\\t ]*\\}\\} or nil,",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1814,
+          "end_line": 1814
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
+        "pattern": "(?<indent>[\\t ]*)\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", padding = 0\\.05\\}, nodes=\\{\n[\\t ]*  \\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minh = 0\\.3, maxw = 4\\.2\\}, nodes=\\{\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{ref_table = \\{val = ''\\}, ref_value = 'val', scale = scale\\*0\\.9, colour = G\\.C\\.UI\\.TEXT_LIGHT, func = 'HUD_blind_debuff_prefix'\\}\\},\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{ref_table = G\\.GAME\\.blind\\.loc_debuff_lines, ref_value = 1, scale = scale\\*0\\.9, colour = G\\.C\\.UI\\.TEXT_LIGHT, id = 'HUD_blind_debuff_1', func = 'HUD_blind_debuff'\\}\\}\n[\\t ]*  \\}\\},\n[\\t ]*  \\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minh = 0\\.3, maxw = 4\\.2\\}, nodes=\\{\n[\\t ]*    \\{n=G\\.UIT\\.T, config=\\{ref_table = G\\.GAME\\.blind\\.loc_debuff_lines, ref_value = 2, scale = scale\\*0\\.9, colour = G\\.C\\.UI\\.TEXT_LIGHT, id = 'HUD_blind_debuff_2', func = 'HUD_blind_debuff'\\}\\}\n[\\t ]*  \\}\\},\n[\\t ]*\\}\\},",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1432,
+          "end_line": 1432
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\blind_ui.toml",
+        "pattern": "\\(k ==1 and blind\\.name == 'The Wheel' and '1' or ''\\)\\.\\.",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4527,
+          "end_line": 4527
+        },
+        {
+          "start_line": 7097,
+          "end_line": 7097
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "(?<indent>[\t ]*)(?<if>if AUT.badges.card_type or AUT.badges.force_rarity then)\n[\t ]*(?<rest>.*)\n[\t ]*end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1229,
+          "end_line": 1244
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "(?<indent>[\t ]*)local t = create_UIBox_generic_options\\(\\{ back_func = G.STAGE",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 3841,
+          "end_line": 3849
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "(?<indent>[\t ]*)nodes=\\{\n[\t ]*UIBox_button\\(\\{button = 'your_collection_tarots'(.*\n){3}[\t ]*}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 3859,
+          "end_line": 3859
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\center.toml",
+        "pattern": "(?<indent>[\\t ]*)for _, v in ipairs\\((?<li>\\{\\n(.*\\n){5}[\\t ]*\\})\\) do",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 827,
+          "end_line": 840
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "local face_cards = CardArea\\(([\\s\\S]*?)\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2840,
+          "end_line": 2876
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "for i = 1, 3 do([\\s\\S]*?)end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2921,
+          "end_line": 2921
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\deck_skins.toml",
+        "pattern": "function create_UIBox_customize_deck()([\\s\\S]*?)end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 2807,
+          "end_line": 2834
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "\\{card_limit = 4, type = 'title', highlight_limit = 0\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4165,
+          "end_line": 4165
+        },
+        {
+          "start_line": 4194,
+          "end_line": 4194
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "string = \\{\\{ref_table = G\\.GAME\\, ref_value = 'dollars'\\, prefix = localize\\('\\$'\\)\\}\\}\\,",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1523,
+          "end_line": 1526
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\number_formatting.toml",
+        "pattern": "tostring\\(saved_game\\.GAME\\.dollars\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 6509,
+          "end_line": 6509
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\number_formatting.toml",
+        "pattern": "scale_number\\(saved_game\\.GAME\\.round_scores\\.hand\\.amt\\, 0\\.8\\*scale\\)",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 6514,
+          "end_line": 6514
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "(?<start>[\\t ]*local t_s = Sprite\\(0,0,0.5,0.5,)G.ASSET_ATLAS\\[.*?\\](?<rest>.*?\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 3745,
+          "end_line": 3745
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "(?<indent>[\t ]*)local SUITS = \\{(\n.*){5}\n[\t ]*local suit_map = \\{'S', 'H', 'C', 'D'\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 6339,
+          "end_line": 6345
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\playing_card.toml",
+        "pattern": "(?<indent>[\\t ]*)for j = 1, 4 do\\n[\\t ]*(?<mid>if SUITS\\[suit_map\\[j\\]\\]\\[1\\] then\\n[\\t ]*table.sort.*(\\n.*)*?)\\n[\\t ]*0\\.42\\*G.CARD_H,",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 6387,
+          "end_line": 6397
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "(?<indent>[\t ]*)local tag_matrix = \\{(\n.*){6}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4299,
+          "end_line": 4316
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "(?<indent>[\\t ]*)v\\.children\\.alert\\.states\\.collide\\.can = false\\n[\\s\\S]{8}end\\n[\\s\\S]{8}return true\\n[\\s\\S]{4}end\\)\\n[\\s\\S]{2}\\}\\)\\)\\n{3}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4349,
+          "end_line": 4352
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "(?<indent>[\\t ]*)\\{\\n[\\s\\S]{10}\\{n=G\\.UIT\\.R, config=\\{align = \"cm\"\\}, nodes=tag_matrix\\[1\\]},[\\s\\S]*tag_matrix\\[4\\]\\},\\n[\\s\\S]{8}\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4364,
+          "end_line": 4364
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "(?<indent>[\\t ]*)for k, v in ipairs\\(G\\.P_CENTER_POOLS\\.Back\\) do\\n[\\s\\S]{4}ordered_names\\[#ordered_names\\+1\\] = v\\.name\\n[\\s\\S]{2}end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 4264,
+          "end_line": 4266
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "(?<indent>[\\t ]*)UIBox_button\\(\\{button = 'your_collection_blinds', label = \\{localize\\('b_blinds'\\)\\}, count = G\\.DISCOVER_TALLIES\\.blinds, minw = 5, minh = 2.0, id = 'your_collection_blinds', focus_args = \\{snap_to = true\\}\\}\\),",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 3868,
+          "end_line": 3868
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "colour = empty and G\\.C\\.CLEAR or G\\.C\\.UI\\.BACKGROUND_WHITE",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1154,
+          "end_line": 1154
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "padding = 0\\.05, colour = G\\.C\\.WHITE\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1180,
+          "end_line": 1180
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\challenge.toml",
+        "pattern": "local challenge_unlocked = G.PROFILES[G.SETTINGS.profile].challenges_unlocked and (G.PROFILES[G.SETTINGS.profile].challenges_unlocked >= k)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5990,
+          "end_line": 5990
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\challenge.toml",
+        "pattern": "local _ch_tab = {comp = _ch_comp, unlocked = G.PROFILES[G.SETTINGS.profile].challenges_unlocked}\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5673,
+          "end_line": 5679
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\challenge.toml",
+        "pattern": "UIBox_button({id = k, col = true, label = {challenge_unlocked and localize(v.id, 'challenge_names') or localize('k_locked'),}, button = challenge_unlocked and 'change_challenge_description' or 'nil', colour = challenge_unlocked and G.C.RED or G.C.GREY, minw = 4, scale = 0.4, minh = 0.6, focus_args = {snap_to = not snapped}}),",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 5997,
+          "end_line": 5997
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\menu.toml",
+        "pattern": "local main_menu = nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2451,
+          "end_line": 2451
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\menu.toml",
+        "pattern": "main_menu = UIBox_button{ label = {localize('b_main_menu')}, button = \"go_to_menu\", minw = 5}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2468,
+          "end_line": 2468
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\menu.toml",
+        "pattern": "main_menu,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2505,
+          "end_line": 2505
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\menu.toml",
+        "pattern": "create_option_cycle({w = 4,scale = 0.8, label = localize(\"b_set_CRT_bloom\"),options = localize('ml_bloom_opt'), opt_callback = 'change_crt_bloom', current_option = G.SETTINGS.GRAPHICS.bloom}),",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2631,
+          "end_line": 2631
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\poker_hand.toml",
+        "pattern": "if v.visible then _poker_hands[#_poker_hands+1] = k end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1733,
+          "end_line": 1733
+        },
+        {
+          "start_line": 6935,
+          "end_line": 6935
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "local tag_sprite_ui = _tag:generate_UI()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1457,
+          "end_line": 1465
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\ui.toml",
+        "pattern": "local BUTTON_SPRITE = Sprite(0,0,args.scale or 0.45,args.scale or 0.45,G.ASSET_ATLAS[\"gamepad_ui\"],",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6604,
+          "end_line": 6612
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\ui.toml",
+        "pattern": "if v.chosen then args.current = {k = k, v = v} end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2320,
+          "end_line": 2321
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\ui.toml",
+        "pattern": "create_option_cycle({w = 5, label = localize('b_set_play_discard_pos'),scale = 0.8, options = localize('ml_play_discard_pos_opt'), opt_callback = 'change_play_discard_position', current_option = (G.SETTINGS.play_button_pos)}),",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2587,
+          "end_line": 2588
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\cardarea-ext.toml",
+        "pattern": "function G.UIDEF.use_and_sell_buttons(card)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 247,
+          "end_line": 248
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\cardarea-ext.toml",
+        "pattern": "{n=G.UIT.T, config={text = localize('b_sell'),colour = G.C.UI.TEXT_LIGHT, scale = 0.4, shadow = true}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 257,
+          "end_line": 265
+        },
+        {
+          "start_line": 450,
+          "end_line": 458
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\cardarea-ext.toml",
+        "pattern": "            {n=G.UIT.T, config={text = localize('$'),colour = G.C.WHITE, scale = 0.4, shadow = true}},\n            {n=G.UIT.T, config={ref_table = card, ref_value = 'sell_cost_label',colour = G.C.WHITE, scale = 0.55, shadow = true}}\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 268,
+          "end_line": 286
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\cardarea-ext.toml",
+        "pattern": "{n=G.UIT.T, config={text = localize('b_use'),colour = G.C.UI.TEXT_LIGHT, scale = 0.55, shadow = true}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 309,
+          "end_line": 317
+        },
+        {
+          "start_line": 326,
+          "end_line": 334
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\settings-page.toml",
+        "pattern": "function create_UIBox_settings()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2514,
+          "end_line": 2517
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-1.1.3a\\lovely\\ui.toml",
+        "pattern": "local customize = nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2455,
+          "end_line": 2455
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Malverk-1.1.3a\\lovely\\ui.toml",
+        "pattern": "local customize = UIBox_button{ label = {localize('b_customize_deck')}, button = \"customize_deck\", minw = 5}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2494,
+          "end_line": 2497
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\core.toml",
+        "pattern": "local settings = UIBox_button({button = 'settings', label = {localize('b_settings')}, minw = 5, focus_args = {snap_to = true}})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2491,
+          "end_line": 2491
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\core.toml",
+        "pattern": "local t = create_UIBox_generic_options({ contents = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2500,
+          "end_line": 2500
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\core.toml",
+        "pattern": "create_option_cycle({label = localize('b_set_gamespeed'),scale = 0.8, options = {0.5, 1, 2, 4}, opt_callback = 'change_gamespeed', current_option = (G.SETTINGS.GAMESPEED == 0.5 and 1 or G.SETTINGS.GAMESPEED == 4 and 4 or G.SETTINGS.GAMESPEED + 1)}),",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2572,
+          "end_line": 2586
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\hide_played.toml",
+        "pattern": "if wheel_flipped > 0 then flip_col = mix_colours(G.C.FILTER, G.C.WHITE,0.7) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3664,
+          "end_line": 3664
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "{n=G.UIT.O, config={object = DynaText({string = {{ref_table = G.GAME.round_resets, ref_value = 'ante'}}, colours = {G.C.IMPORTANT},shadow = true, font = G.LANGUAGES['en-us'].font, scale = 2*scale}),id = 'ante_UI_count'}},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1538,
+          "end_line": 1538
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "{n=G.UIT.T, config={text = localize('k_level_prefix')..G.GAME.hands[handname].level, scale = 0.5, colour = G.C.UI.TEXT_DARK}}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3380,
+          "end_line": 3380
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "{n=G.UIT.C, config={align = \"cm\", padding = 0.01, r = 0.1, colour = G.C.HAND_LEVELS[math.min(7, G.GAME.hands[handname].level)], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3379,
+          "end_line": 3379
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "UnBlind-main\\lovely.toml",
+        "pattern": "    local shop_sign = AnimatedSprite(0,0, 4.4, 2.2, G.ANIMATION_ATLAS['shop_sign'])\n    shop_sign:define_draw_steps({\n      {shader = 'dissolve', shadow_height = 0.05},\n      {shader = 'dissolve'}\n    })\n    G.SHOP_SIGN = UIBox{\n      definition = \n        {n=G.UIT.ROOT, config = {colour = G.C.DYN_UI.MAIN, emboss = 0.05, align = 'cm', r = 0.1, padding = 0.1}, nodes={\n          {n=G.UIT.R, config={align = \"cm\", padding = 0.1, minw = 4.72, minh = 3.1, colour = G.C.DYN_UI.DARK, r = 0.1}, nodes={\n            {n=G.UIT.R, config={align = \"cm\"}, nodes={\n              {n=G.UIT.O, config={object = shop_sign}}\n            }},\n            {n=G.UIT.R, config={align = \"cm\"}, nodes={\n              {n=G.UIT.O, config={object = DynaText({string = {localize('ph_improve_run')}, colours = {lighten(G.C.GOLD, 0.3)},shadow = true, rotate = true, float = true, bump = true, scale = 0.5, spacing = 1, pop_in = 1.5, maxw = 4.3})}}\n            }},\n          }},\n        }},\n      config = {\n        align=\"cm\",\n        offset = {x=0,y=-15},\n        major = G.HUD:get_UIE_by_ID('row_blind'),\n        bond = 'Weak'\n      }\n    }",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 728,
+          "end_line": 739
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "function attention_text(args)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 943,
+          "end_line": 998
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "_tag_sprite.states.collide.can = not not run_info",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1687,
+          "end_line": 1687
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2543,
+          "end_line": 2547
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "elseif tab == 'Graphics' then ",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2618,
+          "end_line": 2624
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "temp_blind.states.collide.can = true",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4408,
+          "end_line": 4408
+        },
+        {
+          "start_line": 6277,
+          "end_line": 6277
+        },
+        {
+          "start_line": 6993,
+          "end_line": 6993
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\UI_definitions.toml",
+        "pattern": "card.states.click.can = false",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 4577,
+          "end_line": 4577
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Go-To-Bed--Minty-main\\lovely.toml",
+        "pattern": "        not show_win_cta and UIBox_button({id = 'from_game_won', button = 'notify_then_setup_run', label = {localize('b_start_new_run')}, minw = 2.5, maxw = 2.5, minh = 1, focus_args = {nav = 'wide', snap_to = true}}) or nil,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3115,
+          "end_line": 3115
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Go-To-Bed--Minty-main\\lovely.toml",
+        "pattern": "    {n=G.UIT.R, config={align = \"cm\", padding = 0.08}, nodes={\n      UIBox_button({button = 'exit_overlay_menu', label = {localize('b_endless')}, minw = 6.5, maxw = 5, minh = 1.2, scale = 0.7, shadow = true, colour = G.C.BLUE, focus_args = {nav = 'wide', button = 'x',set_button_pip = true}}),\n    }},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3120,
+          "end_line": 3120
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Go-To-Bed--Minty-main\\lovely.toml",
+        "pattern": "          {n=G.UIT.R, config={id = 'from_game_over', align = \"cm\", minw = 5, padding = 0.1, r = 0.1, hover = true, colour = G.C.RED, button = \"notify_then_setup_run\", shadow = true, focus_args = {nav = 'wide', snap_to = true}}, nodes={\n            {n=G.UIT.R, config={align = \"cm\", padding = 0, no_fill = true, maxw = 4.8}, nodes={\n              {n=G.UIT.T, config={text = localize('b_start_new_run'), scale = 0.5, colour = G.C.UI.TEXT_LIGHT}}\n            }}\n          }},",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3240,
+          "end_line": 3244
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Go-To-Bed--Minty-main\\lovely.toml",
+        "pattern": "        not show_win_cta and UIBox_button({button = 'go_to_menu', label = {localize('b_main_menu')}, minw = 2.5, maxw = 2.5, minh = 1, focus_args = {nav = 'wide'}}) or nil,",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3117,
+          "end_line": 3117
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Go-To-Bed--Minty-main\\lovely.toml",
+        "pattern": "          {n=G.UIT.R, config={align = \"cm\", minw = 5, padding = 0.1, r = 0.1, hover = true, colour = G.C.RED, button = \"go_to_menu\", shadow = true, focus_args = {nav = 'wide'}}, nodes={\n            {n=G.UIT.R, config={align = \"cm\", padding = 0, no_fill = true, maxw = 4.8}, nodes={\n              {n=G.UIT.T, config={text = localize('b_main_menu'), scale = 0.5, colour = G.C.UI.TEXT_LIGHT}}\n            }}\n          }}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 3245,
+          "end_line": 3245
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "SystemClock\\lovely\\settings.toml",
+        "pattern": "local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2548,
+          "end_line": 2553
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Galdur\\lovely.toml",
+        "pattern": "(?<indent>[\\t ]*)tab_definition_function = G.UIDEF.run_setup_option,[\\n\\t ]*tab_definition_function_args = 'New Run'\n",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 5751,
+          "end_line": 5753
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "CardSleeves-1.8.0\\lovely\\expected_to_match.toml",
+        "pattern": "_type == 'Back' and localize('k_deck') or 'ERROR'",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 165,
+          "end_line": 167
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "JokerDisplay-main\\lovely\\core.toml",
+        "pattern": "local t = create_UIBox_generic_options({back_func = 'options',contents = {create_tabs(",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 2554,
+          "end_line": 2559
+        }
+      ]
+    }
+  ]
+}

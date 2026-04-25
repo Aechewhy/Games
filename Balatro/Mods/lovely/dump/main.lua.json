@@ -1,0 +1,283 @@
+{
+  "buffer_name": "main.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\crash_handler.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1,
+          "end_line": 871
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\core.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1270,
+          "end_line": 1350
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\init.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1351,
+          "end_line": 1538
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\core.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1539,
+          "end_line": 1749
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 1750,
+          "end_line": 2959
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "SystemClock\\lovely\\modules.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 2960,
+          "end_line": 2961
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "JokerDisplay-main\\lovely\\core.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 2962,
+          "end_line": 3136
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Blueprint-main\\lovely.toml",
+        "patch_type": "copy"
+      },
+      "regions": [
+        {
+          "start_line": 3137,
+          "end_line": 3149
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\crash_handler.toml",
+        "pattern": "function love.errhand(msg)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1079,
+          "end_line": 1079
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "--To control when steam communication happens, make sure to send updates to steam as little as possible",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 965,
+          "end_line": 966
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "--Set up the render window and the stage for the splash screen, then enter the gameloop with :update",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 987,
+          "end_line": 987
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "if os == 'OS X' or os == 'Windows' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 962,
+          "end_line": 962
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "if os == 'OS X' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 967,
+          "end_line": 967
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "st = require 'luasteam'",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 971,
+          "end_line": 972
+        },
+        {
+          "start_line": 975,
+          "end_line": 976
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "(?<indent>[\t ]*)if not \\(st.init and st:init\\(\\)\\) then\n[\t ]*(?<quit>love.event.quit\\(\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 985,
+          "end_line": 985
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.mousepressed(x, y, button, touch)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1048,
+          "end_line": 1048
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.mousereleased(x, y, button)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1060,
+          "end_line": 1060
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.keypressed(key)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1016,
+          "end_line": 1016
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "function love.keyreleased(key)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1025,
+          "end_line": 1025
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\compat.toml",
+        "pattern": "G:start_up()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 959,
+          "end_line": 959
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if type(G.GAME.current_round.current_hand.chips) ~= 'number' or type(G.GAME.current_round.current_hand.mult) ~= 'number' then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \\'number\\' or type(G.GAME.current_round.current_hand.mult) ~= \\'number\\' then' on target 'main.lua' for pattern patch from Talisman-main\\lovely.toml resulted in no matches"
+      ]
+    }
+  ]
+}

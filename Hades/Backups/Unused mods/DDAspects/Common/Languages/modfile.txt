@@ -1,0 +1,5 @@
+To "Game/Text/en/HelpText.en.sjson"
+SJSON "HelpText.en.sjson"
+
+To "Game/Text/pt-BR/HelpText.pt-BR.sjson"
+SJSON "HelpText.pt-BR.sjson"

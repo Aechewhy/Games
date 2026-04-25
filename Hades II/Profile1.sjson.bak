@@ -1,0 +1,14 @@
+{
+  SprintAutoHold = true
+  MusicSubtitles = true
+  BackupSaveCount = 2
+  AttackTurbo = "TurboStyle_Hold"
+  ReticleMoveSpeed = 3900.000000
+  ShowGameplayTimer = true
+  ValidCheckpoint = false
+  Brightness = 0.504450
+  ControlsResetRevisionViewed = 133066
+  CurrentSettingsCategory = 32
+  HUDOpacity = 0.802139
+  UseAltCursor = true
+}

@@ -1,0 +1,7 @@
+[Unit]
+Description=Auto backup game saves to GitHub
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/aechewhy/Games/backups/backup.sh
+WorkingDirectory=/home/aechewhy/Games/backups

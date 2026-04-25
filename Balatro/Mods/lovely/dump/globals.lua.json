@@ -1,0 +1,83 @@
+{
+  "buffer_name": "globals.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\booster.toml",
+        "pattern": "(?<indent>[\\t ]*)self\\.STATES = \\{",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 292,
+          "end_line": 294
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "G = Game()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 536,
+          "end_line": 536
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\globals.toml",
+        "pattern": "function Game:set_globals()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 8,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\globals.toml",
+        "pattern": "    if love.system.getOS() == 'Windows' then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 48,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\globals.toml",
+        "pattern": "self.SETTINGS = {",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 146,
+          "end_line": 149
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\globals.toml",
+        "pattern": "self.MIN_CLICK_DIST = 0.9",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 353,
+          "end_line": 356
+        }
+      ]
+    }
+  ]
+}

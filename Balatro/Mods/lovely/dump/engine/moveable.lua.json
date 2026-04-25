@@ -1,0 +1,44 @@
+{
+  "buffer_name": "engine/moveable.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\atlas.toml",
+        "pattern": "Node.init(self, args)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 16,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "(?<indent>[\\t ]*)if +self\\.alignment\\.prev_offset\\.x == self\\.alignment\\.offset\\.x[\\s\\S]*?return end\n",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 129,
+          "end_line": 129
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "function Moveable:move_wh(dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 433,
+          "end_line": 436
+        }
+      ]
+    }
+  ]
+}

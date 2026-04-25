@@ -1,0 +1,122 @@
+{
+  "buffer_name": "tag.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\better_calc.toml",
+        "pattern": "G.GAME.tag_tally = math.max(self.tally, G.GAME.tag_tally) + 1\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 502,
+          "end_line": 502
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\shop.toml",
+        "pattern": "create_shop_card_ui(card, 'Voucher', G.shop_vouchers)\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 325,
+          "end_line": 325
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "function Tag:apply_to_run(_context)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 121,
+          "end_line": 129
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "function Tag:set_ability()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 104,
+          "end_line": 108
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "function Tag:get_uibox_table(tag_sprite)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 564,
+          "end_line": 564
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "tag_sprite.ability_UIBox_table = generate_card_ui(G.P_TAGS[self.key], nil, loc_vars, (self.hide_ability) and 'Undiscovered' or 'Tag', nil, (self.hide_ability))",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 578,
+          "end_line": 579
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "_self.config.h_popup_config ={align = 'cl', offset = {x=-0.1,y=0},parent = _self}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 543,
+          "end_line": 545
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\tag.toml",
+        "pattern": "G.ASSET_ATLAS\\[\"tags\"\\]",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 514,
+          "end_line": 514
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\tag.toml",
+        "pattern": "tag_sprite.hover = function(_self)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 529,
+          "end_line": 529
+        }
+      ]
+    }
+  ]
+}

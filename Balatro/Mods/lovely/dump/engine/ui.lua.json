@@ -1,0 +1,327 @@
+{
+  "buffer_name": "engine/ui.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\scoring_calculation.toml",
+        "pattern": "if self == G.CONTROLLER.text_input_hook then \n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1061,
+          "end_line": 1064
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "if self.config.choice then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1029,
+          "end_line": 1029
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "self.config.chosen = true",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1034,
+          "end_line": 1034
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
+        "pattern": "--Draw the 'chosen triangle'\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 856,
+          "end_line": 863
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_elements.toml",
+        "pattern": "love.graphics.polygon(\"fill\", get_chosen_triangle_from_rect(self.layered_parallax.x, self.layered_parallax.y, self.VT.w*G.TILESIZE, self.VT.h*G.TILESIZE, self.config.chosen == 'vert'))",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 877,
+          "end_line": 877
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
+        "pattern": "self.config.lang.font",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 627,
+          "end_line": 627
+        },
+        {
+          "start_line": 701,
+          "end_line": 701
+        },
+        {
+          "start_line": 702,
+          "end_line": 702
+        },
+        {
+          "start_line": 712,
+          "end_line": 712
+        },
+        {
+          "start_line": 712,
+          "end_line": 712
+        },
+        {
+          "start_line": 713,
+          "end_line": 713
+        },
+        {
+          "start_line": 713,
+          "end_line": 713
+        },
+        {
+          "start_line": 715,
+          "end_line": 715
+        },
+        {
+          "start_line": 715,
+          "end_line": 715
+        },
+        {
+          "start_line": 716,
+          "end_line": 716
+        },
+        {
+          "start_line": 732,
+          "end_line": 732
+        },
+        {
+          "start_line": 732,
+          "end_line": 732
+        },
+        {
+          "start_line": 733,
+          "end_line": 733
+        },
+        {
+          "start_line": 733,
+          "end_line": 733
+        },
+        {
+          "start_line": 735,
+          "end_line": 735
+        },
+        {
+          "start_line": 735,
+          "end_line": 735
+        },
+        {
+          "start_line": 736,
+          "end_line": 736
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui_additional_text_props.toml",
+        "pattern": "node.config.lang.font",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 144,
+          "end_line": 144
+        },
+        {
+          "start_line": 144,
+          "end_line": 144
+        },
+        {
+          "start_line": 144,
+          "end_line": 144
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        },
+        {
+          "start_line": 145,
+          "end_line": 145
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "        args.config.major = args.config.major or args.config.parent or self\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 32,
+          "end_line": 32
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\init.toml",
+        "pattern": "function UIBox:remove()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 276,
+          "end_line": 276
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if _th and _tw then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 188,
+          "end_line": 191
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "local _cw, _ch = w:set_wh()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 565,
+          "end_line": 565
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "if self.config.vert then love.graphics.translate(0,self.VT.h); love.graphics.rotate(-math.pi/2) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 706,
+          "end_line": 706
+        },
+        {
+          "start_line": 723,
+          "end_line": 723
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "self.ARGS.button_colours[2] = (((collided_button.config.hover and collided_button.states.hover.is) or (collided_button.last_clicked and collided_button.last_clicked > G.TIMERS.REAL - 0.1)) and G.C.UI.HOVER or nil)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 765,
+          "end_line": 765
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "--Draw the outline for highlighted buttons",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 827,
+          "end_line": 839
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "function UIElement:update(dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 970,
+          "end_line": 983
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "G.NO_MOD_CURSOR_STACK = nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1025,
+          "end_line": 1025
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "function UIElement:release(other)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1097,
+          "end_line": 1099
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\ui.toml",
+        "pattern": "(?<before>function UIBox:drag\\(offset\\)[\\s\\S]+)(?:    Moveable\\.move\\(self\\.UIRoot, dt\\))",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 331,
+          "end_line": 333
+        }
+      ]
+    }
+  ]
+}

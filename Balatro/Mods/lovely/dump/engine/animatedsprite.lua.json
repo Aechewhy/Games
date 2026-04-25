@@ -1,0 +1,31 @@
+{
+  "buffer_name": "engine/animatedsprite.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "for _, v in pairs(G.ANIMATIONS) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 96,
+          "end_line": 96
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\fixes.toml",
+        "pattern": "for _, v in pairs(G.I.SPRITE) do",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 101,
+          "end_line": 101
+        }
+      ]
+    }
+  ]
+}

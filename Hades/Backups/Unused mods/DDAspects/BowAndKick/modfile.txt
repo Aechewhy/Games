@@ -1,0 +1,14 @@
+To "Scripts/TraitData.lua"
+Import "Trait.lua"
+
+To "Scripts/WeaponUpgradeData.lua"
+Import "WeaponUpgradeData.lua"
+
+To "Scripts/Powers.lua"
+Import "Scripts.lua"
+
+To "Scripts/TraitData.lua"
+Import "Hammers.lua"
+
+To "Scripts/LootData.lua"
+Import "LootData.lua"

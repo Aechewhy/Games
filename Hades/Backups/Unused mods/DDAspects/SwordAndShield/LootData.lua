@@ -1,0 +1,5 @@
+table.insert(LootData.WeaponUpgrade.Traits, "SwordAndShieldChargeSpeedTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "SwordAndShieldPerfectRushTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "SwordAndShieldRushProjectileTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "SwordAndShieldBlockEmpowerTrait")
+table.insert(LootData.WeaponUpgrade.Traits, "SwordAndShieldDashAOETrait")

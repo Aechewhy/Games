@@ -1,0 +1,44 @@
+{
+  "buffer_name": "engine/save_manager.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\threads.toml",
+        "pattern": "if request then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 33,
+          "end_line": 33
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "CHANNEL = love.thread.getChannel(\"save_request\")",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 13,
+          "end_line": 27
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Talisman-main\\lovely.toml",
+        "pattern": "compress_and_save(prefix_profile..'save.jkr', request.save_table)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 97,
+          "end_line": 97
+        }
+      ]
+    }
+  ]
+}

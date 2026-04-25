@@ -1,0 +1,31 @@
+{
+  "buffer_name": "engine/node.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "self.children.h_popup.states.drag.can = true\n",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 277,
+          "end_line": 281
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\node.toml",
+        "pattern": "function Node:update(dt) end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 395,
+          "end_line": 403
+        }
+      ]
+    }
+  ]
+}

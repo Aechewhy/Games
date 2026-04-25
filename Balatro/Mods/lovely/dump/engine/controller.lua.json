@@ -1,0 +1,293 @@
+{
+  "buffer_name": "engine/controller.lua",
+  "entries": [
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\ui.toml",
+        "pattern": "function Controller:key_press_update(key, dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1048,
+          "end_line": 1050
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\edition.toml",
+        "pattern": "(?<indent>[\\t ]*)local _edition = \\{\n[\\t ]*foil = not _card\\.edition,\n[\\t ]*holo = _card\\.edition and _card\\.edition\\.foil,\n[\\t ]*polychrome = _card\\.edition and _card\\.edition\\.holo,\n[\\t ]*negative = _card\\.edition and _card\\.edition\\.polychrome,\n[\\t ]*\\}",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1141,
+          "end_line": 1152
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\keybind.toml",
+        "pattern": "if not _RELEASE_MODE then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1088,
+          "end_line": 1101
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\keybind.toml",
+        "pattern": "function Controller:key_release_update(key, dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1265,
+          "end_line": 1278
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "smods-1.0.0-beta-1016c\\lovely\\keybind.toml",
+        "pattern": "if key == \"r\"",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1216,
+          "end_line": 1234
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "local l_stick_y = self.GAMEPAD.object:getGamepadAxis('lefty')",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 862,
+          "end_line": 865
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controller.toml",
+        "pattern": "local r_stick_y = self.GAMEPAD.object:getGamepadAxis('righty')",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 904,
+          "end_line": 907
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_deselect_hand.toml",
+        "pattern": "if (G.play and #G.play.cards > 0) or",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1386,
+          "end_line": 1386
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_misc.toml",
+        "pattern": "G.challenge_tab = G.GAME and G.GAME.challenge and G.GAME.challenge_tab or nil",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1247,
+          "end_line": 1249
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "HandyBalatro\\lovely\\controls_misc.toml",
+        "pattern": "if key == \"r\" and not G.SETTINGS.paused",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 1235,
+          "end_line": 1235
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "balatro-typist-mod-main\\lovely\\entrypoint.toml",
+        "pattern": "function Controller:key_hold_update(key, dt)",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1196,
+          "end_line": 1211
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Saturn-main\\lovely\\core.toml",
+        "pattern": "self.cursor_down = {T = {x=0, y=0}, target = nil, time = 0, handled = true}",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 20,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:init()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:init()",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 6,
+          "end_line": 7
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "self.HID.mouse = HID_type == 'mouse'",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 155,
+          "end_line": 160
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "if v.states.hover.can and (not v.states.drag.is or self.HID.touch) then",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1363,
+          "end_line": 1363
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "if not self.cursor_hover.target or (self.dragging.target and not self.HID.touch) then self.cursor_hover.target = G.ROOM end",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1370,
+          "end_line": 1370
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "local press_node =  (self.HID.touch and self.cursor_hover.target) or self.hovering.target or self.focused.target",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1406,
+          "end_line": 1406
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "self.cursor_up.target = self.hovering.target or self.focused.target",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1429,
+          "end_line": 1429
+        }
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "MobileLikeDragging\\lovely\\controller.toml",
+        "pattern": "function Controller:update([\\s\\S]+?)^end",
+        "patch_type": "regex"
+      },
+      "regions": [
+        {
+          "start_line": 200,
+          "end_line": 696
+        }
+      ],
+      "warnings": [
+        "Regex 'function Controller:update([\\s\\S]+?)^end' on target 'engine/controller.lua' for regex patch from MobileLikeDragging\\lovely\\controller.toml resulted in 4 matches, wanted 1",
+        "Ignoring excess matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Galdur\\lovely.toml",
+        "pattern": "if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then",
+        "patch_type": "pattern"
+      },
+      "regions": [],
+      "warnings": [
+        "Pattern 'if self.hovering.target and self.hovering.target == self.dragging.target and not self.HID.touch then' on target 'engine/controller.lua' for pattern patch from Galdur\\lovely.toml resulted in no matches"
+      ]
+    },
+    {
+      "patch_source": {
+        "file": "Galdur\\lovely.toml",
+        "pattern": "G:start_run({})",
+        "patch_type": "pattern"
+      },
+      "regions": [
+        {
+          "start_line": 1162,
+          "end_line": 1163
+        }
+      ]
+    }
+  ]
+}

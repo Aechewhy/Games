@@ -1,0 +1,31 @@
+[manifest]
+version = "1.0.0"
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+position = "after"
+times = 1
+pattern = '''
+  G.OVERLAY_MENU:remove()
+  G.OVERLAY_MENU = nil
+  G.VIEWING_DECK = nil
+  G.SETTINGS.paused = false
+'''
+payload = 'require("typist.mod.settings-page").draw_layout_change_notification()'
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+position = "before"
+times = 1
+pattern = "function create_UIBox_settings()"
+payload = '''
+local __typist_create_UIBox_options_impl = create_UIBox_options
+create_UIBox_options = function()
+  return require("typist.mod.settings-page").insert_settings_page_button(__typist_create_UIBox_options_impl())
+end
+'''
+match_indent = false
