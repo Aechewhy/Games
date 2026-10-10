@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+	<Group id="Gameplay" displayName="gameplay">
+		<VisibleVars>
+			<!--  System -->
+			<Var id="AutosaveTimeInterval" displayName="AutosaveTimeInterval" displayType="SLIDER;3;15;12"/>
+
+            <!--  Combat -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="AutomaticFinishersEnabled" displayName="AutoFinishersEnabled" displayType="TOGGLE"/>
+            <Var id="CombatStyle" displayName="menu_combat_style" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="menu_Standard">
+						<Entry varId="CombatStyle" value="0"/>
+					</Option>
+					<Option id="1" displayName="menu_Modern">
+						<Entry varId="CombatStyle" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="UseMovementForKBM" displayName="menu_target_with_movement_keyboard" displayType="TOGGLE" tags="indent;customDisplayName;enableIfModernCombat"/>
+            <Var id="EnableUberMovement" displayName="menu_movement_response" displayType="OPTIONS" tags="customNames;customDisplayName;disableIfModernCombat">
+				<OptionsArray>
+					<Option id="0" displayName="menu_movement_standard">
+						<Entry varId="EnableUberMovement" value="0"/>
+					</Option>
+					<Option id="1" displayName="menu_movement_alternative">
+						<Entry varId="EnableUberMovement" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="EnemyUpscaling" displayName="EnemyUpscaling" displayType="TOGGLE"/>
+            <Var id="EnableAlternateSignCasting" displayName="menu_alternate_sign_casting" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="menu_alternate_sign_casting_standard">
+						<Entry varId="EnableAlternateSignCasting" value="0"/>
+					</Option>
+					<Option id="1" displayName="menu_alternate_sign_casting_alternative">
+						<Entry varId="EnableAlternateSignCasting" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+
+			<!--  UI -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="HudTutorialEnabled" displayName="HudTutorialEnabled" displayType="TOGGLE"/>
+			<Var id="LootMergeEnabled" displayName="LootMergeEnabled" displayType="TOGGLE"/>
+            
+			<!--  Camera -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="TargetLockStyle" displayName="menu_target_lock_style" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="menu_Standard">
+						<Entry varId="TargetLockStyle" value="0"/>
+					</Option>
+					<Option id="1" displayName="menu_Modern">
+						<Entry varId="TargetLockStyle" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="TargetLockCameraSpeed" displayName="menu_target_lock_camera_speed" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="menu_Slow">
+						<Entry varId="TargetLockCameraSpeed" value="0"/>
+					</Option>
+					<Option id="1" displayName="menu_Fast">
+						<Entry varId="TargetLockCameraSpeed" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="SoftLockCameraAssist" displayName="SoftLockCameraAssist" displayType="TOGGLE"/>
+			<Var id="EnableAlternateExplorationCamera" displayName="option_ExplorationCameraPreset" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="camera_view_original">
+						<Entry varId="EnableAlternateExplorationCamera" value="0"/>
+					</Option>
+					<Option id="1" displayName="camera_view_close">
+						<Entry varId="EnableAlternateExplorationCamera" value="1"/>
+					</Option>
+					<Option id="2" displayName="camera_view_modern">
+						<Entry varId="EnableAlternateExplorationCamera" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="EnableAlternateCombatCamera" displayName="option_CombatCameraPreset" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="camera_view_original">
+						<Entry varId="EnableAlternateCombatCamera" value="0"/>
+					</Option>
+					<Option id="1" displayName="camera_view_close">
+						<Entry varId="EnableAlternateCombatCamera" value="1"/>
+					</Option>
+					<Option id="2" displayName="menu_Dynamic">
+						<Entry varId="EnableAlternateCombatCamera" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="EnableAlternateHorseCamera" displayName="option_HorseCameraPreset" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="camera_view_original">
+						<Entry varId="EnableAlternateHorseCamera" value="0"/>
+					</Option>
+					<Option id="1" displayName="camera_view_close">
+						<Entry varId="EnableAlternateHorseCamera" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="AutoCameraCenter" displayName="AutoCameraCenter" displayType="TOGGLE"/>
+			
+			<!--  Telemetry and similar -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="GameTelemetryConsent" displayName="menu_consent_on_telemetry" displayType="TOGGLE"  tags="customDisplayName"/>
+			<Var id="RequestCollectedTelemetry" displayName="panel_telemetry_download" displayType="BUTTON"  tags="indent;customDisplayName"/>
+			<Var id="MarketingTelemetryConsent" displayName="panel_telemetry_share" displayType="TOGGLE"  tags="customDisplayName"/>
+			<Var id="CrossProgression" displayName="ui_gog_cloud_saves_title" displayType="TOGGLE" tags="customDisplayName"/>
+			      
+			<!--  Mods -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var overrideGroup="ContentManager/Mods" id="Enabled" displayName="enable_mods" displayType="TOGGLE"/>
+				<Var id="ModioEnabled" displayName="modio_enabled" displayType="TOGGLE" tags="indent;enableIfMods"/>
+				<Var overrideGroup="ContentManager/Mods" id="EnabledLocal" displayName="enable_local_mods" displayType="TOGGLE" tags="indent;enableIfMods"/>
+				<Var overrideGroup="ContentManager/Mods" id="EnabledWorkshop" displayName="enable_steam_mods" displayType="TOGGLE" tags="indent;enableIfMods"/>
+			<Var id="DisableRestartPopups" displayName="mods_ignore_simple_restart_popups" displayType="TOGGLE"/>
+			<Var id="DisableModVerification" displayName="mods_ignore_mod_verification" displayType="TOGGLE"/>
+
+			<!--  dlcs are appended here -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			</VisibleVars>
+	</Group>
+	
+	<Group id="Accessibility" displayName="option_accessibility" tags="customDisplayName">
+		<VisibleVars>
+			<!--  Gameplay -->
+			<Var id="AccessibilityPreset" displayName="accessibility_presets_preset" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="accessibility_presets_none">
+						<Entry varId="AccessibilityPreset" value="0"/>
+					</Option>				
+					<Option id="1" displayName="accessibility_presets_bardsstale"> 
+						<Entry varId="AccessibilityPreset" value="1"/>
+					</Option>
+					<Option id="2" displayName="accessibility_presets_custom">
+						<Entry varId="AccessibilityPreset" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var overrideGroup="Gameplay" id="AutoApplyBladeOils" displayName="auto_apply_blade_oils" displayType="TOGGLE"/>
+			<Var overrideGroup="Gameplay" id="DisableAutomaticSwordSheathe" displayName="menu_auto_sword_sheathe" displayType="TOGGLE"/>
+			<Var id="LowHPAutoHealOn" displayName="accessibility_autoheal" displayType="TOGGLE"/>
+			<Var id="LowHPAutoHealThreshold" displayName="accessibility_autoheal_threshold" displayType="SLIDER;0;100;100" tags="enableIfAutohealEnabled;indent"/>
+			<Var id="LowHPAutoHealMultiplier" displayName="accessibility_autoheal_multiplier" displayType="SLIDER;1;100;99" tags="enableIfAutohealEnabled;indent"/>
+			<Var id="NoAirDrain" displayName="accessibility_no_airdrain" displayType="TOGGLE"/>
+			<Var id="DisableDurabilityItem" displayName="accessibility_disable_durability_item" displayType="TOGGLE"/>
+			<Var id="DisableDurabilityBoat" displayName="accessibility_disable_durability_boat" displayType="TOGGLE"/>
+			<Var id="FastBoats" displayName="accessibility_fastboats" displayType="TOGGLE"/>
+			<Var id="WeightlessItems" displayName="accessibility_weightless_items" displayType="TOGGLE"/>
+			<Var id="AutoLoot" displayName="accessibility_autoloot" displayType="TOGGLE"/>
+			<Var id="HideHerbs" displayName="accessibility_hide_herbs" displayType="TOGGLE"/>
+			<Var id="HideCorpse" displayName="accessibility_hide_corpses" displayType="TOGGLE"/>
+
+			<!--  UI -->
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="FocusToggle" displayName="accessibility_focus_toggle" displayType="TOGGLE"/>	
+			<Var id="ColorblindFocusMode" displayName="witcher_senses_colorblind" displayType="TOGGLE" visibilityCondition="mainMenu"/>
+            <Var id="MotionSicknessFocusMode" displayName="witcher_senses_motion_sickness" displayType="TOGGLE"/>
+		</VisibleVars>
+	</Group>
+
+    <Group id="Controls" displayName="option_controllerhelp" >
+        <VisibleVars>
+			<Var overrideGroup="Input" id="UIMouseSensitivity" displayName="ui_mouse_sensitivity" displayType="SLIDER;0.1;4.0;78"/>
+            <Var overrideGroup="Input" id="MouseSensitivity" displayName="mouse_sensitivity" displayType="SLIDER;0.1;4.0;78"/>
+            <Var overrideGroup="Input" id="InvertCameraXOnMouse" displayName="camera_input_reverse_x_axis_mouse" displayType="TOGGLE"/>
+			<Var overrideGroup="Input" id="InvertCameraYOnMouse" displayName="camera_input_reverse_y_axis_mouse" displayType="TOGGLE"/>
+			<Var overrideGroup="Input" id="InvertCameraX" displayName="camera_input_reverse_x_axis_xb1" displayType="TOGGLE"/>
+			<Var overrideGroup="Input" id="InvertCameraY" displayName="camera_input_reverse_y_axis_xb1" displayType="TOGGLE"/>
+			<Var overrideGroup="Input" id="InvertLockOption" displayName="camera_input_reverse_lock_targeting" displayType="TOGGLE"/>
+			<Var id="LeftStickSprint" displayName="menu_LeftStickSprint" displayType="TOGGLE"/>
+            <Var id="LeftStickSensitivity" displayName="LeftStickSensitivity" displayType="SLIDER;0.5;1;50" visibilityCondition="hideAlways"/>
+			<Var overrideGroup="NewHorseControls" id="UseNewControls" displayName="UseNewControls" displayType="TOGGLE"/>
+			<Var id="SteeringSensitivity" displayName="SteeringSensitivity" displayType="SLIDER;0.5;1.5;100" tags="indent;enableIfNewHorseControls"/> 
+			
+            <Var overrideGroup="Input" id="RightStickCameraSensitivity" displayName="RightStickCameraSensitivity" displayType="SLIDER;0.5;1.5;98"/>
+			<Var overrideGroup="Input" id="RightStickAimSensitivity" displayName="RightStickAimSensitivity" displayType="SLIDER;0.5;1.5;98"/>
+            <Var overrideGroup="Input" id="PadVibrationEnabled" displayName="pad_vibrations" displayType="TOGGLE"/>
+            <Var overrideGroup="Input" id="AdaptiveTriggersEnabled" displayName="adaptive_triggers" displayType="TOGGLE"/>
+			<Var overrideGroup="Input" id="AdaptiveTriggersAmount" displayName="adaptive_triggers_amount" displayType="SLIDER;0;10;10"/>
+            <Var id="SwapAcceptCancel" displayName="swap_accept_cancel" displayType="TOGGLE"/>
+			<Var id="AlternativeRadialMenuInputMode" displayName="alternative_radial_input_mode" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+    <Group id="NewHorseControls" displayName="option_remaster_horsecontrols" tags="customDisplayName" visibilityCondition="hideAlways">
+		<PresetsArray>
+				<Preset id="0" displayName="New Default" tags="customDisplayName">				
+				<Entry overrideGroup="NewHorseControls" 	varId="UseSteeringCorrection"			value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="SteeringCorrectionMaxAngle"		value="15"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="AutoStop"						value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="AutoJump"						value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="TreeFiltering"					value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="TreeSizeThreshold"				value="0.7"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="RoadFollowing"					value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionDirModifierCanter"		value="4.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionDirModifierGallop"		value="3.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionDirModifier"			value="2.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionSpeedCanter"			value="8.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionSpeedGallop"			value="4.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="CorrectionSpeed"					value="3.0"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="ExperimentalDismounts"			value="true"/>
+				<Entry overrideGroup="NewHorseControls" 	varId="ExperimentalMounts"				value="true"/>
+			</Preset>	
+		</PresetsArray>
+	 <VisibleVars>
+	 		<!-- Hidden - Use the player facing override in controls -->
+	 		<Var id="UseNewControls" displayName="UseNewControls" displayType="TOGGLE" visibilityCondition="hideAlways"/>
+
+			<Var id="UseSteeringCorrection" displayName="Use Steering Correction" displayType="TOGGLE"/>
+			<Var id="SteeringCorrectionMaxAngle" displayName="Steering Correction Max Angle" displayType="SLIDER;0;90;90"/>
+			<Var id="AutoStop" displayName="Auto Stop On Obstacles" displayType="TOGGLE"/>
+			<Var id="AutoJump" displayName="Auto Jump Over Obstacles" displayType="TOGGLE"/>
+			<Var id="TreeFiltering" displayName="Filter Trees Collision" displayType="TOGGLE"/>
+			<Var id="TreeSizeThreshold" displayName="Trees Collision Size Threshold" displayType="SLIDER;0;20;200"/>
+			<Var id="RoadFollowing" displayName="Auto Road Following" displayType="TOGGLE"/>
+			<Var id="CorrectionDirModifierCanter" displayName="Correction Direction Canter Modifier" displayType="SLIDER;0;10;20"/>
+			<Var id="CorrectionDirModifierGallop" displayName="Correction Direction Gallop Modifier" displayType="SLIDER;0;10;20"/>
+			<Var id="CorrectionDirModifier" displayName="Correction Direction Modifier" displayType="SLIDER;0;10;20"/>
+			<Var id="CorrectionSpeedCanter" displayName="Correction Speed Canter Modifier" displayType="SLIDER;0;10;50"/>
+			<Var id="CorrectionSpeedGallop" displayName="Correction Speed Gallop Modifier" displayType="SLIDER;0;10;50"/>
+			<Var id="CorrectionSpeed" displayName="Correction Speed Modifier" displayType="SLIDER;0;10;50"/>
+			<!-- <Var id="CorrectionHeadingBiasCanter" displayName="Correction Heading Bias Canter" displayType="SLIDER;0;1;10"/>
+			<Var id="CorrectionHeadingBiasGallop" displayName="Correction Heading Bias Gallop" displayType="SLIDER;0;1;10"/>
+			<Var id="CorrectionHeadingBias" displayName="Correction Heading Bias" displayType="SLIDER;0;1;10"/> -->
+			<!-- TODO scaling -->
+			<Var id="ExperimentalDismounts" displayName="Experimental Dismounts" displayType="TOGGLE"/> 
+			<Var id="ExperimentalMounts" displayName="Experimental Mounts" displayType="TOGGLE"/> 
+			<Var id="ExperimentalSpeedTimeout" displayName="Experimental Speed Timeout" displayType="SLIDER;0;10;100"/> 
+        </VisibleVars>
+    </Group>
+	<Group id="RemasterCombat" displayName="option_remaster_combat" tags="customDisplayName" visibilityCondition="hideAlways">
+		<PresetsArray>
+			<Preset id="0" displayName="new_climb" tags="customDisplayName">
+				<!-- Used for new climbs -->
+				<Entry varId="ClimbDistance"							value="2"/>
+				<Entry varId="ClimbNewSlide"							value="true"/>
+				<Entry varId="ClimbUseDestinationMotionBlend"			value="true"/>
+				<Entry varId="ClimbNewProbe"							value="true"/>
+				<Entry varId="ClimbReverseFeet"							value="true"/>
+				<!-- Unused -->
+				<Entry varId="ClimbExtraArrivalDistance"				value="0"/>
+				<Entry varId="ClimbDisableAnimSpeedCorrection"			value="false"/>
+				<Entry varId="ClimbDisableMovementAdjustment"			value="false"/>
+				<Entry varId="ClimbDisableCollision"					value="false"/>
+				<Entry varId="ClimbIncreaseAnimationSpeedWhenSprinting"	value="0"/>
+				<!-- Autoclimb -->
+				<Entry varId="AutoClimbObstacles"						value="false"/>
+				<Entry varId="AutoClimbObstaclesWithoutSprint"			value="false"/>
+			</Preset>
+			<Preset id="1" displayName="legacy_climb" tags="customDisplayName">
+				<!-- Used for new climbs -->
+				<Entry varId="ClimbDistance"							value="0"/>
+				<Entry varId="ClimbNewSlide"							value="false"/>
+				<Entry varId="ClimbUseDestinationMotionBlend"			value="false"/>
+				<Entry varId="ClimbNewProbe"							value="false"/>
+				<Entry varId="ClimbReverseFeet"							value="false"/>
+				<!-- Unused -->
+				<Entry varId="ClimbExtraArrivalDistance"				value="0"/>
+				<Entry varId="ClimbDisableAnimSpeedCorrection"			value="false"/>
+				<Entry varId="ClimbDisableMovementAdjustment"			value="false"/>
+				<Entry varId="ClimbDisableCollision"					value="false"/>
+				<Entry varId="ClimbIncreaseAnimationSpeedWhenSprinting"	value="0"/>
+				<!-- Autoclimb -->
+				<Entry varId="AutoClimbObstacles"						value="false"/>
+				<Entry varId="AutoClimbObstaclesWithoutSprint"			value="false"/>
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="UseNewGapClosers" displayName="UseNewGapClosers" displayType="TOGGLE"/>
+				<Var id="GapCloserUseNewAnimations" displayName="GapCloserUseNewAnimations" displayType="TOGGLE" tags="indent"/>
+				<Var id="ForceCombatRange" displayName="ForceCombatRange" displayType="OPTIONS" tags="customNames;customDisplayName;indent">
+					<OptionsArray>
+						<Option id="0" displayName="menu_Default">
+							<Entry varId="ForceCombatRange" value="0"/>
+						</Option>
+						<Option id="1" displayName="Medium">
+							<Entry varId="ForceCombatRange" value="1"/>
+						</Option>
+						<Option id="2" displayName="MediumLarge">
+							<Entry varId="ForceCombatRange" value="2"/>
+						</Option>
+						<Option id="3" displayName="Large">
+							<Entry varId="ForceCombatRange" value="3"/>
+						</Option>
+						<Option id="4" displayName="ExtraLarge">
+							<Entry varId="ForceCombatRange" value="4"/>
+						</Option>
+					</OptionsArray>
+				</Var>
+				<Var id="ForceCombatSide" displayName="ForceCombatSide" displayType="OPTIONS" tags="customNames;customDisplayName;indent">
+					<OptionsArray>
+						<Option id="0" displayName="menu_Default">
+							<Entry varId="ForceCombatSide" value="0"/>
+						</Option>
+						<Option id="1" displayName="Left">
+							<Entry varId="ForceCombatSide" value="1"/>
+						</Option>
+						<Option id="2" displayName="Right">
+							<Entry varId="ForceCombatSide" value="2"/>
+						</Option>
+					</OptionsArray>
+				</Var>
+				<Var id="ForceCombatDirection" displayName="ForceCombatDirection" displayType="OPTIONS" tags="customNames;customDisplayName;indent">
+					<OptionsArray>
+						<Option id="0" displayName="menu_Default">
+							<Entry varId="ForceCombatDirection" value="0"/>
+						</Option>
+						<Option id="1" displayName="Forward">
+							<Entry varId="ForceCombatDirection" value="1"/>
+						</Option>
+						<Option id="2" displayName="Back">
+							<Entry varId="ForceCombatDirection" value="2"/>
+						</Option>
+						<Option id="3" displayName="Left">
+							<Entry varId="ForceCombatDirection" value="3"/>
+						</Option>
+						<Option id="4" displayName="Right">
+							<Entry varId="ForceCombatDirection" value="4"/>
+						</Option>
+					</OptionsArray>
+				</Var>
+			<Var id="GapCloserPredictTime" displayName="GapCloserPredictTime" displayType="SLIDER;0;2;20"/>
+			<Var id="TargetLockSwitchCooldown" displayName="TargetLockSwitchCooldown" displayType="SLIDER;0;1;20"/>
+			<Var id="UseNewAnimations" displayName="UseNewAnimations" displayType="TOGGLE"/>
+				<Var id="JumpCooldown" displayName="JumpCooldown" displayType="SLIDER;0;1;20" tags="indent"/>
+				<Var id="LandAddCoef" displayName="LandAddCoef" displayType="SLIDER;0;1;20" tags="indent"/>
+				<Var id="LandAddTimeCoef" displayName="LandAddTimeCoef" displayType="SLIDER;0;4;80" tags="indent"/>
+				<Var id="LandAddTimeCoefFast" displayName="LandAddTimeCoefFast" displayType="SLIDER;0;4;80" tags="indent"/>
+				<Var id="LandAddCoefWalk" displayName="LandAddCoefWalk" displayType="SLIDER;0;1;20" tags="indent"/>
+				<Var id="LandAddTimeCoefWalk" displayName="LandAddTimeCoefWalk" displayType="SLIDER;0;4;80" tags="indent"/>
+				<Var id="ClimbDistance" displayName="ClimbDistance" displayType="SLIDER;0;5;500" tags="indent"/>
+				<Var id="ClimbExtraArrivalDistance" displayName="ClimbExtraArrivalDistance" displayType="SLIDER;-5;5;1000" tags="indent"/>
+				<Var id="ClimbDisableAnimSpeedCorrection" displayName="ClimbDisableAnimSpeedCorrection" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbDisableMovementAdjustment" displayName="ClimbDisableMovementAdjustment" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbDisableCollision" displayName="ClimbDisableCollision" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbNewSlide" displayName="ClimbNewSlide" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbUseDestinationMotionBlend" displayName="ClimbUseDestinationMotionBlend" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbIncreaseAnimationSpeedWhenSprinting" displayName="ClimbIncreaseAnimationSpeedWhenSprinting" displayType="SLIDER;0;1;100" tags="indent"/>
+				<Var id="ClimbNewProbe" displayName="ClimbNewProbe" displayType="TOGGLE" tags="indent"/>
+				<Var id="ClimbReverseFeet" displayName="ClimbReverseFeet" displayType="TOGGLE" tags="indent"/>
+			<Var id="AutoClimbObstacles" displayName="AutoClimbObstacles" displayType="TOGGLE"/>
+			<Var id="AutoClimbObstaclesWithoutSprint" displayName="AutoClimbObstaclesWithoutSprint" displayType="TOGGLE"/>
+			<Var id="AutoClimbLadders" displayName="AutoClimbLadders" displayType="TOGGLE"/>
+			<Var id="AutoClimbAngleToEnter" displayName="AutoClimbAngleToEnter" displayType="SLIDER;0;90;90"/>
+			<Var id="UseLegacySkillTree" displayName="UseLegacySkillTree" displayType="TOGGLE" value="false"/>
+			<Var id="RemasterLadderFeatures" displayName="RemasterLadderFeatures" displayType="TOGGLE" value = "false"/>
+			<Var id="RemasterLadderAnims" displayName="RemasterLadderAnims" displayType="TOGGLE" value = "false"/>
+			<Var overrideGroup="RemasterMeditation" id="NewMeditationGroup" displayName="NewMeditationGroup" displayType="OPTIONS" tags="customDisplayName;customNames">
+				<OptionsArray>
+					<Option id="0" displayName="Enabled">
+						<Entry overrideGroup="RemasterMeditation" varId="NewMeditationGroup" value="0"/>
+					</Option>
+					<Option id="1" displayName="Enabled">
+						<Entry overrideGroup="RemasterMeditation" varId="NewMeditationGroup" value="1"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+				<Var overrideGroup="RemasterMeditation" id="MeditationBlendTime" displayName="MeditationBlendTime" displayType="SLIDER;0;5;10" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationBlendStepCount" displayName="MeditationBlendStepCount" displayType="SLIDER;0;50;50" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationWaitTime" displayName="MeditationWaitTime" displayType="SLIDER;0;10;10" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationWaitTimeAddPerHour" displayName="MeditationWaitTimeAddPerHour" displayType="SLIDER;0;1;20" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationMaxTimescale" displayName="MeditationMaxTimescale" displayType="SLIDER;0;20;20" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationMaxFoliageTimescale" displayName="MeditationMaxFoliageTimescale" displayType="SLIDER;0;10;10" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationMaxCloudsTimescale" displayName="MeditationMaxCloudsTimescale" displayType="SLIDER;0;100;100" tags="indent"/>
+				<Var overrideGroup="RemasterMeditation" id="MeditationBlendOutHpmTarget" displayName="MeditationBlendOutHpmTarget" displayType="SLIDER;0;10;40" tags="indent"/>
+			<Var overrideGroup="RemasterExplCam" id="EnableNewExplCam" displayName="EnableNewExplCam" displayType="TOGGLE"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamXOffset" displayName="ExplCamXOffset" displayType="SLIDER;-5;5;200" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamYOffset" displayName="ExplCamYOffset" displayType="SLIDER;-5;5;200" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamZOffset" displayName="ExplCamZOffset" displayType="SLIDER;-5;5;200" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamFov" displayName="ExplCamFov" displayType="SLIDER;30;180;150" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamPitch" displayName="ExplCamPitch" displayType="SLIDER;-60;60;120" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamJumpZ" displayName="ExplCamJumpZ" displayType="SLIDER;0;10;200" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamJumpUpTimeCoef" displayName="ExplCamJumpUpTimeCoef" displayType="SLIDER;0;3;300" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamJumpDtCoefDown" displayName="ExplCamJumpDtCoefDown" displayType="SLIDER;0;5;100" tags="indent"/>
+				<Var overrideGroup="RemasterExplCam" id="ExplCamJumpSmoothAlgo" displayName="ExplCamJumpSmoothAlgo" displayType="OPTIONS" tags="indent">
+					<OptionsArray>
+						<Option id="0" displayName="Lerp">
+							<Entry overrideGroup="RemasterExplCam" varId="ExplCamJumpSmoothAlgo" value="0"/>
+						</Option>
+						<Option id="1" displayName="Smoothstep">
+							<Entry overrideGroup="RemasterExplCam" varId="ExplCamJumpSmoothAlgo" value="1"/>
+						</Option>
+						<Option id="2" displayName="Smootherstep">
+							<Entry overrideGroup="RemasterExplCam" varId="ExplCamJumpSmoothAlgo" value="2"/>
+						</Option>
+					</OptionsArray>
+				</Var>
+		</VisibleVars>
+	</Group>
+</UserConfig>

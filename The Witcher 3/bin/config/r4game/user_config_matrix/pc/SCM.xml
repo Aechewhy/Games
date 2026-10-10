@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+	
+	<Group id="SCM" displayName="Mods.scm_ModName">
+		<VisibleVars>
+			<Var id="switch" displayName="scm_ONOFFSwitch" displayType="TOGGLE"/>
+			<Var id="mult" displayName="scm_Multiplier" displayType="SLIDER;0;10;40"/>
+		</VisibleVars>
+	</Group>
+	
+</UserConfig>

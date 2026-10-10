@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+    <Group id="LightRewrite_General" displayName="Mods.LightRewrite">
+        <VisibleVars>
+            <Var id="Enabled" displayName="LightRewrite_Enabled" displayType="TOGGLE" tags="customDisplayName" />
+            <Var id="CurrentProfile" displayName="LightRewrite_CurrentProfile" displayType="OPTIONS" tags="customNames;customDisplayName">
+              <OptionsArray>
+                <Option id="0" displayName="LightRewrite_Preset_Author">
+                  <Entry varId="CurrentProfile" value="0" />
+                </Option>
+                <!-- Placeholders; required for variable slider list. -->
+                <Option id="1"><Entry varId="CurrentProfile" value="1" /></Option>
+                <Option id="2"><Entry varId="CurrentProfile" value="2" /></Option>
+                <Option id="3"><Entry varId="CurrentProfile" value="3" /></Option>
+                <Option id="4"><Entry varId="CurrentProfile" value="4" /></Option>
+                <Option id="5"><Entry varId="CurrentProfile" value="5" /></Option>
+                <Option id="6"><Entry varId="CurrentProfile" value="6" /></Option>
+                <Option id="7"><Entry varId="CurrentProfile" value="7" /></Option>
+                <Option id="8"><Entry varId="CurrentProfile" value="8" /></Option>
+                <Option id="9"><Entry varId="CurrentProfile" value="9" /></Option>
+              </OptionsArray>
+            </Var>
+
+            <Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR" />
+
+            <Var id="PlayerTorchEnabled" displayName="LightRewrite_PlayerTorch_Enabled"
+                displayType="TOGGLE" tags="customDisplayName" />
+            <Var id="PlayerTorchBrightness" displayName="LightRewrite_Brightness"
+                displayType="SLIDER;0;100;200" tags="customDisplayName;indent" />
+            <Var id="PlayerTorchRadius" displayName="LightRewrite_Radius"
+                displayType="SLIDER;0.5;50;99" tags="customDisplayName;indent" />
+            <Var id="PlayerTorchAttenuation" displayName="LightRewrite_Attenuation"
+                displayType="SLIDER;0;1;20" tags="customDisplayName;indent" />
+
+            <Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR" />
+
+            <Var id="NpcTorchEnabled" displayName="LightRewrite_NpcTorch_Enabled"
+                displayType="TOGGLE" tags="customDisplayName" />
+            <Var id="NpcTorchBrightness" displayName="LightRewrite_Brightness"
+                displayType="SLIDER;0;100;200" tags="customDisplayName;indent" />
+            <Var id="NpcTorchRadius" displayName="LightRewrite_Radius"
+                displayType="SLIDER;0.5;50;99" tags="customDisplayName;indent" />
+            <Var id="NpcTorchAttenuation" displayName="LightRewrite_Attenuation"
+                displayType="SLIDER;0;1;20" tags="customDisplayName;indent" />
+
+            <!-- Internal: Tracks the version of the config that was last initialised. -->
+            <Var id="InitVersion" displayName="LightRewrite_InitVersion"
+                displayType="SLIDER;0;99;99" visibilityCondition="hideAlways" />
+
+            <!-- <= v13 -->
+            <Var id="SpacingMode" displayName="LightRewrite_Spacing_Mode" 
+                displayType="SLIDER;0;99;99" visibilityCondition="hideAlways"/>
+            <Var id="SpacingCount" displayName="LightRewrite_Spacing_Count"
+                displayType="SLIDER;0;10;10" visibilityCondition="hideAlways" />
+            <Var id="SpacingBudget" displayName="LightRewrite_Spacing_Budget"
+                displayType="SLIDER;0.5;10;19" visibilityCondition="hideAlways" />
+        </VisibleVars>
+    </Group>
+</UserConfig>

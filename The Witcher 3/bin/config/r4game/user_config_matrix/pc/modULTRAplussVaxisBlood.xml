@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+
+	<Group id="VaxisBloodPhysics" displayName="Mods.VaxisBloodPhysics">
+		<VisibleVars>
+			<Var id="GCP_VBPreset" displayName="Preset" displayType="OPTIONS" tags="nonLocalizedName;customNames;nonLocalized">
+				<OptionsArray>
+					<Option id="0" displayName="Light">
+						<Entry overrideGroup="VB_Store" varId="GCP_VBPresetV" value="0"/>
+					</Option>
+					<Option id="1" displayName="Standard">
+						<Entry overrideGroup="VB_Store" varId="GCP_VBPresetV" value="1"/>
+					</Option>
+					<Option id="2" displayName="Double Drops">
+						<Entry overrideGroup="VB_Store" varId="GCP_VBPresetV" value="2"/>
+					</Option>
+					<Option id="3" displayName="Custom">
+						<Entry overrideGroup="VB_Store" varId="GCP_VBPresetV" value="3"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+			<Var id="GCP_VBDrops" displayName="Drops per hit (safe up to 4)" displayType="SLIDER;0.5;6;11" tags="nonLocalizedName"/>
+			<Var id="GCP_VBMaxDrops" displayName="Max drops in the air (safe up to 2100)" displayType="SLIDER;200;4000;38" tags="nonLocalizedName"/>
+			<Var id="GCP_VBStains" displayName="Stains kept (safe up to 4000)" displayType="SLIDER;500;10000;38" tags="nonLocalizedName"/>
+			<Var id="GCP_VBStainLife" displayName="Stains and pools last (minutes)" displayType="SLIDER;1;30;29" tags="nonLocalizedName"/>
+			<Var id="GCP_VBStainRate" displayName="Stains made per frame (safe up to 30)" displayType="SLIDER;6;60;9" tags="nonLocalizedName"/>
+			<Var id="GCP_VBWhirl" displayName="Blood on fast multi-hits (safe up to 3)" displayType="SLIDER;0.5;5;9" tags="nonLocalizedName"/>
+			<Var id="GCP_VBSword" displayName="Blood the sword picks up (safe up to 2)" displayType="SLIDER;0;3;12" tags="nonLocalizedName"/>
+			<Var id="GCP_VBSwordLife" displayName="Sword streaks last (seconds)" displayType="SLIDER;10;600;59" tags="nonLocalizedName"/>
+			<Var id="GCP_VBRuns" displayName="Drips run down walls" displayType="TOGGLE" tags="nonLocalizedName"/>
+			<Var id="GCP_VBRagdolls" displayName="Bodies fall limp (ragdolls)" displayType="TOGGLE" tags="nonLocalizedName"/>
+		</VisibleVars>
+	</Group>
+
+	<Group id="VB_Store" displayName="vb_store" visibilityCondition="hideAlways">
+		<VisibleVars>
+			<Var id="VB_Version" displayName="VB_Version" displayType="SLIDER;0;1000;1000" tags="nonLocalizedName"/>
+			<Var id="GCP_VBPresetV" displayName="GCP_VBPresetV" displayType="SLIDER;0;100;100" tags="nonLocalizedName"/>
+		</VisibleVars>
+	</Group>
+
+</UserConfig>

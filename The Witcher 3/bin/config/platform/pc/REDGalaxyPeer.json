@@ -1,0 +1,7 @@
+{
+  "content": {
+    "http_client": {
+      "thread_count": 4
+    }
+  }
+}

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<OverrideOrder>
+	<Set name="pc">
+		<!-- default values in code -->
+		<Path name="base\"/>
+		<Path name="developer\"/>
+		<Path name="r4game\"/>
+		<Path name="platform\pc\"/>
+	</Set>
+	<Set name="xbox1">
+		<!-- default values in code -->
+		<Path name="base\"/>
+		<Path name="developer\"/>
+		<Path name="r4game\"/>
+		<Path name="platform\xbox1\"/>
+	</Set>
+	<Set name="xboxseriess">
+		<!-- default values in code -->
+		<Path name="base\"/>
+		<Path name="developer\"/>
+		<Path name="r4game\"/>
+		<Path name="platform\xboxseriesx\"/>
+		<Path name="platform\xboxseriess\"/>
+	</Set>
+	<Set name="xboxseriesx">
+		<!-- default values in code -->
+		<Path name="base\"/>
+		<Path name="developer\"/>
+		<Path name="r4game\"/>
+		<Path name="platform\xboxseriesx\"/>
+	</Set>
+	<Set name="ps4">
+		<!-- default values in code -->
+		<Path name="base/"/>
+		<Path name="developer\"/>
+		<Path name="r4game/"/>
+		<Path name="platform/ps4/"/>
+	</Set>
+	<Set name="ps5">
+		<!-- default values in code -->
+		<Path name="base/"/>
+		<Path name="developer\"/>
+		<Path name="r4game/"/>
+		<Path name="platform/ps5/"/>
+	</Set>
+	<Set name="ps5pro">
+		<!-- default values in code -->
+		<Path name="base/"/>
+		<Path name="developer\"/>
+		<Path name="r4game/"/>
+		<Path name="platform/ps5/"/>
+		<Path name="platform/ps5pro/"/>
+	</Set>
+	<Set name="switch2">
+		<!-- default values in code -->
+		<Path name="base/"/>
+		<Path name="developer\"/>
+		<Path name="r4game/"/>
+		<Path name="platform/switch2/"/>
+	</Set>
+</OverrideOrder>

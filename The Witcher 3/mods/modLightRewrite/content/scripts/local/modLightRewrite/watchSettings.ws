@@ -1,0 +1,77 @@
+// Wires CLightRewriteSettings into the game as a singleton on CR4Game,
+// forwards option-change events from CR4IngameMenu, and performs the
+// initial config read when the player spawns.
+
+@addField(CR4Game)
+private var lightRewriteSettings: CLightRewriteSettings;
+
+// Gets the LightRewrite settings singleton - lazy initialised
+@addMethod(CR4Game)
+public function GetLightRewriteSettings(): CLightRewriteSettings {
+    if (!lightRewriteSettings) {
+        lightRewriteSettings = new CLightRewriteSettings in this;
+        lightRewriteSettings.Init();
+    }
+    return lightRewriteSettings;
+}
+
+// Ensure the LightRewrite settings are read before the game starts.
+@wrapMethod(CR4Game)
+function OnGameStarting(restored: bool) {
+    wrappedMethod(restored);
+
+    GetLightRewriteSettings().ReadGameConfig();
+}
+
+@addField(CR4IngameMenu)
+private var lightRewriteSettings: CLightRewriteSettings;
+
+// Id of the last options submenu opened, so back-nav only applies changes for our menu
+@addField(CR4IngameMenu)
+private var lightRewriteLastSubmenuId: string;
+
+@wrapMethod(CR4IngameMenu)
+function OnConfigUI() {
+    wrappedMethod();
+
+    lightRewriteSettings = theGame.GetLightRewriteSettings();
+    lightRewriteSettings.EnsureGameConfigIsInitialised();
+}
+
+// Configure the LightRewrite settings menu when it is opened.
+@wrapMethod(CR4IngameMenu)
+function OnShowOptionSubmenu(actionType: int, menuTag: int, id: string) {
+    var recordBaseline: bool;
+
+    wrappedMethod(actionType, menuTag, id);
+
+    if (lightRewriteSettings.IsLightRewriteSubmenu(id)) {
+        lightRewriteSettings.ReadGameConfig();
+        recordBaseline = !lightRewriteSettings.IsLightRewriteSubmenu(lightRewriteLastSubmenuId);
+
+        lightRewriteSettings.ConfigureModMenu(id, recordBaseline);
+    }
+    lightRewriteLastSubmenuId = id;
+}
+
+// Forward every option-change event to the settings object for filtering.
+@wrapMethod(CR4IngameMenu)
+function OnOptionValueChanged(groupId: int, optionName: name, optionValue: string) {
+    var wrappedReturnValue: bool;
+
+    wrappedReturnValue = wrappedMethod(groupId, optionName, optionValue);
+
+    lightRewriteSettings.OptionValueChanged(groupId, optionName, optionValue);
+
+    return wrappedReturnValue;
+}
+
+// Apply any deferred Light Rewrite menu changes when exiting the menu
+@wrapMethod(CR4IngameMenu)
+function OnOptionPanelNavigateBack() {
+    if (lightRewriteSettings.IsLightRewriteSubmenu(lightRewriteLastSubmenuId)) {
+        lightRewriteSettings.ApplyPendingChanges();
+    }
+    lightRewriteLastSubmenuId = "";
+    return wrappedMethod();
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+	<Group id="Audio" displayName="audio">
+		<VisibleVars>
+            <Var id="MasterVolume" displayName="master_volume" displayType="SLIDER;0;100;100"/>
+			<Var id="MusicVolume" displayName="music_volume" displayType="SLIDER;0;100;100"/>
+			<Var id="SoundVolume" displayName="sound_volume" displayType="SLIDER;0;100;100"/>
+			<Var id="VoiceoversVolume" displayName="voice_volume" displayType="SLIDER;0;100;100"/>
+			<Var id="DynamicRange" displayName="dynamic_range_section_title" displayType="OPTIONS" tags="customNames;customDisplayName" >
+				<OptionsArray>
+					<Option id="0" displayName="dynamic_range_preset_1">
+						<Entry varId="DynamicRange" value="0"/>
+					</Option>
+					<Option id="1" displayName="dynamic_range_preset_3">
+						<Entry varId="DynamicRange" value="1"/>
+					</Option>
+					<Option id="2" displayName="dynamic_range_preset_2">
+						<Entry varId="DynamicRange" value="2"/>
+					</Option>
+					<Option id="3" displayName="dynamic_range_preset_7">
+						<Entry varId="DynamicRange" value="3"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+		</VisibleVars>
+	</Group>
+</UserConfig>

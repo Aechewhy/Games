@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+	<Group id="HDR" displayName="video.settings_hdr" tags="refreshEngineWithTexturesReload;graphics;enableIfHDR;customDisplayName">
+		<VisibleVars>
+			<Var overrideGroup="Visuals" id="MaxTVBrightness" displayName="settings_hdr_max_monitor_brightness" displayType="SLIDER;300;4000;370" tags="enableIfHDR;customDisplayName"/>
+			<Var overrideGroup="Visuals" id="HdrPaperWhite" displayName="settings_hdr_paperwhitelevel" displayType="SLIDER;100;500;40" tags="enableIfHDR;customDisplayName"/>
+			<Var overrideGroup="Visuals" id="HdrSaturation" displayName="settings_hdr_saturation" displayType="SLIDER;0;1;10" tags="enableIfHDR;customDisplayName"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>

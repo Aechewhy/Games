@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!-- This file associates base key binding ini file with keyboard layouts (locale IDs, Input Locales, LCIDDec) -->
+<!-- If you want to associate certain keyboard layout with binding ini file, then add LCIDDec id to 'ids' property in proper Layout node -->
+
+<KeyboardLayoutToFileMapping defaultFile="input_qwerty">	<!-- Default keybinding is for QWERTY keyboard layouts -->
+	<!-- AZERTY -->
+	<Layout file="input_azerty" ids="0000040C;0000080C;00000C0C;0000100C;0000140C;0000180C"/>
+	<!-- QWERTZ -->
+	<Layout file="input_qwertz" ids="00000407;00000807;00000C07;00001007;00001407"/>
+</KeyboardLayoutToFileMapping>

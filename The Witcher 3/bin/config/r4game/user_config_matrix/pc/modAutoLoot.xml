@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+	<Group id="AutoLoot" displayName="Mods.mod_autoloot_group" tags="customDisplayName">
+		<VisibleVars>
+			<!-- Glowne ustawienia -->
+			<Var id="AutoLootEnabled" displayName="mod_autoloot_enabled" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="AutoLootMode" displayName="mod_autoloot_mode" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="mod_autoloot_mode_both">
+						<Entry varId="AutoLootMode" value="0"/>
+					</Option>
+					<Option id="1" displayName="mod_autoloot_mode_passive">
+						<Entry varId="AutoLootMode" value="1"/>
+					</Option>
+					<Option id="2" displayName="mod_autoloot_mode_interact">
+						<Entry varId="AutoLootMode" value="2"/>
+					</Option>
+					<Option id="3" displayName="mod_autoloot_mode_interact_aoe">
+						<Entry varId="AutoLootMode" value="3"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="PassiveHerbs" displayName="mod_autoloot_passive_herbs" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="AutoLootRadius" displayName="mod_autoloot_radius" displayType="SLIDER;3;50;47" tags="customDisplayName"/>
+			<Var id="CustomRadiiEnabled" displayName="mod_autoloot_custom_radii" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="RadiusHerbs" displayName="mod_autoloot_radius_herbs" displayType="SLIDER;1;50;49" tags="customDisplayName"/>
+			<Var id="RadiusCorpses" displayName="mod_autoloot_radius_corpses" displayType="SLIDER;1;40;39" tags="customDisplayName"/>
+			<Var id="RadiusContainers" displayName="mod_autoloot_radius_containers" displayType="SLIDER;1;25;24" tags="customDisplayName"/>
+			<Var id="AutoLootInterval" displayName="mod_autoloot_interval" displayType="OPTIONS" tags="customNames;customDisplayName;nonLocalized">
+				<OptionsArray>
+					<Option id="0" displayName="0.3s">
+						<Entry varId="AutoLootInterval" value="0.3"/>
+					</Option>
+					<Option id="1" displayName="0.5s">
+						<Entry varId="AutoLootInterval" value="0.5"/>
+					</Option>
+					<Option id="2" displayName="1.0s">
+						<Entry varId="AutoLootInterval" value="1.0"/>
+					</Option>
+					<Option id="3" displayName="1.5s">
+						<Entry varId="AutoLootInterval" value="1.5"/>
+					</Option>
+					<Option id="4" displayName="2.0s">
+						<Entry varId="AutoLootInterval" value="2.0"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="HudStyle" displayName="mod_autoloot_hud_style" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="mod_autoloot_hud_bottom_right">
+						<Entry varId="HudStyle" value="0"/>
+					</Option>
+					<Option id="1" displayName="mod_autoloot_hud_bottom_left">
+						<Entry varId="HudStyle" value="1"/>
+					</Option>
+					<Option id="2" displayName="mod_autoloot_hud_minimal">
+						<Entry varId="HudStyle" value="2"/>
+					</Option>
+					<Option id="3" displayName="mod_autoloot_hud_off">
+						<Entry varId="HudStyle" value="3"/>
+					</Option>
+					<Option id="4" displayName="mod_autoloot_hud_right_center">
+						<Entry varId="HudStyle" value="4"/>
+					</Option>
+					<Option id="5" displayName="mod_autoloot_hud_box">
+						<Entry varId="HudStyle" value="5"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="HudItemScale" displayName="mod_autoloot_hud_scale" displayType="SLIDER;70;150;8" tags="customDisplayName"/>
+			<Var id="HudOpacity" displayName="mod_autoloot_hud_opacity" displayType="SLIDER;50;100;5" tags="customDisplayName"/>
+			<Var id="HudGroupItems" displayName="mod_autoloot_hud_group" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedHerbs" displayName="mod_autoloot_hud_herbs" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedEquipment" displayName="mod_autoloot_hud_equipment" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedAlchemy" displayName="mod_autoloot_hud_alchemy" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedBooks" displayName="mod_autoloot_hud_books" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedJunk" displayName="mod_autoloot_hud_junk" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="HudFeedMoney" displayName="mod_autoloot_hud_money" displayType="TOGGLE" tags="customDisplayName"/>
+
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+
+			<!-- Mechanizm kradziezy i bezpieczenstwa -->
+			<Var id="TheftMode" displayName="mod_autoloot_theft_mode" displayType="OPTIONS" tags="customNames;customDisplayName">
+				<OptionsArray>
+					<Option id="0" displayName="mod_autoloot_theft_smart">
+						<Entry varId="TheftMode" value="0"/>
+					</Option>
+					<Option id="1" displayName="mod_autoloot_theft_never">
+						<Entry varId="TheftMode" value="1"/>
+					</Option>
+					<Option id="2" displayName="mod_autoloot_theft_strict">
+						<Entry varId="TheftMode" value="2"/>
+					</Option>
+					<Option id="3" displayName="mod_autoloot_theft_always">
+						<Entry varId="TheftMode" value="3"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="TheftRadius" displayName="mod_autoloot_theft_radius" displayType="SLIDER;5;35;30" tags="customDisplayName"/>
+			<Var id="TheftCheckLoS" displayName="mod_autoloot_theft_los" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="TheftCheckAngle" displayName="mod_autoloot_theft_angle" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="TheftNotify" displayName="mod_autoloot_theft_notify" displayType="TOGGLE" tags="customDisplayName"/>
+
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+
+			<!-- Filtry zrodel -->
+			<Var id="LootHerbs" displayName="mod_autoloot_filter_herbs" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootCorpses" displayName="mod_autoloot_filter_corpses" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootChests" displayName="mod_autoloot_filter_chests" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootContainers" displayName="mod_autoloot_filter_containers" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootPoICaches" displayName="mod_autoloot_filter_poi" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootQuest" displayName="mod_autoloot_filter_quest" displayType="TOGGLE" tags="customDisplayName"/>
+
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+
+			<!-- Filtry kategorii -->
+			<Var id="LootEquipment" displayName="mod_autoloot_filter_equipment" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="IgnoreCommonEquipment" displayName="mod_autoloot_ignore_common_equipment" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootAlchemyCrafting" displayName="mod_autoloot_filter_alchemy" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootBooks" displayName="mod_autoloot_filter_books" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootJunk" displayName="mod_autoloot_filter_junk" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="LootMoney" displayName="mod_autoloot_filter_money" displayType="TOGGLE" tags="customDisplayName"/>
+
+			<Var id="Separator" displayName="" displayType="SUBTLE_SEPARATOR"/>
+
+			<!-- Ograniczenia i wygoda -->
+			<Var id="DisableInCombat" displayName="mod_autoloot_combat" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="DisableOnHorse" displayName="mod_autoloot_horse" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="StopIfOverweight" displayName="mod_autoloot_weight" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="InstantInteract" displayName="mod_autoloot_instant_interact" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="PlayLootSound" displayName="mod_autoloot_sound" displayType="TOGGLE" tags="customDisplayName"/>
+			<Var id="PlayHerbAnim" displayName="mod_autoloot_herb_anim" displayType="TOGGLE" tags="customDisplayName"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>

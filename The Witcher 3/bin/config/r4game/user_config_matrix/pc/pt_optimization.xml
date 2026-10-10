@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Path Tracing Optimization: settings in Options > Video > Graphics.
+     Written by xinput9_1_0.dll in the game's text language (EN). -->
+<UserConfig>
+	<Group id="PTOptimization" displayName="video.general">
+		<VisibleVars>
+			<Var overrideGroup="Rendering/RT/PathTracer" id="PTNumBounces" displayName="Path tracing: light bounces" displayType="SLIDER;1;4;3" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/RT/PathTracer" id="PTIndirectLightMultiplier" displayName="Path tracing: bounced light brightness" displayType="SLIDER;1;1.2;20" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/HairWorks" id="PTHairNumBounces" displayName="Path tracing: hair bounces" displayType="SLIDER;1;6;5" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/RT/PathTracer" id="PTUseWRS" displayName="Path tracing: ray-traced shadows" displayType="TOGGLE" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/RT/PathTracer" id="PTSkyImpact" displayName="Path tracing: sky light" displayType="SLIDER;0.2;1.5;26" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/RT/PathTracer" id="PTMoonImpact" displayName="Path tracing: moon light" displayType="SLIDER;0.1;1.5;28" tags="nonLocalizedName;enableIfPT"/>
+			<Var overrideGroup="Rendering/RT/Caustics" id="CausticsMode" displayName="Ray tracing: caustics" displayType="OPTIONS" tags="nonLocalizedName;customNames;enableIfRT">
+				<OptionsArray>
+					<Option id="0" displayName="panel_mainmenu_option_value_off">
+						<Entry overrideGroup="Rendering/RT/Caustics" varId="CausticsMode" value="0"/>
+					</Option>
+					<Option id="1" displayName="panel_mainmenu_option_value_on">
+						<Entry overrideGroup="Rendering/RT/Caustics" varId="CausticsMode" value="7"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+		</VisibleVars>
+	</Group>
+</UserConfig>

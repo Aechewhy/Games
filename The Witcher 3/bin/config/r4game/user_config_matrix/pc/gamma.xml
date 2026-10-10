@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+
+	<Group id="Gamma" displayName="video.gamma" tags="enableIfSDREnabled">
+		<VisibleVars>
+			<Var overrideGroup="Visuals" id="GammaValue" displayName="gamma" displayType="GAMMA;0.1;1.9;90" tags="nonLocalized;enableIfSDREnabled"/>
+		</VisibleVars>
+	</Group>
+
+</UserConfig>

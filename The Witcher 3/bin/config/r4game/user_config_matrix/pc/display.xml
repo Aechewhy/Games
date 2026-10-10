@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserConfig>
+
+	<Group id="Display" displayName="video.display" tags="refreshEngineWithTexturesReload;graphics">
+		<VisibleVars>
+			<!-- Display - Output Monitor -->
+			<Var id="Virtual_OutputMonitor" displayName="monitor" displayType="OPTIONS" tags="buffered;RefreshOutputMonitor;refreshViewport;nonLocalized;customNames">
+				<OptionsArray>
+					<ListingFunction name="ListAvailableMonitorCount"/>
+				</OptionsArray>
+			</Var>
+
+			<!-- Display Mode - Fullscreen Mode -->
+			<Var id="Virtual_FullScreenMode" displayName="fullscreenmode" displayType="OPTIONS" tags="buffered;RefreshOutputMonitor;refreshViewport">
+				<OptionsArray>
+					<Option id="0" displayName="windowed">
+						<Entry overrideGroup="Viewport" varId="FullScreenMode" value="0"/>
+					</Option>
+					<Option id="1" displayName="borderless">
+						<Entry overrideGroup="Viewport" varId="FullScreenMode" value="1"/>
+					</Option>
+					<Option id="2" displayName="fullscreen">
+						<Entry overrideGroup="Viewport" varId="FullScreenMode" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			
+			<!-- VSync -->
+			<Var overrideGroup="Viewport" id="VSync" displayName="vsync" displayType="TOGGLE" tags="buffered"/>
+			
+			<!-- Resolution -->
+			<Var id="Resolution" displayName="resolution" displayType="OPTIONS" tags="buffered;RefreshOutputMonitor;refreshViewport;nonLocalized;customNames">
+				<OptionsArray>
+					<ListingFunction name="ListResolutions"/>
+				</OptionsArray>
+			</Var>
+
+			<!-- Maximum Frames Per Second. TODO: More granular slider? Higher Limit? -->
+			<Var id="FPSLimit" displayName="framerate_limit" displayType="OPTIONS" tags="buffered;refreshViewport">
+				<OptionsArray>
+					<Option id="0" displayName="framerate_limit_unlimited">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="0"/>
+					</Option>
+					<Option id="1" displayName="framerate_limit_30">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="30"/>
+					</Option>
+					<Option id="2" displayName="framerate_limit_60">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="60"/>
+					</Option>
+					<Option id="3" displayName="framerate_limit_75">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="75"/>
+					</Option>
+					<Option id="4" displayName="framerate_limit_90">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="90"/>
+					</Option>
+					<Option id="5" displayName="framerate_limit_120">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="120"/>
+					</Option>
+					<Option id="6" displayName="framerate_limit_144">
+						<Entry overrideGroup="Engine" varId="LimitFPS" value="144"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+
+			<!-- Unsure why this is in Graphics settings? -->
+            <Var overrideGroup="Rendering" id="HardwareCursor" displayName="hardware_cursor" displayType="TOGGLE"/>
+		</VisibleVars>
+	</Group>
+
+</UserConfig>

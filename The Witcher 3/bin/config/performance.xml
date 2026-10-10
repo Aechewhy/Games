@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<performance>
+  <!--Tahiti XT [Radeon HD 7970/8970 OEM / R9 280X]-->
+  <device vid="1002" did="6798" preset="2" />
+  <!--Curacao XT [Radeon R9 270X]-->
+  <device vid="1002" did="6810" preset="2" />
+  <!--Tonga PRO [Radeon R9 285]-->
+  <device vid="1002" did="6939" preset="2" />
+  <!--GF110 [GeForce GTX 560 Ti]-->
+  <device vid="0x10DE" did="0x1082" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 560 Ti]-->
+  <device vid="0x10DE" did="0x1087" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 560]-->
+  <device vid="0x10DE" did="0x1084" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 570]-->
+  <device vid="0x10DE" did="0x1081" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 570]-->
+  <device vid="0x10DE" did="0x1086" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 580]-->
+  <device vid="0x10DE" did="0x1080" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 580]-->
+  <device vid="0x10DE" did="0x1089" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 580]-->
+  <device vid="0x10DE" did="0x108b" preset="0" fpslimit="30" />
+  <!--GF110 [GeForce GTX 590]-->
+  <device vid="0x10DE" did="0x1088" preset="0" fpslimit="30" />
+  <!--GK104 [GeForce GTX 660]-->
+  <device vid="0x10DE" did="0x1185" preset="0" fpslimit="30" />
+  <!--GK104 [GeForce GTX 670]-->
+  <device vid="0x10DE" did="0x1189" preset="1" fpslimit="30" />
+  <!--GK104 [GeForce GTX 760]-->
+  <device vid="0x10DE" did="0x1187" preset="1" fpslimit="30" />
+  <!--GK110 [GeForce GTX 780]-->
+  <device vid="0x10DE" did="0x1004" preset="2" fpslimit="30" />
+  <!--GK110 [GeForce GTX Titan LE]-->
+  <device vid="0x10DE" did="0x1003" preset="3" />
+  <!--GK110 [GeForce GTX Titan]-->
+  <device vid="0x10DE" did="0x1005" preset="3" />
+  <!--Geforce GTX 780 Ti-->
+  <device vid="0x10DE" did="0x100a" preset="2" />
+  <!--GeForce GTX 980-->
+  <device vid="0x10DE" did="0x13c0" preset="3" />
+</performance>
+
